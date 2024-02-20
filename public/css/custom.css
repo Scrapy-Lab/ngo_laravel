@@ -1,0 +1,130 @@
+/* My css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+}
+
+.content {
+    flex: 1; /* Allow content to grow and fill remaining space */
+}
+
+.footer {
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+body {
+    font-family: "Roboto", sans-serif !important;
+}
+.tophead {
+    max-width: 90%;
+    margin: 0 auto;
+}
+nav.navbar.navbar-expand-lg {
+    padding: 0;
+}
+.topButtons button {
+    color: #fff;
+    background: #ba1b1b;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 4px 10px;
+}
+a.nav-link.active {
+    color: #ba1b1b !important;
+    border-top: 2px solid #ba1b1b !important;
+}
+a.nav-link:hover {
+    color: #ba1b1b !important;
+    border-top: 2px solid #ba1b1b !important;
+}
+.tophead ul.navbar-nav {
+    gap: 28px;
+}
+.tophead ul li a.nav-link {
+    font-weight: 700;
+    font-size: 15px;
+    border-top: 2px solid #fff;
+    padding: 15px 0 !important;
+}
+.footerinner {
+    max-width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    padding-bottom: 60px;
+}
+.mainfooter {
+    background: #333;
+    padding-top: 48px;
+}
+.footerinner h3 {
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 24px;
+    position: relative;
+}
+.footerinner h3:before {
+    position: absolute;
+    content: '';
+    background-color: #7abc00;
+    width: 56px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+
+}
+p.footercontn {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.footerinner img {
+    padding-bottom: 24px;
+    margin-bottom: 12px;
+}
+.footerinner ul {
+    list-style: none;
+    padding: 0 !important;
+}
+.footerinner ul li {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    padding: 12px 3px;
+}
+.footerinner ul li h4 {
+    font-size: 14px;
+    margin: 0 !important;
+    font-weight: 400;
+}
+p.date {
+    color: rgba(255,255,255,.6);
+    margin: 4px 0 0 !important;
+    font-size: 12px;
+}
+.copyright {
+    background: rgba(0,0,0,.1);
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.copyright p {
+    font-weight: 400;
+    font-size: .702rem;
+    letter-spacing: .01875rem;
+    line-height: 1.5;
+    margin: 0 !important;
+    color: #fff;
+    text-align: center;
+}
