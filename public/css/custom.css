@@ -11,26 +11,33 @@ html, body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    min-height: 100vh;
+    /* Set minimum height to 100% of viewport height */
 }
 
 .content {
-    flex: 1; /* Allow content to grow and fill remaining space */
+    flex: 1;
+    /* Allow content to grow and fill remaining space */
 }
 
 .footer {
-    flex-shrink: 0; /* Prevent footer from shrinking */
+    flex-shrink: 0;
+    /* Prevent footer from shrinking */
 }
+
 body {
     font-family: "Roboto", sans-serif !important;
 }
+
 .tophead {
     max-width: 90%;
     margin: 0 auto;
 }
+
 nav.navbar.navbar-expand-lg {
     padding: 0;
 }
+
 .topButtons button {
     color: #fff;
     background: #ba1b1b;
@@ -40,35 +47,42 @@ nav.navbar.navbar-expand-lg {
     font-size: 15px;
     padding: 4px 10px;
 }
+
 a.nav-link.active {
     color: #ba1b1b !important;
     border-top: 2px solid #ba1b1b !important;
 }
+
 a.nav-link:hover {
     color: #ba1b1b !important;
     border-top: 2px solid #ba1b1b !important;
 }
+
 .tophead ul.navbar-nav {
     gap: 28px;
 }
+
 .tophead ul li a.nav-link {
     font-weight: 700;
     font-size: 15px;
     border-top: 2px solid #fff;
     padding: 15px 0 !important;
 }
+
 .footerinner {
     max-width: 90%;
     margin: 0 auto;
     color: #fff;
     padding-bottom: 60px;
 }
+
 .mainfooter {
     background: #333;
     padding-top: 48px;
 }
+
 .footerinner h3 {
-    font-family: Montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
@@ -77,6 +91,7 @@ a.nav-link:hover {
     padding-bottom: 24px;
     position: relative;
 }
+
 .footerinner h3:before {
     position: absolute;
     content: '';
@@ -87,38 +102,46 @@ a.nav-link:hover {
     left: 0;
 
 }
+
 p.footercontn {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.5;
 }
+
 .footerinner img {
     padding-bottom: 24px;
     margin-bottom: 12px;
 }
+
 .footerinner ul {
     list-style: none;
     padding: 0 !important;
 }
+
 .footerinner ul li {
-    border-bottom: 1px solid rgba(255,255,255,.2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
     padding: 12px 3px;
 }
+
 .footerinner ul li h4 {
     font-size: 14px;
     margin: 0 !important;
     font-weight: 400;
 }
+
 p.date {
-    color: rgba(255,255,255,.6);
+    color: rgba(255, 255, 255, .6);
     margin: 4px 0 0 !important;
     font-size: 12px;
 }
+
 .copyright {
-    background: rgba(0,0,0,.1);
+    background: rgba(0, 0, 0, .1);
     padding-top: 36px;
     padding-bottom: 36px;
 }
+
 .copyright p {
     font-weight: 400;
     font-size: .702rem;
@@ -127,4 +150,131 @@ p.date {
     margin: 0 !important;
     color: #fff;
     text-align: center;
+}
+
+/* OUR WORK */
+
+.ourWorkBanner {
+    background-image: url('../images/ourwork.jpg');
+    padding: 96px 0;
+    position: relative;
+}
+
+.ourWorkBanner::before {
+    position: absolute;
+    content: '';
+    background-color: #000000ab;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.row {
+    max-width: 100%;
+}
+.ourWorkBanner h1 {
+    color: #fff;
+    font-size: 40px;
+    z-index: 999;
+    position: relative;
+}
+.campaignsInner .row {
+    max-width: 100%;
+}
+.ourworkMain {
+    max-width: 1116px;
+    margin: 0 auto;
+    padding-top: 62px;
+}
+.campaigns {
+    text-align: center;
+}
+.campaignBox {
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.08);
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 42px;
+}
+.campaignBox img {
+    transition: 2.2s ease all;
+    height: 100%;
+}
+
+.campaignBox:hover img {
+    transform: scale(1.5);
+}
+.campaignBox figure {
+    overflow: hidden;
+    height: 220px;
+}
+.campaignboxcontent {
+    padding: 24px;
+    text-align: center;
+}
+.campaignsInner {
+    margin-top: 44px;
+}
+.campaignboxcontent a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 10px;
+    transition: 2.2s ease all;
+}
+.campaignBox:hover .campaignboxcontent a {
+    color: #ba1b1b;
+}
+.campaignboxcontent p {
+    font-size: 14px;
+    margin: 20px 0 !important;
+    min-height: 148px;
+    max-width: 100% !important;
+}
+.campaignboxcontent button {
+    border: none;
+    background: #7abc00;
+    border-radius: 12px;
+    padding: 5px 20px;
+    color: #fff;
+    transition: 2.2s ease all;
+}
+.campaignBox:hover .campaignboxcontent button {
+    background: #ba1b1b;
+}
+.campaigns p {
+    max-width: 56%;
+    margin: 0 auto;
+}
+.partnersMain img {
+    width: 159px;
+    margin-bottom: 30px;
+}
+.partnersMain {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.partnersMain h3 {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #7abc00;
+}
+.partnersMain h4 {
+    font-size: 19px;
+    font-weight: 400;
+    max-width: 92%;
+    margin-top: 20px;
+}
+.partnersMain p {
+    margin-top: 20px;
+    line-height: 25px;
+    max-width: 92%;
+    font-size: 14px;
+}
+.campaigns h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #7abc00;
 }
