@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('slug');
             $table->text('description');
             $table->string('image');
+            $table->dateTime('schedule')->nullable();
             $table->integer('priority')->nullable();
             $table->boolean('is_visible')->default(0);
             $table->timestamps();
