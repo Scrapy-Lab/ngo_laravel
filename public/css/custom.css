@@ -210,6 +210,7 @@ p.date {
 .campaignboxcontent {
     padding: 24px;
     text-align: center;
+    height: 267px !important;
 }
 .campaignsInner {
     margin-top: 44px;
@@ -228,8 +229,8 @@ p.date {
 .campaignboxcontent p {
     font-size: 14px;
     margin: 20px 0 !important;
-    min-height: 148px;
     max-width: 100% !important;
+    display: block;
 }
 .campaignboxcontent button {
     border: none;
@@ -277,4 +278,198 @@ p.date {
     text-transform: capitalize;
     font-weight: 800;
     color: #7abc00;
+}
+
+
+/* OUR WORK */
+
+.donateMain {
+    background-image: url('../images/donateNow.jpg');
+    padding: 96px 0;
+    position: relative;
+}
+
+
+.donateMain::before {
+    position: absolute;
+    content: '';
+    background-color: #000000ab;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.donateMain h1 {
+    color: #fff;
+    font-size: 40px;
+    z-index: 999;
+    position: relative;
+}
+.donateblogs {
+    max-width: 90%;
+    margin: 0 auto !important;
+    padding: 100px 0;
+}
+.donateBlogbox img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.donatePayment img {
+    width: 362px;
+}
+.accordion-item {
+    margin-bottom: 0px;
+    border: 1px solid lightgrey;
+}
+.accordion-button:not(.collapsed) {
+    background: transparent !important;
+    color: green;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+button.accordion-button {
+    font-family: 'Roboto';
+    font-size: 16px;
+    position: relative;
+    padding-left: 43px;
+}
+button.accordion-button:before {
+    position: absolute;
+    content: '';
+    background: #7abc00;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    left: 17px;
+    top: 17px;
+}
+.accordion-body {
+    font-size: 13px;
+    color: grey;
+    line-height: 20px;
+}
+.donatePayment h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #7abc00;
+    margin-bottom: 18px;
+}
+.donatePayment p {
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+.donateBlogInnerbox {
+    padding: 24px;
+}
+.donateBlogbox {
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.08);
+}
+.donateBlogInnerbox h3 {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+span.smallfont {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.inputWIthoptions input {
+    padding: 2px 12px;
+    border: 1px solid darkslategrey;
+    color: #fff;
+}
+.inputWIthoptions label {
+    background: #7abc00;
+    padding: 2px 12px;
+    border: 1px solid #7abc00;
+    color: #fff;
+}
+.inputWIthoptions {
+    margin: 28px 0;
+}
+.donateBlogInnerbox button {
+    background: #7abc00;
+    border: 1px solid #7abc00;
+    width: fit-content;
+    border-radius: 14px;
+    padding: 4px 26px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    transition: 1.8s ease all;
+}
+.donateBlogInnerbox button:hover {
+    background: #ba1b1b;
+    border: 1px solid #ba1b1b;
+}
+h4.allHead {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+}
+.selectPayment input {
+    border: 1px solid grey;
+}
+.selectPayment label {
+    font-size: 14px;
+    font-weight: 400;
+}
+.formGroups {
+    width: 48% !important;
+}
+.formGroups input {
+    width: 100% !important;
+    color: grey;
+    border: 1px solid darkgray;
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.formGroups label {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.emailGroup label {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.emailGroup input {
+    width: 100% !important;
+    color: grey;
+    border: 1px solid darkgray;
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.donateBlogInnerbox p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.forcheck p {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 !important;
+}
+.donateBlogInnerbox h5 {
+    font-size: 18px !important;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.checkbox1 label {
+    font-size: 14px;
+    font-weight: 500;
+}
+.checkbox1 input {
+    border: 1px solid darkslategrey;
+}
+
+.donateBlogInnerbox a {
+    text-decoration: none;
+    color: #7abc00;
+    font-weight: 500;
 }
