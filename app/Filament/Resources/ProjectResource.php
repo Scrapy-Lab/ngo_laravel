@@ -39,6 +39,7 @@ class ProjectResource extends Resource
                 Forms\Components\FileUpload::make('image')
                     ->image()
                     ->required(),
+                Forms\Components\DateTimePicker::make('schedule'),
                 Forms\Components\TextInput::make('priority')
                     ->numeric(),
                 Forms\Components\Toggle::make('is_visible')
