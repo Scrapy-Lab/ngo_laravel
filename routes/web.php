@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DynamicPageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,12 +20,10 @@ Route::get('/', function () {
 
 Route::get('ourwork', function () {
     return view('pages.ourwork');
-});
+})->name('our-projects');
 
 Route::get('donate', function () {
     return view('pages.donate');
 });
 
-Route::get('project-details', function () {
-    return view('pages.project-details');
-});
+Route::get('project-details/{slug}',[DynamicPageController::class,'projectDetail'])->name('project-details');

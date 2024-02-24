@@ -21,9 +21,9 @@
                                 <figure>
                                 <img src="{{ asset('storage/' . $project->image) }}" alt=""></figure>
                                 <div class="campaignboxcontent">
-                                    <a href="#">{{$project->title}}</a>
+                                    <a href="{{route('project-details', $project->slug)}}">{{$project->title}}</a>
                                     <p>{!! html_entity_decode(Str::limit($project->description,100)) !!}</p>
-                                    <button>Donate Now</button>
+                                    <a href="{{ route('project-details', $project->slug) }}" id="readMore">Read More</a>
                                 </div>
                             </div>
                         </div>

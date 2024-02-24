@@ -232,7 +232,7 @@ p.date {
     max-width: 100% !important;
     display: block;
 }
-.campaignboxcontent button {
+.campaignboxcontent #readMore {
     border: none;
     background: #7abc00;
     border-radius: 12px;
@@ -240,7 +240,7 @@ p.date {
     color: #fff;
     transition: 2.2s ease all;
 }
-.campaignBox:hover .campaignboxcontent button {
+.campaignBox:hover .campaignboxcontent #readMore {
     background: #ba1b1b;
 }
 .campaigns p {
