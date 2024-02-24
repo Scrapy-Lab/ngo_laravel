@@ -8,7 +8,8 @@
         <div class="campaigns">
             <h2>Our Campaigns</h2>
             <p>
-                Our vision is nothing less than realizing the full potential of the Internet – universal access to research
+                Our vision is nothing less than realizing the full potential of the Internet – universal access to
+                research
                 and education
             </p>
 
@@ -19,11 +20,13 @@
                         <div class="col-md-4">
                             <div class="campaignBox">
                                 <figure>
-                                <img src="{{ asset('storage/' . $project->image) }}" alt=""></figure>
+                                    <img src="{{ asset('storage/' . $project->image) }}" alt="">
+                                </figure>
                                 <div class="campaignboxcontent">
-                                    <a href="{{route('project-details', $project->slug)}}">{{$project->title}}</a>
-                                    <p>{!! html_entity_decode(Str::limit($project->description,100)) !!}</p>
-                                    <a href="{{ route('project-details', $project->slug) }}" id="readMore">Read More</a>
+                                    <a href="{{ route('project-details', $project->slug) }}">{{ $project->title }}</a>
+                                    <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
+                                    <a href="{{ route('project-details', $project->slug) }}" id="readMore">Read
+                                        More</a>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +42,11 @@
             <div class="col-md-6">
                 <h3>Our partners</h3>
                 <h4>Everyone here is passionate about their work, incredibly smart, and genuinely kind.</h4>
-                <p>Our partnerships with Government bodies, the Police and other organizations in the NGO ecosystem allow us to join hands with those who share our commitment and dedication to improving the lives of people in need through on-ground programs. With all of our outreach partners, Youngistaan Foundation ensures that our work is aligned with the 17 Youngistaan with Public Police Foundation of the United Nations. </p>
+                <p>Our partnerships with Government bodies, the Police and other organizations in the NGO ecosystem
+                    allow us to join hands with those who share our commitment and dedication to improving the lives of
+                    people in need through on-ground programs. With all of our outreach partners, Youngistaan Foundation
+                    ensures that our work is aligned with the 17 Youngistaan with Public Police Foundation of the United
+                    Nations. </p>
             </div>
 
             <div class="col-md-6">

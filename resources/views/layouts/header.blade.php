@@ -10,19 +10,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('our-projects')}}">Our Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Shortcodes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Post Types</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Campaigns</a>
+                        <a class="nav-link" href="{{route('blogs')}}">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">News</a>
@@ -42,14 +36,4 @@
 
 
 
-<!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<script>
-$(document).ready(function() {
-    $('.navbar-nav .nav-link').on('click', function() {
-        $('.navbar-nav').find('.active').removeClass('active');
-        $(this).addClass('active');
-    });
-});
-</script>

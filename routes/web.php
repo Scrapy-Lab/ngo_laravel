@@ -15,7 +15,7 @@ use App\Http\Controllers\DynamicPageController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
 
 
 Route::get('ourwork', function () {
