@@ -9,21 +9,9 @@
     {{-- Donate Content --}}
 
     <div class="donateblogs row justify-content-between">
-        <div class="col-md-8 donateblogcontent">
-            <div class="donateBlogbox">
-                <img src="{{ url('/images/donatebox.jpg') }}" alt="">
-                <div class="donateBlogInnerbox">
-                    <h3>Blog Details</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quibusdam assumenda ipsam neque
-                        ea labore adipisci atque dolor consectetur cum? Minus sint itaque quo dolore facere quod eaque
-                        veritatis ullam. Ipsum exercitationem excepturi ipsa modi recusandae autem harum inventore quia laborum molestias
-                        temporibus veritatis, magni consequuntur odio placeat unde quam officia, saepe sapiente obcaecati!
-                        Quae rerum et qui ea consequatur.
-                    </p>
-                </div>
-            </div>
-        </div>
-
+        
+        {{-- Project Detail Page --}}
+        @livewire('project-detail', ['slug' => $slug])
 
         <div class="col-md-3 donatePayment">
 
