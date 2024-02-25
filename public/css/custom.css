@@ -40,7 +40,7 @@ nav.navbar.navbar-expand-lg {
 
 .topButtons button {
     color: #fff;
-    background: #ba1b1b;
+    background: #0a64bc;
     border: none;
     border-radius: 15px;
     font-weight: 700;
@@ -49,13 +49,13 @@ nav.navbar.navbar-expand-lg {
 }
 
 a.nav-link.active {
-    color: #ba1b1b !important;
-    border-top: 2px solid #ba1b1b !important;
+    color: #660000 !important;
+    border-top: 2px solid #660000 !important;
 }
 
 a.nav-link:hover {
-    color: #ba1b1b !important;
-    border-top: 2px solid #ba1b1b !important;
+    color: #660000 !important;
+    border-top: 2px solid #660000 !important;
 }
 
 .tophead ul.navbar-nav {
@@ -95,7 +95,7 @@ a.nav-link:hover {
 .footerinner h3:before {
     position: absolute;
     content: '';
-    background-color: #7abc00;
+    background-color: #0a64bc;
     width: 56px;
     height: 3px;
     bottom: 0;
@@ -224,7 +224,7 @@ p.date {
     transition: 2.2s ease all;
 }
 .campaignBox:hover .campaignboxcontent a {
-    color: #ba1b1b;
+    color: #660000;
 }
 .campaignboxcontent p {
     font-size: 14px;
@@ -232,16 +232,16 @@ p.date {
     max-width: 100% !important;
     display: block;
 }
-.campaignboxcontent #readMore {
+.campaignboxcontent button {
     border: none;
-    background: #7abc00;
+    background: #0a64bc;
     border-radius: 12px;
     padding: 5px 20px;
     color: #fff;
     transition: 2.2s ease all;
 }
-.campaignBox:hover .campaignboxcontent #readMore {
-    background: #ba1b1b;
+.campaignBox:hover .campaignboxcontent button {
+    background: #660000;
 }
 .campaigns p {
     max-width: 56%;
@@ -259,7 +259,7 @@ p.date {
     font-size: 35px;
     text-transform: capitalize;
     font-weight: 800;
-    color: #7abc00;
+    color: #0a64bc;
 }
 .partnersMain h4 {
     font-size: 19px;
@@ -277,33 +277,25 @@ p.date {
     font-size: 35px;
     text-transform: capitalize;
     font-weight: 800;
-    color: #7abc00;
+    color: #0a64bc;
 }
 
 
 /* OUR WORK */
 
+.imagesgrid {
+    flex-wrap: wrap;
+}
 .donateMain {
-    background-image: url('../images/donateNow.jpg');
-    padding: 96px 0;
-    position: relative;
+    max-width: 90%;
+    margin: 0 auto ;
 }
-
-
-.donateMain::before {
-    position: absolute;
-    content: '';
-    background-color: #000000ab;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+.imagesgrid figure img {
+    width: 100% !important;
 }
-.donateMain h1 {
-    color: #fff;
-    font-size: 40px;
-    z-index: 999;
-    position: relative;
+.imagesgrid figure {
+    width: 13% !important;
+    margin-bottom: 17px;
 }
 .donateblogs {
     max-width: 90%;
@@ -336,7 +328,7 @@ button.accordion-button {
 button.accordion-button:before {
     position: absolute;
     content: '';
-    background: #7abc00;
+    background: #0a64bc;
     width: 14px;
     height: 14px;
     border-radius: 50px;
@@ -351,7 +343,7 @@ button.accordion-button:before {
 .donatePayment h3 {
     font-size: 22px;
     font-weight: 800;
-    color: #7abc00;
+    color: #0a64bc;
     margin-bottom: 18px;
 }
 .donatePayment p {
@@ -380,17 +372,17 @@ span.smallfont {
     color: #fff;
 }
 .inputWIthoptions label {
-    background: #7abc00;
+    background: #0a64bc;
     padding: 2px 12px;
-    border: 1px solid #7abc00;
+    border: 1px solid #0a64bc;
     color: #fff;
 }
 .inputWIthoptions {
     margin: 28px 0;
 }
 .donateBlogInnerbox button {
-    background: #7abc00;
-    border: 1px solid #7abc00;
+    background: #0a64bc;
+    border: 1px solid #0a64bc;
     width: fit-content;
     border-radius: 14px;
     padding: 4px 26px;
@@ -400,8 +392,8 @@ span.smallfont {
     transition: 1.8s ease all;
 }
 .donateBlogInnerbox button:hover {
-    background: #ba1b1b;
-    border: 1px solid #ba1b1b;
+    background: #660000;
+    border: 1px solid #660000;
 }
 h4.allHead {
     margin-top: 12px;
@@ -470,6 +462,45 @@ h4.allHead {
 
 .donateBlogInnerbox a {
     text-decoration: none;
-    color: #7abc00;
+    color: #0a64bc;
     font-weight: 500;
+}
+.donateblogBox img {
+    width: 100%;
+    border-radius: 10px;
+}
+.donateblogBox {
+    position: relative;
+}
+.donateBoxheads h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff !important;
+}
+.donateBoxheads {
+    background: #660000bd;
+    position: absolute;
+    bottom: 15px;
+    width: 75%;
+    padding-left: 17px;
+    padding-top: 15px;
+    margin-left: 12px;
+}
+.donateBoxheads p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.donateMain h3 {
+    font-weight: 900;
+    margin-top: 15px;
+    color: #0a64bc;
+}
+.donateMain p {
+    font-size: 14px;
+    width: 65%;
+}
+.donateblogBoxs.row {
+    margin-bottom: 40px;
 }
