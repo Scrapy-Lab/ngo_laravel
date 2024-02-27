@@ -16,29 +16,7 @@
         class="carousel slide"
         data-bs-ride="carousel"
         >
-        <div class="carousel-inner w-100">
-            <div class="carousel-item active crsl-txt">
-            <img class="Myimg"  src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}" alt="..."/>
-            <div class="carousel-caption d-none d-md-block CustomCarousel">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-            </div>
-            </div>
-            <div class="carousel-item crsl-txt">
-            <img class="Myimg" src="{{ asset('images/portfolio-1.jpg') }}"  alt="..." />
-            <div class="carousel-caption d-none d-md-block CustomCarousel">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-            </div>
-            </div>
-            <div class="carousel-item crsl-txt">
-            <img  class="Myimg"src="{{ asset('images/post-2-750x510.jpg') }}" alt="..." />
-            <div class="carousel-caption d-none d-md-block CustomCarousel">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-            </div>
-            </div>
-        </div>
+        @livewire('homepage-slider')
         <button
             class="carousel-control-prev"
             type="button"
