@@ -2,8 +2,128 @@
 @section('content')
     {{-- DONATE PAGE --}}
 
-    <div class="donateMain text-center">
-        <h1>Donate Now</h1>
+    <div class="donateMain">
+        <div class="imagesgrid d-flex justify-content-between">
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+
+            <figure>
+                <img src="{{ url('/images/image-002.png') }}" alt="">
+            </figure>
+        </div>
+        <h3>Our Programms</h3>
+        <p>Youngistaan Foundation’s programs address multiple issues such as hunger, homelessness, gender,
+            education, animal welfare, youth, emergency responses and more. We encourage you to visit our
+            website to know about our programs!</p>
+
+        <div class="donateblogBoxs row">
+            <div class="donateblogBox col-md-4">
+                <img src="{{ url('/images/image-022.png') }}" alt="">
+                <div class="donateBoxheads">
+                    <h3>Hunger & Nutrition</h3>
+                    <p>(Food Project)</p>
+                </div>
+            </div>
+
+            <div class="donateblogBox col-md-4">
+                <img src="{{ url('/images/image-022.png') }}" alt="">
+                <div class="donateBoxheads">
+                    <h3>Hunger & Nutrition</h3>
+                    <p>(Food Project)</p>
+                </div>
+            </div>
+
+            <div class="donateblogBox col-md-4">
+                <img src="{{ url('/images/image-022.png') }}" alt="">
+                <div class="donateBoxheads">
+                    <h3>Hunger & Nutrition</h3>
+                    <p>(Food Project)</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>THE SIMPLEST WAY OF HELPING US</h3>
+        <p>You many organize a collection drive in your Office, School, Society wherein people may donate their Old
+            Clothes ( Unturned and in Wearable Condition) , Dry Ration,, Medicines ( Please check expiry date), Toys,
+            Footwear, Utensils, Books etc.</p>
     </div>
 
     {{-- Donate Content --}}
