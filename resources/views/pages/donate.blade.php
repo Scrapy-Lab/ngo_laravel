@@ -4,9 +4,9 @@
 
     <div class="donateMain">
         <div class="imagesgrid d-flex justify-content-between">
-
+            <h2>Donate Now</h2>
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-001.png') }}" alt="">
             </figure>
 
             <figure>
@@ -14,79 +14,79 @@
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-003.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-004.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-005.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-006.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-007.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-008.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-009.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-010.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-011.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-012.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-013.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-014.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-015.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-016.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-017.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-018.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-019.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-020.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-021.png') }}" alt="">
             </figure>
         </div>
         <h3>Our Programms</h3>
@@ -135,73 +135,90 @@
                 <div class="donateBlogInnerbox">
                     <h3>Donation Form</h3>
                     <h3>₹0 <span class="smallfont">of ₹1 lakh raised</span></h3>
-                    <div class="inputWIthoptions">
-                        <label for="">₹</label><input type="text" name="" id="">
-                    </div>
-                    <div class="d-flex justify-content-between selectMoney">
-                        <button>₹100</button>
-                        <button>₹200</button>
-                        <button>₹500</button>
-                        <button>₹1000</button>
-                        <button>₹2000</button>
-                    </div>
 
-                    <button>Custom Amount</button>
-
-                    <div class="selectPayment">
-                        <h4 class="allHead">Select Payment Method</h4>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="yesOption"
-                                value="yes">
-                            <label class="form-check-label" for="yesOption">
-                                Offline Donation
-                            </label>
+                    {{-- DONATION TYPE --}}
+                    <h4>Donation Type</h4>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox1" name="checkbox1">
+                                <label class="form-check-label" for="checkbox1">Checkbox 1</label>
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="noOption"
-                                value="no">
-                            <label class="form-check-label" for="noOption">
-                                Paypal
-                            </label>
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox2" name="checkbox2">
+                                <label class="form-check-label" for="checkbox2">Checkbox 2</label>
+                            </div>
                         </div>
-
-                    </div>
-
-                    <h4 class="allHead">Personal Info</h4>
-
-                    <div class="personal d-flex justify-content-between">
-                        <div class="formGroups">
-                            <label for="">First Name*</label>
-                            <input type="text" name="" id="" placeholder="First Name">
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox3">
+                                <label class="form-check-label" for="checkbox3">Checkbox 3</label>
+                            </div>
                         </div>
-                        <div class="formGroups">
-                            <label for="">Last Name*</label>
-                            <input type="text" name="" id="" placeholder="Last Name">
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox4" name="checkbox4">
+                                <label class="form-check-label" for="checkbox4">Checkbox 4</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="emailGroup">
-                        <label for="">Email Address*</label>
-                        <input type="email" placeholder="Email Address">
-                    </div>
-                    <p>To make an offline donation toward this cause, follow these steps::</p>
-                    <div class="forcheck">
-                        <p>Write a check payable to "{Youngistaan Welfare Society}"</p>
-                        <p>On the memo line of the check, indicate that the donation is for "Youngistaan"</p>
-                        <p>Mail your check to:</p>
-                    </div>
-                    <h5>Master Colony, Jamalpur, chandigarh Road - Ludhiana.</h5>
-                    <p>Your tax-deductible donation is greatly appreciated!</p>
-                    <div class="forTerms d-flex justify-content-between">
-                        <div class="checkbox1">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="whyAreYouCheckbox">
-                                <label class="form-check-label" for="whyAreYouCheckbox">
-                                  Agree to Terms?
-                                </label>
-                              </div>
+
+                    {{-- Amount --}}
+                    <h4>Select Amount</h4>
+                    <div class="row amountmain">
+                        <div class="col-md-4">
+                            <button>100</button>
                         </div>
-                        <a href="#">Show Terms</a>
+                        <div class="col-md-4">
+                            <button>200</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button>500</button>
+                        </div>
                     </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col d-flex gap-4 p-0">
+                                <button id="customAmountBtn" class="btn btn-primary">Custom Amount</button>
+                                <div class="input-row">
+                                    <input type="number" id="customAmountInput" class="form-control" placeholder="Enter custom amount">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- Personal Info --}}
+
+                    <h4>Personal Info</h4>
+                    <div class="donateForm d-flex">
+                        <div class="donteGroup">
+                            <label for="">Full Name*</label>
+                            <input type="text" placeholder="Full Name">
+                        </div>
+                        <div class="donteGroup">
+                            <label for="">Email</label>
+                            <input type="email" name="" id="" placeholder="Email">
+                        </div>
+                        <div class="donteGroup mt-2">
+                            <label for="">Phone</label>
+                            <input type="tel" name="" id="" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    {{-- Payment Type --}}
+                    <h4>Payment Type</h4>
+                    <select class="types" id="">
+                        <option value="">Payment Type</option>
+                    </select>
+
+                    {{-- Transaction Type --}}
+                    <h4>Transaction Type</h4>
+                    <select class="types" name="" id="">
+                        <option value="">Transaction Type</option>
+                    </select>
+
                 </div>
             </div>
         </div>
@@ -311,4 +328,13 @@
             <img src="{{ url('/images/qrcode.jpeg') }}" alt="">
         </div>
     </div>
+
+
+    <script>
+        document.getElementById('customAmountBtn').addEventListener('click', function() {
+            // Toggle visibility of the input row
+            var inputRow = document.querySelector('.input-row');
+            inputRow.style.display = inputRow.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
 @endsection

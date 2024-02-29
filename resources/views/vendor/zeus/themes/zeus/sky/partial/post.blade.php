@@ -9,7 +9,7 @@
             </div>
         </div>
         <aside class="mt-2">
-            <a href="{{ route('post',$post->slug) }}" class="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-200 hover:underline">
+            <a href="{{ route('post',$post->slug) }}" class="blogMaintitle text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-200 hover:underline">
                 {!! $post->title !!}
             </a>
             @if($post->description !== null)
@@ -19,7 +19,7 @@
             @endif
         </aside>
         <div class="flex items-center justify-between mt-4">
-            <a href="{{ route('post',$post->slug) }}" class="text-blue-500 dark:text-blue-200 hover:underline">Read more</a>
+            <a href="{{ route('post',$post->slug) }}" class=" blogMainButton text-blue-500 dark:text-blue-200 hover:underline">Read more</a>
             <div>
                 <a class="flex items-center gap-2">
                     <img src="{{ \Filament\Facades\Filament::getUserAvatarUrl($post->author) }}" alt="avatar" class="hidden object-cover w-8 h-8 rounded-full sm:block">

@@ -29,7 +29,7 @@
         </div>
     </nav>
     <div class="topButtons d-flex gap-4">
-        <button>Donate Now</button>
+      <a href="{{ url('/donate') }}"><button>Donate Now</button></a>
         <button>Join Now</button>
     </div>
 </div>
