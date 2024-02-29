@@ -401,3 +401,16 @@
   .mediaQur .Main-cnt {
     height: 47vh !important;
   }
+  .Customtitle {
+    text-align: center;
+    margin-left: 50rem;
+    color: white !important;
+  }
+  .footertxt {
+    text-align: left;
+    margin: 0px 2rem 1rem 70rem;
+    color: white !important;
+  }
+  .mYcard{
+    margin-top: 7rem;
+  }

@@ -26,4 +26,8 @@ Route::get('donate', function () {
     return view('pages.donate');
 });
 
+Route::get('about-us', function () {
+    return view('pages.aboutus');
+})->name('about-us');
+
 Route::get('project-details/{slug}',[DynamicPageController::class,'projectDetail'])->name('project-details');
