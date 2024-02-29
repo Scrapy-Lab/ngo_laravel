@@ -22,6 +22,9 @@
                         <a class="nav-link" href="#">News</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('about-us') }}">About us</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Shop</a>
                     </li>
                 </ul>
