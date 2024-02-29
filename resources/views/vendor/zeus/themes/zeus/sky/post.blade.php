@@ -27,9 +27,9 @@
             </div>
         </div>
 
-        <div class="flex flex-col items-start justify-start gap-4">
+        <div class="flex flex-col items-start justify-start gap-2">
             <div>
-                <a href="#" class="text-2xl font-bold text-gray-700 dark:text-gray-100 hover:underline">
+                <a href="#" class="blogMaintitle text-2xl font-bold text-gray-700 dark:text-gray-100 hover:underline">
                     {{ $post->title ?? '' }}
                 </a>
                 <p class="mt-2 text-gray-600 dark:text-gray-200">
@@ -49,7 +49,7 @@
             </a>
         </div>
 
-        <div class="mt-6 lg:mt-12 prose dark:prose-invert max-w-none">
+        <div class="mt-6 lg:mt-8 prose dark:prose-invert max-w-none">
             {!! $post->getContent() !!}
         </div>
     </div>
