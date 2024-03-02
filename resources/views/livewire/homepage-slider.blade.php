@@ -1,15 +1,15 @@
 <div>
     <div class="carousel-inner w-100">
-        @foreach ($banners as $banner)
-        <div class="carousel-item active crsl-txt">
+        @foreach ($banners as  $banner)
+        <div class="carousel-item @if ($loop->index == 0) active @endif  crsl-txt">
             <img class="Myimg" src="{{ asset('storage/'.$banner->image) }}" alt="..." />
             <!-- <div class="carousel-caption d-none d-md-block CustomCarousel"> -->
                 <div class="card-img-overlay mYcard">
                     <h2 class="card-title Customtitle">No one has ever become <br> poor by giving</h2>
                     <p class="card-text footertxt">
                     Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met
-                    condimentum estibulum dignissim posuere cubilia Curae; Suspendisse at consectetur massa. 
-                    Curabitur non ipsum nisinec dapibus elit. Donec nec magna id lacus consequat posuere. Aenean ut 
+                    condimentum estibulum dignissim posuere cubilia Curae; Suspendisse at consectetur massa.
+                    Curabitur non ipsum nisinec dapibus elit. Donec nec magna id lacus consequat posuere. Aenean ut
                     diam vitae ante interdum interdum ut sit amet metus.
                     </p>
                     <button type="button" class="bnner-btns">Donate Now</button>
