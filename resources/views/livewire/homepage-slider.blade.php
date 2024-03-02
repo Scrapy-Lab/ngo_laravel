@@ -5,12 +5,14 @@
             <img class="Myimg" src="{{ asset('storage/'.$banner->image) }}" alt="..." />
             <!-- <div class="carousel-caption d-none d-md-block CustomCarousel"> -->
                 <div class="card-img-overlay mYcard">
-                    <h5 class="card-title Customtitle">Card title</h5>
+                    <h2 class="card-title Customtitle">No one has ever become <br> poor by giving</h2>
                     <p class="card-text footertxt">
-                        This is a wider card with supporting text below as a natural lead-in
-                        to additional content. This content is a little bit longer.This is a wider card with supporting text below as a natural lead-in
-                        to additional content. This content is a little bit longer.
+                    Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met
+                    condimentum estibulum dignissim posuere cubilia Curae; Suspendisse at consectetur massa. 
+                    Curabitur non ipsum nisinec dapibus elit. Donec nec magna id lacus consequat posuere. Aenean ut 
+                    diam vitae ante interdum interdum ut sit amet metus.
                     </p>
+                    <button type="button" class="bnner-btns">Donate Now</button>
                 </div>
             <!-- </div> -->
         </div>
