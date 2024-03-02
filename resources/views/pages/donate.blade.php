@@ -89,7 +89,7 @@
                 <img src="{{ url('/images/image-021.png') }}" alt="">
             </figure>
         </div>
-        <h3>Our Programms</h3>
+        {{-- <h3>Our Programms</h3>
         <p>Youngistaan Foundation’s programs address multiple issues such as hunger, homelessness, gender,
             education, animal welfare, youth, emergency responses and more. We encourage you to visit our
             website to know about our programs!</p>
@@ -123,13 +123,13 @@
         <h3>THE SIMPLEST WAY OF HELPING US</h3>
         <p>You many organize a collection drive in your Office, School, Society wherein people may donate their Old
             Clothes ( Unturned and in Wearable Condition) , Dry Ration,, Medicines ( Please check expiry date), Toys,
-            Footwear, Utensils, Books etc.</p>
+            Footwear, Utensils, Books etc.</p> --}}
     </div>
 
     {{-- Donate Content --}}
 
     <div class="donateblogs row justify-content-between">
-        <div class="col-md-8 donateblogcontent">
+        <div class="col-md-9 donateblogcontent">
             <div class="donateBlogbox">
 
                 {{-- CAROUSEL --}}
