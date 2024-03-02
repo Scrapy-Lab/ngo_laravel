@@ -131,10 +131,30 @@
     <div class="donateblogs row justify-content-between">
         <div class="col-md-8 donateblogcontent">
             <div class="donateBlogbox">
-                <img src="{{ url('/images/donatebox.jpg') }}" alt="">
+
+                {{-- CAROUSEL --}}
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                {{-- Carousel ENd --}}
+
+                {{-- Step  1 --}}
                 <div class="donateBlogInnerbox">
                     <h3>Donation Form</h3>
-                    <h3>₹0 <span class="smallfont">of ₹1 lakh raised</span></h3>
+                    <p>Distributes the smiles...</p>
 
                     {{-- DONATION TYPE --}}
                     <h4>Donation Type</h4>
@@ -142,84 +162,176 @@
                         <div class="col">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="checkbox1" name="checkbox1">
-                                <label class="form-check-label" for="checkbox1">Checkbox 1</label>
+                                <label class="form-check-label" for="checkbox1">Monthly Donation</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="checkbox2" name="checkbox2">
-                                <label class="form-check-label" for="checkbox2">Checkbox 2</label>
+                                <label class="form-check-label" for="checkbox2">Anual Donation</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox3">
-                                <label class="form-check-label" for="checkbox3">Checkbox 3</label>
+                                <label class="form-check-label" for="checkbox3">One Time Donation</label>
                             </div>
                         </div>
-                        <div class="col">
+                    </div>
+
+                    {{-- Selct Project --}}
+                    <h4>Select Project*</h4>
+                    <div class="row">
+                        <div class="col-md-4">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="checkbox4" name="checkbox4">
-                                <label class="form-check-label" for="checkbox4">Checkbox 4</label>
+                                <input class="form-check-input" type="checkbox" id="checkbox1" name="checkbox1">
+                                <label class="form-check-label" for="checkbox1">Project-Siksha</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox2" name="checkbox2">
+                                <label class="form-check-label" for="checkbox2">Medical Programs</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox3">
+                                <label class="form-check-label" for="checkbox3">Hunger Hero</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox3">
+                                <label class="form-check-label" for="checkbox3">VastarDaan</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox3">
+                                <label class="form-check-label" for="checkbox3">Traffic Awareness</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox3">
+                                <label class="form-check-label" for="checkbox3">Right To Vote</label>
                             </div>
                         </div>
                     </div>
 
                     {{-- Amount --}}
-                    <h4>Select Amount</h4>
-                    <div class="row amountmain">
-                        <div class="col-md-4">
-                            <button>100</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button>200</button>
-                        </div>
-                        <div class="col-md-4">
-                            <button>500</button>
-                        </div>
-                    </div>
+                    <h4>Select Donation Amount</h4>
                     <div class="container">
                         <div class="row">
-                            <div class="col d-flex gap-4 p-0">
-                                <button id="customAmountBtn" class="btn btn-primary">Custom Amount</button>
+                            <div class="col d-flex gap-4 py-4">
+                                <button>Custom Amount</button>
                                 <div class="input-row">
-                                    <input type="number" id="customAmountInput" class="form-control" placeholder="Enter custom amount">
+                                    <input type="number" id="customAmountInput" class="form-control"
+                                        placeholder="Enter custom amount">
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row amountmain">
+                        <div class="col-md-2">
+                            <button>100</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button>200</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button>500</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button>1000</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button>2000</button>
+                        </div>
+                    </div>
 
+
+
+
+
+                    <a href="#" class="my-4">Next</a>
+                </div>
+
+
+                {{-- STEP 2  --}}
+
+                <div class="donateBlogInnerbox">
                     {{-- Personal Info --}}
 
                     <h4>Personal Info</h4>
                     <div class="donateForm d-flex">
                         <div class="donteGroup">
-                            <label for="">Full Name*</label>
-                            <input type="text" placeholder="Full Name">
+                            <label for="">First Name*</label>
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <div class="donteGroup">
+                            <label for="">Last Name*</label>
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="donteGroup mt-2">
+                            <label for="">Mobile Number*</label>
+                            <input type="tel" name="" id="" placeholder="Mobile number">
                         </div>
                         <div class="donteGroup">
                             <label for="">Email</label>
                             <input type="email" name="" id="" placeholder="Email">
                         </div>
                         <div class="donteGroup mt-2">
-                            <label for="">Phone</label>
-                            <input type="tel" name="" id="" placeholder="Phone">
+                            <label for="">Address*</label>
+                            <select name="" id="">
+                                <option value="">State</option>
+                                <option value="">JJ ka rapchik replay</option>
+                            </select>
                         </div>
+                        <div class="donteGroup mt-2">
+                            <label for="">City</label>
+                            <input type="text" name="" id="" placeholder="City">
+                        </div>
+
+                        <div class="donteGroups mt-2">
+                            <label for="">Address</label>
+                           <textarea name="" id="" cols="30" rows="10" placeholder="Address"></textarea>
+                        </div>
+                        <a href="#" class="my-4">Donate Now</a>
                     </div>
 
-                    {{-- Payment Type --}}
-                    <h4>Payment Type</h4>
-                    <select class="types" id="">
-                        <option value="">Payment Type</option>
-                    </select>
-
-                    {{-- Transaction Type --}}
-                    <h4>Transaction Type</h4>
-                    <select class="types" name="" id="">
-                        <option value="">Transaction Type</option>
-                    </select>
 
                 </div>
+
+                {{-- STEP 3 --}}
+                <div class="donateBlogInnerbox">
+                    <div class="itsImage text-center">
+                        <img src="{{ url('/images/bgQr.png') }}" alt="">
+                    </div>
+                    <div class="noticeMian">
+                        <p> <span class="red">Important Note:</span> Our Developer team Are Working On Payment Gateway .
+                            You can pay through QR code . Don’t worry your transaction is totally safe.
+                        </p>
+                    </div>
+
+                </div>
+
+                {{-- STEP 4 --}}
+                <div class="donateBlogInnerbox nextTypeImage text-center">
+                    <img id="bouncingImage" src="{{ url('/images/successMe.jpeg') }}" alt="Bouncing Image">
+                    <h4>Your Donation has been successfully
+                        submitted</h4>
+
+                    <div class="noticeMian text-center">
+                        <p> Your tax-deductible donation is greatly
+                            appreciated!
+                        </p>
+                    </div>
+                    <h3>Download Your Donation Receipt</h3>
+                    <a href="#" class="my-4">Download Now</a>
+                </div>
+
             </div>
         </div>
 
@@ -330,11 +442,27 @@
     </div>
 
 
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
     <script>
-        document.getElementById('customAmountBtn').addEventListener('click', function() {
-            // Toggle visibility of the input row
-            var inputRow = document.querySelector('.input-row');
-            inputRow.style.display = inputRow.style.display === 'none' ? 'block' : 'none';
+        $(document).ready(function() {
+            $('#carouselExample').carousel({
+                interval: 2000 // Change slide interval here (in milliseconds)
+            });
         });
     </script>
+
 @endsection

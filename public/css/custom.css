@@ -528,12 +528,37 @@ h4.allHead {
 }
 .donateForm {
     flex-wrap: wrap;
+    gap: 20px;
+}
+.donteGroups {
+    width: 100%;
+}
+.donteGroups label {
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    margin-bottom: 6px;
+}
+.donteGroups textarea {
+    width: 97%;
+    height: 39px;
+    border: 1px solid darkgrey;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Montserrat';
 }
 .donateForm .donteGroup {
-    width: 50%;
+    width: 48%;
 }
 .donteGroup label {
     width: 100%;
+}
+.donteGroup select {
+    width: 98%;
+    border: 1px solid darkgrey;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Montserrat';
 }
 .donteGroup input {
     width: 98%;
@@ -563,9 +588,6 @@ h4.allHead {
 .form-check label {
     font-size: 14px;
     font-family: 'Montserrat';
-}
-.input-row {
-    display: none; /* Hide initially */
 }
 input#customAmountInput {
     font-family: 'Montserrat';
@@ -611,4 +633,84 @@ h4.recentPost {
     font-weight: 700;
     color: #0a64bc;
     text-decoration: underline;
+}
+.carousel-item {
+    height: 300px; /* Adjust height as needed */
+  }
+  .carousel-inner img {
+    object-fit: contain;
+    height: auto;
+    width: 100% !important;
+}
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 484px;
+}
+a.my-4 {
+    width: 30%;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    margin: 36px auto !important;
+    background: #0a64bc;
+    border: 1px solid #0a64bc;
+    border-radius: 14px;
+    padding: 4px 26px;
+    color: #fff;
+    font-weight: 500;
+    transition: 1.8s ease all;
+}
+a.my-4:hover {
+    background: #660000;
+    border: 1px solid #660000;
+}
+.itsImage img {
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.08);
+    width: 50%;
+}
+.noticeMian {
+    border: 2px solid #660000 !important;
+    border-radius: 10px;
+    width: 79%;
+    margin: 20px auto !important;
+    padding: 10px 36px;
+}
+.noticeMian p {
+    font-size: 15px;
+    font-family: 'Montserrat';
+}
+span.red {
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color:  #660000;
+}
+
+.snowflake {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  #bouncingImage {
+    position: absolute;
+    width: 100px;
+    animation: bounceAnimation 1s infinite alternate;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 37px;
+}
+
+  @keyframes bounceAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px); /* Adjust the bounce height */
+    }
+  }
+  .nextTypeImage {
+    padding: 174px 24px 24px;
+    position: relative;
 }
