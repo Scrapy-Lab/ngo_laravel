@@ -1,0 +1,189 @@
+.About-hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+.About-img{
+    width: 100%;
+    height: 44vh;
+}
+/* end */
+/* section-2,3 */
+.Aboutsec-2{
+    margin: 2em;
+}
+.About-box1 i {
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+.About-box2 i {
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+.About-box2{
+    /* width:17% !important; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdffb8;
+    border-radius: 6px;
+    padding: 1em;
+}
+.About-box1{
+    background-color: #dfeaf1;
+    /* width:17% !important; */
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 1em;
+    justify-content: center;
+ }
+ .Aboutbox4{
+    /* width:17% !important; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdffb8;
+    border-radius: 6px;
+    padding: 1em;
+}
+.Aboutbox3{
+    background-color: #dfeaf1;
+    /* width:17% !important; */
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 1em;
+    justify-content: center;
+ }
+.Abtfourdivs{
+    /* display: flex;   */
+    gap: 1rem;
+    justify-content: center;
+} 
+.About-text{
+    text-align: center;
+}
+.onedivs{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+.about-icon {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.about-icon:hover {
+    color: red;
+    transform: translateX(5px);
+    font-size: 2em !important;
+    cursor: pointer;
+}
+.storycnt p{
+    margin-top: 2em;
+}
+/* end */
+/* section-5 */
+.Abt-btns {
+    background: red;
+    color: white;
+    padding: 12px 22px 12px 20px;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-left: 54em;
+    margin-top: 6rem;
+}
+.Abt-btns:hover{
+  background: white;
+  color: black;
+
+}
+.Abtcen-img{
+    margin-left: 12em;
+}
+.zoom-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.zoom-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 59.5%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 11em;
+    width: 62%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.zoom-container:hover .zoom-img {
+    transform: scale(1.1);
+}
+
+.zoom-container:hover .overlay {
+    opacity: 1;
+}
+.zoom-container:hover .overlay1 {
+    opacity: 1;
+}
+/* end */
+.AbtFlexxx i {
+    font-size: 2rem;
+}
+.abtFlexx i {
+    font-size: 2rem;
+}
+.abtFlexx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdffb8;
+    border-radius: 6px;
+    padding: 1em;
+}
+.AbtFlexxx{
+    background-color: #dfeaf1;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 1em;
+    justify-content: center;
+ }
+ @media screen and (max-width:768px) {
+    .hero-content {
+        margin-top: 2em;
+    }
+    .Abt-btns {
+        margin-left: 28em;
+    }
+    .overlay {
+        width: 55.5%;
+ }
+ .overlay1 {
+    width: 58%;
+}
+}
+ @media screen and (max-width:425px) {
+    .Abt-btns {
+        margin-left: 13em;
+    }
+ }

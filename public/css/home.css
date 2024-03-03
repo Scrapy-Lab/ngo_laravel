@@ -234,7 +234,7 @@ margin-top: 6rem;
   }
   .clsFlexx{
       border: 0px solid black;
-      /* width:22% !important; */
+      /* width:50% !important; */
       display: flex;
       gap: 1rem;
       align-items: center;
@@ -245,7 +245,7 @@ margin-top: 6rem;
   }
   .clsFlexxx{
       background-color: #dfeaf1;
-      /* width:22% !important; */
+      /* width:50% !important; */
       display: flex;
       align-items: center;
       gap: 1rem;
