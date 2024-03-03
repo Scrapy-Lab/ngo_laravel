@@ -17,14 +17,13 @@ Route::get('/', function () {
     return view('index');
 })->name('home');
 
-
 Route::get('ourwork', function () {
     return view('pages.ourwork');
 })->name('our-projects');
 
 Route::get('donate', function () {
     return view('pages.donate');
-});
+})->name('donate-now');
 
 Route::get('about-us', function () {
     return view('pages.aboutus');
