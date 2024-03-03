@@ -4,9 +4,9 @@
 
     <div class="donateMain">
         <div class="imagesgrid d-flex justify-content-between">
-
+            <h2>Donate Now</h2>
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-001.png') }}" alt="">
             </figure>
 
             <figure>
@@ -14,82 +14,82 @@
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-003.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-004.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-005.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-006.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-007.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-008.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-009.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-010.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-011.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-012.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-013.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-014.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-015.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-016.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-017.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-018.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-019.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-020.png') }}" alt="">
             </figure>
 
             <figure>
-                <img src="{{ url('/images/image-002.png') }}" alt="">
+                <img src="{{ url('/images/image-021.png') }}" alt="">
             </figure>
         </div>
-        <h3>Our Programms</h3>
+        {{-- <h3>Our Programms</h3>
         <p>Youngistaan Foundation’s programs address multiple issues such as hunger, homelessness, gender,
             education, animal welfare, youth, emergency responses and more. We encourage you to visit our
             website to know about our programs!</p>
@@ -123,86 +123,34 @@
         <h3>THE SIMPLEST WAY OF HELPING US</h3>
         <p>You many organize a collection drive in your Office, School, Society wherein people may donate their Old
             Clothes ( Unturned and in Wearable Condition) , Dry Ration,, Medicines ( Please check expiry date), Toys,
-            Footwear, Utensils, Books etc.</p>
+            Footwear, Utensils, Books etc.</p> --}}
     </div>
 
     {{-- Donate Content --}}
 
     <div class="donateblogs row justify-content-between">
-        <div class="col-md-8 donateblogcontent">
+        <div class="col-md-9 donateblogcontent">
             <div class="donateBlogbox">
-                <img src="{{ url('/images/donatebox.jpg') }}" alt="">
-                <div class="donateBlogInnerbox">
-                    <h3>Donation Form</h3>
-                    <h3>₹0 <span class="smallfont">of ₹1 lakh raised</span></h3>
-                    <div class="inputWIthoptions">
-                        <label for="">₹</label><input type="text" name="" id="">
-                    </div>
-                    <div class="d-flex justify-content-between selectMoney">
-                        <button>₹100</button>
-                        <button>₹200</button>
-                        <button>₹500</button>
-                        <button>₹1000</button>
-                        <button>₹2000</button>
-                    </div>
 
-                    <button>Custom Amount</button>
-
-                    <div class="selectPayment">
-                        <h4 class="allHead">Select Payment Method</h4>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="yesOption"
-                                value="yes">
-                            <label class="form-check-label" for="yesOption">
-                                Offline Donation
-                            </label>
+                {{-- CAROUSEL --}}
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 1">
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="noOption"
-                                value="no">
-                            <label class="form-check-label" for="noOption">
-                                Paypal
-                            </label>
+                        <div class="carousel-item">
+                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 2">
                         </div>
-
-                    </div>
-
-                    <h4 class="allHead">Personal Info</h4>
-
-                    <div class="personal d-flex justify-content-between">
-                        <div class="formGroups">
-                            <label for="">First Name*</label>
-                            <input type="text" name="" id="" placeholder="First Name">
+                        <div class="carousel-item">
+                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 3">
                         </div>
-                        <div class="formGroups">
-                            <label for="">Last Name*</label>
-                            <input type="text" name="" id="" placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="emailGroup">
-                        <label for="">Email Address*</label>
-                        <input type="email" placeholder="Email Address">
-                    </div>
-                    <p>To make an offline donation toward this cause, follow these steps::</p>
-                    <div class="forcheck">
-                        <p>Write a check payable to "{Youngistaan Welfare Society}"</p>
-                        <p>On the memo line of the check, indicate that the donation is for "Youngistaan"</p>
-                        <p>Mail your check to:</p>
-                    </div>
-                    <h5>Master Colony, Jamalpur, chandigarh Road - Ludhiana.</h5>
-                    <p>Your tax-deductible donation is greatly appreciated!</p>
-                    <div class="forTerms d-flex justify-content-between">
-                        <div class="checkbox1">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="whyAreYouCheckbox">
-                                <label class="form-check-label" for="whyAreYouCheckbox">
-                                  Agree to Terms?
-                                </label>
-                              </div>
-                        </div>
-                        <a href="#">Show Terms</a>
                     </div>
                 </div>
+
+                {{-- Carousel ENd --}}
+
+                @livewire('donate-form')
+               
             </div>
         </div>
 
@@ -311,4 +259,29 @@
             <img src="{{ url('/images/qrcode.jpeg') }}" alt="">
         </div>
     </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('#carouselExample').carousel({
+                interval: 2000 // Change slide interval here (in milliseconds)
+            });
+        });
+    </script>
+
 @endsection

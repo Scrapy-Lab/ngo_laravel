@@ -11,7 +11,7 @@ class OurProject extends Component
     public $allProjects =[];
 
     public function mount() {
-        $this->allProjects = Project::orWhere('schedule',null)->orWhere('schedule','<=',Carbon::now())->where('is_visible',1)->get();
+        $this->allProjects = Project::orWhere('schedule',null)->orWhere('schedule','<=',Carbon::now())->where('is_visible',1)->orderBy('priority', 'ASC')->get();
     }
 
     public function render()

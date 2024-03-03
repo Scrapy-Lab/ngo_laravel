@@ -13,13 +13,15 @@ return new class extends Migration
     {
         Schema::create('donate_nows', function (Blueprint $table) {
             $table->id();
-            $table->string('full_name');
-            $table->string('email');
-            $table->string('phone');
-            $table->float('amount');
-            $table->string('donation_type');
-            $table->integer('payment_type')->comment('1=>monthly, 2=>one_time');
-            $table->integer('transaction_type')->comment('1=>offline donation, 2=>online donation');
+            $table->string('full_name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->float('amount')->nullable();
+            $table->integer('donation_type')->nullable();
+            $table->integer('payment_type')->comment('1=>monthly, 2=>annual, 3=>one_time')->nullable();
+            $table->json('transaction_type')->nullable();
+            $table->string('city')->nullable();
+            $table->string('address')->nullable();
             $table->timestamps();
         });
     }
