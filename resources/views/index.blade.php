@@ -93,8 +93,8 @@
                             </div>
                             <div class="content">
 
-                                <p class="mt-4">
-                                    {!! html_entity_decode(Str::limit($project->description , 50)) !!}
+                                <p class="">
+                                    {!! html_entity_decode(Str::limit($project->description , 80)) !!}
                                 </p>
                                 <a href="{{ route('project-details', $project->slug) }}" id="readMore">
                                     <button>Read More
