@@ -1,5 +1,5 @@
 <div>
-        {{-- Step  1 --}}
+    {{-- Step  1 --}}
     @if($donateFirstForm)
         <form wire:submit.prevent="saveDonateForm">
             <div class="donateBlogInnerbox">
@@ -29,6 +29,22 @@
                     </div>
                 </div>
 
+                {{-- Payment Type--}}
+                <h4>Payment Type</h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check form-check-inline">
+                            <input wire:model="payment_type" class="form-check-input" type="radio" id="checkbox1" name="payment_type" value="1">
+                            <label class="form-check-label" for="checkbox1">Online</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check form-check-inline">
+                            <input wire:model="payment_type" class="form-check-input" type="radio" id="checkbox2" name="payment_type" value="2">
+                            <label class="form-check-label" for="checkbox2">Offline</label>
+                        </div>
+                    </div>
+                </div>
                 {{-- Selct Project --}}
                 <h4>Select Project*</h4>
                 <div class="row">
@@ -52,104 +68,104 @@
                             <div wire:click="enableCustomAmt">Custom Amount</div>
                             <div class="input-row">
                                 <input type="number" wire:model="amount" id="customAmountInput" class="form-control"
-                                    placeholder="Enter custom amount" disabled>
+                                    placeholder="Enter custom amount" {{$disable}}>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row amountmain">
-                    <div class="col-md-2">
-                        <button>100</button>
+                    <div class="col-md-2" wire:click="fixedAmount(200)">
+                        <span>200</span>
                     </div>
-                    <div class="col-md-2">
-                        <button>200</button>
+                    <div class="col-md-2" wire:click="fixedAmount(500)">
+                        <span>500</span>
                     </div>
-                    <div class="col-md-2">
-                        <button>500</button>
+                    <div class="col-md-2" wire:click="fixedAmount(1000)">
+                        <span>1000</span>
                     </div>
-                    <div class="col-md-2">
-                        <button>1000</button>
+                    <div class="col-md-2" wire:click="fixedAmount(2000)">
+                        <span>2000</span>
                     </div>
-                    <div class="col-md-2">
-                        <button>2000</button>
+                    <div class="col-md-2" wire:click="fixedAmount(5000)">
+                        <span>5000</span>
                     </div>
                 </div>
                 <button class="my-4" type="submit">Next</button>
             </div>
         <form>
     @endif
-
-        {{-- STEP 2  --}}
-        @if ($donateSecondForm)
+    {{-- STEP 2  --}}
+    @if ($donateSecondForm)
+        <form wire:submit.prevent="savePersonalInfo">
             <div class="donateBlogInnerbox">
                 {{-- Personal Info --}}
-
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
                 <h4>Personal Info</h4>
                 <div class="donateForm d-flex">
                     <div class="donteGroup">
                         <label for="">Full Name*</label>
-                        <input type="text" placeholder="First Name">
+                        <input type="text" wire:model="full_name" placeholder="Full Name">
+                        <div style="color:red">@error('full_name') {{ $message }} @enderror</div>
                     </div>
                     <div class="donteGroup">
                         <label for="">Email</label>
-                        <input type="email" name="" id="" placeholder="Email">
+                        <input type="email" wire:model="email" name="" id="" placeholder="Email">
+                        <div style="color:red">@error('email') {{ $message }} @enderror</div>
                     </div>
-                    {{-- <div class="donteGroup">
-                        <label for="">Last Name*</label>
-                        <input type="text" placeholder="Last Name">
-                    </div> --}}
                     <div class="donteGroup mt-2">
                         <label for="">Mobile Number*</label>
-                        <input type="tel" name="" id="" placeholder="Mobile number">
+                        <input type="tel" wire:model="phone" name="" id="" placeholder="Mobile number">
+                        <div style="color:red">@error('phone') {{ $message }} @enderror</div>
                     </div>
-                    
-                    {{-- <div class="donteGroup mt-2">
-                        <label for="">State*</label>
-                        <select name="" id="">
-                            <option value="">State</option>
-                            <option value="">JJ ka rapchik replay</option>
-                        </select>
-                    </div> --}}
                     <div class="donteGroup mt-2">
                         <label for="">City</label>
-                        <input type="text" name="" id="" placeholder="City">
+                        <input type="text" name="" wire:model="city" id="" placeholder="City">
+                        <div style="color:red">@error('city') {{ $message }} @enderror</div>
                     </div>
 
                     <div class="donteGroups mt-2">
                         <label for="">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Address"></textarea>
+                    <textarea name="" id="" cols="30" wire:model="address" rows="10" placeholder="Address"></textarea>
+                    <div style="color:red">@error('address') {{ $message }} @enderror</div>
                     </div>
-                    <a href="#" class="my-4">Donate Now</a>
+                    <button href="#" class="my-4">Donate Now</button>
                 </div>
             </div>
-        @endif
-        {{-- STEP 3 --}}
-        @if($donateThirdForm)
-            <div class="donateBlogInnerbox">
-                <div class="itsImage text-center">
-                    <img src="{{ url('/images/bgQr.png') }}" alt="">
+        </form>
+    @endif
+    {{-- STEP 3 --}}
+    @if($donateThirdForm)
+        <div class="donateBlogInnerbox">
+            @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
                 </div>
-                <div class="noticeMian">
-                    <p> <span class="red">Important Note:</span> Our Developer team Are Working On Payment Gateway .
-                        You can pay through QR code . Don’t worry your transaction is totally safe.
-                    </p>
-                </div>
+            @endif
+            <div class="itsImage text-center">
+                <img src="{{ url('/images/bgQr.png') }}" alt="">
             </div>
-        @endif
-        {{-- STEP 4 --}}
-        @if($donateFourthForm)
-            <div class="donateBlogInnerbox nextTypeImage text-center">
-                <img id="bouncingImage" src="{{ url('/images/successMe.jpeg') }}" alt="Bouncing Image">
-                <h4>Your Donation has been successfully
-                    submitted</h4>
+            <div class="noticeMian">
+                <p> <span class="red">Important Note:</span> Our Developer team Are Working On Payment Gateway .
+                    You can pay through QR code . Don’t worry your transaction is totally safe.
+                </p>
+            </div>
+        </div>
+        <div class="donateBlogInnerbox nextTypeImage text-center">
+            <img id="bouncingImage" src="{{ url('/images/successMe.jpeg') }}" alt="Bouncing Image">
+            <h4>Your Donation has been successfully
+                submitted</h4>
 
-                <div class="noticeMian text-center">
-                    <p> Your tax-deductible donation is greatly
-                        appreciated!
-                    </p>
-                </div>
-                <h3>Download Your Donation Receipt</h3>
-                <a href="#" class="my-4">Download Now</a>
+            <div class="noticeMian text-center">
+                <p> Your tax-deductible donation is greatly
+                    appreciated!
+                </p>
             </div>
-        @endif
+            <h3>Download Your Donation Receipt</h3>
+            <a href="#" class="my-4">Download Now</a>
+        </div>
+    @endif
 </div>
