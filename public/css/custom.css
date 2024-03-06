@@ -40,7 +40,7 @@ nav.navbar.navbar-expand-lg {
 
 .topButtons button {
     color: #fff;
-    background: #0a64bc;
+    background: #660000;
     border: none;
     border-radius: 15px;
     font-weight: 700;
@@ -95,7 +95,7 @@ a.nav-link:hover {
 .footerinner h3:before {
     position: absolute;
     content: '';
-    background-color: #0a64bc;
+    background-color: #660000;
     width: 56px;
     height: 3px;
     bottom: 0;
@@ -234,7 +234,7 @@ p.date {
 }
 .campaignboxcontent button {
     border: none;
-    background: #0a64bc;
+    background: #660000;
     border-radius: 12px;
     padding: 5px 20px;
     color: #fff;
@@ -259,7 +259,7 @@ p.date {
     font-size: 35px;
     text-transform: capitalize;
     font-weight: 800;
-    color: #0a64bc;
+    color: #660000;
 }
 .partnersMain h4 {
     font-size: 19px;
@@ -277,7 +277,7 @@ p.date {
     font-size: 35px;
     text-transform: capitalize;
     font-weight: 800;
-    color: #0a64bc;
+    color: #660000;
 }
 
 
@@ -343,7 +343,7 @@ button.accordion-button {
 button.accordion-button:before {
     position: absolute;
     content: '';
-    background: #0a64bc;
+    background: #660000;
     width: 14px;
     height: 14px;
     border-radius: 50px;
@@ -358,7 +358,7 @@ button.accordion-button:before {
 .donatePayment h3 {
     font-size: 22px;
     font-weight: 800;
-    color: #0a64bc;
+    color: #660000;
     margin-bottom: 18px;
 }
 .donatePayment p {
@@ -387,17 +387,17 @@ span.smallfont {
     color: #fff;
 }
 .inputWIthoptions label {
-    background: #0a64bc;
+    background: #660000;
     padding: 2px 12px;
-    border: 1px solid #0a64bc;
+    border: 1px solid #660000;
     color: #fff;
 }
 .inputWIthoptions {
     margin: 28px 0;
 }
 .donateBlogInnerbox button {
-    background: #0a64bc;
-    border: 1px solid #0a64bc;
+    background: #660000;
+    border: 1px solid #660000;
     width: fit-content;
     border-radius: 14px;
     padding: 4px 26px;
@@ -477,7 +477,7 @@ h4.allHead {
 
 .donateBlogInnerbox a {
     text-decoration: none;
-    color: #0a64bc;
+    color: #660000;
     font-weight: 500;
 }
 .donateblogBox img {
@@ -510,7 +510,7 @@ h4.allHead {
 .donateMain h3 {
     font-weight: 900;
     margin-top: 15px;
-    color: #0a64bc;
+    color: #660000;
 }
 .donateMain p {
     font-size: 14px;
@@ -579,7 +579,7 @@ h4.allHead {
     margin-top: 25px;
     font-weight: 700;
     margin-bottom: 13px;
-    color: #0a64bc;
+    color: #660000;
     text-decoration: underline;
 }
 .form-check input {
@@ -603,10 +603,10 @@ select.types {
 a.blogMaintitle {
     font-family: 'Montserrat' !important;
     font-size: 22px;
-    color: #0a64bc;
+    color: #660000;
 }
 a.blogMainButton {
-    background: #0a64bc;
+    background: #660000;
     padding: 8px 30px;
     color: #fff;
     font-family: 'Montserrat';
@@ -631,7 +631,7 @@ h4.recentPost {
 }
 .recentTitleBlogs {
     font-weight: 700;
-    color: #0a64bc;
+    color: #660000;
     text-decoration: underline;
 }
 .carousel-item {
@@ -654,8 +654,8 @@ a.my-4 {
     display: block;
     text-align: center;
     margin: 36px auto !important;
-    background: #0a64bc;
-    border: 1px solid #0a64bc;
+    background: #660000;
+    border: 1px solid #660000;
     border-radius: 14px;
     padding: 4px 26px;
     color: #fff;
@@ -713,4 +713,77 @@ span.red {
   .nextTypeImage {
     padding: 174px 24px 24px;
     position: relative;
+}
+
+/* JOIN NOW */
+.joinNowMain {
+    max-width: 70%;
+    margin: 100px auto;
+    box-shadow: 0px 1px 16.8px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 60px;
+    position: relative;
+}
+.joinGroup {
+    flex-direction: column;
+    max-width: 50%;
+}
+.joinFormInner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.joinGroup.d-flex {
+    flex-direction: column;
+    max-width: 48%;
+    width: 100%;
+}
+.joinNowMain h2 {
+    position: absolute;
+    top: -16px;
+    background: #fff;
+    padding: 0 2px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 27px;
+    color: #660000;
+}
+.joinGroup label {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+.joinGroup input {
+    border: 1px solid darkgrey;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+.joinGroup select {
+    border: 1px solid darkgrey;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+.submitButtonit button {
+    background: #660000;
+    border: 1px solid #660000;
+    width: fit-content;
+    border-radius: 14px;
+    padding: 4px 26px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    transition: 1.8s ease all;
+}
+.submitButtonit button:hover {
+    background: #660000;
+    border: 1px solid #660000;
+}
+.joinGroups {
+    width: 100%;
 }
