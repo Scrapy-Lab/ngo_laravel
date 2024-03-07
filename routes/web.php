@@ -23,6 +23,10 @@ Route::get('donate', function () {
     return view('pages.donate');
 })->name('donate-now');
 
+Route::get('join-now', function () {
+    return view('pages.join-now');
+})->name('join-now');
+
 Route::get('about-us', function () {
     return view('pages.aboutus');
 })->name('about-us');
