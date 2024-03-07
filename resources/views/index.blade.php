@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
     <!DOCTYPE html>
     <html lang="en">
 
@@ -10,6 +11,7 @@
     </head>
 
     <body>
+
         <!-- section-1 -->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             @livewire('homepage-slider')
@@ -452,7 +454,9 @@
 
         <!-- end -->
 
+
     </body>
 
     </html>
+
 @endsection

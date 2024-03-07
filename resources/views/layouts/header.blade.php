@@ -25,6 +25,9 @@
                         <a class="nav-link @if ( Route::currentRouteName() == 'about-us') active  @endif" href="{{ route('about-us') }}">About us</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('contact-us') }}">Contact us</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Shop</a>
                     </li>
                 </ul>

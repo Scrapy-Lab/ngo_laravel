@@ -27,4 +27,9 @@ Route::get('about-us', function () {
     return view('pages.aboutus');
 })->name('about-us');
 
+Route::get('contact-us', function () {
+    return view('pages.contactus');
+})->name('contact-us');
+
+
 Route::get('project-details/{slug}',[DynamicPageController::class,'projectDetail'])->name('project-details');
