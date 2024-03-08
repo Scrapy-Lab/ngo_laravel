@@ -71,7 +71,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col d-flex gap-4 py-4">
-                            <div wire:click="enableCustomAmt">Custom Amount</div>
+                            <div wire:click="enableCustomAmt" class="donateAmountButton" >Custom Amount</div>
                             <div class="input-row">
                                 <input type="number" wire:model="amount" id="customAmountInput" class="form-control"
                                     placeholder="Enter custom amount" {{$disable}}>
@@ -80,20 +80,20 @@
                     </div>
                 </div>
                 <div class="row amountmain">
-                    <div class="col-md-2" wire:click="fixedAmount(200)">
-                        <span>200</span>
+                    <div class="col-md-2 " wire:click="fixedAmount(200)">
+                        <span class="donateAmountButton"> ₹ 200</span>
                     </div>
-                    <div class="col-md-2" wire:click="fixedAmount(500)">
-                        <span>500</span>
+                    <div class="col-md-2 "  wire:click="fixedAmount(500)">
+                        <span class="donateAmountButton"> ₹ 500</span>
                     </div>
-                    <div class="col-md-2" wire:click="fixedAmount(1000)">
-                        <span>1000</span>
+                    <div class="col-md-2 " wire:click="fixedAmount(1000)">
+                        <span class="donateAmountButton"> ₹ 1000</span>
                     </div>
-                    <div class="col-md-2" wire:click="fixedAmount(2000)">
-                        <span>2000</span>
+                    <div class="col-md-2 " wire:click="fixedAmount(2000)">
+                        <span class="donateAmountButton"> ₹ 2000</span>
                     </div>
-                    <div class="col-md-2" wire:click="fixedAmount(5000)">
-                        <span>5000</span>
+                    <div class="col-md-2 " wire:click="fixedAmount(5000)">
+                        <span class="donateAmountButton"> ₹ 5000</span>
                     </div>
                 </div>
                 <button class="my-4" type="submit">Next</button>

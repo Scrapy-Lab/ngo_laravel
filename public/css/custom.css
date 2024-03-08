@@ -586,6 +586,15 @@ h4.allHead {
     border: 2px solid #660000;
 }
 
+.donateAmountButton{
+    background-color: #660000;
+    /* width: 61px; */
+    border-radius: 10px;
+    padding: 7px;
+    color: #fff;
+    font-size: 14px;
+}
+
 .form-check-input:checked {
     background-color: #000000 !important;
     border-color: #000000 !important;
