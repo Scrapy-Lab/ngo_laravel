@@ -78,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+
                 <div class="row amountmain">
                     <div class="col-md-2 " wire:click="fixedAmount(200)">
                         <span class="donateAmountButton"> ₹ 200</span>
@@ -96,6 +96,7 @@
                         <span class="donateAmountButton"> ₹ 5000</span>
                     </div>
                 </div>
+            </div>
                 <button class="my-4" type="submit">Next</button>
             </div>
         <form>
