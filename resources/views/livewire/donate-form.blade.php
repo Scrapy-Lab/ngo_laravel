@@ -9,7 +9,13 @@
                 {{-- DONATION TYPE --}}
                 <h4>Donation Type</h4>
                 <div class="row">
-                    <div class="col">
+                    <select wire:model="donation_type" class="form-control">
+                        <option value=" " selected>Select Donation Type</option>
+                        <option value="1">Monthly Donation</option>
+                        <option value="2">Annual Donation</option>
+                        <option value="3">One Time Donation</option>
+                    </select>
+                    {{-- <div class="col">
                         <div class="form-check form-check-inline">
                             <input wire:model="donation_type" class="form-check-input" type="radio" id="checkbox1" name="donation_type" value="1">
                             <label class="form-check-label" for="checkbox1">Monthly Donation</label>
@@ -26,11 +32,11 @@
                             <input wire:model="donation_type" class="form-check-input" type="radio" id="checkbox3" name="donation_type" value="3">
                             <label class="form-check-label" for="checkbox3">One Time Donation</label>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
 
                 {{-- Payment Type--}}
-                <h4>Payment Type</h4>
+                {{-- <h4>Payment Type</h4>
                 <div class="row">
                     <div class="col">
                         <div class="form-check form-check-inline">
@@ -44,7 +50,7 @@
                             <label class="form-check-label" for="checkbox2">Offline</label>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 {{-- Selct Project --}}
                 <h4>Select Project*</h4>
                 <div class="row">

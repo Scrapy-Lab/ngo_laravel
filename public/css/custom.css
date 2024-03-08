@@ -583,7 +583,12 @@ h4.allHead {
     text-decoration: underline;
 }
 .form-check input {
-    border: 2px solid #1967d3;
+    border: 2px solid #660000;
+}
+
+.form-check-input:checked {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
 }
 .form-check label {
     font-size: 14px;
