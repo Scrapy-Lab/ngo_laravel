@@ -8,6 +8,9 @@
     object-fit: cover;
     height: 40vh;
 }
+.card-img{
+    background: linear-gradient(90deg, rgba(0,0,0,0.5046393557422969) 0%, rgba(0,0,0,0.4990371148459384) 100%) !important;
+}
 .MYcard-cnt{
     margin-top: 4em;
     text-align: center;
