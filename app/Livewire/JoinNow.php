@@ -14,23 +14,29 @@ class JoinNow extends Component
 
     public $projects = [];
     public $join_now;
-    #[Validate('required|min:3')] 
+    #[Validate('required|min:3')]
     public $full_name;
+    #[Validate('required|min:3')]
     public $mobile_no;
-    #[Validate('required|email')] 
+    #[Validate('required|email')]
     public $email;
-    #[Validate('required|min:3')] 
+    #[Validate('required|min:3')]
     public $address;
-    #[Validate('required|min:3')] 
+    #[Validate('required|min:3')]
     public $city;
-    #[Validate('required|min:3')] 
+    #[Validate('required|min:3')]
     public $state;
+    #[Validate('required|min:3')]
     public $dob;
+    #[Validate('required')]
     public $age;
+
     public $blood_group;
-    #[Validate('required|min:3')] 
+    #[Validate('required')]
     public $qualification;
+    #[Validate('required')]
     public $volunter_type;
+    #[Validate('required')]
     public $project_id = [];
     public $aadhar_front;
     public $aadhar_back;
@@ -50,6 +56,8 @@ class JoinNow extends Component
     public function joinNow()
     {
         $this->validate();
+// dd($this->aadhar_back->extension());
+
         $aadharFront = 'aadharFront_'.time().'.'.$this->aadhar_front->extension();
         $aadharBack = 'aadharBack_'.time().'.'.$this->aadhar_back->extension();
         $imagePan = 'imagePan_'.time().'.'.$this->pan->extension();
