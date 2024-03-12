@@ -13,6 +13,21 @@ return new class extends Migration
     {
         Schema::create('join_nows', function (Blueprint $table) {
             $table->id();
+            $table->string('full_name');
+            $table->string('email');
+            $table->string('mobile_no');
+            $table->string('address');
+            $table->string('city');
+            $table->string('state');
+            $table->string('dob');
+            $table->string('age');
+            $table->string('blood_group')->nullable();
+            $table->string('qualification');
+            $table->string('volunter_type');
+            $table->json('project_id');
+            $table->string('aadhar_front')->nullable();
+            $table->string('aadhar_back')->nullable();
+            $table->string('pan')->nullable();
             $table->timestamps();
         });
     }
