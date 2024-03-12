@@ -181,7 +181,7 @@
     <div class="row">
         @forelse ($projects as $project)
             <div class="col-3 wrapper"> <!--agar ik hi project hai toh aapko iss class m jaana hai .img-box img (issmne aapko margin-left:13px dena hogha )-->
-                <div class="card main-content">
+                <div class="card main-cnt">
                     <a href="{{ route('project-details', $project->slug) }}" style="text-decoration: none">
                         <div class="img-box">
                             <img src="{{ asset('storage/' . $project->image) }}" alt="image url">
@@ -272,7 +272,6 @@
             </div>
             <div class="col-lg-5 col-md-6">
                 <div class="oph-para">
-                    <p>$45632 TO GO</p>
                     <h1>Sponsor An Orphan Child</h1>
                     <p class="oph-cont">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed qui
@@ -403,7 +402,7 @@
                         <h5 class="card-title">Alisha</h5>
                         <p class="card-text">Support military families</p>
                         <p class="card-para">
-                            Donated <span style="color: red; float: right">$2145632</span>
+                            Experience <span style="color: red; float: right">2years</span>
                         </p>
                     </div>
                 </div>
@@ -416,7 +415,7 @@
                         <h5 class="card-title">Deepak</h5>
                         <p class="card-text">Family support program</p>
                         <p class="card-para">
-                            Donated <span style="color: red; float: right">$2145632</span>
+                            Experience <span style="color: red; float: right">1years</span>
                         </p>
                     </div>
                 </div>
@@ -428,7 +427,7 @@
                         <h5 class="card-title">Lisoba</h5>
                         <p class="card-text">ceo of orphan</p>
                         <p class="card-para">
-                            Donated <span style="color: red; float: right">$2145632</span>
+                            Experience <span style="color: red; float: right">3years</span>
                         </p>
                     </div>
                 </div>
@@ -440,8 +439,8 @@
                         <h5 class="card-title">John</h5>
                         <p class="card-text">child care</p>
                         <p class="card-para">
-                            Donated
-                            <span style="color: red; float: right">$2145632</span>
+                            Experience
+                            <span style="color: red; float: right">2years</span>
                         </p>
                     </div>
                 </div>

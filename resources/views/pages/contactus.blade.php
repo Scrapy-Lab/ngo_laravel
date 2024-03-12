@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('content')
+<div class="container-fluid about-sect-1">
+    <h3 style="color:white;">Contact</h3>
+    <span style="color: white;">Home/contact</span>
+</div>
+<!-- end -->
 <!-- section-1 -->
 <div class="container bnnerimg">
     <div class="card">
