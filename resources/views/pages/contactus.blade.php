@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
 <div class="container-fluid about-sect-1">
-    <h3 style="color:white;">Contact</h3>
-    <span style="color: white;">Home/contact</span>
+    <h3 style="color:white;margin-left:1em;">Contact</h3>
+    <span style="color: white;margin-right:1em;">Home/contact</span>
 </div>
 <!-- end -->
 <!-- section-1 -->

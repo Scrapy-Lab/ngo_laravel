@@ -217,13 +217,13 @@ margin-bottom: 3em;
     font-weight: 800;
   }
   .divCenter {
-    text-align: left;
+    text-align: center;
     border-left: 4px solid darkorange;
     margin: auto;
   }
   .paracen {
     text-align: center;
-    margin-left: -2rem;
+    /* margin-left: -2rem; */
     color: #8a8a8a;
   }
   /* end */
@@ -234,7 +234,7 @@ margin-bottom: 3em;
   }
   .clsFlexx i {
       font-size: 2rem;
-      color: #660000;
+      color: white;
   }
   .clsFlexx{
       border: 0px solid black;
@@ -243,13 +243,15 @@ margin-bottom: 3em;
       gap: 1rem;
       align-items: center;
       justify-content: center;
-      background-color: #fdffb8;
+      background-color: #660000;
       border-radius: 6px;
       padding: 2em;
+      color: white;
   }
   .clsFlexxx{
-      background-color: #dfeaf1;
+      background-color: #96bce6;
       /* width:50% !important; */
+      color: white;
       display: flex;
       align-items: center;
       gap: 1rem;

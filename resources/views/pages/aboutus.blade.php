@@ -2,8 +2,8 @@
 @section('content')
 <!-- heading -->
 <div class="container-fluid about-sect-1">
-    <h3 style="color:white;">About</h3>
-    <span style="color: white;">Home/about</span>
+    <h3 style="color:white;margin-left:1em;">About</h3>
+    <span style="color: white;margin-right:1em;">Home/about</span>
 </div>
 <!-- end -->
 <!-- hero section -->
