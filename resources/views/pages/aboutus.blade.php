@@ -140,7 +140,7 @@
 </div>
 <!-- end -->
 <!-- blog section -->
-<section class="py-3 py-md-5">
+{{-- <section class="py-3 py-md-5">
   <div class="container overflow-hidden">
     <div class="row gy-4 gy-lg-0">
       <div class="col-12 col-lg-4">
@@ -232,6 +232,10 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
+
+<div class="container bnnerimg ">
+    @livewire('blog-list')
+</div>
 <!-- end -->
 @endsection

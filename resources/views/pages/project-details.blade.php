@@ -9,7 +9,7 @@
     {{-- Donate Content --}}
 
     <div class="donateblogs row justify-content-between">
-        
+
         {{-- Project Detail Page --}}
         @livewire('project-detail', ['slug' => $slug])
 

@@ -428,7 +428,7 @@
                             <span style="color: red; float: right">5000</span>
                         </p>
                         <p>
-                            Experience <span style="color: red; float: right">1years</span>
+                            Experience <span style="color: red; float: right">1 Years</span>
                         </p>
                     </div>
                 </div>
@@ -444,7 +444,7 @@
                             <span style="color: red; float: right">5000</span>
                         </p>
                         <p >
-                            Experience <span style="color: red; float: right">3years</span>
+                            Experience <span style="color: red; float: right">3 Years</span>
                         </p>
                     </div>
                 </div>
@@ -461,7 +461,7 @@
                         </p>
                         <p>
                             Experience
-                            <span style="color: red; float: right">2years</span>
+                            <span style="color: red; float: right">2 Years</span>
                         </p>
                     </div>
                 </div>
@@ -486,6 +486,9 @@
         </div>
     </div>
 
+    <div class="container bnnerimg sec_marginB">
+        @livewire('blog-list')
+    </div>
     <!-- end -->
 
 @endsection

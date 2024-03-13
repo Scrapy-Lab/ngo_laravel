@@ -577,6 +577,7 @@ h4.allHead {
     margin-bottom: 6px;
 }
 .donateBlogbox h4 {
+    text-decoration: none !important;
     font-family: 'Montserrat';
     font-size: 17px;
     margin-top: 25px;
@@ -590,6 +591,7 @@ h4.allHead {
 }
 
 .donateAmountButton{
+    cursor: pointer;
     background-color: #660000;
     /* width: 61px; */
     border-radius: 10px;
