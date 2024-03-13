@@ -54,6 +54,30 @@
         });
     </script>
     @livewireScripts
+
+    <script>
+        // Function to animate the number
+        function animateValue(start, end, duration, element) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                element.textContent = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Start the animation for each counter element
+        document.querySelectorAll('.counter').forEach(element => {
+            const endValue = parseInt(element.getAttribute('data-end-value'));
+            const duration = 2000; // Animation duration for each counter (2 seconds)
+
+            animateValue(0, endValue, duration, element);
+        });
+    </script>
 </body>
 
 </html>

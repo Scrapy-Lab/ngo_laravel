@@ -10,7 +10,7 @@
     <div class="card">
         <img src="{{ asset('images/contactbanner.jpg') }}" class="card-img footer-Img" alt="..." />
         <div class="card-img-overlay MYcard-cnt">
-            <h5 class="card-title">
+            <h5 class="card-title" style="padding-top: 4%;">
                 Get in Touch</h5>
             <p class="card-text">
                 Tell us what you think

@@ -27,37 +27,37 @@
 <!-- </div> -->
 <!-- end -->
 <!-- section-1  -->
-<div class="container Aboutsec-2">
-  <div class="row Abtfourdivs">
-    <div class="col-lg-2 About-box1 col-md-4 ">
-      <i class="fa-regular fa-file-lines"></i>
-      <div class="crts">
-        <h2>14800+</h2>
-        <p>success Compaign</p>
-      </div>
+<div class="container-fluid sec-2">
+    <div class="row fourdivs">
+        <div class="col-lg-2  Aboutbox3 clsFlexxx col-md-4">
+            <i class="fa-regular fa-file-lines"></i>
+            <div class="crts">
+                <h2 ><span class="counter" data-end-value="14800">0</span>+</h2>
+                <p>success Compaign</p>
+            </div>
+        </div>
+        <div class="col-lg-2 clsFlexx col-md-4 Aboutbox4">
+            <i class="fa-solid fa-hospital"></i>
+            <div class="crtss">
+                <h3> <span class="counter" data-end-value="38">0</span>+</h3>
+                <p>hospitals we have</p>
+            </div>
+        </div>
+        <div class="col-lg-2 clsFlexxx col-md-4 Aboutbox3">
+            <i class="fa-solid fa-people-roof"></i>
+            <div class="crts">
+                <h3> <span class="counter" data-end-value="3">3</span>crore+</h3>
+                <p>Campaign running</p>
+            </div>
+        </div>
+        <div class="col-lg-2 clsFlexx col-md-4 Aboutbox4">
+            <i class="fa-solid fa-clock"></i>
+            <div class="crtss">
+                <h3> <span class="counter" data-end-value="148">0</span>lakh+</h3>
+                <p>Customer</p>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-2 About-box2 col-md-4">
-      <i class="fa-solid fa-hospital"></i>
-      <div class="crtss">
-        <h3>38+</h3>
-        <p>hospitals we have</p>
-      </div>
-    </div>
-    <div class="col-lg-2 About-box1 col-md-4">
-      <i class="fa-solid fa-people-roof"></i>
-      <div class="crts">
-        <h3>3crore+</h3>
-        <p>Campaign running</p>
-      </div>
-    </div>
-    <div class="col-lg-2 About-box2 col-md-4">
-      <i class="fa-solid fa-clock"></i>
-      <div class="crtss">
-        <h3>148lakh+</h3>
-        <p>Customer</p>
-      </div>
-    </div>
-  </div>
 </div>
 <!-- end -->
 <!-- section-2 -->
