@@ -186,7 +186,7 @@
                             <img src="{{ asset('storage/' . $project->image) }}" alt="">
                         </figure>
                         <div class="campaignboxcontent">
-                            <a href="{{ route('project-details', $project->slug) }}"> <h3>{{ $project->title }}</h3></a>
+                            <a href="{{ route('project-details', $project->slug) }}"> {{ $project->title }}</a>
                             <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
                             <a href="{{ route('project-details', $project->slug) }}" id="readMore">
 

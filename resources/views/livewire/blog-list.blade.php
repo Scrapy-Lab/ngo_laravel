@@ -10,8 +10,13 @@
                     <div class="campaignboxcontent">
                         <a href="{{ route('project-details', $project->slug) }}">{{ $project->title }}</a>
                         <p>{!! html_entity_decode(Str::limit($project->content, 100)) !!}</p>
-                        <a href="{{ route('project-details', $project->slug) }}" id="readMore">Read
-                            More</a>
+                        <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+                            <button>
+
+                                Read
+                                More
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
