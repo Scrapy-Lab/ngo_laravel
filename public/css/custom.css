@@ -219,7 +219,7 @@ p.date {
     margin-top: 44px;
 }
 .campaignboxcontent a {
-    font-size: 18px;
+    font-size: 25px;
     color: #000;
     text-decoration: none;
     font-weight: 600;
@@ -236,6 +236,7 @@ p.date {
     display: block;
 }
 .campaignboxcontent button {
+    font-size: 18px;
     border: none;
     background: #660000;
     border-radius: 12px;
