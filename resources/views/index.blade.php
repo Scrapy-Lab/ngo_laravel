@@ -45,15 +45,17 @@
     <!-- section-start -->
     <div class="container-fluid sec-2">
         <div class="row fourdivs">
+
             <div class="col-lg-2  Aboutbox3 clsFlexxx col-md-4">
-                <i class="fa-regular fa-file-lines"></i>
+                <i class="fa-solid fa-medal fnt-cn"></i>
                 <div class="crts">
                     <h2 ><span class="counter" data-end-value="14800">0</span>+</h2>
                     <p>success Compaign</p>
                 </div>
             </div>
+
             <div class="col-lg-2 clsFlexx col-md-4 Aboutbox4">
-                <i class="fa-solid fa-hospital"></i>
+                <i class="fa-solid fa-globe fnt-cn"></i>
                 <div class="crtss">
                     <h3> <span class="counter" data-end-value="38">0</span>+</h3>
                     <p>hospitals we have</p>
@@ -67,7 +69,8 @@
                 </div>
             </div>
             <div class="col-lg-2 clsFlexx col-md-4 Aboutbox4">
-                <i class="fa-solid fa-clock"></i>
+                <i class="fas fa-handshake"></i>
+
                 <div class="crtss">
                     <h3> <span class="counter" data-end-value="148">0</span>lakh+</h3>
                     <p>Customer</p>
