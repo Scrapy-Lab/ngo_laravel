@@ -199,6 +199,7 @@ margin-bottom: 3em;
   }
   .card-para{
       font-weight:600 ;
+      padding-top: 20px;
       color: black;
       border-top: 2px solid #8a8a8a33;
   }
@@ -469,3 +470,16 @@ a{
 .card.main-content {
   height: 390px;
 }
+
+
+.Aboutbox3  i {
+    font-size: 2rem;
+    color: #000000 !important;
+}
+
+.Aboutbox4  i {
+    font-size: 2rem;
+    color: #660000 !important;
+}
+
+

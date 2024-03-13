@@ -18,18 +18,18 @@
                     <li class="nav-item">
                         <a class="nav-link @if ( Route::currentRouteName() == 'blogs') active  @endif" href="{{route('blogs')}}">Blog</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="#">News</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link @if ( Route::currentRouteName() == 'about-us') active  @endif" href="{{ route('about-us') }}">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contact-us') }}">Contact us</a>
+                        <a class="nav-link @if ( Route::currentRouteName() == 'contact-us') active  @endif" href="{{ route('contact-us') }}">Contact us</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="#">Shop</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>

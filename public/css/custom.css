@@ -202,11 +202,14 @@ p.date {
 
 .campaignBox:hover img {
     transform: scale(1.5);
+    object-fit: contain;
 }
 .campaignBox figure {
     overflow: hidden;
-    height: 220px;
+    /* height: 220px; */
+    aspect-ratio: 3 / 2;
 }
+
 .campaignboxcontent {
     padding: 24px;
     text-align: center;
@@ -236,7 +239,7 @@ p.date {
     border: none;
     background: #660000;
     border-radius: 12px;
-    padding: 5px 20px;
+    padding: 11px 20px;
     color: #fff;
     transition: 2.2s ease all;
 }
@@ -808,3 +811,9 @@ span.red {
     color: red;
     margin-bottom: 5px;
 }
+
+.sec_marginB{
+
+    margin-bottom: 10rem !important;
+}
+
