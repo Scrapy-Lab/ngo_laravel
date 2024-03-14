@@ -61,26 +61,30 @@
 </div>
 <!-- end -->
 <!-- section-2 -->
-<div class="container StoryImage">
+<div class="container-fluid StoryImage">
   <h1 class="About-text">Story of youngistaan</h1>
   <div class="row">
-    <div class="col-lg-6 col-md-12 col-sm-12">
-      <div class="zoom-container">
-        <img src="{{ asset('images/youngistaan-education-1.jpg') }}" alt="" class="rounded zoom-img" srcset="">
-        <div class="overlay"></div>
-      </div>
-
-      <div class="zoom-container mt-2 mb-2">
-        <img src="{{ asset('images/vastardaan.jpg') }}" alt="" srcset="" class="Abtcen-img rounded zoom-img">
-        <div class="overlay1"></div>
-      </div>
-
-      <div class="zoom-container">
-        <img src="{{ asset('images/youngistaan-food_n.jpg') }}" alt="" class="rounded zoom-img" srcset="">
-        <div class="overlay"></div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-12 col-sm-12">
+  <div class="col-lg-7 m-auto col-md-12 col-sm-12 p-md-5 p-sm-4">
+        <img class='grid-item grid-item-1 img-3'
+          src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+          alt=''>
+        <img class='grid-item grid-item-2 img-2'
+          src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+          alt=''>
+        <img class='grid-item grid-item-4 img-1'
+          src='https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+          alt=''>
+        <img class='grid-item grid-item-6 img-5'
+          src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+          alt=''>
+        <img class='grid-item grid-item-5 img-6'
+          src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+          alt=''>
+        <img class='grid-item grid-item-6 img-4'
+          src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+          alt=''>
+  </div>
+    <div class="col-lg-5 col-md-12 col-sm-12">
       <div class="storycnt">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos perferendis vero
           inventore? Alias voluptas eius tenetur, cumque, doloribus molestiae iste ad eveniet tempore et

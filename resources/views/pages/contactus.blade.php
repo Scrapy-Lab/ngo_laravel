@@ -93,9 +93,6 @@
 </div>
 <!-- end -->
 <!-- section-5 -->
-<div class="container footer-bnner">
-    <img src="{{ asset('images/fbanner.png') }}" alt="" srcset="" class="fbanner">
-</div>
 
 <div class="container bnnerimg ">
     @livewire('blog-list')

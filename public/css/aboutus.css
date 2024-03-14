@@ -9,6 +9,25 @@
 }
 
 /* end */
+.zoom-container img {
+    border: 2px solid #333; /* Add a border to the images */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-bottom: 10px; /* Optional: Add some space between images */
+  }
+
+  /* Add styling for zoom-container1 and zoom-container2 if needed */
+  .zoom-container1 img {
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .zoom-container2 img {
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
 .About-hero{
     display: flex;
     flex-direction: row;
@@ -105,8 +124,36 @@
 .storycnt p{
     margin-top: 2em;
 }
+.img-2 {
+    width: 25.33%;
+}
+.img-6 {
+    width: 25.33%;
+    /* margin-left: 21px; */
+    margin-top: 4px;
+}
+.img-5{
+    width: 33.33%;
+    margin-bottom: 77px;
+    margin-left: 20px;
+}
+.img-3 {
+    width: 39%;
+    margin-left: -23px;
+    height: 22vh;
+    margin-bottom: -69px;
+}
+.img-1 {
+    width: 33.33%;
+    margin-bottom: -84px;
+}
+.img-4 {
+    width: 37%;
+    height: 22vh;
+    margin-bottom: 63px;
+}
 .StoryImage {
-    margin-top: 3em;
+    padding: 30px;
 }
 /* end */
 /* section-5 */
@@ -128,46 +175,6 @@
 }
 .Abtcen-img{
     margin-left: 12em;
-}
-.zoom-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.zoom-img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 59.5%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.overlay1 {
-    position: absolute;
-    top: 0;
-    left: 11em;
-    width: 62%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.zoom-container:hover .zoom-img {
-    transform: scale(1.1);
-}
-
-.zoom-container:hover .overlay {
-    opacity: 1;
-}
-.zoom-container:hover .overlay1 {
-    opacity: 1;
 }
 /* end */
 .AbtFlexxx i {
