@@ -10,9 +10,12 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Request;
 
 class JoinNowResource extends Resource
 {
@@ -103,12 +106,25 @@ class JoinNowResource extends Resource
                         }
                         return $projects;
                     }),
-                Tables\Columns\TextColumn::make('aadhar_front')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('aadhar_back')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('pan')
-                    ->searchable(),
+                    ImageColumn::make('aadhar_front')
+                ->getStateUsing(function (JoinNow $record): string {
+                    // http://127.0.0.1:8000/admin/join-nows
+                    // dd(Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_front);
+                    return Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_front;
+                }),
+                Tables\Columns\ImageColumn::make('aadhar_back')
+                ->getStateUsing(function (JoinNow $record): string {
+
+                    // dd(Request::getScheme()."/storage/joinNowImages/".$record->aadhar_back);
+                    return Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_back;
+                })
+                   ,
+                Tables\Columns\ImageColumn::make('pan')
+                ->getStateUsing(function (JoinNow $record): string {
+
+                    // dd(Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_back);
+                    return Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->pan;
+                }),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
