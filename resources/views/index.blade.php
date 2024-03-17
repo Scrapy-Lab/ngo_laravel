@@ -501,10 +501,6 @@
             <img src="{{ asset('images/brittani-burns-LCzc79jZGf4-unsplash.jpg') }}" class="card-img footerImg" alt="..." />
             <div class="card-img-overlay MYcard">
                 <h5 class="card-title CustomTitle">Card title</h5>
-                <p class="card-text footer-txt">
-                    This is a wider card with supporting text below as a natural lead-in
-                    to additional content. This content is a little bit longer.
-                </p>
                 <button type="button" class="btn btn-outline-danger text-white CstomBtn">
                     Donate now
                 </button>
