@@ -93,6 +93,9 @@
 </div>
 <!-- end -->
 <!-- section-5 -->
+
+<div class="container bnnerimg ">
+
 <div class="container">
     <div class="row">
         <div class="col-lg-6 mb-lg-5">
