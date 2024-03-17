@@ -93,6 +93,15 @@
 </div>
 <!-- end -->
 <!-- section-5 -->
-
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 mb-lg-5">
+           <img src="{{ asset('images/youngistaan-team_n-1.jpg') }}" alt="" srcset="" height="450" >
+        </div>
+        <div class="col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13757.4498502598!2d74.51117165!3d30.454170050000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710677064655!5m2!1sen!2sin" width="680" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
 <!-- end -->
 @endsection

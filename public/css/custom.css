@@ -189,6 +189,7 @@ p.date {
 .campaigns {
     text-align: center;
 }
+
 .campaignBox {
     box-shadow: 0 2px 20px 0 rgba(0,0,0,0.08);
     overflow: hidden;
@@ -213,14 +214,14 @@ p.date {
 .campaignboxcontent {
     padding: 24px;
     text-align: center;
-    height: 267px !important;
+    height: 230px !important;
 }
 .campaignsInner {
     margin-top: 44px;
 }
 .campaignboxcontent a {
     font-size: 18px;
-    color: #000;
+    color: #5586e8;
     text-decoration: none;
     font-weight: 600;
     line-height: 10px;
@@ -238,8 +239,8 @@ p.date {
 .campaignboxcontent button {
     border: none;
     background: #660000;
-    border-radius: 12px;
-    padding: 11px 20px;
+    padding: 16px 16px;
+    border-radius: 8px;
     color: #fff;
     transition: 2.2s ease all;
 }
