@@ -3,13 +3,13 @@
     @if($donateFirstForm)
         <form wire:submit.prevent="saveDonateForm">
             <div class="donateBlogInnerbox">
-                <h3>Donation Form</h3>
-                <p>Distributes the smiles...</p>
+                <h3 style="color: #660000">Donation Form</h3>
+                <p style="color:#96bce6">Distributes the smiles...</p>
 
                 {{-- DONATION TYPE --}}
                 <h4>Donation Type</h4>
                 <div class="row">
-                    <select wire:model="donation_type" class="form-control">
+                    <select wire:model="donation_type" class="form-control" style="width:200px">
                         <option value=" " selected>Select Donation Type</option>
                         <option value="1">Monthly Donation</option>
                         <option value="2">Annual Donation</option>
@@ -51,6 +51,36 @@
                         </div>
                     </div>
                 </div> --}}
+                 {{-- Amount --}}
+                 <h4>Select Donation Amount</h4>
+                 <div class="container">
+                     <div class="row">
+                         <div class="col d-flex gap-4 py-4">
+                             <div wire:click="enableCustomAmt" class="donateAmountButton" >Custom Amount</div>
+                             <div class="input-row">
+                                 <input type="number" wire:model="amount" id="customAmountInput" class="form-control"
+                                     placeholder="Enter custom amount" {{$disable}}>
+                             </div>
+                         </div>
+                     </div>
+
+                 <div class="row amountmain">
+                     <div class="col-md-2 " wire:click="fixedAmount(200)">
+                         <span class="donateAmountButton"> ₹ 200</span>
+                     </div>
+                     <div class="col-md-2 "  wire:click="fixedAmount(500)">
+                         <span class="donateAmountButton"> ₹ 500</span>
+                     </div>
+                     <div class="col-md-2 " wire:click="fixedAmount(1000)">
+                         <span class="donateAmountButton"> ₹ 1000</span>
+                     </div>
+                     <div class="col-md-2 " wire:click="fixedAmount(2000)">
+                         <span class="donateAmountButton"> ₹ 2000</span>
+                     </div>
+                     <div class="col-md-2 " wire:click="fixedAmount(5000)">
+                         <span class="donateAmountButton"> ₹ 5000</span>
+                     </div>
+                 </div>
                 {{-- Selct Project --}}
                 <h4>Select Project*</h4>
                 <div class="row">
@@ -64,37 +94,6 @@
                     @empty
 
                     @endforelse
-                </div>
-
-                {{-- Amount --}}
-                <h4>Select Donation Amount</h4>
-                <div class="container">
-                    <div class="row">
-                        <div class="col d-flex gap-4 py-4">
-                            <div wire:click="enableCustomAmt" class="donateAmountButton" >Custom Amount</div>
-                            <div class="input-row">
-                                <input type="number" wire:model="amount" id="customAmountInput" class="form-control"
-                                    placeholder="Enter custom amount" {{$disable}}>
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="row amountmain">
-                    <div class="col-md-2 " wire:click="fixedAmount(200)">
-                        <span class="donateAmountButton"> ₹ 200</span>
-                    </div>
-                    <div class="col-md-2 "  wire:click="fixedAmount(500)">
-                        <span class="donateAmountButton"> ₹ 500</span>
-                    </div>
-                    <div class="col-md-2 " wire:click="fixedAmount(1000)">
-                        <span class="donateAmountButton"> ₹ 1000</span>
-                    </div>
-                    <div class="col-md-2 " wire:click="fixedAmount(2000)">
-                        <span class="donateAmountButton"> ₹ 2000</span>
-                    </div>
-                    <div class="col-md-2 " wire:click="fixedAmount(5000)">
-                        <span class="donateAmountButton"> ₹ 5000</span>
-                    </div>
                 </div>
             </div>
                 <button class="my-4" type="submit">Next</button>

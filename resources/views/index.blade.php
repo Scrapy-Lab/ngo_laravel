@@ -168,28 +168,26 @@
             </div> --}}
     </div> -->
 
-<!-- section-2 end -->
-<div class="container project-main campaignsInner" style="margin-bottom:5rem">
-    <div class="row justify-content-between text-center divCenters">
-        <h1>Our Campaigns</h1>
-        <p class="paracen">
-            Our vision is nothing less than realizing the full potential of the Internet – universal access to
-            research
-            and education
-        </p>
-        {{-- COMPAIGN BOX --}}
-        @forelse ($projects as $project)
-        <div class="col-md-4 mt-3">
-            <div class="campaignBox">
-                <figure>
-                    <img src="{{ asset('storage/' . $project->image) }}" alt="">
-                </figure>
-                <div class="campaignboxcontent">
-                    <a href="{{ route('project-details', $project->slug) }}">
-                        <h3>{{ $project->title }}</h3>
-                    </a>
-                    <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
-                    <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+    <!-- section-2 end -->
+       <div class="container project-main campaignsInner"  style="margin-bottom:5rem">
+        <div class="row justify-content-between text-center">
+            <h2>Our Campaigns</h2>
+            <p>
+                Our vision is nothing less than realizing the full potential of the Internet – universal access to
+                research
+                and education
+            </p>
+            {{-- COMPAIGN BOX --}}
+            @forelse ($projects as $project)
+                <div class="col-md-4 mt-3">
+                    <div class="campaignBox">
+                        <figure>
+                            <img src="{{ asset('storage/' . $project->image) }}" alt="">
+                        </figure>
+                        <div class="campaignboxcontent">
+                            <a href="{{ route('project-details', $project->slug) }}"> <h3>{{ $project->title }}</h3></a>
+                            <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
+                            <a href="{{ route('project-details', $project->slug) }}" id="readMore">
 
                         <button>Read
                             More</button></a>
@@ -419,97 +417,75 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mediaQur">
-            <div class="card">
-                <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Deepak</h5>
-                    <p class="card-text">Designation</p>
-                    <p class="card-para">
-                        Donated
-                        <span style="color: red; float: right">5000</span>
-                    </p>
-                    <p>
-                        Experience <span style="color: red; float: right">1years</span>
-                    </p>
+            <div class="col-lg-3 col-md-6 mediaQur">
+                <div class="card">
+                    <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Deepak</h5>
+                        <p class="card-text">Designation</p>
+                        <p class="card-para">
+                            Donated
+                            <span style="color: red; float: right">5000</span>
+                        </p>
+                        <p>
+                            Experience <span style="color: red; float: right">1years</span>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mediaQur">
-            <div class="card">
-                <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}" class="card-img-top sec-img" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">Lisoba</h5>
-                    <p class="card-text">Designation</p>
-                    <p class="card-para">
-                        Donated
-                        <span style="color: red; float: right">5000</span>
-                    </p>
-                    <p>
-                        Experience <span style="color: red; float: right">3years</span>
-                    </p>
+            <div class="col-lg-3 col-md-6 mediaQur">
+                <div class="card">
+                    <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}" class="card-img-top sec-img" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Lisoba</h5>
+                        <p class="card-text">Designation</p>
+                         <p class="card-para">
+                            Donated
+                            <span style="color: red; float: right">5000</span>
+                        </p>
+                        <p >
+                            Experience <span style="color: red; float: right">3years</span>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mediaQur">
-            <div class="card">
-                <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">John</h5>
-                    <p class="card-text">Designation</p>
-                    <p class="card-para">
-                        Donated
-                        <span style="color: red; float: right">5000</span>
-                    </p>
-                    <p>
-                        Experience
-                        <span style="color: red; float: right">2years</span>
-                    </p>
+            <div class="col-lg-3 col-md-6 mediaQur">
+                <div class="card">
+                    <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">John</h5>
+                        <p class="card-text">Designation</p>
+                        <p class="card-para">
+                            Donated
+                            <span style="color: red; float: right">5000</span>
+                        </p>
+                        <p>
+                            Experience
+                            <span style="color: red; float: right">2years</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- end -->
-<!-- logo -->
-<div class="container h-100 logo-sect">
-    <div class="row align-items-center h-100">
-        <div class="container rounded">
-            <h1 class="text-center mb-5">Our Sponsor</h1>
-            <div class="slider">
-                <div class="logos">
-                    <i class="fab fa-js fa-4x"></i>
-                    <i class="fab fa-linkedin-in fa-4x"></i>
-                    <i class="fab fa-dribbble fa-4x"></i>
-                    <i class="fab fa-medium-m fa-4x"></i>
-                    <i class="fab fa-github fa-4x"></i>
-                </div>
-                <div class="logos">
-                    <i class="fab fa-js fa-4x"></i>
-                    <i class="fab fa-linkedin-in fa-4x"></i>
-                    <i class="fab fa-dribbble fa-4x"></i>
-                    <i class="fab fa-medium-m fa-4x"></i>
-                    <i class="fab fa-github fa-4x"></i>
-                </div>
+    <!-- end -->
+    <!-- section -->
+    <div class="container bnnerimg sec_marginB">
+        <div class="card bg-dark text-white">
+            <img src="{{ asset('images/brittani-burns-LCzc79jZGf4-unsplash.jpg') }}" class="card-img footerImg" alt="..." />
+            <div class="card-img-overlay MYcard">
+                <h5 class="card-title CustomTitle">Card title</h5>
+                <p class="card-text footer-txt">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <button type="button" class="btn btn-outline-danger text-white CstomBtn">
+                    Donate now
+                </button>
             </div>
         </div>
     </div>
 
-</div>
-<!-- end -->
-<!-- section -->
-<div class="container bnnerimg sec_marginB">
-    <div class="card bg-dark text-white">
-        <img src="{{ asset('images/brittani-burns-LCzc79jZGf4-unsplash.jpg') }}" class="card-img footerImg" alt="..." />
-        <div class="card-img-overlay MYcard">
-            <h1 class="card-title CustomTitle">Card title</h1>
-            <button type="button" class="btn btn-outline-danger text-white CstomBtn">
-                Donate now
-            </button>
-        </div>
-    </div>
-</div>
-
-<!-- end -->
+    <!-- end -->
 
 @endsection

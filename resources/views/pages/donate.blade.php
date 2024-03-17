@@ -150,7 +150,7 @@
                 {{-- Carousel ENd --}}
 
                 @livewire('donate-form')
-               
+
             </div>
         </div>
 
@@ -256,7 +256,7 @@
             <p>For the needs of a special donation, you can contact donation@youngistaan.org</p>
             <p><i class="fa fa-phone" aria-hidden="true"></i> 78372-77738</p>
             <p><i class="fa fa-envelope" aria-hidden="true"></i> info@youngistaan.org</p>
-            <img src="{{ url('/images/qrcode.jpeg') }}" alt="">
+            {{-- <img src="{{ url('/images/qrcode.jpeg') }}" alt=""> --}}
         </div>
     </div>
 
