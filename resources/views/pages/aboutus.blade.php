@@ -2,8 +2,8 @@
 @section('content')
 <!-- heading -->
 <div class="container-fluid about-sect-1">
-    <h3 style="color:white;margin-left:1em;">About</h3>
-    <span style="color: white;margin-right:1em;">Home/about</span>
+  <h3 style="color:white;margin-left:1em;">About</h3>
+  <span style="color: white;margin-right:1em;">Home/about</span>
 </div>
 <!-- end -->
 <!-- hero section -->
@@ -28,62 +28,50 @@
 <!-- end -->
 <!-- section-1  -->
 <div class="container-fluid sec-2">
-    <div class="row fourdivs">
-        <div class="col-lg-2  Aboutbox3 clsFlexxx col-md-4">
-            <i class="fa-regular fa-file-lines"></i>
-            <div class="crts">
-                <h2 ><span class="counter" data-end-value="14800">0</span>+</h2>
-                <p>success Compaign</p>
-            </div>
-        </div>
-        <div class="col-lg-2 clsFlexx col-md-4 Aboutbox4">
-            <i class="fa-solid fa-hospital"></i>
-            <div class="crtss">
-                <h3> <span class="counter" data-end-value="38">0</span>+</h3>
-                <p>hospitals we have</p>
-            </div>
-        </div>
-        <div class="col-lg-2 clsFlexxx col-md-4 Aboutbox3">
-            <i class="fa-solid fa-people-roof"></i>
-            <div class="crts">
-                <h3> <span class="counter" data-end-value="3">3</span>crore+</h3>
-                <p>Campaign running</p>
-            </div>
-        </div>
-        <div class="col-lg-2 clsFlexx col-md-4 Aboutbox4">
-            <i class="fa-solid fa-clock"></i>
-            <div class="crtss">
-                <h3> <span class="counter" data-end-value="148">0</span>lakh+</h3>
-                <p>Customer</p>
-            </div>
-        </div>
+  <div class="row fourdivs">
+    <div class="col-lg-2  Aboutbox3  col-md-4">
+      <i class="fa-regular fa-file-lines"></i>
+      <div class="crts">
+        <h2><span class="counter" data-end-value="76800">0</span>+</h2>
+        <p>Students P/year</p>
+      </div>
     </div>
+    <div class="col-lg-2 col-md-4 Aboutbox4">
+      <i class="fa-solid fa-hospital"></i>
+      <div class="crtss">
+        <h3> <span class="counter" data-end-value="20">0</span>+</h3>
+        <p>Cities Work</p>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-4 Aboutbox3">
+      <i class="fa-solid fa-people-roof"></i>
+      <div class="crts">
+        <h3> <span class="counter" data-end-value="800">3</span>+</h3>
+        <p>Active Members</p>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-4 Aboutbox4">
+      <i class="fa-solid fa-clock"></i>
+      <div class="crtss">
+        <h3> <span class="counter" data-end-value="1500">0</span>+</h3>
+        <p>Active Donors</p>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- end -->
 <!-- section-2 -->
 <div class="container-fluid StoryImage">
   <h1 class="About-text">Story of youngistaan</h1>
   <div class="row">
-  <div class="col-lg-7 m-auto col-md-12 col-sm-12 p-md-5 p-sm-4">
-        <img class='grid-item grid-item-1 img-3'
-          src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-          alt=''>
-        <img class='grid-item grid-item-2 img-2'
-          src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-          alt=''>
-        <img class='grid-item grid-item-4 img-1'
-          src='https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-          alt=''>
-        <img class='grid-item grid-item-6 img-5'
-          src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-          alt=''>
-        <img class='grid-item grid-item-5 img-6'
-          src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-          alt=''>
-        <img class='grid-item grid-item-6 img-4'
-          src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-          alt=''>
-  </div>
+    <div class="col-lg-7 m-auto col-md-12 col-sm-12 p-md-5 p-sm-4">
+      <img class='grid-item grid-item-1 img-3' src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+      <img class='grid-item grid-item-2 img-2' src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+      <img class='grid-item grid-item-4 img-1' src='https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+      <img class='grid-item grid-item-6 img-5' src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+      <img class='grid-item grid-item-5 img-6' src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+      <img class='grid-item grid-item-6 img-4' src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    </div>
     <div class="col-lg-5 col-md-12 col-sm-12">
       <div class="storycnt">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos perferendis vero
