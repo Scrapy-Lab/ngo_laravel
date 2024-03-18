@@ -6,7 +6,7 @@
 }
 /* section-2 style */
 .bnner-btns {
-    background: #660000;
+    background: #AF1515;
     color: white;
     padding: 8px 12px 11px 10px;
     border-radius: 8px 8px 8px 8px;
@@ -147,7 +147,7 @@
 }
 .classFlex i {
     font-size: 2em;
-    color: #660000;
+    color: #AF1515;
 }
 .crt p {
     margin-bottom: -1rem;
@@ -209,7 +209,7 @@
 }
 .divCenter p {
     font-size: 20px;
-    color: #660000;
+    color: #AF1515;
     margin-bottom: 0rem;
 }
 .divCenter h1 {
@@ -218,7 +218,7 @@
 }
 .divCenter {
     text-align: center;
-    border-left: 4px solid #660000;
+    border-left: 4px solid #AF1515;
     margin: auto;
 }
 .paracen {
@@ -234,7 +234,7 @@
 /*sec-2  */
 .clsFlexxx i {
     font-size: 2rem;
-    color: #660000;
+    color: #AF1515;
 }
 .clsFlexx i {
     font-size: 2rem;
@@ -491,10 +491,10 @@ a {
 
 .Aboutbox4 i {
     font-size: 2rem;
-    color: #660000 !important;
+    color: #AF1515 !important;
 }
 .bnner-btn {
-    background: #660000;
+    background: #AF1515;
     color: white;
     padding: 8px 12px 11px 10px;
     border-radius: 8px 8px 8px 8px;
@@ -520,7 +520,7 @@ a {
     height: 100%;
     background-color: white;
   }
-  
+
   .logo-sect{
     overflow: hidden;
   }
@@ -535,9 +535,9 @@ a {
       }
         .fab {
           width: calc(100% / 5);
-          animation: fade-in 0.5s 
+          animation: fade-in 0.5s
             cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-        }  
+        }
   @keyframes slidein {
     from {
       transform: translate3d(0, 0, 0);
@@ -546,7 +546,7 @@ a {
       transform: translate3d(-100%, 0, 0);
     }
   }
-  
+
   @keyframes fade-in {
     0% {
       opacity: 0;

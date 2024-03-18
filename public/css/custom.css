@@ -40,7 +40,7 @@ nav.navbar.navbar-expand-lg {
 
 .topButtons button {
     color: #fff;
-    background: #660000;
+    background: #AF1515;
     border: none;
     border-radius: 15px;
     font-weight: 700;
@@ -49,13 +49,13 @@ nav.navbar.navbar-expand-lg {
 }
 
 a.nav-link.active {
-    color: #660000 !important;
-    border-top: 2px solid #660000 !important;
+    color: #AF1515 !important;
+    border-top: 2px solid #AF1515 !important;
 }
 
 a.nav-link:hover {
-    color: #660000 !important;
-    border-top: 2px solid #660000 !important;
+    color: #AF1515 !important;
+    border-top: 2px solid #AF1515 !important;
 }
 
 .tophead ul.navbar-nav {
@@ -95,7 +95,7 @@ a.nav-link:hover {
 .footerinner h3:before {
     position: absolute;
     content: '';
-    background-color: #660000;
+    background-color: #AF1515;
     width: 56px;
     height: 3px;
     bottom: 0;
@@ -228,7 +228,7 @@ p.date {
     transition: 2.2s ease all;
 }
 .campaignBox:hover .campaignboxcontent a {
-    color: #660000;
+    color: #AF1515;
 }
 .campaignboxcontent p {
     font-size: 14px;
@@ -239,14 +239,14 @@ p.date {
 .campaignboxcontent button {
     font-size: 18px;
     border: none;
-    background: #660000;
+    background: #AF1515;
     padding: 16px 16px;
     border-radius: 8px;
     color: #fff;
     transition: 2.2s ease all;
 }
 .campaignBox:hover .campaignboxcontent button {
-    background: #660000;
+    background: #AF1515;
 }
 .campaigns p {
     max-width: 56%;
@@ -264,7 +264,7 @@ p.date {
     font-size: 35px;
     text-transform: capitalize;
     font-weight: 800;
-    color: #660000;
+    color: #AF1515;
 }
 .partnersMain h4 {
     font-size: 19px;
@@ -282,7 +282,7 @@ p.date {
     font-size: 35px;
     text-transform: capitalize;
     font-weight: 800;
-    color: #660000;
+    color: #AF1515;
 }
 
 
@@ -348,7 +348,7 @@ button.accordion-button {
 button.accordion-button:before {
     position: absolute;
     content: '';
-    background: #660000;
+    background: #AF1515;
     width: 14px;
     height: 14px;
     border-radius: 50px;
@@ -363,7 +363,7 @@ button.accordion-button:before {
 .donatePayment h3 {
     font-size: 22px;
     font-weight: 800;
-    color: #660000;
+    color: #AF1515;
     margin-bottom: 18px;
 }
 .donatePayment p {
@@ -392,19 +392,19 @@ span.smallfont {
     color: #fff;
 }
 .inputWIthoptions label {
-    background: #660000;
+    background: #AF1515;
     padding: 2px 12px;
-    border: 1px solid #660000;
+    border: 1px solid #AF1515;
     color: #fff;
 }
 .inputWIthoptions {
     margin: 28px 0;
 }
 .donateBlogInnerbox button {
-    background: #660000;
-    border: 1px solid #660000;
+    background: #AF1515;
+    border: 1px solid #AF1515;
     width: fit-content;
-    border-radius: 14px;
+    border-radius: 5px;
     padding: 4px 26px;
     color: #fff;
     font-weight: 500;
@@ -412,8 +412,8 @@ span.smallfont {
     transition: 1.8s ease all;
 }
 .donateBlogInnerbox button:hover {
-    background: #660000;
-    border: 1px solid #660000;
+    background: #AF1515;
+    border: 1px solid #AF1515;
 }
 h4.allHead {
     margin-top: 12px;
@@ -482,7 +482,7 @@ h4.allHead {
 
 .donateBlogInnerbox a {
     text-decoration: none;
-    color: #660000;
+    color: #AF1515;
     font-weight: 500;
 }
 .donateblogBox img {
@@ -499,7 +499,7 @@ h4.allHead {
     color: #fff !important;
 }
 .donateBoxheads {
-    background: #660000bd;
+    background: #AF1515bd;
     position: absolute;
     bottom: 15px;
     width: 75%;
@@ -515,7 +515,7 @@ h4.allHead {
 .donateMain h3 {
     font-weight: 900;
     margin-top: 15px;
-    color: #660000;
+    color: #AF1515;
 }
 .donateMain p {
     font-size: 14px;
@@ -585,26 +585,28 @@ h4.allHead {
     margin-top: 25px;
     font-weight: 700;
     margin-bottom: 13px;
-    color: #660000;
+    color: #AF1515;
     text-decoration: underline;
 }
 .form-check input {
-    border: 2px solid #660000;
+    border: 2px solid #AF1515;
 }
 
 .donateAmountButton{
     cursor: pointer;
-    background-color: #660000;
+    background-color: #AF1515;
     /* width: 61px; */
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 7px;
     color: #fff;
     font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .form-check-input:checked {
-    background-color: #000000 !important;
-    border-color: #000000 !important;
+    background-color: #AF1515 !important;
+    border-color: #AF1515 !important;
 }
 .form-check label {
     font-size: 14px;
@@ -624,10 +626,10 @@ select.types {
 a.blogMaintitle {
     font-family: 'Montserrat' !important;
     font-size: 22px;
-    color: #660000;
+    color: #AF1515;
 }
 a.blogMainButton {
-    background: #660000;
+    background: #AF1515;
     padding: 8px 30px;
     color: #fff;
     font-family: 'Montserrat';
@@ -637,22 +639,22 @@ a.blogMainButton {
     transition: 1.8s ease all;
 }
 a.blogMainButton:hover {
-    background: #660000;
-    border: 1px solid #660000;
+    background: #AF1515;
+    border: 1px solid #AF1515;
 }
 .mainSearch {
     margin: 0 !important;
     font-family: 'Montserrat';
-    color: #660000 !important;
+    color: #AF1515 !important;
 }
 h4.recentPost {
     margin: 0 !important;
     font-family: 'Montserrat';
-    color: #660000;
+    color: #AF1515;
 }
 .recentTitleBlogs {
     font-weight: 700;
-    color: #660000;
+    color: #AF1515;
     text-decoration: underline;
 }
 .carousel-item {
@@ -675,8 +677,8 @@ a.my-4 {
     display: block;
     text-align: center;
     margin: 36px auto !important;
-    background: #660000;
-    border: 1px solid #660000;
+    background: #AF1515;
+    border: 1px solid #AF1515;
     border-radius: 14px;
     padding: 4px 26px;
     color: #fff;
@@ -684,15 +686,15 @@ a.my-4 {
     transition: 1.8s ease all;
 }
 a.my-4:hover {
-    background: #660000;
-    border: 1px solid #660000;
+    background: #AF1515;
+    border: 1px solid #AF1515;
 }
 .itsImage img {
     box-shadow: 0 2px 20px 0 rgba(0,0,0,0.08);
     width: 50%;
 }
 .noticeMian {
-    border: 2px solid #660000 !important;
+    border: 2px solid #AF1515 !important;
     border-radius: 10px;
     width: 79%;
     margin: 20px auto !important;
@@ -705,7 +707,7 @@ a.my-4:hover {
 span.red {
     font-weight: 700;
     font-family: 'Montserrat';
-    color:  #660000;
+    color:  #AF1515;
 }
 
 .snowflake {
@@ -715,8 +717,9 @@ span.red {
   }
   #bouncingImage {
     position: absolute;
-    width: 100px;
-    animation: bounceAnimation 1s infinite alternate;
+    width: 200px;
+    height: 80px;
+    /* animation: bounceAnimation 1s infinite alternate; */
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -767,7 +770,7 @@ span.red {
     font-family: 'Montserrat';
     font-weight: 800;
     font-size: 27px;
-    color: #660000;
+    color: #AF1515;
 }
 .joinGroup label {
     font-family: 'Montserrat';
@@ -791,8 +794,8 @@ span.red {
 }
 
 .submitButtonit button {
-    background: #660000;
-    border: 1px solid #660000;
+    background: #AF1515;
+    border: 1px solid #AF1515;
     width: fit-content;
     border-radius: 14px;
     padding: 4px 26px;
@@ -802,8 +805,8 @@ span.red {
     transition: 1.8s ease all;
 }
 .submitButtonit button:hover {
-    background: #660000;
-    border: 1px solid #660000;
+    background: #AF1515;
+    border: 1px solid #AF1515;
 }
 .joinGroups {
     width: 100%;

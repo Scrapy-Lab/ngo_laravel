@@ -7,12 +7,15 @@ use App\Models\Project;
 use Carbon\Carbon;
 use App\Models\DonateNow;
 use Livewire\Attributes\Validate;
+use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 class DonateForm extends Component
 {
+    use WithFileUploads;
     public $donateFirstForm = true;
     public $donateSecondForm = false;
     public $donateThirdForm = false;
+    public $donateFourthForm = false;
     public $disable = 'disabled';
     public $donateNow;
     public $projects;
@@ -24,16 +27,18 @@ class DonateForm extends Component
     public $amount;
 
     // Personal Information
-    #[Validate('required|min:3')] 
+    #[Validate('required|min:3')]
     public $full_name;
-    #[Validate('required|email')] 
+    #[Validate('required|email')]
     public $email;
-    #[Validate('required|min:3')] 
+    #[Validate('required|min:3')]
     public $phone;
-    #[Validate('required|min:3')] 
+    #[Validate('required|min:3')]
     public $city;
-    #[Validate('required|min:3')] 
+    #[Validate('required|min:3')]
     public $address;
+    // #[Validate('required|image|max:1024')]
+    public $screenshot;
 
     public function mount()
     {
@@ -47,7 +52,7 @@ class DonateForm extends Component
     {
         return view('livewire.donate-form');
     }
-    
+
     public function enableCustomAmt()
     {
         $this->disable = '';
@@ -71,13 +76,17 @@ class DonateForm extends Component
         if($this->donateNow->save()){
             $this->donateFirstForm = false;
             $this->donateSecondForm = true;
-            session()->flash('status', 'Donation Details successfully submitted.');
+            session()->flash('status', 'Donation Details Complete.');
         }
+
+
     }
 
     public function savePersonalInfo()
     {
+        // dd('asdasd');
         $this->validate();
+        // dd($this->validate());
         $this->donateNow->full_name = $this->full_name;
         $this->donateNow->email = $this->email;
         $this->donateNow->phone = $this->phone;
@@ -87,6 +96,18 @@ class DonateForm extends Component
             $this->donateSecondForm = false;
             $this->donateThirdForm = true;
             session()->flash('status', 'User Personal Details successfully submitted.');
+        }
+    }
+
+
+    public function saveScreenShot()
+    {
+        $this->validate();
+        $this->donateNow->payment_ss = $this->screenshot;
+        if($this->donateNow->save()){
+            $this->donateThirdForm = false;
+            $this->donateFourthForm = true;
+            session()->flash('status', 'Payment Details successfully submitted.');
         }
     }
 }

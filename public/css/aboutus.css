@@ -1,5 +1,5 @@
 .about-sect-1{
-    background-color: #660000;
+    background-color: #AF1515;
     margin: 2em 0em;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@
     align-items: center;
     justify-content: center;
     background-color: #D9EAFF;
-    color: #660000;
+    color: #AF1515;
     border-radius: 6px;
     padding: 1em;
     gap: 1em;
@@ -65,14 +65,14 @@
     border-radius: 6px;
     padding: 1em;
     justify-content: center;
-    color: #660000;
+    color: #AF1515;
     gap: 1em;
 }
 .Abtfourdivs{
     /* display: flex;   */
     gap: 1rem;
     justify-content: center;
-} 
+}
 .About-text {
     text-align: center;
     margin-bottom: 1em;

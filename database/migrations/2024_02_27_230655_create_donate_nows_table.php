@@ -22,6 +22,7 @@ return new class extends Migration
             $table->json('transaction_type')->nullable();
             $table->string('city')->nullable();
             $table->string('address')->nullable();
+            $table->string('payment_ss')->nullable();
             $table->timestamps();
         });
     }
