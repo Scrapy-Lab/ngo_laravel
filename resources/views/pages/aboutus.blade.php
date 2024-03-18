@@ -63,26 +63,14 @@
 <!-- section-2 -->
 <div class="container-fluid StoryImage">
   <h1 class="About-text">Story of youngistaan</h1>
-  <div class="row">
-    <div class="col-lg-7 m-auto col-md-12 col-sm-12 p-md-5 p-sm-4">
-      <img class='grid-item grid-item-1 img-3' src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-      <img class='grid-item grid-item-2 img-2' src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-      <img class='grid-item grid-item-4 img-1' src='https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-      <img class='grid-item grid-item-6 img-5' src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-      <img class='grid-item grid-item-5 img-6' src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
-      <img class='grid-item grid-item-6 img-4' src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+  <div class="row youngistan-sect">
+    <div class="col-lg-6">
+      <img src="{{ asset('images/collapse.jpg.jpeg') }}" alt="" srcset="" class="story-img">
     </div>
-    <div class="col-lg-5 col-md-12 col-sm-12">
+    <div class="col-lg-6 col-md-12 col-sm-12">
       <div class="storycnt">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos perferendis vero
-          inventore? Alias voluptas eius tenetur, cumque, doloribus molestiae iste ad eveniet tempore et
-          repellat, animi voluptatem earum quis deserunt illo possimus nam! Hic numquam, consequuntur
-          laborum qui in, quisquam assumenda repellendus ullam est commodi laboriosam suscipit molestiae
-          quo ut voluptatum illum quod. Veniam rerum commodi voluptas laudantium distinctio neque in aperiam
-          possimus praesentium est similique et harum fugiat, saepe illum beatae quo corrupti velit sapiente facilis.
-          Nesciunt impedit id quisquam libero ducimus, dicta inventore natus ad consectetur vero sapiente obcaecati qui illum quasi ut iure voluptate magni laborum.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aspernatur iure praesentium odio? Odit maiores magnam cum molestiae recusandae cumque nesciunt iste fuga minus eligendi, quaerat tempore similique officia impedit nisi est eos tempora natus! Excepturi unde voluptate non, quibusdam perspiciatis culpa laboriosam vero vel ducimus soluta inventore quod ullam temporibus, doloremque amet fuga nihil debitis dolorum reiciendis doloribus autem! Amet voluptatem praesentium error non similique cum officiis nostrum ducimus commodi doloribus consequatur in ea, assumenda, odit maxime, rerum dolor cupiditate pariatur provident aliquid nam facere voluptatibus molestiae? Harum ad ab incidunt cumque delectus. Ipsum distinctio excepturi accusamus tenetur atque!
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis earum impedit illum fugit dolore odio quas perspiciatis enim voluptatibus quia cum, doloribus sunt numquam, aperiam fuga, eligendi nesciunt dolorem eum iste necessitatibus nemo? Aut amet accusamus illum quia. Sunt iusto quidem expedita? Ipsum deserunt quaerat iusto tempore velit esse nesciunt? </p>
+        <p>The journey of youngistaan started in 2013. The slogan of youngistaan “We help people on approach to living and serving well. It encompasses three simple phases: learn, discover and act” describes that how much this NGO is committed towards people who are in need of just a little. Back in our college time, we saw some children begging at the traffic signal. In order to secure their future, we thought to aware them about the education and real world knowledge. Initially, we made a group in college to conduct a survey in a particular slum area and gathered approx. 20-30 children and their parents to make them aware about the importance of education. Under the act of right to education, we started a project and soon after the college we conducted a class of 2 hours daily for the children. Due to poverty, they were not having sufficient amount of money to get education in school and so we took the initiative and get them admission in nearest primary school. For now, they are a go getter and achieving highest pedestal in their life. Youngistaan was registered in February 2017 with multiple projects that run throughout the country. The NGO is committed for young people who are ready to create real change in the areas of hunger, homelessness, poverty, education inequity, gender inequality, taboos on menstruation, emergency responses, animal rights, capacity building and many more issues. In 2018, we started an institution for those children who are capable to study but doesn’t have resources to move further. We started giving internship to college going students and currently we have 344 volunteers. Approximately, 120+ companies have sponsored this NGO with 1200+ donors. Youngistaan have 64 members who works in a single city out of 16 cities. Everyone here is passionate about their work, incredibly smart, and genuinely kind.
+          Our partnerships with Government bodies, the Police and other organizations in the NGO ecosystem allow us to join hands with those who share our commitment and dedication to improving the lives of people in need through on-ground programs. We are fighting every minute of every day to encounter every societal challenges to better living by constant effort to finish what we started and achieve our vision to build compassion among people and put our concerns into action through improvement of health, impart education, and alleviate poverty.</p>
       </div>
     </div>
   </div>
@@ -141,93 +129,93 @@
             <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
               <a href="#!">
                 <img class="img-fluid bsb-scale bsb-hover-scale-up" src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" alt="Business">
-              </a>
-              <figcaption>
-                <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
-              </figcaption>
-            </figure>
-            <div class="card-body border bg-white p-4">
-              <div class="entry-header mb-3">
-                <ul class="entry-meta list-unstyled d-flex mb-2">
-                  <li>
-                    <a class="link-primary text-decoration-none" href="#!">Business</a>
-                  </li>
-                </ul>
-                <h2 class="card-title entry-title h4 mb-0">
-                  <a class="link-dark text-decoration-none" href="#!">Overcoming Challenges to Make a Living Online</a>
-                </h2>
-              </div>
-              <p class="card-text entry-summary text-secondary">
-                Making money online is attainable. However, even if the processes are simple, you may still need help with issues.
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-lg-4">
-        <article>
-          <div class="card border-0">
-            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-              <a href="#!">
-                <img class="img-fluid bsb-scale bsb-hover-scale-up" src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" alt="Nutrition">
-              </a>
-              <figcaption>
-                <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Read More</h4>
-              </figcaption>
-            </figure>
-            <div class="card-body border bg-white p-4">
-              <div class="entry-header mb-3">
-                <ul class="entry-meta list-unstyled d-flex mb-2">
-                  <li>
-                    <a class="link-primary text-decoration-none" href="#!">Nutrition</a>
-                  </li>
-                </ul>
-                <h2 class="card-title entry-title h4 mb-0">
-                  <a class="link-dark text-decoration-none" href="#!">How to Exercise to Achieve Your Nutrition Goals</a>
-                </h2>
-              </div>
-              <p class="card-text entry-summary text-secondary">
-                Fitness trainer explains how nutrition is as important as workouts when it comes to losing fat or building muscle.
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="col-12 col-lg-4">
-        <article>
-          <div class="card border-0">
-            <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
-              <a href="#!">
-                <img class="img-fluid bsb-scale bsb-hover-scale-up" src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" alt="Health">
-              </a>
-              <figcaption>
-                <h4 class="h6 text-white bsb-hover-fadeInLeft mt-2">Read More</h4>
-              </figcaption>
-            </figure>
-            <div class="card-body border bg-white p-4">
-              <div class="entry-header mb-3">
-                <ul class="entry-meta list-unstyled d-flex mb-2">
-                  <li>
-                    <a class="link-primary text-decoration-none" href="#!">Health</a>
-                  </li>
-                </ul>
-                <h2 class="card-title entry-title h4 mb-0">
-                  <a class="link-dark text-decoration-none" href="#!">10 Tips To Lose Weight Quickly Without Dieting</a>
-                </h2>
-              </div>
-              <p class="card-text entry-summary text-secondary">
-                Chewing slowly and eating more fiber may help you lose weight quickly without exercise or a specific diet plan.
-              </p>
-            </div>
-          </div>
-        </article>
+</a>
+<figcaption>
+  <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">Read More</h4>
+</figcaption>
+</figure>
+<div class="card-body border bg-white p-4">
+  <div class="entry-header mb-3">
+    <ul class="entry-meta list-unstyled d-flex mb-2">
+      <li>
+        <a class="link-primary text-decoration-none" href="#!">Business</a>
+      </li>
+    </ul>
+    <h2 class="card-title entry-title h4 mb-0">
+      <a class="link-dark text-decoration-none" href="#!">Overcoming Challenges to Make a Living Online</a>
+    </h2>
+  </div>
+  <p class="card-text entry-summary text-secondary">
+    Making money online is attainable. However, even if the processes are simple, you may still need help with issues.
+  </p>
+</div>
+</div>
+</article>
+</div>
+<div class="col-12 col-lg-4">
+  <article>
+    <div class="card border-0">
+      <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+        <a href="#!">
+          <img class="img-fluid bsb-scale bsb-hover-scale-up" src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" alt="Nutrition">
+        </a>
+        <figcaption>
+          <h4 class="h6 text-white bsb-hover-fadeInUp mt-2">Read More</h4>
+        </figcaption>
+      </figure>
+      <div class="card-body border bg-white p-4">
+        <div class="entry-header mb-3">
+          <ul class="entry-meta list-unstyled d-flex mb-2">
+            <li>
+              <a class="link-primary text-decoration-none" href="#!">Nutrition</a>
+            </li>
+          </ul>
+          <h2 class="card-title entry-title h4 mb-0">
+            <a class="link-dark text-decoration-none" href="#!">How to Exercise to Achieve Your Nutrition Goals</a>
+          </h2>
+        </div>
+        <p class="card-text entry-summary text-secondary">
+          Fitness trainer explains how nutrition is as important as workouts when it comes to losing fat or building muscle.
+        </p>
       </div>
     </div>
-  </div>
+  </article>
+</div>
+<div class="col-12 col-lg-4">
+  <article>
+    <div class="card border-0">
+      <figure class="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+        <a href="#!">
+          <img class="img-fluid bsb-scale bsb-hover-scale-up" src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" alt="Health">
+        </a>
+        <figcaption>
+          <h4 class="h6 text-white bsb-hover-fadeInLeft mt-2">Read More</h4>
+        </figcaption>
+      </figure>
+      <div class="card-body border bg-white p-4">
+        <div class="entry-header mb-3">
+          <ul class="entry-meta list-unstyled d-flex mb-2">
+            <li>
+              <a class="link-primary text-decoration-none" href="#!">Health</a>
+            </li>
+          </ul>
+          <h2 class="card-title entry-title h4 mb-0">
+            <a class="link-dark text-decoration-none" href="#!">10 Tips To Lose Weight Quickly Without Dieting</a>
+          </h2>
+        </div>
+        <p class="card-text entry-summary text-secondary">
+          Chewing slowly and eating more fiber may help you lose weight quickly without exercise or a specific diet plan.
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
+</div>
+</div>
 </section> --}}
 
 <div class="container bnnerimg ">
-    @livewire('blog-list')
+  @livewire('blog-list')
 </div>
 <!-- end -->
 @endsection

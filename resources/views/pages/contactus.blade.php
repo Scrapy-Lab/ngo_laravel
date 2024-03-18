@@ -24,9 +24,8 @@
     <div class="row">
         <div class="col-6">
             <h2>How to connect us?</h2>
-            <p>To connect with us, you can visit our website and use the contact form to send us a message or find the nearest branch in
-                your city and reach out to us. For any queries or concerns, you can reach out to our customer support team through our website
-                contact form or by visiting one of our branches in 20+ cities across India.</p>
+            <p>On our journey to make a meaningful impact in the lives of those in need, we invite you to connect with us. Whether you're looking to volunteer your time, donate to our cause, or simply learn more about the work we do, we're here to welcome you with open arms. Every connection we make strengthens our ability to create positive change in the world. So, reach out to us today and let's join forces to spread kindness, hope, and compassion to those who need it most. Together, we can make a difference that lasts a lifetime.
+            </p>
         </div>
         <div class="col-6">
             <img src="{{ asset('images/dealer.jpg') }}" alt="dealer-img" class="dealer-img">
@@ -96,18 +95,18 @@
 
 <div class="container bnnerimg ">
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 mb-lg-5">
-           <img src="{{ asset('images/youngistaan-team_n-1.jpg') }}" alt="" srcset="" height="450" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-lg-5">
+                <img src="{{ asset('images/youngistaan-team_n-1.jpg') }}" alt="" srcset="" height="450">
+            </div>
+            <div class="col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13757.4498502598!2d74.51117165!3d30.454170050000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710677064655!5m2!1sen!2sin" width="680" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div class="col-lg-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13757.4498502598!2d74.51117165!3d30.454170050000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710677064655!5m2!1sen!2sin" width="680" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
 
-<div class="container bnnerimg ">
-    @livewire('blog-list')
-</div>
-<!-- end -->
-@endsection
+        <div class="container bnnerimg ">
+            @livewire('blog-list')
+        </div>
+        <!-- end -->
+        @endsection

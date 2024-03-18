@@ -236,7 +236,7 @@ p.date {
     max-width: 100% !important;
     display: block;
 }
-.campaignboxcontent button {
+.read-btn {
     font-size: 18px;
     border: none;
     background: #AF1515;
@@ -246,6 +246,13 @@ p.date {
     transition: 2.2s ease all;
 }
 .campaignBox:hover .campaignboxcontent button {
+    background: #AF1515;
+
+}
+.read-btn:hover{
+    background: #5586e8;
+}
+.campaignBox:hover .read-btn {
     background: #AF1515;
 }
 .campaigns p {
