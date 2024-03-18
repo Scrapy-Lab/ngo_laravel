@@ -169,7 +169,7 @@
     </div> -->
 
 <!-- section-2 end -->
-<div class="container project-main campaignsInner" style="margin-bottom:5rem">
+<div class="container project-main campaignsInner" style="margin-bottom: 5em;">
     <div class="row justify-content-between text-center divCenters">
         <h1>Our Campaigns</h1>
         <p class="paracen">
@@ -191,7 +191,7 @@
                     <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
                     <a href="{{ route('project-details', $project->slug) }}" id="readMore">
 
-                        <button>Read
+                        <button class="read-btn">Read
                             More</button></a>
                 </div>
             </div>
@@ -268,9 +268,7 @@
 <div class="container-fluid sec-8 sec_marginB">
     <div class="row">
         <div class="col-lg-5 col-md-6">
-            <div class="orphan-cnt">
-                <img src="{{ asset('images/portfolio-6.jpg') }}" alt="" srcset="" />
-            </div>
+                <img src="{{ asset('images/portfolio-6.jpg') }}" alt="" srcset="" class="orphan-cnt"/>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="oph-para">
@@ -290,12 +288,9 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 rounded-circle text-center CustomBorder" style="border-width: 4px;">
-            <div class="Mycontent text-white">
-                <h1>73%</h1>
-                <p>Donated Now</p>
-            </div>
-        </div>
+    <div class="col-lg-3">
+        <img src="{{ asset('images/chart1.png') }}" alt="" srcset="" class="sponsor-img">
+    </div>
 
     </div>
 </div>
@@ -501,7 +496,7 @@
             <img src="{{ asset('images/brittani-burns-LCzc79jZGf4-unsplash.jpg') }}" class="card-img footerImg" alt="..." />
             <div class="card-img-overlay MYcard">
                 <h5 class="card-title CustomTitle">Card title</h5>
-                <button type="button" class="btn btn-outline-danger text-white CstomBtn">
+                <button type="button" class="CstomBtn">
                     Donate now
                 </button>
             </div>

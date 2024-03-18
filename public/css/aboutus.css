@@ -141,9 +141,7 @@
     margin-top: 6rem;
 }
 .Abt-btns:hover{
-  background: white;
-  color: black;
-
+  background:#5586e8;
 }
 .Abtcen-img{
     margin-left: 12em;
@@ -189,4 +187,10 @@
     .Abt-btns {
         margin-left: 13em;
     }
+ }
+ .youngistan-sect{
+    background-color: #F2EEED;
+ }
+ .story-img{
+    max-width: 100%;
  }

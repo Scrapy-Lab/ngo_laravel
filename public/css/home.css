@@ -15,10 +15,22 @@
     font-weight: 500;
     margin-left: 11em;
 }
-.bnner-btns:hover {
-    background: white;
-    color: black;
+.bnner-btn{
+    background: #660000;
+    color: white;
+    padding: 8px 12px 11px 10px;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
 }
+.bnner-btns:hover {
+    background: #5586e8;
+}
+.bnner-btn:hover{
+    background: #5586e8;
+}
+
 .Custom-title {
     text-align: left;
     padding-left: 11rem;
@@ -273,7 +285,7 @@
 /* sec-2 */
 .orphan-cnt {
     margin-left: 60px;
-    width: 330px;
+    height: 50vh;
 }
 .MyCustomCard h1 {
     font-size: 30px;
@@ -391,6 +403,9 @@
     text-transform: uppercase;
     border: none;
 }
+.link:hover{
+    background: #5586e8;
+}
 .mycustomcardBody {
     background-color: #9064bf;
     text-align: center;
@@ -407,6 +422,9 @@
     background-color: #369ff4 !important;
     height: 47.5vh;
     text-align: center;
+}
+.campaignBox .campaignboxcontent .read-btn:hover {
+    background: #5586e8;
 }
 .CustomImg {
     height: 11vh;
@@ -493,20 +511,6 @@ a {
     font-size: 2rem;
     color: #660000 !important;
 }
-.bnner-btn {
-    background: #660000;
-    color: white;
-    padding: 8px 12px 11px 10px;
-    border-radius: 8px 8px 8px 8px;
-    font-size: 16px;
-    font-family: Montserrat;
-    font-weight: 500;
-    /* margin-left: 11em; */
-}
-.bnner-btn:hover {
-    background: white;
-    color: black;
-}
 .CustomTitle{
     font-size:41px ;
     margin-left: 3em;
@@ -514,6 +518,13 @@ a {
 }
 .CstomBtn{
     margin-left:8em;
+    background: #660000;
+    color: white;
+    padding: 8px 12px 11px 10px;
+    border-radius: 8px ;
+}
+.CstomBtn:hover{
+    background: #5586e8;
 }
 /* logo */
 .logo-sect{
@@ -556,3 +567,6 @@ a {
     }
   }
   /* end */
+.sponsor-img{
+    max-width: 100%;
+}
