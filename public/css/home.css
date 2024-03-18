@@ -52,11 +52,12 @@
     /* background: linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(0,0,0,1) 100%); */
 
     /* left side black */
-    background: linear-gradient(
+    /* background: linear-gradient(
         90deg,
         rgba(0, 0, 0, 1) 0%,
         rgba(255, 255, 255, 0) 42%
-    );
+    ); */
+    background: linear-gradient(90deg, rgba(0,0,0,0.7035189075630253) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6979166666666667) 100%);
 }
 .crd-sec {
     width: 1100px;
