@@ -108,5 +108,7 @@
         <div class="container bnnerimg ">
             @livewire('blog-list')
         </div>
+    </div>
+    </div>
         <!-- end -->
         @endsection
