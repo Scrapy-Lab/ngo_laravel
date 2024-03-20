@@ -13,9 +13,9 @@ use App\Http\Controllers\DynamicPageController;
 |
 */
 
-Route::get('/',[DynamicPageController::class,'index'])->name('home');
+Route::middleware('page-cache')->get('/',[DynamicPageController::class,'index'])->name('home');
 
-Route::get('ourwork', function () {
+Route::middleware('page-cache')->get('ourwork', function () {
     return view('pages.ourwork');
 })->name('our-projects');
 
@@ -27,11 +27,11 @@ Route::get('join-now', function () {
     return view('pages.join-now');
 })->name('join-now');
 
-Route::get('about-us', function () {
+Route::middleware('page-cache')->get('about-us', function () {
     return view('pages.aboutus');
 })->name('about-us');
 
-Route::get('contact-us', function () {
+Route::middleware('page-cache')->get('contact-us', function () {
     return view('pages.contactus');
 })->name('contact-us');
 
