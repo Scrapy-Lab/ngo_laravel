@@ -8,10 +8,7 @@
                     {{-- @dd($banner) --}}
                     <h2 class="card-title Custom-title">{{$banner->name}} <br> poor by giving</h2>
                     <p class="card-text footertxt">
-                    Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met
-                    condimentum estibulum dignissim posuere cubilia Curae; Suspendisse at consectetur massa.
-                    Curabitur non ipsum nisinec dapibus elit. Donec nec magna id lacus consequat posuere. Aenean ut
-                    diam vitae ante interdum interdum ut sit amet metus.
+                    {{$banner->description}}
                     </p>
                     <button type="button" class="bnner-btns">Donate Now</button>
                 </div>

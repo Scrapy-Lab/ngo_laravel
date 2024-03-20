@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\DonorResource\Pages;
 use App\Filament\Resources\DonorResource\RelationManagers;
+use App\Models\DonateNow;
 use App\Models\Donor;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -15,7 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class DonorResource extends Resource
 {
-    protected static ?string $model = Donor::class;
+    protected static ?string $model = DonateNow::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -43,14 +44,14 @@ class DonorResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')
+                Tables\Columns\TextColumn::make('full_name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('amount')
+                Tables\Columns\TextColumn::make('phone')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('email')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('ip_address')
+                Tables\Columns\TextColumn::make('donation_type')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
