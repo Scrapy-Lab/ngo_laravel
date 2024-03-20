@@ -20,14 +20,11 @@
     <div class="row">
         <div class="col-6 divCenter">
             <p>We're helping hand on</p>
-            <h1>90,100 children in 120+ Countries.Edit</h1>
+            <h1>76800+ Children in 20+ Cities in India.</h1>
         </div>
 
         <p class="paracen">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            tenetur placeat,<br />
-            modi ipsa dolores odit perspiciatis excepturi velit deleniti
-            voluptatibus vitae?
+            We are providing quality education to 76800+ per year underprivilege children in India.
         </p>
     </div>
 </div>
@@ -39,7 +36,7 @@
             <i class="fa-solid fa-medal fnt-cn"></i>
             <div class="crts">
                 <h2><span class="counter" data-end-value="76800">0</span>+</h2>
-                <p>Students P/year</p>
+                <p>Children P/year</p>
             </div>
         </div>
 
@@ -170,13 +167,13 @@
 
 <!-- section-2 end -->
 <div class="container project-main campaignsInner" style="margin-bottom: 5em;">
-    <div class="row justify-content-between text-center divCenters">
-        <h1>Our Campaigns</h1>
-        <p class="paracen">
-            Our vision is nothing less than realizing the full potential of the Internet – universal access to
-            research
-            and education
+    <div class="row">
+    <div class="col-6 mb-lg-3 upcard">
+        <h1>Our Projects</h1>
+        <p>
+            Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
         </p>
+    </div>
         {{-- COMPAIGN BOX --}}
         @forelse ($projects as $project)
         <div class="col-md-4 mt-3">
@@ -210,28 +207,24 @@
     <div class="row">
         <div class="sct-2 col">
             <div class="col-lg-6 col-md-12">
-                <img src="{{ asset('images/maharastra.jpg') }}" alt="" class="crd-img" />
+                <img src="{{ asset('images/Picture3.jpg') }}" alt="" class="crd-img" />
             </div>
             <div class="main-content col-lg-6">
-                <h1>WHO WE ARE</h1>
+                <h1>We are Young India, We are Youngistaan!</h1>
                 <p class="prg">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-                    eius beatae accusantium?Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Aliquid eius beatae accusantium?
+                    Youngistaan was found in February 2017,
+                    Youngistaan is based in Ludhiana, Punjab with multiple projects that run throughout the country.
                 </p>
                 <div>
                     <p class="cnt-prg">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-                        qui sed dolor tempore placeat rerum, labore quibusdam expedita
-                        tenetur dicta . Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Officia recusandae dolorem magni deserunt,
-                        corporis reprehenderit earum est numquam velit soluta accusamus?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-                        sapiente, voluptatum nobis fuga doloremque laudantium eum quasi
-                        adipisci quia eius odit?Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Harum ullam assumenda minima, vel consequuntur
-                        in commodi doloremque, ea mollitia obcaecati alias ut excepturi
-                        ducimus veniam quae provident nesciunt atque magnam. Quisquam?
+                        Founded 8 years ago, Youngistaan Foundation was born out of a shared passion for education and
+                        a deep-seated belief in its transformative power. Our founder Mr. Sandeep Kumar, inspired by
+                        the stories of children denied the opportunity to learn, set out to create an organization
+                        that would make a difference where it mattered most - in the lives of those who need it most.
+                        Since then, we have worked tirelessly to break down barriers to education, advocating for
+                        policy changes, mobilizing resources, and partnering with local communities to create
+                        sustainable solutions. From building schools and providing scholarships to training teachers
+                        and developing innovative educational programs, our impact extends far beyond the classroom.
                     </p>
                 </div>
                 <div class="row icn-bx">
@@ -268,18 +261,16 @@
 <div class="container-fluid sec-8 sec_marginB">
     <div class="row">
         <div class="col-lg-5 col-md-6">
-                <img src="{{ asset('images/portfolio-6.jpg') }}" alt="" srcset="" class="orphan-cnt"/>
+            <img src="{{ asset('images/Picture1.jpg') }}" alt="" srcset="" class="orphan-cnt" />
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="oph-para">
-                <h1>Sponsor An Orphan Child</h1>
+                <h1>Sponsor To Our Talented Children</h1>
                 <p class="oph-cont">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed qui
-                    rem ea? Aliquam, iusto. Cumque in nostrum magnam ex iste harum
-                    repudiandae labore sit laboriosam vel? Nostrum, voluptates
-                    voluptatibus. Ad, neque. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Adipisci tempora nesciunt cupiditate dolor!
-                    Autem alias unde voluptas minima sequi ea nesciunt?
+                    At Youngistaan, we believe that every child deserves the opportunity to pursue their passions and
+                    realize their full potential. That's why we're launching our "Sponsor Our Talented Children"
+                    initiative, a heartfelt invitation for compassionate individuals and organizations to join us in
+                    supporting young talents from underserved communities.
                 </p>
                 <a href="{{route('donate-now')}}">
                     <button type="button" class="bnner-btn">
@@ -288,25 +279,28 @@
                 </a>
             </div>
         </div>
-    <div class="col-lg-3">
-        <img src="{{ asset('images/chart1.png') }}" alt="" srcset="" class="sponsor-img">
-    </div>
-
+        <div class="col-lg-3">
+            <img src="{{ asset('images/chart1.png') }}" alt="" srcset="" class="sponsor-img">
+        </div>
     </div>
 </div>
 <!-- end -->
 <!-- start -->
 <div class="container MyCustomCard sec_marginB">
-    <!-- <h1>Our Team</h1> -->
     <div class="row">
+            <div class="col-6 mb-lg-3 upcard">
+            <h1>Our Upcoming Programs</h1>
+            <p>Empowering Communities, Transforming Lives: Our Exciting Initiatives Ahead!</p>
+            </div>
+            
+        
         <div class="col-lg-3 col-md-6 mediaQur">
             <div class="card Main-cnt">
                 <img src="{{ asset('images/droplets.png') }}" class="card-img-top CustomImg" alt="..." />
                 <div class="card-body bodyCustom">
                     <p class="card-text text-white">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-                        quia, eveniet tempore assumenda velit facere minus soluta at
-                        aperiam vel laborum.
+                        As an NGO deeply committed to creating positive change, we are thrilled to announce
+                        our upcoming programs aimed at empowering communities and transforming lives.
                     </p>
                     <button class="btn text-white link"><i class="fa-solid fa-arrow-right" style="margin-right: 5px;"></i>Read more</button>
                 </div>
@@ -314,13 +308,12 @@
         </div>
 
         <div class="col-lg-3 col-md-6 mediaQur">
-            <div class="card">
+            <div class="card Main-cnt">
                 <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top" alt="..." />
                 <div class="card-body mycustomcardBody">
-                    <h5 class="card-title text-white">Send donation</h5>
+                    <h5 class="card-title text-white">Right To Vote</h5>
                     <p class="card-text text-white">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Labore, repellendus veniam.
+                        Its our upcoming programs for voting power awarness to the public of Punjab .
                     </p>
                     <button class="btn text-white link"><i class="fa-solid fa-arrow-right" style="margin-right: 5px;"></i>Read more</button>
                 </div>
@@ -330,23 +323,21 @@
             <div class="card">
                 <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}" class="card-img-top sec-img" alt="..." />
                 <div class="card-body mYCustomcard">
-                    <h5 class="card-title text-white">Become voluteer</h5>
+                    <h5 class="card-title text-white">Food Distribution </h5>
                     <p class="card-text text-white">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Labore, repellendus veniam.
+                        upcoming event for the needy children. We will cooking food together then will distribute with our children .
                     </p>
                     <button class="btn text-white link"><i class="fa-solid fa-arrow-right" style="margin-right: 5px;"></i>Read more</button>
                 </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 mediaQur">
-            <div class="card">
+            <div class="card Main-cnt">
                 <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top" alt="..." />
                 <div class="card-body Custombody">
                     <h5 class="card-title text-white">John</h5>
                     <p class="card-text text-white">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Labore, repellendus veniam.
+                        Organize a Drawing Event for our children of Youngistaan.
                     </p>
                     <button class="btn text-white link"><i class="fa-solid fa-arrow-right" style="margin-right: 5px;"></i>Read more</button>
                 </div>
@@ -360,32 +351,22 @@
 <div class="container sect-5 sec_marginB">
     <div class="row">
         <div class="col sct-2">
-            <div class="col-lg-4 col-md-12">
-                <img src="{{ asset('images/pexels-carlos-espinoza-2269648.jpg') }}" alt="" class="crds-img" />
+            <div class="col-lg-5 col-md-12">
+                <img src="{{ asset('images/Picture2.png') }}" alt="" class="crds-img" />
             </div>
-            <div class="main-cont col-lg-8 col-md-12">
-                <h1>NOTE FROM CEO & FOUNDER</h1>
+            <div class="main-cont col-lg-7 col-md-12">
+                <h1>Message From Founder & CEO</h1>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                    praesentium ipsum dolor placeat nihil quos, eum dolore
-                    necessitatibus labore dolores culpa consectetur perspiciatis.
-                    Nihil ex, tempora quas ea sint harum fuga explicabo ipsa est
-                    laborum molestias? Itaque laudantium voluptatum ducimus tenetur
-                    natus illum dicta vero dolorem, optio, rem, voluptas libero.<br />
-                    Illum iure suscipit dolor fuga fugiat error, tenetur molestiae
-                    iste nobis quis optio odio cumque vitae neque eos molestias quos
-                    nostrum dicta mollitia ipsam distinctio temporibus! Sit delectus
-                    distinctio voluptatem nemo necessitatibus est consectetur nisi
-                    aperiam similique nam, placeat fugiat illo quo? Doloremque labore,
-                    error repellendus iusto dolor at similique? Lorem, ipsum dolor sit
-                    amet consectetur adipisicing elit.Libero corrupti quaerat cum
-                    nulla excepturi quod dignissimos neque necessitatibus aliquam.
-                    Voluptate corrupti dicta error, natus rem nulla deleniti, deserunt
-                    maiores earum architecto iste fugit aspernatur ullam perferendis
-                    cumque laborum. Rem numquam incidunt, quo similique exercitationem
-                    sapiente ipsum impedit. Assumenda alias explicabo, obcaecati culpa
-                    nesciunt quis corrupti delectus enim quae ipsa amet quod sed
-                    nostrum doloremque unde fugiat. Dicta earum id voluptatibus
+                    Dear Friends and Supporters,<br><br><br>
+                    I am filled with immense gratitude as I reflect on the remarkable journey we've embarked on
+                    together. At Youngistaan our mission isn't just about creating change – it's about igniting a
+                    spark of hope, inspiring hearts, and transforming lives.<br><br><br>
+                    Each day, we are reminded of the incredible resilience and strength within every individual we
+                    serve. From the children whose laughter echoes through our programs to the communities who
+                    rally together in times of need, it is their unwavering spirit that fuels our passion and
+                    drives our determination.<br><br><br>Thank you for being part of this extraordinary adventure. Your
+                    support, dedication, and belief in our mission are the driving force behind everything we do.<br>
+
                 </p>
             </div>
         </div>
@@ -395,7 +376,10 @@
 <!-- next-section -->
 <div class="container sect-6">
     <div class="row">
-        <h1 class="text-center mb-3 divCenters">Our Team</h1>
+    <div class="mb-lg-3 col-6 upcard">
+        <h1>Our Board Team</h1>
+        <p>Behind Every Smile, Every Success, Every Changed Life - Our Dedicated Volunteers Shine Bright.</p>
+    </div>
         <div class="col-lg-3 col-md-6 mediaQur">
             <div class="card">
                 <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}" class="card-img-top sec-img" alt="..." />
@@ -469,8 +453,11 @@
 <!-- logo -->
 <div class="container h-100 logo-sect">
     <div class="row align-items-center h-100">
-        <div class="container rounded">
-            <h1 class="text-center mb-5">Our Sponsor</h1>
+        <div class="container rounded ">
+        <div class="mb-lg-3 col-6 upcard">
+            <h1>Our Partners & Sponsors</h1>
+            <p>Honoring Our Esteemed Partners and Sponsors in Our Journey of Change.</p>
+        </div>
             <div class="slider">
                 <div class="logos">
                     <i class="fab fa-js fa-4x"></i>
@@ -508,4 +495,4 @@
     </div>
     <!-- end -->
 
-@endsection
+    @endsection
