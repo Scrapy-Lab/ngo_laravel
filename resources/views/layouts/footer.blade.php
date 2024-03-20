@@ -4,7 +4,7 @@
     <div class="footerinner">
         <div class="row justify-content-between">
             <div class="col-md-3">
-                <img src="{{ url('images/logoNgo.png') }}" alt="">
+                <img src="{{ url('images/logo/site_logo_white.png') }}" alt="" width="150px">
                 <h3>About Us</h3>
                 <p class="footercontn">Youngistaan Foundation is a network of volunteers, committed to making a difference in the community by helping those in need.</p>
             </div>
