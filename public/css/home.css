@@ -133,9 +133,10 @@
 }
 .main-content {
     margin-left: 4rem;
+    margin-top: 2em;
 }
 .main-content .prg {
-    border-left: 4px solid #AF1515;
+    border-left: 4px solid #660000;
     padding-left: 10px;
     font-style: italic;
 }
@@ -169,7 +170,6 @@
 }
 .crt h3 {
     margin-bottom: 0rem;
-    color: #5586E8;
 }
 /* end */
 /* start */
@@ -298,7 +298,7 @@
     color: #8a8a8a;
 }
 .upcard {
-    border-left: 4px solid #AF1515;
+    border-left: 4px solid #660000;
     margin-left: 31%;
     padding: 0px 18px;
 }
@@ -501,7 +501,7 @@
     margin-top: 3rem;
 }
 .mediaQur .Main-cnt {
-    height: 41vh !important;
+    height: 50vh !important;
 }
 .project-main {
     margin-top: 8em;
