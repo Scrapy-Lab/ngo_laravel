@@ -16,9 +16,9 @@
     <div class="col-lg-6 col-md-12 col-sm-12">
       <div class="hero-content">
         <h1>Who We Are</h1>
-        <h5>We are here not for income, but for outcome</h5>
-        <p>Lorem Aenean nec quam efficitur, volutpat felis quis, commodo lacus. Morbi feugiat orci vel urna semper, ac tempus nunc luctus. Etiam quis placerat purus. Nulla fringilla varius lacus, eget eleifend sapien malesuada eget. Phasellus porta magna diam, ut accumsan massa semper in. Aliquam elit lectus, tincidunt eget vulputate vel, faucibus vitae elit. Donec sit amet quam facilisis, hendrerit lacus vitae, commodo dui. Nam consectetur ex nibh, id vulputate ex lacinia nec. Suspendisse nisi ante, luctus vel vestibulum in, commodo non dui. Suspendisse potenti. Nulla euismod lacus elit, vitae malesuada leo varius eu. Nam non quam posuere, facilisis augue sit amet, eleifend augue. In quis elit quis risus ornare tristique.</p>
-        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dolor leo, scelerisque ac mauris vitae!”</p>
+        <h5>We are here not for income, but for outcome.</h5>
+        <p>We Help People on approach to living and serving well. It encompasses four simple phases: Learn, Discover, and Act..</p>
+        <p>With over 1200+ registered young volunteers, Youngistaan is committed to making a difference in our communities by helping those in need. We are a platform for young people who are ready to create real change in the areas of hunger, homelessness, poverty, education inequity, emergency responses, animal rights, capacity building and many more issues</p>
       </div>
     </div>
   </div>
@@ -112,10 +112,10 @@
 <!-- section-4 -->
 <div class="container bnnerimg">
   <div class="card bg-dark text-white">
-    <img src="{{ asset('images/bg-4.jpg') }}" class="card-img footerImg" alt="... " />
-    <div class="card-img-overlay MYcard">
+    <img src="{{ asset('images/youngistaan.jpg') }}" class="card-img footerImg" alt="... " />
+    <!-- <div class="card-img-overlay MYcard">
       <button type="button" class="Abt-btns">Join Now</button>
-    </div>
+    </div> -->
   </div>
 </div>
 <!-- end -->

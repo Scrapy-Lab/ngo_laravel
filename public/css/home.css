@@ -129,13 +129,13 @@
 }
 .crd-img {
     width: 100%;
+    height: 55vh;
 }
 .main-content {
     margin-left: 4rem;
-    margin-top: 2em;
 }
 .main-content .prg {
-    border-left: 4px solid #660000;
+    border-left: 4px solid #AF1515;
     padding-left: 10px;
     font-style: italic;
 }
@@ -238,7 +238,7 @@
 }
 .clsFlexx i {
     font-size: 2rem;
-    color: white;
+    color:#5586e8 ;
 }
 .clsFlexx {
     border: 0px solid black;
@@ -297,7 +297,7 @@
     color: #8a8a8a;
 }
 .upcard {
-    border-left: 4px solid #660000;
+    border-left: 4px solid #AF1515;
     margin-left: 31%;
     padding: 0px 18px;
 }
@@ -340,6 +340,53 @@
     }
     .Myimg {
         height: 80vh !important;
+    }
+    .upcard{
+        margin-left:8%;
+    }
+    .clsFlexxx {
+        background-color: #d9eaff;
+        /* width: 50% !important; */
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 6px;
+        padding: 2em;
+        border: 0px solid black;
+        justify-content: center;
+        margin-left: 37px;
+    }
+    .clsFlexx {
+        border: 0px solid black;
+        /* width: 50% !important; */
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffe4e4;
+        border-radius: 6px;
+        padding: 2em;
+        color: black;
+        margin-left: 37px;
+    }
+    .divCenter {
+        text-align: center;
+        border-left: 4px solid #660000;
+        margin: 0 22px;
+    }
+    .paracen {
+        text-align: center;
+        margin-left: 15px;
+        color: #8a8a8a;
+    }
+    .sec-3 {
+        padding: 10px;
+        margin-left: 20px !important;
+    }
+    .orphan-cnt {
+        margin-left: 4px;
+        max-width: 104%;
     }
 }
 @media screen and (max-width: 425px) {
@@ -576,3 +623,5 @@ a {
 .sponsor-img{
     max-width: 100%;
 }
+/* end */
+
