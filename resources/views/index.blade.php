@@ -18,7 +18,7 @@
 <!-- section -->
 <div class="container txt-1">
     <div class="row">
-        <div class="col-6 divCenter">
+        <div class="col-lg-6 col-sm-12 divCenter">
             <p>We're helping hand on</p>
             <h1>76800+ Children in 20+ Cities in India.</h1>
         </div>
@@ -168,7 +168,7 @@
 <!-- section-2 end -->
 <div class="container project-main campaignsInner" style="margin-bottom: 5em;">
     <div class="row">
-    <div class="col-6 mb-lg-3 upcard">
+    <div class="col-lg-6 col-sm-12 mb-lg-3 upcard">
         <h1>Our Projects</h1>
         <p>
             Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
@@ -200,7 +200,7 @@
 
 </div>
 <!-- section renew -->
-
+   
 <!-- end -->
 <!-- section 3 -->
 <div class="container sec-3 sec_marginB">
@@ -288,7 +288,7 @@
 <!-- start -->
 <div class="container MyCustomCard sec_marginB">
     <div class="row">
-            <div class="col-6 mb-lg-3 upcard">
+            <div class="col-lg-6 col-sm-12 mb-lg-3 upcard">
             <h1>Our Upcoming Programs</h1>
             <p>Empowering Communities, Transforming Lives: Our Exciting Initiatives Ahead!</p>
             </div>
