@@ -1,4 +1,3 @@
-/* My css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -12,17 +11,17 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Set minimum height to 100% of viewport height */
+    /* / Set minimum height to 100% of viewport height / */
 }
 
 .content {
     flex: 1;
-    /* Allow content to grow and fill remaining space */
+    /* / Allow content to grow and fill remaining space / */
 }
 
 .footer {
     flex-shrink: 0;
-    /* Prevent footer from shrinking */
+    /* / Prevent footer from shrinking / */
 }
 
 body {
@@ -152,7 +151,7 @@ p.date {
     text-align: center;
 }
 
-/* OUR WORK */
+/* / OUR WORK / */
 
 .ourWorkBanner {
     background-image: url('../images/ourwork.jpg');
@@ -207,7 +206,7 @@ p.date {
 }
 .campaignBox figure {
     overflow: hidden;
-    /* height: 220px; */
+    /* / height: 220px; / */
     aspect-ratio: 3 / 2;
 }
 
@@ -293,7 +292,7 @@ p.date {
 }
 
 
-/* OUR WORK */
+/* / OUR WORK / */
 
 .imagesgrid {
     flex-wrap: wrap;
@@ -592,7 +591,7 @@ h4.allHead {
     margin-top: 25px;
     font-weight: 700;
     margin-bottom: 13px;
-    color: #AF1515;
+    color: #000;
     text-decoration: underline;
 }
 .form-check input {
@@ -602,7 +601,7 @@ h4.allHead {
 .donateAmountButton{
     cursor: pointer;
     background-color: #AF1515;
-    /* width: 61px; */
+    /* / width: 61px; / */
     border-radius: 5px;
     padding: 7px;
     color: #fff;
@@ -726,7 +725,7 @@ span.red {
     position: absolute;
     width: 200px;
     height: 80px;
-    /* animation: bounceAnimation 1s infinite alternate; */
+    /* / animation: bounceAnimation 1s infinite alternate; / */
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -746,7 +745,7 @@ span.red {
     position: relative;
 }
 
-/* JOIN NOW */
+/* / JOIN NOW / */
 .joinNowMain {
     max-width: 70%;
     margin: 100px auto;
@@ -831,3 +830,49 @@ span.red {
     margin-bottom: 10rem !important;
 }
 
+a.navbar-brand {
+    margin-right: 80px;
+}
+.footerinner ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 !important;
+    font-weight: 400;
+}
+
+.socialMediaLinks li {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.charityList li a {
+    background: #fff;
+    color: #af1515 !important;
+    padding: 11px;
+    width: 136px !important;
+    display: block;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: 600 !important;
+    transition: 0.8s ease all;
+}
+
+.footerinner ul li a:hover {
+    background: #5586e8;
+    color: #fff !important;
+}
+
+.donateListblogMain img.crd-img {
+    width: 312px !important;
+    height: 312px !important;
+    object-fit: cover;
+    margin-top: 12px;
+}
+
+.leftSides {
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

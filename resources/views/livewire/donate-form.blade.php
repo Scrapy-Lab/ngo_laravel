@@ -3,7 +3,7 @@
     @if ($donateFirstForm)
         <form wire:submit.prevent="saveDonateForm">
             <div class="donateBlogInnerbox">
-                <h3 style="color: #AF1515">Donation Form</h3>
+                <h3 style="color: #000">Donation Form</h3>
                 <p style="color:#96bce6">Distributes the smiles...</p>
 
                 {{-- DONATION TYPE --}}
@@ -54,15 +54,7 @@
                 {{-- Amount --}}
                 <h4>Select Donation Amount</h4>
                 <div class="container">
-                    <div class="row">
-                        <div class="col d-flex gap-4 py-4">
-                            <span wire:click="enableCustomAmt" class="donateAmountButton">Custom Amount</span>
-                            <div class="input-row">
-                                <input type="number" wire:model="amount" id="customAmountInput" class="form-control"
-                                    placeholder="Enter custom amount" {{ $disable }}>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div class="row amountmain">
                         <div class="col-md-2
@@ -84,6 +76,15 @@
                         <div class="col-md-2
                       " wire:click="fixedAmount(5000)">
                             <span class="donateAmountButton"> ₹ 5000</span>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col d-flex gap-4 py-4">
+                            <span wire:click="enableCustomAmt" class="donateAmountButton">Custom Amount</span>
+                            <div class="input-row">
+                                <input type="number" wire:model="amount" id="customAmountInput" class="form-control"
+                                    placeholder="Enter custom amount" {{ $disable }}>
+                            </div>
                         </div>
                     </div>
                     {{-- Selct Project --}}

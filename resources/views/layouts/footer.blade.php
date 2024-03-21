@@ -9,40 +9,46 @@
                 <p class="footercontn">Youngistaan Foundation is a network of volunteers, committed to making a difference in the community by helping those in need.</p>
             </div>
             <div class="col-md-3">
-                <h3>Recent Post</h3>
+                <h3>Quick Links</h3>
                 <ul class="blogsList">
                     <li>
-                        <h4>Every cloud has a silver lining</h4>
-                        <p class="date">July 25, 2018</p>
+                        <a href="{{route('home')}}">Home</a>
                     </li>
                     <li>
-                        <h4>Every cloud has a silver lining</h4>
-                        <p class="date">July 25, 2018</p>
+                        <a href="{{route('our-projects')}}">Our Projects</a>
                     </li>
                     <li>
-                        <h4>Every cloud has a silver lining</h4>
-                        <p class="date">July 25, 2018</p>
+                        <a href="{{route('blogs')}}">Blog</a>
                     </li>
                     <li>
-                        <h4>Every cloud has a silver lining</h4>
-                        <p class="date">July 25, 2018</p>
+                        <a href="{{route('about-us')}}">About us</a>
                     </li>
+                    <li>
+                        <a href="{{route('contact-us')}}">Contact us</a>
+                    </li>
+
                 </ul>
             </div>
             <div class="col-md-3">
-                <h3>Category List</h3>
+                <h3>Get in Touch</h3>
                 <ul class="charityList">
-                    <li><h4>Charity (1)</h4></li>
-                    <li><h4>Children Stories (4)</h4></li>
+                    <li><a href="{{ url('/join-now') }}">Join Now</a></li>
+                    <li><a href="{{ url('/donate') }}">Donate Now</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
-               <h3>Quick Search</h3>
+               <h3>Contact Details</h3>
                <ul class="quick">
-                <li><h4>Log in</h4></li>
-                <li><h4>Entries feed</h4></li>
-                <li><h4>Comments feed</h4></li>
-                <li><h4>wordpress.org</h4></li>
+                <li><p><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Address:</strong> #70, Shree Ram Mandir, Nanakpura Gurdwara,South Moti Bagh, New Delhi, 110021</p></li>
+                <li><p><i class="fa fa-phone" aria-hidden="true"></i> <strong>Phone Number:</strong> 88727-46727</p></li>
+                <li><p><i class="fa fa-envelope-o" aria-hidden="true"></i> <strong>Email:</strong> info@otomotors.in</p></li>
+                <li>
+                    <ul class="socialMediaLinks d-flex gap-5">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </li>
                </ul>
             </div>
         </div>
