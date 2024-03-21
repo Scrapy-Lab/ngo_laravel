@@ -25,8 +25,15 @@
                                 <div class="campaignboxcontent">
                                     <a href="{{ route('project-details', $project->slug) }}">{{ $project->title }}</a>
                                     <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
-                                    <a href="{{ route('project-details', $project->slug) }}" id="readMore">Read
-                                        More</a>
+                                    {{-- <a href="{{ route('project-details', $project->slug) }}" id="readMore">Read
+                                        More</a> --}}
+                                        <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+                                            <button class="read-btn">
+
+                                                Read
+                                                More
+                                            </button>
+                                        </a>
                                 </div>
                             </div>
                         </div>
