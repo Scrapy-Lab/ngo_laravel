@@ -7,9 +7,11 @@ use App\Filament\Resources\DonorResource\RelationManagers;
 use App\Models\DonateNow;
 use App\Models\Donor;
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -24,19 +26,7 @@ class DonorResource extends Resource
     {
         return $form
             ->schema([
-                // Forms\Components\TextInput::make('name')
-                //     ->required()
-                //     ->maxLength(255),
-                // Forms\Components\TextInput::make('amount')
-                //     ->required()
-                //     ->numeric(),
-                // Forms\Components\TextInput::make('email')
-                //     ->email()
-                //     ->required()
-                //     ->maxLength(255),
-                // Forms\Components\TextInput::make('ip_address')
-                //     ->required()
-                //     ->maxLength(255),
+                FileUpload::make('payment_ss')
             ]);
     }
 
@@ -51,7 +41,13 @@ class DonorResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('email')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('amount'),
+                Tables\Columns\IconColumn::make('payment_ss'),
                 Tables\Columns\TextColumn::make('donation_type')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('city')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('address')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
@@ -66,6 +62,7 @@ class DonorResource extends Resource
                 //
             ])
             ->actions([
+                Tables\Actions\ViewAction::make(),
                 // Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
