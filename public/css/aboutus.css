@@ -41,6 +41,9 @@
 .hero-content {
     margin-top: 1em;
 }
+.hero-content h5{
+    color: #5586e8;
+}
 .left-txt{
     margin: 6em 0em;
 }
@@ -196,4 +199,10 @@
  }
  .story-img{
     max-width: 100%;
+ }
+
+ .hero-content .prg{
+    border-left: 4px solid #AF1515;
+    padding-left: 10px;
+    font-style: italic;
  }

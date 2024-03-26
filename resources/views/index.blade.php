@@ -166,42 +166,56 @@
     </div> -->
 
 <!-- section-2 end -->
-<div class="container project-main campaignsInner" style="margin-bottom: 5em;">
+<!-- <div class="container project-main campaignsInner" style="margin-bottom: 5em;">
     <div class="row">
-    <div class="col-lg-6 col-sm-12 mb-lg-3 upcard">
-        <h1>Our Projects</h1>
-        <p>
-            Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
-        </p>
-    </div>
-        {{-- COMPAIGN BOX --}}
-        @forelse ($projects as $project)
-        <div class="col-md-4 mt-3">
-            <div class="campaignBox">
-                <figure>
-                    <img src="{{ asset('storage/' . $project->image) }}" alt="">
-                </figure>
-                <div class="campaignboxcontent">
-                    <a href="{{ route('project-details', $project->slug) }}">
-                        <h3>{{ $project->title }}</h3>
-                    </a>
-                    <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
-                    <a href="{{ route('project-details', $project->slug) }}" id="readMore">
-
-                        <button class="read-btn">Read
-                            More</button></a>
+        <div class="col-lg-6 col-sm-12 mb-lg-3 upcard">
+            <h1>Our Projects</h1>
+            <p>
+                Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
+            </p>
+        </div>
+        <div class="col-md-12">
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    {{-- COMPAIGN BOX --}}
+                    @php $count = 0; @endphp
+                    @foreach ($projects->chunk(3) as $chunk)
+                    <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
+                        <div class="row">
+                            @foreach ($chunk as $project)
+                            <div class="col-md-4 mt-3">
+                                <div class="campaignBox">
+                                    <figure>
+                                        <img src="{{ asset('storage/' . $project->image) }}" alt="">
+                                    </figure>
+                                    <div class="campaignboxcontent">
+                                        <a href="{{ route('project-details', $project->slug) }}">
+                                            <h3>{{ $project->title }}</h3>
+                                        </a>
+                                        <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
+                                        <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+                                            <button class="read-btn">Read More</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    @endforeach
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev" style="color: red;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next" style="color: red;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-        @empty
-        <b>Projects are not available now.</b>
-        @endforelse
     </div>
-
-</div>
-<!-- section renew -->
-   
-<!-- end -->
+</div> -->
 <!-- section 3 -->
 <div class="container sec-3 sec_marginB">
     <div class="row">
@@ -288,12 +302,12 @@
 <!-- start -->
 <div class="container MyCustomCard sec_marginB">
     <div class="row">
-            <div class="col-lg-6 col-sm-12 mb-lg-3 upcard">
+        <div class="col-lg-6 col-sm-12 mb-lg-3 upcard">
             <h1>Our Upcoming Programs</h1>
             <p>Empowering Communities, Transforming Lives: Our Exciting Initiatives Ahead!</p>
-            </div>
-            
-        
+        </div>
+
+
         <div class="col-lg-3 col-md-6 mediaQur">
             <div class="card Main-cnt">
                 <img src="{{ asset('images/droplets.png') }}" class="card-img-top CustomImg" alt="..." />
@@ -325,7 +339,7 @@
                 <div class="card-body mYCustomcard">
                     <h5 class="card-title text-white">Food Distribution </h5>
                     <p class="card-text text-white">
-                        upcoming event for the needy children. We will cooking food together then will distribute with our children .
+                        upcoming event for the needy children. We will distributes the food to our children.
                     </p>
                     <button class="btn text-white link"><i class="fa-solid fa-arrow-right" style="margin-right: 5px;"></i>Read more</button>
                 </div>
@@ -376,10 +390,10 @@
 <!-- next-section -->
 <div class="container sect-6">
     <div class="row">
-    <div class="mb-lg-3 col-6 upcard">
-        <h1>Our Board Team</h1>
-        <p>Behind Every Smile, Every Success, Every Changed Life - Our Dedicated Volunteers Shine Bright.</p>
-    </div>
+        <div class="mb-lg-3 col-6 upcard">
+            <h1>Our Board Team</h1>
+            <p>Behind Every Smile, Every Success, Every Changed Life - Our Dedicated Volunteers Shine Bright.</p>
+        </div>
         <div class="col-lg-3 col-md-6 mediaQur">
             <div class="card">
                 <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}" class="card-img-top sec-img" alt="..." />
@@ -454,10 +468,10 @@
 <div class="container h-100 logo-sect">
     <div class="row align-items-center h-100">
         <div class="container rounded ">
-        <div class="mb-lg-3 col-6 upcard">
-            <h1>Our Partners & Sponsors</h1>
-            <p>Honoring Our Esteemed Partners and Sponsors in Our Journey of Change.</p>
-        </div>
+            <div class="mb-lg-3 col-6 upcard">
+                <h1>Our Partners & Sponsors</h1>
+                <p>Honoring Our Esteemed Partners and Sponsors in Our Journey of Change.</p>
+            </div>
             <div class="slider">
                 <div class="logos">
                     <i class="fab fa-js fa-4x"></i>
