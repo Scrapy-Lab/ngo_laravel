@@ -17,7 +17,7 @@
       <div class="hero-content">
         <h1>Who We Are</h1>
         <h5>We are here not for income, but for outcome.</h5>
-        <p>We Help People on approach to living and serving well. It encompasses four simple phases: Learn, Discover, and Act..</p>
+        <p class="prg">We Help People on approach to living and serving well. It encompasses four simple phases: Learn, Discover, and Act..</p>
         <p>With over 1200+ registered young volunteers, Youngistaan is committed to making a difference in our communities by helping those in need. We are a platform for young people who are ready to create real change in the areas of hunger, homelessness, poverty, education inequity, emergency responses, animal rights, capacity building and many more issues</p>
       </div>
     </div>
