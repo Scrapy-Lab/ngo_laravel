@@ -166,7 +166,7 @@
     </div> -->
 
 <!-- section-2 end -->
-<!-- <div class="container project-main campaignsInner" style="margin-bottom: 5em;">
+<div class="container project-main campaignsInner" style="margin-bottom: 5em;">
     <div class="row">
         <div class="col-lg-6 col-sm-12 mb-lg-3 upcard">
             <h1>Our Projects</h1>
@@ -174,56 +174,58 @@
                 Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
             </p>
         </div>
-        <div class="col-md-12">
-            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    {{-- COMPAIGN BOX --}}
-                    @php $count = 0; @endphp
-                    @foreach ($projects->chunk(3) as $chunk)
-                    <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
-                        <div class="row">
-                            @foreach ($chunk as $project)
-                            <div class="col-md-4 mt-3">
-                                <div class="campaignBox">
-                                    <figure>
-                                        <img src="{{ asset('storage/' . $project->image) }}" alt="">
-                                    </figure>
-                                    <div class="campaignboxcontent">
-                                        <a href="{{ route('project-details', $project->slug) }}">
-                                            <h3>{{ $project->title }}</h3>
-                                        </a>
-                                        <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
-                                        <a href="{{ route('project-details', $project->slug) }}" id="readMore">
-                                            <button class="read-btn">Read More</button>
-                                        </a>
+        <div class="col-md-12 slider">
+            <div id="cnt-slider" class="owl-carousel">
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        {{-- COMPAIGN BOX --}}
+                        @php $count = 0; @endphp
+                        @foreach ($projects->chunk(3) as $chunk)
+                        <div class="carousel-item{{ $loop->first ? ' active' : '' }}">
+                            <div class="row">
+                                @foreach ($chunk as $project)
+                                <div class="col-md-4 mt-3">
+                                    <div class="campaignBox">
+                                        <figure>
+                                            <img src="{{ asset('storage/' . $project->image) }}" alt="">
+                                        </figure>
+                                        <div class="campaignboxcontent">
+                                            <a href="{{ route('project-details', $project->slug) }}">
+                                                <h3>{{ $project->title }}</h3>
+                                            </a>
+                                            <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
+                                            <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+                                                <button class="read-btn">Read More</button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
-                            @endforeach
                         </div>
+                        @endforeach
                     </div>
-                    @endforeach
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev" style="color: red;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next" style="color: red;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev" style="color: red;">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next" style="color: red;">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
     </div>
-</div> -->
+</div>
 <!-- section 3 -->
 <div class="container sec-3 sec_marginB">
     <div class="row">
         <div class="sct-2 col">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-5 col-md-12">
                 <img src="{{ asset('images/Picture3.jpg') }}" alt="" class="crd-img" />
             </div>
-            <div class="main-content col-lg-6">
+            <div class="main-content col-lg-7">
                 <h1>We are Young India, We are Youngistaan!</h1>
                 <p class="prg">
                     Youngistaan was found in February 2017,
@@ -503,10 +505,107 @@
             </div>
         </div>
     </div>
+    <!-- end -->
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div id="news-slider" class="owl-carousel">
+                    <div class="post-slide col-4">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
+                            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </h3>
+                            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
 
+                    <div class="post-slide col-4">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503" alt="">
+                            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </h3>
+                            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+
+                    <div class="post-slide col-4">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500" alt="">
+                            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </h3>
+                            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+
+                    <div class="post-slide col-4">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
+                            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </h3>
+                            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+
+                    <div class="post-slide col-4">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1586083702768-190ae093d34d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=305&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=505" alt="">
+                            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </h3>
+                            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+
+                    <div class="post-slide col-4">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1484656551321-a1161420a2a0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=306&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=506" alt="">
+                            <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </h3>
+                            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                            <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end -->
     <div class="container bnnerimg sec_marginB">
         @livewire('blog-list')
     </div>
     <!-- end -->
-
     @endsection

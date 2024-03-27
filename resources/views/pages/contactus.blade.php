@@ -22,19 +22,19 @@
 <!-- section-2 -->
 <div class="container dealer-section">
     <div class="row">
-        <div class="col-6">
+        <div class="col-6 m-auto">
             <h2>How to connect us?</h2>
             <p>On our journey to make a meaningful impact in the lives of those in need, we invite you to connect with us. Whether you're looking to volunteer your time, donate to our cause, or simply learn more about the work we do, we're here to welcome you with open arms. Every connection we make strengthens our ability to create positive change in the world. So, reach out to us today and let's join forces to spread kindness, hope, and compassion to those who need it most. Together, we can make a difference that lasts a lifetime.
             </p>
         </div>
         <div class="col-6">
-            <img src="{{ asset('images/dealer.jpg') }}" alt="dealer-img" class="dealer-img">
+            <img src="{{ asset('images/Youngistaan.png') }}" alt="dealer-img" class="dealer-img">
         </div>
     </div>
 </div>
 <!-- end -->
 <!-- section-3 -->
-<div class="container team-section ">
+<!-- <div class="container team-section ">
     <div class="row">
         <div class="col-6 first-team">
             <img src="{{ asset('images/left.png') }}" alt="" class="team1">
@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- end -->
 <!-- section-4 -->
 <div class="container business-box">

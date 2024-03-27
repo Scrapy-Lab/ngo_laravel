@@ -39,9 +39,9 @@
             <div class="col-md-3">
                <h3>Contact Details</h3>
                <ul class="quick">
-                <li><p><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Address:</strong> #70, Shree Ram Mandir, Nanakpura Gurdwara,South Moti Bagh, New Delhi, 110021</p></li>
-                <li><p><i class="fa fa-phone" aria-hidden="true"></i> <strong>Phone Number:</strong> 88727-46727</p></li>
-                <li><p><i class="fa fa-envelope-o" aria-hidden="true"></i> <strong>Email:</strong> info@otomotors.in</p></li>
+                <li><p><i class="fa fa-map-marker" aria-hidden="true"></i> <strong> Head Office:</strong>#1123, 2nd Floor, Sector-39, Opp. ICICI Bank, Chandigarh Road, Ludhiana -141010 (PB.)</p></li>
+                <li><p><i class="fa fa-phone" aria-hidden="true"></i> <strong>Phone Number:</strong>78372-77738</p></li>
+                <li><p><i class="fa fa-envelope-o" aria-hidden="true"></i> <strong>Email:</strong>info@youngistaan.org</p></li>
                 <li>
                     <ul class="socialMediaLinks d-flex gap-5">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
