@@ -841,7 +841,9 @@ a.navbar-brand {
     margin: 0 !important;
     font-weight: 400;
 }
-
+.socialMediaLinks li a i {
+    font-size: 25px;
+}
 .socialMediaLinks li {
     padding: 0 !important;
     border: none !important;

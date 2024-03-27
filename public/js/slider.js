@@ -1,37 +1,24 @@
-
-// $(".slider").owlCarousel({
-//     loop: true,
-//     autoplay: true,
-//     autoplayTimeout: 2000,
-//     autoplayHoverPause: true,
-//     items: 1
-// });
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints:{
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-    },
+$(document).ready(function () {
+  $("#news-slider").owlCarousel({
+    items: 3,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [980, 2],
+    itemsMobile: [600, 1],
+    navigation: true,
+    navigationText: ["", ""],
+    pagination: true,
+    autoPlay: true
   });
+});
+$(document).ready(function () {
+  $("#cnt-slider").owlCarousel({
+    items: 1,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [980, 2],
+    itemsMobile: [600, 1],
+    navigation: true,
+    navigationText: ["", ""],
+    pagination: true,
+    autoPlay: true
+  });
+});
