@@ -213,7 +213,8 @@ p.date {
 .campaignboxcontent {
     padding: 24px;
     text-align: center;
-    height: 200px !important;
+    /* height: 200px !important; */
+    height: auto;
 }
 .campaignsInner {
     margin-top: 44px;

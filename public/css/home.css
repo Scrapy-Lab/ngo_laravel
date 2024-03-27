@@ -501,7 +501,7 @@
     margin-top: 3rem;
 }
 .mediaQur .Main-cnt {
-    height: 47vh !important;
+    height: 41vh !important;
 }
 .project-main {
     margin-top: 8em;
@@ -770,7 +770,7 @@ a {
   .button:hover{
     background: #265DF2;
   }
-  
+
   .swiper-navBtn{
     color: #6E93f7;
     transition: color 0.3s ease;
@@ -795,7 +795,7 @@ a {
   .swiper-pagination-bullet-active{
     background-color: #4070F4;
   }
-  
+
   @media screen and (max-width: 768px) {
     .slide-content{
       margin: 0 10px;
@@ -803,4 +803,9 @@ a {
     .swiper-navBtn{
       display: none;
     }
+  }
+
+
+  .mxHeight{
+    max-height: 386px;
   }

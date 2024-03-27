@@ -309,7 +309,7 @@
 
 
         <div class="col-lg-3 col-md-6 mediaQur">
-            <div class="card Main-cnt">
+            <div class="card Main-cnt ">
                 <img src="{{ asset('images/droplets.png') }}" class="card-img-top CustomImg" alt="..." />
                 <div class="card-body bodyCustom">
                     <p class="card-text text-white">
@@ -322,7 +322,7 @@
         </div>
 
         <div class="col-lg-3 col-md-6 mediaQur">
-            <div class="card Main-cnt">
+            <div class="card Main-cnt ">
                 <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top" alt="..." />
                 <div class="card-body mycustomcardBody">
                     <h5 class="card-title text-white">Right To Vote</h5>
@@ -346,7 +346,7 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-6 mediaQur">
-            <div class="card Main-cnt">
+            <div class="card Main-cnt ">
                 <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top" alt="..." />
                 <div class="card-body Custombody">
                     <h5 class="card-title text-white">John</h5>
