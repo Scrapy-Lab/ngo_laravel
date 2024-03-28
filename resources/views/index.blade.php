@@ -176,7 +176,7 @@
             <div class="owl-carousel owl-theme">
                 @forelse ($projects as $project)
                 <div class="item">
-                <div class="col-md-10 mt-3">
+                <div class="col-md-11 mt-3">
                     <div class="campaignBox">
                         <figure>
                             <img src="{{ asset('storage/' . $project->image) }}" alt="">

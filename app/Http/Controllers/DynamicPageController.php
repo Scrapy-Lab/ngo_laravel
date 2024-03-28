@@ -11,7 +11,7 @@ class DynamicPageController extends Controller
     public function index()
     {
 
-        $projects = Project::orWhere('schedule',null)->orWhere('schedule','<=',Carbon::now())->where('is_visible', true)->orderBy('priority', 'ASC')->limit(3)->get();
+        $projects = Project::orWhere('schedule',null)->orWhere('schedule','<=',Carbon::now())->where('is_visible', true)->orderBy('priority', 'ASC')->limit(4)->get();
 
 
         // dd($projects);
