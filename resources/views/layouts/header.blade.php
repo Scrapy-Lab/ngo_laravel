@@ -1,6 +1,6 @@
-<div class="tophead d-flex justify-content-between align-items-center">
+<div class="tophead d-flex justify-content-between align-items-center sticky-top bg-body-tertiary">
     {{-- Navbar --}}
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="{{ url('images/logo/site_logo.png') }}" alt="" width="80px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
