@@ -65,38 +65,38 @@
     <!-- end -->
     <!-- section-2 -->
     <!-- <div class="container project-card">
-                <div class="row">
-                    <h1 class="text-center ">OUR PROJECTS</h1>
-                    @forelse ($projects as $project)
+                    <div class="row">
+                        <h1 class="text-center ">OUR PROJECTS</h1>
+                        @forelse ($projects as $project)
     <div class="col mt-2">
-                        <div class="crd">
-                            <div class="image">
-                                <a href="{{ route('project-details', $project->slug) }}">
-                                    <figure>
-                                        <img src="{{ asset('storage/' . $project->image) }}" alt="">
-                                    </figure>
-                                </a>
-                                <a href="{{ route('project-details', $project->slug) }}" class="text-center" style="text-decoration: none">
-                                    <h5>{{ $project->title }}</h5>
-                                </a>
-                            </div>
-                            <div class="content">
+                            <div class="crd">
+                                <div class="image">
+                                    <a href="{{ route('project-details', $project->slug) }}">
+                                        <figure>
+                                            <img src="{{ asset('storage/' . $project->image) }}" alt="">
+                                        </figure>
+                                    </a>
+                                    <a href="{{ route('project-details', $project->slug) }}" class="text-center" style="text-decoration: none">
+                                        <h5>{{ $project->title }}</h5>
+                                    </a>
+                                </div>
+                                <div class="content">
 
-                                <p class="">
-                                    {!! html_entity_decode(Str::limit($project->description, 80)) !!}
-                                </p>
-                                <a href="{{ route('project-details', $project->slug) }}" id="readMore">
-                                    <button>Read More
-                                    </button>
-                                </a>
+                                    <p class="">
+                                        {!! html_entity_decode(Str::limit($project->description, 80)) !!}
+                                    </p>
+                                    <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+                                        <button>Read More
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 @empty
     @endforelse
 
-                </div>
-                {{-- <div class="row">
+                    </div>
+                    {{-- <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="crd">
                         <div class="image">
@@ -161,39 +161,39 @@
                     </div>
                 </div>
             </div> --}}
-            </div> -->
+                </div> -->
 
     <!-- section-2 end -->
     <div class="container project-main campaignsInner" style="margin-bottom: 5em;">
         {{-- <div class="row"> --}}
-            <div class="col-6 mb-lg-3 upcard">
-                <h1>Our Projects</h1>
-                <p>
-                    Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
-                </p>
-            </div>
-            {{-- COMPAIGN BOX --}}
-            <div class="owl-carousel owl-theme">
-                @forelse ($projects as $project)
+        <div class="col-6 mb-lg-3 upcard">
+            <h1>Our Projects</h1>
+            <p>
+                Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
+            </p>
+        </div>
+        {{-- COMPAIGN BOX --}}
+        <div class="owl-carousel owl-theme">
+            @forelse ($projects as $project)
                 <div class="item">
-                <div class="col-md-11 mt-3">
-                    <div class="campaignBox">
-                        <figure>
-                            <img src="{{ asset('storage/' . $project->image) }}" alt="">
-                        </figure>
-                        <div class="campaignboxcontent">
-                            <a href="{{ route('project-details', $project->slug) }}">
-                                <h3>{{ $project->title }}</h3>
-                            </a>
-                            <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
-                            <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+                    <div class="col-md-11 mt-3">
+                        <div class="campaignBox">
+                            <figure>
+                                <img src="{{ asset('storage/' . $project->image) }}" alt="">
+                            </figure>
+                            <div class="campaignboxcontent">
+                                <a href="{{ route('project-details', $project->slug) }}">
+                                    <h3>{{ $project->title }}</h3>
+                                </a>
+                                <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
+                                <a href="{{ route('project-details', $project->slug) }}" id="readMore">
 
-                                <button class="read-btn">Read
-                                    More</button></a>
+                                    <button class="read-btn">Read
+                                        More</button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             @empty
             @endforelse
         </div>
@@ -379,94 +379,163 @@
     </div>
     <!-- section ends -->
     <!-- next-section -->
-    <div class="container sect-6">
+    <div class="container sect-6  h-100 logo-sect">
         <div class="row">
             <div class="mb-lg-3 col-6 upcard">
                 <h1>Our Board Team</h1>
                 <p>Behind Every Smile, Every Success, Every Changed Life - Our Dedicated Volunteers Shine Bright.</p>
             </div>
-            <div class="owl-carousel owl-theme">
-            <div class="item">
-            <div class="col-lg-11 col-md-6 mediaQur">
-                <div class="card">
-                    <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}" class="card-img-top sec-img"
-                        alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Alisha</h5>
-                        <p class="card-text">Designation</p>
 
-                        <p class="card-para">
-                            Donated
-                            <span style="color: red; float: right">5000</span>
-                        </p>
-                        <p>
-                            Experience <span style="color: red; float: right">2years</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="item">
-            <div class="col-lg-11 col-md-6 mediaQur">
-                <div class="card">
-                    <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
-                        alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Deepak</h5>
-                        <p class="card-text">Designation</p>
-                        <p class="card-para">
-                            Donated
-                            <span style="color: red; float: right">5000</span>
-                        </p>
-                        <p>
-                            Experience <span style="color: red; float: right">1years</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="item">
-            <div class="col-lg-11 col-md-6 mediaQur">
-                <div class="card">
-                    <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}" class="card-img-top sec-img"
-                        alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">Lisoba</h5>
-                        <p class="card-text">Designation</p>
-                        <p class="card-para">
-                            Donated
-                            <span style="color: red; float: right">5000</span>
-                        </p>
-                        <p>
-                            Experience <span style="color: red; float: right">3years</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            </div>
+            <div class="sliderTeam " style="display: ruby;">
+                <div class="logos d-flex" style="margin-right:38px">
+                    <div class="col-lg-3 col-md-6 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}"
+                                class="card-img-top sec-img" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Alisha</h5>
+                                <p class="card-text">Designation</p>
 
-            <div class="item">
-            <div class="col-lg-11 col-md-6 mediaQur">
-                <div class="card">
-                    <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
-                        alt="..." />
-                    <div class="card-body">
-                        <h5 class="card-title">John</h5>
-                        <p class="card-text">Designation</p>
-                        <p class="card-para">
-                            Donated
-                            <span style="color: red; float: right">5000</span>
-                        </p>
-                        <p>
-                            Experience
-                            <span style="color: red; float: right">2years</span>
-                        </p>
+                                <p class="card-para">
+                                    Donated
+                                    <span style="color: red; float: right">5000</span>
+                                </p>
+                                <p>
+                                    Experience <span style="color: red; float: right">2years</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Deepak</h5>
+                                <p class="card-text">Designation</p>
+                                <p class="card-para">
+                                    Donated
+                                    <span style="color: red; float: right">5000</span>
+                                </p>
+                                <p>
+                                    Experience <span style="color: red; float: right">1years</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}"
+                                class="card-img-top sec-img" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Lisoba</h5>
+                                <p class="card-text">Designation</p>
+                                <p class="card-para">
+                                    Donated
+                                    <span style="color: red; float: right">5000</span>
+                                </p>
+                                <p>
+                                    Experience <span style="color: red; float: right">3years</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">John</h5>
+                                <p class="card-text">Designation</p>
+                                <p class="card-para">
+                                    Donated
+                                    <span style="color: red; float: right">5000</span>
+                                </p>
+                                <p>
+                                    Experience
+                                    <span style="color: red; float: right">2years</span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
+                <div class="logos d-flex">
+                    <div class="col-lg-3 col-md-6 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}"
+                                class="card-img-top sec-img" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Alisha</h5>
+                                <p class="card-text">Designation</p>
 
-            </div>
+                                <p class="card-para">
+                                    Donated
+                                    <span style="color: red; float: right">5000</span>
+                                </p>
+                                <p>
+                                    Experience <span style="color: red; float: right">2years</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Deepak</h5>
+                                <p class="card-text">Designation</p>
+                                <p class="card-para">
+                                    Donated
+                                    <span style="color: red; float: right">5000</span>
+                                </p>
+                                <p>
+                                    Experience <span style="color: red; float: right">1years</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}"
+                                class="card-img-top sec-img" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Lisoba</h5>
+                                <p class="card-text">Designation</p>
+                                <p class="card-para">
+                                    Donated
+                                    <span style="color: red; float: right">5000</span>
+                                </p>
+                                <p>
+                                    Experience <span style="color: red; float: right">3years</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">John</h5>
+                                <p class="card-text">Designation</p>
+                                <p class="card-para">
+                                    Donated
+                                    <span style="color: red; float: right">5000</span>
+                                </p>
+                                <p>
+                                    Experience
+                                    <span style="color: red; float: right">2years</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
@@ -514,102 +583,102 @@
         </div>
         <!-- end -->
         <!-- <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <div id="news-slider" class="owl-carousel">
-                            <div class="post-slide col-4">
-                                <div class="post-img">
-                                    <img src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                    <div class="row">
+                        <div class="col">
+                            <div id="news-slider" class="owl-carousel">
+                                <div class="post-slide col-4">
+                                    <div class="post-img">
+                                        <img src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
+                                        <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-title">
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </h3>
+                                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                                        <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                                        <a href="#" class="read-more">read more</a>
+                                    </div>
                                 </div>
-                                <div class="post-content">
-                                    <h3 class="post-title">
-                                        <a href="#">Lorem ipsum dolor sit amet.</a>
-                                    </h3>
-                                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-                                    <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                                    <a href="#" class="read-more">read more</a>
-                                </div>
-                            </div>
 
-                            <div class="post-slide col-4">
-                                <div class="post-img">
-                                    <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                <div class="post-slide col-4">
+                                    <div class="post-img">
+                                        <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503" alt="">
+                                        <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-title">
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </h3>
+                                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                                        <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                                        <a href="#" class="read-more">read more</a>
+                                    </div>
                                 </div>
-                                <div class="post-content">
-                                    <h3 class="post-title">
-                                        <a href="#">Lorem ipsum dolor sit amet.</a>
-                                    </h3>
-                                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-                                    <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                                    <a href="#" class="read-more">read more</a>
-                                </div>
-                            </div>
 
-                            <div class="post-slide col-4">
-                                <div class="post-img">
-                                    <img src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                <div class="post-slide col-4">
+                                    <div class="post-img">
+                                        <img src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500" alt="">
+                                        <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-title">
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </h3>
+                                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                                        <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                                        <a href="#" class="read-more">read more</a>
+                                    </div>
                                 </div>
-                                <div class="post-content">
-                                    <h3 class="post-title">
-                                        <a href="#">Lorem ipsum dolor sit amet.</a>
-                                    </h3>
-                                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-                                    <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                                    <a href="#" class="read-more">read more</a>
-                                </div>
-                            </div>
 
-                            <div class="post-slide col-4">
-                                <div class="post-img">
-                                    <img src="https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                <div class="post-slide col-4">
+                                    <div class="post-img">
+                                        <img src="https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501" alt="">
+                                        <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-title">
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </h3>
+                                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                                        <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                                        <a href="#" class="read-more">read more</a>
+                                    </div>
                                 </div>
-                                <div class="post-content">
-                                    <h3 class="post-title">
-                                        <a href="#">Lorem ipsum dolor sit amet.</a>
-                                    </h3>
-                                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-                                    <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                                    <a href="#" class="read-more">read more</a>
-                                </div>
-                            </div>
 
-                            <div class="post-slide col-4">
-                                <div class="post-img">
-                                    <img src="https://images.unsplash.com/photo-1586083702768-190ae093d34d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=305&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=505" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                <div class="post-slide col-4">
+                                    <div class="post-img">
+                                        <img src="https://images.unsplash.com/photo-1586083702768-190ae093d34d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=305&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=505" alt="">
+                                        <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-title">
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </h3>
+                                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                                        <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                                        <a href="#" class="read-more">read more</a>
+                                    </div>
                                 </div>
-                                <div class="post-content">
-                                    <h3 class="post-title">
-                                        <a href="#">Lorem ipsum dolor sit amet.</a>
-                                    </h3>
-                                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-                                    <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                                    <a href="#" class="read-more">read more</a>
-                                </div>
-                            </div>
 
-                            <div class="post-slide col-4">
-                                <div class="post-img">
-                                    <img src="https://images.unsplash.com/photo-1484656551321-a1161420a2a0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=306&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=506" alt="">
-                                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="post-content">
-                                    <h3 class="post-title">
-                                        <a href="#">Lorem ipsum dolor sit amet.</a>
-                                    </h3>
-                                    <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-                                    <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-                                    <a href="#" class="read-more">read more</a>
+                                <div class="post-slide col-4">
+                                    <div class="post-img">
+                                        <img src="https://images.unsplash.com/photo-1484656551321-a1161420a2a0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=306&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=506" alt="">
+                                        <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <h3 class="post-title">
+                                            <a href="#">Lorem ipsum dolor sit amet.</a>
+                                        </h3>
+                                        <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+                                        <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+                                        <a href="#" class="read-more">read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> -->
+                </div> -->
         <!-- end -->
         <div class="container bnnerimg sec_marginB">
             @livewire('blog-list')

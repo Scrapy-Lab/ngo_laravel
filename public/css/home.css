@@ -590,7 +590,12 @@ a {
     overflow: hidden;
   }
     .slider {
-      animation: slidein 10s linear infinite;
+      animation: slidein 15s linear infinite;
+      white-space: nowrap;
+    }
+
+    .sliderTeam {
+      animation: slidein 20s linear infinite;
       white-space: nowrap;
     }
       .logos {
