@@ -94,6 +94,10 @@
                 autoplay: true,
                 autoplayTimeout: 5000,
                 nav: true,
+                // navText: [
+                //     "<i class='fa fa-caret-left'></i>",
+                //     "<i class='fa fa-caret-right'></i>"
+                // ],
                 autoWidth: false,
                 responsive: {
                     0: {

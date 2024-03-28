@@ -385,7 +385,9 @@
                 <h1>Our Board Team</h1>
                 <p>Behind Every Smile, Every Success, Every Changed Life - Our Dedicated Volunteers Shine Bright.</p>
             </div>
-            <div class="col-lg-3 col-md-6 mediaQur">
+            <div class="owl-carousel owl-theme">
+            <div class="item">
+            <div class="col-lg-11 col-md-6 mediaQur">
                 <div class="card">
                     <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}" class="card-img-top sec-img"
                         alt="..." />
@@ -403,8 +405,9 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 mediaQur">
+            </div>
+            <div class="item">
+            <div class="col-lg-11 col-md-6 mediaQur">
                 <div class="card">
                     <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
                         alt="..." />
@@ -421,7 +424,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mediaQur">
+            </div>
+            <div class="item">
+            <div class="col-lg-11 col-md-6 mediaQur">
                 <div class="card">
                     <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}" class="card-img-top sec-img"
                         alt="..." />
@@ -438,7 +443,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mediaQur">
+            </div>
+
+            <div class="item">
+            <div class="col-lg-11 col-md-6 mediaQur">
                 <div class="card">
                     <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
                         alt="..." />
@@ -455,6 +463,11 @@
                         </p>
                     </div>
                 </div>
+            </div>
+            </div>
+
+            </div>
+
             </div>
         </div>
     </div>
