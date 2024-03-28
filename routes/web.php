@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DynamicPageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::middleware('page-cache')->get('/',[DynamicPageController::class,'index'])->name('home');
+
+Route::middleware('page-cache')->get('ourwork', function () {
+    return view('pages.ourwork');
+})->name('our-projects');
+
+Route::get('donate', function () {
+    return view('pages.donate');
+})->name('donate-now');
+
+Route::get('join-now', function () {
+    return view('pages.join-now');
+})->name('join-now');
+
+Route::middleware('page-cache')->get('about-us', function () {
+    return view('pages.aboutus');
+})->name('about-us');
+
+Route::middleware('page-cache')->get('contact-us', function () {
+    return view('pages.contactus');
+})->name('contact-us');
+
+
+Route::get('project-details/{slug}',[DynamicPageController::class,'projectDetail'])->name('project-details');

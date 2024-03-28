@@ -3,9 +3,11 @@
 /public/build
 /public/hot
 /public/storage
+/public/page-cache
 /storage/*.key
 /vendor
 .env
+composer.lock
 .env.backup
 .env.production
 .phpunit.result.cache

@@ -6,6 +6,7 @@ use App\Filament\Resources\BannerResource\Pages;
 use App\Filament\Resources\BannerResource\RelationManagers;
 use App\Models\Banner;
 use Filament\Forms;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -26,6 +27,9 @@ class BannerResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
+                Textarea::make('description')
+                    ->required()
+                    ->maxLength(255),
                 Forms\Components\FileUpload::make('image')
                     ->image()
                     ->required(),
@@ -43,6 +47,7 @@ class BannerResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('description'),
                 Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('priority')
                     ->numeric()
