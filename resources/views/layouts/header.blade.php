@@ -35,8 +35,8 @@
         </div>
     </nav>
     <div class="topButtons d-flex gap-4">
-      <a href="{{ url('/donate') }}"><button>Donate Now</button></a>
-      <a href="{{ url('/join-now') }}"><button>Join Now</button></a>
+      <a href="{{ url('/donate') }}"><button class="read-btn">Donate Now</button></a>
+      <a href="{{ url('/join-now') }}"><button class="read-btn">Join Now</button></a>
     </div>
 </div>
 
