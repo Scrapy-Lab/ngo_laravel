@@ -165,7 +165,7 @@
 
     <!-- section-2 end -->
     <div class="container project-main campaignsInner" style="margin-bottom: 5em;">
-        <div class="row">
+        {{-- <div class="row"> --}}
             <div class="col-6 mb-lg-3 upcard">
                 <h1>Our Projects</h1>
                 <p>
@@ -173,8 +173,10 @@
                 </p>
             </div>
             {{-- COMPAIGN BOX --}}
-            @forelse ($projects as $project)
-                <div class="col-md-4 mt-3">
+            <div class="owl-carousel owl-theme">
+                @forelse ($projects as $project)
+                <div class="item">
+                <div class="col-md-10 mt-3">
                     <div class="campaignBox">
                         <figure>
                             <img src="{{ asset('storage/' . $project->image) }}" alt="">
@@ -191,9 +193,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
             @empty
             @endforelse
         </div>
+        {{-- </div> --}}
     </div>
     <!-- section 3 -->
     <div class="container sec-3 sec_marginB">
