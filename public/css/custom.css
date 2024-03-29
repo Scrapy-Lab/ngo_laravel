@@ -200,7 +200,7 @@ p.date {
     overflow: hidden;
     border-radius: 16px;
     margin-bottom: 42px;
-    min-height: 490px;
+    min-height: 500px;
 }
 .campaignBox img {
     transition: 2.2s ease all;
