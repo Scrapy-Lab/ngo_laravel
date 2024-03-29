@@ -575,9 +575,11 @@
                     alt="..." />
                 <div class="card-img-overlay MYcard">
                     <h5 class="card-title CustomTitle">Card title</h5>
+                    <a href="{{route('donate-now')}}">
                     <button type="button" class="CstomBtn">
                         Donate now
                     </button>
+                    </a>
                 </div>
             </div>
         </div>

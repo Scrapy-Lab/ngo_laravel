@@ -10,7 +10,7 @@
                     <p class="card-text footertxt">
                     {{$banner->description}}
                     </p>
-                    <button type="button" class="bnner-btns">Donate Now</button>
+                   <a href="{{route('donate-now')}}"><button type="button" class="bnner-btns">Donate Now</button></a>
                 </div>
             <!-- </div> -->
         </div>
