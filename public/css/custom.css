@@ -200,6 +200,7 @@ p.date {
     overflow: hidden;
     border-radius: 16px;
     margin-bottom: 42px;
+    min-height: 490px;
 }
 .campaignBox img {
     transition: 2.2s ease all;
@@ -336,7 +337,7 @@ p.date {
     padding: 100px 0;
 }
 .donateBlogbox img {
-    width: 100%;
+    width: 240px;
     border-radius: 10px 10px 0 0;
 }
 .donatePayment img {

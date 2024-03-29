@@ -6,6 +6,7 @@ use Livewire\Component;
 use App\Models\Project;
 use Carbon\Carbon;
 use App\Models\DonateNow;
+use App\Models\Payment;
 use Livewire\Attributes\Validate;
 use Livewire\Features\SupportFileUploads\WithFileUploads;
 
@@ -18,6 +19,7 @@ class DonateForm extends Component
     public $donateFourthForm = false;
     public $disable = 'disabled';
     public $donateNow;
+    public $payment;
     public $projects;
 
     // Donation Type
@@ -46,6 +48,7 @@ class DonateForm extends Component
         $this->payment_type = 1;
         $this->projects = Project::orWhere('schedule',null)->orWhere('schedule','<=',Carbon::now())->where('is_visible',1)->get();
         $this->donateNow = new DonateNow();
+        $this->payment = new Payment();
     }
 
     public function render()
@@ -102,11 +105,21 @@ class DonateForm extends Component
 
     public function saveScreenShot()
     {
+
         $this->validate();
-        $this->donateNow->payment_ss = $this->screenshot;
+
+
+        // dd();
+        // $this->screenshot->store('screenshot');
+        // dd( $this->screenshot->store('screenshot'));
+        $this->donateNow->payment_ss = $this->screenshot->store('payments','public');
         if($this->donateNow->save()){
             $this->donateThirdForm = false;
             $this->donateFourthForm = true;
+
+            // dd($this->donateNow->id);
+            $this->payment->donation_id = $this->donateNow->id;
+            $this->payment->save();
             session()->flash('status', 'Payment Details successfully submitted.');
         }
     }

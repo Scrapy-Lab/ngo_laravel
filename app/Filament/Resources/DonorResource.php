@@ -6,15 +6,18 @@ use App\Filament\Resources\DonorResource\Pages;
 use App\Filament\Resources\DonorResource\RelationManagers;
 use App\Models\DonateNow;
 use App\Models\Donor;
+use App\Models\Project;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Request;
 
 class DonorResource extends Resource
 {
@@ -36,17 +39,17 @@ class DonorResource extends Resource
                 ->maxLength(191),
             Forms\Components\TextInput::make('amount')
                 ->numeric(),
-            Forms\Components\TextInput::make('donation_type')
-                ->numeric(),
-            Forms\Components\TextInput::make('payment_type')
-                ->numeric(),
-            Forms\Components\TextInput::make('transaction_type'),
+            Forms\Components\Select::make('donation_type')
+            ->options([
+                '1' => 'Monthly',
+                '2' => 'Annually',
+                '3' => 'One Time'
+            ]),
             Forms\Components\TextInput::make('city')
                 ->maxLength(191),
             Forms\Components\TextInput::make('address')
                 ->maxLength(191),
-            Forms\Components\TextInput::make('payment_ss')
-                ->maxLength(255),
+            Forms\Components\FileUpload::make('payment_ss'),
         ]);
     }
 
@@ -62,7 +65,27 @@ class DonorResource extends Resource
                 Tables\Columns\TextColumn::make('email')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('amount'),
-                Tables\Columns\IconColumn::make('payment_ss'),
+                Tables\Columns\TextColumn::make('transaction_type')
+                    ->formatStateUsing(function (DonateNow $record) {
+                        $projects="";
+                        // dd();
+                        $ids = json_decode($record->transaction_type);
+                        $data = Project::select('title')->whereIn('id',$ids)->get();
+                        foreach($data as $val){
+                            $projects .= $val->title." , ";
+                        }
+                        // dd($projects);
+                        return ($projects);
+                    }),
+
+                ImageColumn::make('payment_ss')
+                ->getStateUsing(function (DonateNow $record): string {
+                    // http://127.0.0.1:8000/admin/join-nows
+                    // dd(Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_front);
+                    return Request::getScheme()."://".Request::getHttpHost()."/storage/".$record->payment_ss;
+                }),
+
+
                 Tables\Columns\TextColumn::make('donation_type')
                 ->formatStateUsing(function ($record) {
 

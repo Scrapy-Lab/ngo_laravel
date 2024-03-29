@@ -4,12 +4,12 @@
         <form wire:submit.prevent="saveDonateForm">
             <div class="donateBlogInnerbox">
                 <h3 style="color: #000">Donation Form</h3>
-                <p style="color:#96bce6">Distributes the smiles...</p>
+                <p style="color:#5586e8">Distributes the smiles...</p>
 
                 {{-- DONATION TYPE --}}
                 <h4>Donation Type</h4>
                 <div class="row">
-                    <select wire:model="donation_type" class="form-control" style="width:200px">
+                    <select wire:model="donation_type" class="form-control  form-select" style="width:200px">
                         <option value=" " selected>Select Donation Type</option>
                         <option value="1">Monthly Donation</option>
                         <option value="2">Annual Donation</option>
@@ -209,7 +209,7 @@
                                         </label>
 
                                         <input type="file" name="" id="file-input" wire:model="screenshot"
-                                            style="display: none">
+                                            style="display: none" required>
                                     </div>
                                     @error('screenshot')
                                         <span class="error">{{ $message }}</span>
@@ -222,13 +222,14 @@
                         </div>
                     </div>
                 </div>
-
-                <button href="#" class="my-4">Donate Now</button>
                 <div class="noticeMian">
                     <p> <span class="red">Important Note:</span> Our Developer team Are Working On Payment Gateway .
                         You can pay through QR code . Don’t worry your transaction is totally safe.
                     </p>
                 </div>
+
+                <button href="#" class="my-4">Donate Now</button>
+
             </div>
         </form>
     @endif
