@@ -303,7 +303,7 @@
 }
 .upcard {
     border-left: 4px solid #AF1515;
-    margin-left: 31%;
+    margin: auto;
     padding: 0px 18px;
 }
 /* end */
@@ -756,4 +756,8 @@ a {
 .banner-text h1 {
     font-size: 60px; /* Adjust as needed */
     line-height: 1.2; /* Adjust line spacing as needed */
+}
+
+.titleMargin{
+    margin: 3rem;
 }
