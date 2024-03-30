@@ -26,8 +26,11 @@
                     </p> --}}
                     <div class="banner_btn">
 
-                        <a href="{{route('donate-now')}}"><button type="button" class="bnner-btns">Donate Now</button></a>
-                        <a href="{{route('join-now')}}"><button type="button" class="bnner-btns">Join Now</button></a>
+
+                        <a href="{{ url('/donate') }}"><button class="read-btn_banner" style="">Donate Now</button></a>
+                        <a href="{{ url('/join-now') }}"><button class="read-btn_banner" >Join Now</button></a>
+                        {{-- <a href="{{route('donate-now')}}"><button type="button" class="bnner-btns">Donate Now</button></a>
+                        <a href="{{route('join-now')}}"><button type="button" class="bnner-btns">Join Now</button></a> --}}
                     </div>
                 </div>
             <!-- </div> -->

@@ -761,3 +761,22 @@ a {
 .titleMargin{
     margin: 3rem;
 }
+
+
+.read-btn_banner{
+
+    color: #fff;
+    background: #AF1515;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 4px 10px;
+    line-height: 2.5rem;
+    width: 136px;
+    margin-right:1.5rem
+}
+
+.read-btn_banner:hover{
+background: #5586e8;
+}
