@@ -64,114 +64,28 @@
     </div>
     <!-- end -->
     <!-- section-2 -->
-    <!-- <div class="container project-card">
-                    <div class="row">
-                        <h1 class="text-center ">OUR PROJECTS</h1>
-                        @forelse ($projects as $project)
-    <div class="col mt-2">
-                            <div class="crd">
-                                <div class="image">
-                                    <a href="{{ route('project-details', $project->slug) }}">
-                                        <figure>
-                                            <img src="{{ asset('storage/' . $project->image) }}" alt="">
-                                        </figure>
-                                    </a>
-                                    <a href="{{ route('project-details', $project->slug) }}" class="text-center" style="text-decoration: none">
-                                        <h5>{{ $project->title }}</h5>
-                                    </a>
-                                </div>
-                                <div class="content">
-
-                                    <p class="">
-                                        {!! html_entity_decode(Str::limit($project->description, 80)) !!}
-                                    </p>
-                                    <a href="{{ route('project-details', $project->slug) }}" id="readMore">
-                                        <button>Read More
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                @empty
-    @endforelse
-
-                    </div>
-                    {{-- <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="crd">
-                        <div class="image">
-                            <img src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
-                        </div>
-                        <div class="content">
-                            <h3>This is content</h3>
-                            <p>
-                                DIn publishing and graphic design, Lorem ipsum is a placeholder
-                                text commonly used to demonstrate the visual form of a document
-                                or a typeface without relying on meaningful content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 mycustommargn">
-                    <div class="crd">
-                        <div class="image">
-                            <img src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
-                        </div>
-                        <div class="content">
-                            <h3>This is content</h3>
-                            <p>
-                                DIn publishing and graphic design, Lorem ipsum is a placeholder
-                                text commonly used to demonstrate the visual form of a document
-                                or a typeface without relying on meaningful content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mediaQur col-sm-12">
-                    <div class="crd">
-                        <div class="image">
-                            <img src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
-                        </div>
-                        <div class="content">
-                            <h3>This is content</h3>
-                            <p>
-                                DIn publishing and graphic design, Lorem ipsum is a placeholder
-                                text commonly used to demonstrate the visual form of a document
-                                or a typeface without relying on meaningful content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mediaQur col-sm-12">
-                    <div class="crd">
-                        <div class="image">
-                            <img src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
-                        </div>
-                        <div class="content">
-                            <h3>This is content</h3>
-                            <p>
-                                DIn publishing and graphic design, Lorem ipsum is a placeholder
-                                text commonly used to demonstrate the visual form of a document
-                                or a typeface without relying on meaningful content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-                </div> -->
 
     <!-- section-2 end -->
     <div class="container project-main campaignsInner" style="margin-bottom: 5em;">
         {{-- <div class="row"> --}}
-        <div class="col-6 mb-lg-3 upcard">
+            <div class="container txt-1">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 divCenter">
+                    <p>Hope in Action, Hearts United.</p>
+                    <h1>Our Projects</h1>
+                </div>
+
+                <p class="paracen">
+                    Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
+                </p>
+            </div>
+            </div>
+        {{-- <div class="col-6 mb-lg-3 upcard">
             <h1>Our Projects</h1>
             <p>
                 Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
             </p>
-        </div>
+        </div> --}}
         {{-- COMPAIGN BOX --}}
         <div class="owl-carousel owl-theme">
             @forelse ($projects as $project)
@@ -326,8 +240,7 @@
                     <div class="card-body mYCustomcard">
                         <h5 class="card-title text-white">Food Distribution </h5>
                         <p class="card-text text-white">
-                            upcoming event for the needy children. We will cooking food together then will distribute with
-                            our children .
+                            Upcoming event for the needy children. We will distributes the food to our children.
                         </p>
                         <button class="btn text-white link"><i class="fa-solid fa-arrow-right"
                                 style="margin-right: 5px;"></i>Read more</button>

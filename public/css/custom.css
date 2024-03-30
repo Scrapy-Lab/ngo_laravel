@@ -51,6 +51,8 @@ nav.navbar.navbar-expand-lg {
     font-weight: 700;
     font-size: 15px;
     padding: 4px 10px;
+    line-height: 2.5rem;
+    width: 136px;
 }
 
 a.nav-link.active {
@@ -232,7 +234,7 @@ p.date {
     text-decoration: none;
     font-weight: 600;
     line-height: 10px;
-    transition: 2.2s ease all;
+    /* transition: 2.2s ease all; */
 }
 .campaignBox:hover .campaignboxcontent a {
     color: #AF1515;
@@ -250,7 +252,7 @@ p.date {
     padding: 16px 16px;
     border-radius: 8px;
     color: #fff;
-    transition: 2.2s ease all;
+    /* transition: 2.2s ease all; */
 }
 .campaignBox:hover .campaignboxcontent button {
     background: #AF1515;
@@ -845,7 +847,7 @@ a.navbar-brand {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-    margin: 0 !important;
+    margin: 5px !important;
     font-weight: 400;
 }
 .socialMediaLinks li a i {
@@ -865,7 +867,7 @@ a.navbar-brand {
     text-align: center;
     border-radius: 7px;
     font-weight: 600 !important;
-    transition: 0.8s ease all;
+    /* transition: 0.8s ease all; */
 }
 
 .footerinner ul li a:hover {

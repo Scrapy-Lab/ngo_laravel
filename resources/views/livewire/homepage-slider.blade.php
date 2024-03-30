@@ -6,11 +6,29 @@
             <!-- <div class="carousel-caption d-none d-md-block CustomCarousel"> -->
                 <div class="card-img-overlay mYcard">
                     {{-- @dd($banner) --}}
-                    <h2 class="card-title Custom-title">{{$banner->name}} <br> poor by giving</h2>
-                    <p class="card-text footertxt">
+
+                    {{-- <h1 class="card-title Custom-title">{{$banner->name}} </h1> --}}
+
+                    <div class="banner-text">
+                        <h1 class="card-title Custom-title">
+                            @php
+                                $text = $banner->name;
+                                $words = explode(' ', $text);
+                                $half = ceil(count($words) / 2);
+                                $firstHalf = implode(' ', array_slice($words, 0, $half));
+                                $secondHalf = implode(' ', array_slice($words, $half));
+                            @endphp
+                            {{ $firstHalf }} <br> {{ $secondHalf }}
+                        </h1>
+                    </div>
+                    {{-- <p class="card-text footertxt">
                     {{$banner->description}}
-                    </p>
-                   <a href="{{route('donate-now')}}"><button type="button" class="bnner-btns">Donate Now</button></a>
+                    </p> --}}
+                    <div class="banner_btn">
+
+                        <a href="{{route('donate-now')}}"><button type="button" class="bnner-btns">Donate Now</button></a>
+                        <a href="{{route('join-now')}}"><button type="button" class="bnner-btns">Join Now</button></a>
+                    </div>
                 </div>
             <!-- </div> -->
         </div>
