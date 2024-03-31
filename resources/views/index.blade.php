@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- section-1 -->
-    <div id="carouselExampleCaptions" class="carousel slide slider1" data-bs-ride="carousel" data-bs-interval="2000">
+    <div id="carouselExampleCaptions" class="carousel slide slider1" data-bs-ride="false" data-bs-interval="2000">
         @livewire('homepage-slider')
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -317,18 +317,18 @@
                 <div class="my-logos">
                     <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}"
+                            <img src="{{ asset('images/board_member/Sandeep kumar.jpg') }}"
                                 class="card-img-top sec-img" alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">Alisha</h5>
-                                <p class="card-text">Designation</p>
+                                <h5 class="card-title">Sandeep kumar</h5>
+                                <p class="card-text">Founder & CEO</p>
 
                                 <p class="card-para">
-                                    Donated
-                                    <span style="color: red; float: right">5000</span>
+                                    Joining
+                                    <span style="color: red; float: right">2013</span>
                                 </p>
                                 <p>
-                                    Experience <span style="color: red; float: right">2years</span>
+                                    Experience <span style="color: red; float: right">11 Years</span>
                                 </p>
                             </div>
                         </div>
@@ -336,34 +336,34 @@
 
                     <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('images/board_member/Mohd. Aftab.jpg') }}" class="card-img-top"
                                 alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">Deepak</h5>
-                                <p class="card-text">Designation</p>
+                                <h5 class="card-title">Mohd. Aftab</h5>
+                                <p class="card-text">Co-Founder</p>
                                 <p class="card-para">
-                                    Donated
-                                    <span style="color: red; float: right">5000</span>
+                                    Joining
+                                    <span style="color: red; float: right">2017</span>
                                 </p>
                                 <p>
-                                    Experience <span style="color: red; float: right">1years</span>
+                                    Experience <span style="color: red; float: right">7 years</span>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}"
+                            <img src="{{ asset('images/board_member/Neelam Rani.jpg') }}"
                                 class="card-img-top sec-img" alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">Lisoba</h5>
-                                <p class="card-text">Designation</p>
+                                <h5 class="card-title">Neelam Rani</h5>
+                                <p class="card-text">Chairperson</p>
                                 <p class="card-para">
-                                    Donated
-                                    <span style="color: red; float: right">5000</span>
+                                    Joining
+                                    <span style="color: red; float: right">2016</span>
                                 </p>
                                 <p>
-                                    Experience <span style="color: red; float: right">3years</span>
+                                    Experience <span style="color: red; float: right">8 years</span>
                                 </p>
                             </div>
                         </div>
@@ -371,36 +371,36 @@
 
                     <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('images/board_member/Parveen Kumar.jpg') }}" class="card-img-top"
                                 alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">John</h5>
-                                <p class="card-text">Designation</p>
+                                <h5 class="card-title">Parveen Kumar</h5>
+                                <p class="card-text">National President</p>
                                 <p class="card-para">
-                                    Donated
-                                    <span style="color: red; float: right">5000</span>
+                                    Joining
+                                    <span style="color: red; float: right">2013</span>
                                 </p>
                                 <p>
                                     Experience
-                                    <span style="color: red; float: right">2years</span>
+                                    <span style="color: red; float: right">11 years</span>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}"
+                            <img src="{{ asset('images/board_member/Amit Kumar.jpg') }}"
                                 class="card-img-top sec-img" alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">Alisha</h5>
-                                <p class="card-text">Designation</p>
+                                <h5 class="card-title">Amit Kumar</h5>
+                                <p class="card-text">National Vice-President</p>
 
                                 <p class="card-para">
-                                    Donated
-                                    <span style="color: red; float: right">5000</span>
+                                    Joining
+                                    <span style="color: red; float: right">2013</span>
                                 </p>
                                 <p>
-                                    Experience <span style="color: red; float: right">2years</span>
+                                    Experience <span style="color: red; float: right">11 years</span>
                                 </p>
                             </div>
                         </div>
@@ -408,34 +408,34 @@
 
                     <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('images/board_member/Rajat Sharma.jpg') }}" class="card-img-top"
                                 alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">Deepak</h5>
-                                <p class="card-text">Designation</p>
+                                <h5 class="card-title">Rajat Sharma</h5>
+                                <p class="card-text">Chief Secretary</p>
                                 <p class="card-para">
-                                    Donated
-                                    <span style="color: red; float: right">5000</span>
+                                    Joining
+                                    <span style="color: red; float: right">2016</span>
                                 </p>
                                 <p>
-                                    Experience <span style="color: red; float: right">1years</span>
+                                    Experience <span style="color: red; float: right">8 years</span>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}"
+                            <img src="{{ asset('images/board_member/Raju Sharma.jpg') }}"
                                 class="card-img-top sec-img" alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">Lisoba</h5>
-                                <p class="card-text">Designation</p>
+                                <h5 class="card-title">Raju Sharma</h5>
+                                <p class="card-text">Finance Head</p>
                                 <p class="card-para">
-                                    Donated
-                                    <span style="color: red; float: right">5000</span>
+                                    Joining
+                                    <span style="color: red; float: right">2017</span>
                                 </p>
                                 <p>
-                                    Experience <span style="color: red; float: right">3years</span>
+                                    Experience <span style="color: red; float: right">7 years</span>
                                 </p>
                             </div>
                         </div>
@@ -443,18 +443,36 @@
 
                     <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('images/board_member/Anish Kumar Singh.jpg') }}" class="card-img-top"
                                 alt="..." />
                             <div class="card-body">
-                                <h5 class="card-title">John</h5>
-                                <p class="card-text">Designation</p>
+                                <h5 class="card-title">Anish Kumar Singh</h5>
+                                <p class="card-text">HOD of Volunteers (LPU Group)</p>
                                 <p class="card-para">
-                                    Donated
-                                    <span style="color: red; float: right">5000</span>
+                                    Joining
+                                    <span style="color: red; float: right">2021</span>
                                 </p>
                                 <p>
                                     Experience
-                                    <span style="color: red; float: right">2years</span>
+                                    <span style="color: red; float: right">3 years</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/board_member/Aiman Fatma.jpg') }}" class="card-img-top"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Aiman Fatma</h5>
+                                <p class="card-text">Brand Ambassador </p>
+                                <p class="card-para">
+                                    Joining
+                                    <span style="color: red; float: right">2021</span>
+                                </p>
+                                <p>
+                                    Experience
+                                    <span style="color: red; float: right">3 years</span>
                                 </p>
                             </div>
                         </div>
@@ -508,7 +526,7 @@
                 <div class="card-img-overlay MYcard">
                     <h5 class="card-title CustomTitle">Card title</h5>
                     <a href="{{ route('donate-now') }}">
-                        <button type="button" class="CstomBtn">
+                        <button type="button" class="CstomBtn read-btn">
                             Donate now
                         </button>
                     </a>
