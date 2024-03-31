@@ -130,9 +130,6 @@
     height: 22vh;
     margin-bottom: 63px;
 }
-.StoryImage {
-    padding: 30px;
-}
 /* end */
 /* section-5 */
 .Abt-btns {
@@ -189,20 +186,44 @@
     width: 58%;
 }
 }
- @media screen and (max-width:425px) {
+ @media screen and (min-width:425px) {
     .Abt-btns {
         margin-left: 13em;
+    }
+    .left-txt {
+        margin: 3em 0em;
+    }
+    .About-img {
+        width: 107%;
+        height: 38vh;
+        margin-left: 22px;
+    }
+    .Aboutbox4{
+        margin-left: 23px;
+    }
+    .Aboutbox3{
+        margin-left: 23px;
     }
  }
  .youngistan-sect{
     background-color: #F2EEED;
  }
- .story-img{
+ /* .story-img{
     max-width: 100%;
- }
-
+ } */
+ .story-img {
+    max-width: 100%;
+    height: 70vh;
+}
  .hero-content .prg{
     border-left: 4px solid #AF1515;
     padding-left: 10px;
     font-style: italic;
  }
+ .foter-Img {
+    object-fit: cover;
+    height: 50vh;
+}
+.StoryImage {
+    margin-top: 35px;
+}

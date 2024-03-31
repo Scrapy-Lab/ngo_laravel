@@ -16,7 +16,7 @@
     /* margin-left: 14em    ; */
 }
 .bnner-btn{
-    ba4px solid #AF1515;
+    /* ba4px solid #AF1515; */
     color: white;
     padding: 8px 12px 11px 10px;
     border-radius: 8px 8px 8px 8px;
@@ -127,6 +127,7 @@
 /* section-3 */
 .sct-2 {
     display: flex;
+    gap: 4em;
 }
 .sec-3 {
     padding: 10px;
@@ -136,7 +137,7 @@
     height: 46vh;
 }
 .main-content {
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
     margin-top: 2em;
 }
 .main-content .prg {
@@ -321,9 +322,9 @@
     .main-cont {
         margin-top: 1rem;
     }
-    .mediaQur {
+    /* .mediaQur {
         margin-top: 3rem !important;
-    }
+    } */
     .crd-sec {
         /* margin-top: 7rem; */
         row-gap: 4rem;
@@ -394,17 +395,17 @@
         max-width: 104%;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 425px) {
     .Myimg {
         height: 80vh !important;
     }
     .crd:hover {
         height: 41vh;
     }
-    .mediaQur {
+    /* .mediaQur {
         margin-top: 2rem;
         margin-left: 2rem;
-    }
+    } */
     .main-content {
         margin-left: 0px;
     }
@@ -414,8 +415,14 @@
     .main-cont h1::after {
         top: 3.5rem !important;
     }
-    .divCenter {
+    /* .divCenter {
         margin-left: 2rem !important;
+    } */
+    .banner-text h1{
+        font-size: 25px;
+    }
+    .banner_btn {
+        margin-left: 4em;
     }
 }
 /* end */
@@ -576,7 +583,7 @@ a {
 }
 .CstomBtn{
     margin-left:8em;
-    ba4px solid #AF1515;
+    /* ba4px solid #AF1515; */
     color: white;
     padding: 8px 12px 11px 10px;
     border-radius: 8px ;
@@ -602,11 +609,11 @@ a {
       animation: slidein 20s linear infinite;
       white-space: nowrap;
     }
-      .logos {
-        width: 100%;
-        display: inline-block;
-        margin: 0px 0;
-      }
+    .logos {
+        display: flex;
+        flex-direction: row;
+        gap: 8em;
+    }
         .fab {
           width: calc(100% / 5);
           animation: fade-in 0.5s
@@ -628,6 +635,11 @@ a {
     100% {
       opacity: 1;
     }
+  }
+  .my-logos{
+    display: flex;
+    flex-direction: row;
+    /* gap: 8em; */
   }
   /* end */
 .sponsor-img{
@@ -744,9 +756,12 @@ a {
     }
   }
 
-  .banner_btn{
-        margin-left: 14em;
-  }
+  .banner_btn {
+    margin-left: 14em;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
 
   .banner-text {
     text-align: center;
@@ -779,4 +794,12 @@ a {
 
 .read-btn_banner:hover{
 background: #5586e8;
+}
+@media screen and (min-width:425px) {
+    .rw-gap{
+        row-gap: 4em;
+    }
+    .slider1 {
+        margin-top: 20px;
+    }
 }

@@ -18,15 +18,16 @@
     background: linear-gradient(90deg, rgba(0,0,0,0.5046393557422969) 0%, rgba(0,0,0,0.7483368347338936) 100%);
 
 }
-
-
-
 /* end */
 /* section-2 */
-.dealer-img {
-    max-width: 50%;
+/* .dealer-img {
+    width: 50%;
     float: right;
     margin-right: 7em;
+} */
+.dealer-img {
+    height: 47vh;
+    margin-left: 13em;
 }
 .dealer-section {
     margin: 6em;
@@ -73,4 +74,37 @@
 /* end */
 .donate-now {
     height: 55vh;
+}
+/* .MYcard-cnt h5{
+    padding-top: 4%;
+} */
+@media screen and (min-width:425px) {
+    /* .MYcard-cnt h5 {
+        padding-top: 25% !important;
+    } */
+    .dealer-section {
+        margin: -1em;
+    }
+    .map-img {
+        width: 107%;
+        height: 40vh;
+    }
+    .iframe-map {
+        max-width: 107%;
+        margin-top: 3rem;
+    }
+    /* .dealer-img {
+        width: 100%;
+        float: left;
+    } */
+    .dealer-img {
+        margin-left: 0.6em;
+        width: 100% !important;
+        margin-top: 2em;
+    }
+}
+.dealer-img {
+    height: 34vh !important;
+    /* margin-left: 9em; */
+    width: 70%;
 }

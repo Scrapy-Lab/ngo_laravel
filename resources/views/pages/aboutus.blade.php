@@ -64,10 +64,10 @@
 <div class="container-fluid StoryImage">
   <h1 class="About-text">Story of youngistaan</h1>
   <div class="row youngistan-sect">
-    <div class="col-lg-6">
+    <div class="col-lg-6 main-story">
       <img src="{{ asset('images/collapse.jpg.jpeg') }}" alt="" srcset="" class="story-img">
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12">
+    <div class="col-lg-6 col-md-12 col-sm-12 main-cnt">
       <div class="storycnt">
         <p>The journey of Youngistaan was started by ‘Sandeep Kumar’ in 2013. The slogan of Youngistaan “We help people on approach to living and serving well. It encompasses three simple phases: learn, discover and act”. Back in our college time, we saw some children begging at the traffic signal. In order to secure their future, we thought to aware them about the education and real-world knowledge. Initially, we made a group in college to conduct a survey in a particular slum area and gathered approx. 20-30 children and their parents to make them aware about the importance of education. Under the act of right to education, we started a project and conducted a class of 2 hours daily for the children.
        <br> <br>  Due to poverty, they were not having enough money to get education in school and so we took the initiative and get them admission in nearest primary school. For now, they are a go getter and achieving highest pedestal in their life. Youngistaan was registered in February 2017 with multiple projects that run throughout the country. The NGO is committed for young people who are ready to create real change in the areas of hunger, homelessness, poverty, education inequity, gender inequality, taboos on menstruation, emergency responses, animal rights, capacity building and many more issues.
@@ -114,7 +114,7 @@
 <!-- section-4 -->
 <div class="container bnnerimg">
   <div class="card bg-dark text-white">
-    <img src="{{ asset('images/youngistaan.jpg') }}" class="card-img footerImg" alt="... " />
+    <img src="{{ asset('images/youngistaan.jpg') }}" class="card-img foter-Img" alt="... " />
     <!-- <div class="card-img-overlay MYcard">
       <button type="button" class="Abt-btns">Join Now</button>
     </div> -->

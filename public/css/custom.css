@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-html, body {
-    height: 100%;
+body {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -52,7 +53,18 @@ nav.navbar.navbar-expand-lg {
     font-size: 15px;
     padding: 4px 10px;
     line-height: 2.5rem;
-    width: 136px;
+    width: 100%;
+}
+.topButtons {
+    display: flex;
+    row-gap: 15em !important;
+    flex-direction: row;
+    flex-basis: content;
+}
+@media screen and (min-width:425px){
+    .tophead ul.navbar-nav{
+        gap: 0px;
+    }
 }
 
 a.nav-link.active {
@@ -896,7 +908,7 @@ a.navbar-brand {
 }
 
 
-.col-lg-3.col-md-6.mediaQur.mr-2 {
+.mediaQur {
     margin-right: 10px;
 }
 
