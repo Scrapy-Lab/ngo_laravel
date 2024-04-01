@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- section-1 -->
-    <div id="carouselExampleCaptions" class="carousel slide slider1" data-bs-ride="false" data-bs-interval="2000">
+    <div id="carouselExampleCaptions" class="carousel slide slider1" data-bs-ride="carousel" data-bs-interval="2000">
         @livewire('homepage-slider')
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
