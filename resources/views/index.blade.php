@@ -207,13 +207,13 @@
 
         <div class="container titleMargin">
             <div class="row ">
-        <div class="col-lg-6 col-md-12 col-sm-12 mb-lg-3 upcard">
-            <h1>Our Upcoming Programs</h1>
-            <p>Empowering Communities, Transforming Lives: Our Exciting Initiatives Ahead!</p>
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-lg-3 upcard">
+                    <h1>Our Upcoming Programs</h1>
+                    <p>Empowering Communities, Transforming Lives: Our Exciting Initiatives Ahead!</p>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-            <div class="row rw-gap ">
+        <div class="row rw-gap ">
 
             <div class="col-lg-3 col-md-6 col-sm-12 mediaQur">
                 <div class="card Main-cnt ">
@@ -284,15 +284,15 @@
                 </div>
                 <div class="main-cont col-lg-7 col-md-12">
                     <h1>Message From Founder & CEO</h1>
-                    <p>
-                        Dear Friends and Supporters,<br><br><br>
+                    <p style="font-family:Comic Sans MS">
+                        Dear Friends and Supporters,<br><br>
                         I am filled with immense gratitude as I reflect on the remarkable journey we've embarked on
                         together. At Youngistaan our mission isn't just about creating change – it's about igniting a
-                        spark of hope, inspiring hearts, and transforming lives.<br><br><br>
+                        spark of hope, inspiring hearts, and transforming lives.<br><br>
                         Each day, we are reminded of the incredible resilience and strength within every individual we
                         serve. From the children whose laughter echoes through our programs to the communities who
                         rally together in times of need, it is their unwavering spirit that fuels our passion and
-                        drives our determination.<br><br><br>Thank you for being part of this extraordinary adventure. Your
+                        drives our determination.<br><br>Thank you for being part of this extraordinary adventure. Your
                         support, dedication, and belief in our mission are the driving force behind everything we do.<br>
 
                     </p>
@@ -306,19 +306,21 @@
 
         <div class="container titleMargin">
             <div class="row">
-        <div class="mb-lg-3 col-lg-6 col-md-12 col-sm-12 upcard">
-            <h1>Our Board Team</h1>
-            <p>Behind Every Smile, Every Success, Every Changed Life - Our Dedicated Volunteers Shine Bright.</p>
+                <div class="mb-lg-3 col-lg-6 col-md-12 col-sm-12 upcard">
+                    <h1>Our Board Team</h1>
+                    <p>Behind Every Smile, Every Success, Every Changed Life - Our Dedicated Volunteers Shine Bright.</p>
+                </div>
+            </div>
         </div>
-            </div></div>
 
         <div class="row">
-            <div class="sliderTeam " style="display: ruby;">
-                <div class="my-logos">
-                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/board_member/Sandeep kumar.jpg') }}"
-                                class="card-img-top sec-img" alt="..." />
+                            <img src="{{ asset('images/board_member/Sandeep kumar.jpg') }}" class="card-img-top sec-img"
+                                alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Sandeep kumar</h5>
                                 <p class="card-text">Founder & CEO</p>
@@ -333,10 +335,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+                <div class="item">
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/board_member/Mohd. Aftab.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('images/board_member/Mohd. Aftab.jpg') }}" class="card-img-top sec-img"
                                 alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Mohd. Aftab</h5>
@@ -351,10 +355,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+                </div>
+
+                <div class="item">
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/board_member/Neelam Rani.jpg') }}"
-                                class="card-img-top sec-img" alt="..." />
+                            <img src="{{ asset('images/board_member/Neelam Rani.jpg') }}" class="card-img-top sec-img"
+                                alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Neelam Rani</h5>
                                 <p class="card-text">Chairperson</p>
@@ -368,10 +375,13 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+                <div class="item">
+
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/board_member/Parveen Kumar.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('images/board_member/Parveen Kumar.jpg') }}" class="card-img-top sec-img"
                                 alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Parveen Kumar</h5>
@@ -387,10 +397,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+                </div>
+
+                <div class="item">
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/board_member/Amit Kumar.jpg') }}"
-                                class="card-img-top sec-img" alt="..." />
+                            <img src="{{ asset('images/board_member/Amit Kumar.jpg') }}" class="card-img-top sec-img"
+                                alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Amit Kumar</h5>
                                 <p class="card-text">National Vice-President</p>
@@ -405,10 +418,13 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+                <div class="item">
+
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/board_member/Rajat Sharma.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('images/board_member/Rajat Sharma.jpg') }}" class="card-img-top sec-img"
                                 alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Rajat Sharma</h5>
@@ -423,10 +439,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+                </div>
+
+                <div class="item">
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/board_member/Raju Sharma.jpg') }}"
-                                class="card-img-top sec-img" alt="..." />
+                            <img src="{{ asset('images/board_member/Raju Sharma.jpg') }}" class="card-img-top sec-img"
+                                alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Raju Sharma</h5>
                                 <p class="card-text">Finance Head</p>
@@ -440,10 +459,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+                <div class="item">
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/board_member/Anish Kumar Singh.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('images/board_member/Anish Kumar Singh.jpg') }}" class="card-img-top sec-img"
                                 alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Anish Kumar Singh</h5>
@@ -459,9 +480,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mediaQur mr-2">
+                </div>
+
+                <div class="item">
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                         <div class="card">
-                            <img src="{{ asset('images/board_member/Aiman Fatma.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('images/board_member/Aiman Fatma.jpg') }}" class="card-img-top sec-img"
                                 alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title">Aiman Fatma</h5>
@@ -481,6 +505,7 @@
             </div>
         </div>
     </div>
+
     <!-- end -->
     <!-- logo -->
     <div class="container h-100 logo-sect">
@@ -492,7 +517,8 @@
                     <p>Honoring Our Esteemed Partners and Sponsors in Our Journey of Change.</p>
                 </div>
 
-            </div></div>
+            </div>
+        </div>
         <div class="row align-items-center h-100">
             <div class="container rounded ">
 
@@ -517,25 +543,27 @@
                 </div>
             </div>
         </div>
-        <!-- end -->
-        <!-- section -->
-        <div class="container bnnerimg sec_marginB">
-            <div class="card bg-dark text-white">
-                <img src="{{ asset('images/brittani-burns-LCzc79jZGf4-unsplash.jpg') }}" class="card-img footerImg"
-                    alt="..." />
-                <div class="card-img-overlay MYcard">
-                    <h5 class="card-title CustomTitle">Card title</h5>
-                    <a href="{{ route('donate-now') }}">
-                        <button type="button" class="CstomBtn read-btn">
-                            Donate now
-                        </button>
-                    </a>
-                </div>
+    </div>
+    <!-- end -->
+    <!-- section -->
+    <div class="container-fluid bnnerimg sec_marginB">
+        <div class="card bg-dark text-white">
+            <img src="{{ asset('images/lower_banner.jpg') }}" class="card-img footerImg" alt="..." />
+            <div class="card-img-overlay MYcard">
+                <h5 class="card-title CustomTitle">No one has ever become poor by giving</h5>
+                <a href="{{ route('donate-now') }}" style="float: right; padding: 0 19%;">
+                    <button type="button" class="CstomBtn read-btn">
+                        Donate now
+                    </button>
+                </a>
             </div>
         </div>
-        <!-- end -->
-        <div class="container bnnerimg sec_marginB">
-            @livewire('blog-list')
-        </div>
-        <!-- end -->
-    @endsection
+    </div>
+    <!-- end -->
+    <div class="container bnnerimg sec_marginB">
+        @livewire('blog-list')
+    </div>
+
+
+    <!-- end -->
+@endsection

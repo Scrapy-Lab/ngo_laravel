@@ -800,7 +800,7 @@ h4.recentPost {
 }
 
 .carousel-item {
-    height: 300px;
+    /* height: 300px; */
     /* Adjust height as needed */
 }
 
@@ -814,7 +814,7 @@ h4.recentPost {
 @media screen and (max-width:768px) {
     .carousel-inner {
 
-        height: 300px;
+        /* height: 300px; */
     }
 
 }
@@ -987,7 +987,9 @@ span.red {
 
 .sec_marginB {
 
+    padding: 0 !important;
     margin-bottom: 10rem !important;
+    margin-top: 10rem !important;
 }
 
 a.navbar-brand {
@@ -1052,24 +1054,41 @@ a.navbar-brand {
 
 
     .mediaQur {
-        margin: 22px;
+        margin: 3%;
+        display: flex;
+        justify-content: center;
     }
 
-    .footer{
+    /* body{
 
         width: 105%;
-    }
+    } */
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 
 
-    .mediaQur {
-        /* margin-right: 10px; */
+    .sec-2{
+
+        display: flex;
+        justify-content: center;
     }
-
 }
 
 body {
     overflow-x: hidden;
+}
+
+
+
+.sec-3{
+
+    display: flex;
+    justify-content: center;
+}
+
+.sect-3{
+
+    display: flex;
+    justify-content: center;
 }

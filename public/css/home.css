@@ -51,6 +51,8 @@
         /* padding-left: 3rem; */
         color: white !important;
         margin-bottom: 1em !important;
+        font-size: 20px;
+        padding: 10px;
     }
 }
 
@@ -62,22 +64,12 @@
     margin-bottom: 3em;
 }
 
-.mYcard {
-    /* margin-top: 6rem; */
-    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0) 39%, rgba(0, 0, 0, 1) 100%) !important; */
-    padding-top: 100px !important;
-    /* |right side black */
-    /* background: linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(0,0,0,1) 100%); */
+@media only screen and (min-width: 768px) {
+    .mYcard {
 
-    /* left side black */
-    /* background: linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(255, 255, 255, 0) 42%
-    ); */
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7035189075630253) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6979166666666667) 100%);
-
-    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3897934173669467) 35%, rgba(0,0,0,1) 100%); */
+        padding-top: 100px !important;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7035189075630253) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6979166666666667) 100%);
+    }
 }
 
 
@@ -197,7 +189,7 @@
 }
 
 .main-cont p {
-    font-size: 15px;
+    font-size: 19px;
     margin-top: 2rem;
 }
 
@@ -427,7 +419,7 @@
     }
 
     .Myimg {
-        height: 80vh !important;
+        /* height: 80vh !important; */
     }
 
     .upcard {
@@ -445,7 +437,7 @@
         padding: 2em;
         border: 0px solid black;
         justify-content: center;
-        margin-left: 37px;
+        /* margin-left: 37px; */
     }
 
     .clsFlexx {
@@ -459,7 +451,7 @@
         border-radius: 6px;
         padding: 2em;
         color: black;
-        margin-left: 37px;
+        /* margin-left: 37px; */
     }
 
     .divCenter {
@@ -476,7 +468,7 @@
 
     .sec-3 {
         padding: 10px;
-        margin-left: 20px !important;
+        /* margin-left: 20px !important; */
     }
 
     .orphan-cnt {
@@ -524,8 +516,12 @@
 
 /* end */
 /* banner */
-.carousel-item {
-    height: 600px;
+
+@media only screen and (min-width: 768px) {
+    .carousel-item {
+        height: 600px;
+    }
+
 }
 
 .crsl-txt {
@@ -534,13 +530,13 @@
 
 /* end */
 /* sect-7 */
-.bnnerimg {
+/* .bnnerimg {
     margin: 4rem;
-}
+} */
 
 .footerImg {
-    height: 50vh;
-    object-fit: cover;
+    /* height: 50vh; */
+    object-fit: contain;
 }
 
 .footer-txt {
@@ -622,8 +618,19 @@
     /* margin: 0px 0rem 1rem 49rem; */
 }
 
-.MYcard {
-    margin-top: 3rem;
+@media screen and (min-width:768px) {
+    .MYcard {
+        padding: 6%;
+        /* margin-top: 5rem; */
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .MYcard {
+        padding: 6%;
+        /* margin-top: 3rem; */
+    }
 }
 
 .mediaQur .Main-cnt {
@@ -701,14 +708,29 @@ a {
     color: black;
 }
 
-.CustomTitle {
-    font-size: 41px;
-    margin-left: 3em;
-    margin-bottom: 1em !important;
+@media screen and (max-width:768px) {
+    .CustomTitle {
+        text-align: end;
+        /* font-size: 41px; */
+        margin-left: 3em;
+        margin-bottom: 1em !important;
+    }
+
+}
+
+
+@media screen and (min-width:768px) {
+    .CustomTitle {
+        text-align: end;
+        font-size: 41px;
+        margin-left: 3em;
+        margin-bottom: 1em !important;
+    }
+
 }
 
 .CstomBtn {
-    margin-left: 8em;
+    /* margin-left: 8em; */
     /* ba4px solid #AF1515; */
     color: white;
     padding: 8px 12px 11px 10px;
@@ -978,7 +1000,7 @@ a {
         font-weight: 700;
         font-size: 15px;
         padding: 4px 10px;
-        line-height: 2.5rem;
+        /* line-height: 2.5rem; */
         /* width: 136px; */
         margin-right: 1.5rem
     }
@@ -997,4 +1019,10 @@ a {
     .slider1 {
         margin-top: 20px;
     }
+}
+
+
+.sec-img{
+
+    aspect-ratio: 3 / 2;
 }
