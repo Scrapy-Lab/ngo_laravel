@@ -337,6 +337,7 @@
 .orphan-cnt {
     margin-left: 60px;
     max-width: 85%;
+    padding: 28px;
 }
 
 .MyCustomCard h1 {
@@ -611,6 +612,7 @@
 
 .oph-para {
     margin-top: 1em;
+    padding: 10px;
 }
 
 .footer-txt {
