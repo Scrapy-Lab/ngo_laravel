@@ -295,14 +295,32 @@ p.date {
     display: block;
 }
 
-.read-btn {
-    font-size: 18px;
-    border: none;
-    background: #AF1515;
-    padding: 16px 16px;
-    border-radius: 8px;
-    color: #fff;
-    /* transition: 2.2s ease all; */
+
+@media screen and (min-width:768px) {
+    .read-btn {
+        font-size: 18px;
+        border: none;
+        background: #AF1515;
+        padding: 16px 16px;
+        border-radius: 8px;
+        color: #fff;
+        /* transition: 2.2s ease all; */
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .read-btn {
+        font-size: 10px;
+        border: none;
+        background: #AF1515;
+        padding: 16px 16px;
+        border-radius: 8px;
+        color: #fff;
+        /* transition: 2.2s ease all; */
+    }
+
 }
 
 .campaignBox:hover .campaignboxcontent button {
@@ -1068,7 +1086,7 @@ a.navbar-brand {
 @media only screen and (max-width: 768px) {
 
 
-    .sec-2{
+    .sec-2 {
 
         display: flex;
         justify-content: center;
@@ -1081,13 +1099,13 @@ body {
 
 
 
-.sec-3{
+.sec-3 {
 
     display: flex;
     justify-content: center;
 }
 
-.sect-3{
+.sect-3 {
 
     display: flex;
     justify-content: center;
