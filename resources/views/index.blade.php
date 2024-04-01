@@ -67,19 +67,6 @@
 
     <!-- section-2 end -->
     <div class="container project-main campaignsInner" style="margin-bottom: 5em;">
-        {{-- <div class="row"> --}}
-        {{-- <div class="container txt-1">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12 divCenter">
-                    <p>Hope in Action, Hearts United.</p>
-                    <h1>Our Projects</h1>
-                </div>
-
-                <p class="paracen">
-                    Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
-                </p>
-            </div>
-            </div> --}}
 
         <div class="container titleMargin">
             <div class="row">

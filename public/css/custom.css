@@ -987,7 +987,7 @@ span.red {
 
 .sec_marginB {
 
-    padding: 0 !important;
+    /* padding: 0 !important; */
     margin-bottom: 10rem !important;
     margin-top: 10rem !important;
 }
