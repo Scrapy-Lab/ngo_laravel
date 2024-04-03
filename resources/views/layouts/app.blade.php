@@ -72,16 +72,15 @@
     <script>
         $(document).ready(function() {
 
-            $('.navbar-toggler').click(function(){
-                $('.headerButton').toggle();
-            });
+            // $('.navbar-toggler').click(function(){
+            //     $('.headerButton').toggle();
+            // });
 
 
             $('.navbar-nav .nav-link').on('click', function() {
                 $('.navbar-nav').find('.active').removeClass('active');
                 $(this).addClass('active');
             });
-
 
         });
     </script>

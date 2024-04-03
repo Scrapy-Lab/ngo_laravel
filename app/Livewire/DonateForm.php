@@ -17,13 +17,14 @@ class DonateForm extends Component
     public $donateSecondForm = false;
     public $donateThirdForm = false;
     public $donateFourthForm = false;
-    public $disable = 'disabled';
+    // public $disable = 'disabled'; //commented by client
+    public $disable = '';
     public $donateNow;
     public $payment;
     public $projects;
 
     // Donation Type
-    public $donation_type;
+    public $donation_type=0;
     public $payment_type;
     public $transaction_type = [];
     public $amount;
@@ -44,7 +45,7 @@ class DonateForm extends Component
 
     public function mount()
     {
-        $this->donation_type = 1;
+        $this->donation_type = 0;
         $this->payment_type = 1;
         $this->projects = Project::orWhere('schedule',null)->orWhere('schedule','<=',Carbon::now())->where('is_visible',1)->get();
         $this->donateNow = new DonateNow();
@@ -53,6 +54,7 @@ class DonateForm extends Component
 
     public function render()
     {
+
         return view('livewire.donate-form');
     }
 

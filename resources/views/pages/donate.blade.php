@@ -129,7 +129,7 @@
     {{-- Donate Content --}}
 
     <div class="donateblogs row justify-content-between">
-        <div class="col-md-8 donateblogcontent">
+        <div class="col-md-8 donateblogcontent mb-3">
             <div class="donateBlogbox">
 
                 {{-- CAROUSEL --}}
