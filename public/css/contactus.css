@@ -27,7 +27,7 @@
 } */
 .dealer-img {
     height: 47vh;
-    margin-left: 13em;
+    /* margin-left: 13em; */
 }
 .dealer-section {
     margin: 6em;
@@ -104,7 +104,7 @@
     }
 }
 .dealer-img {
-    height: 34vh !important;
+    height: 400px !important;
     /* margin-left: 9em; */
     width: 70%;
 }

@@ -6,7 +6,7 @@
 </div>
 <!-- end -->
 <!-- section-1 -->
-<div class="container bnnerimg">
+<div class="container bnnerimg mt-3">
     <div class="card">
         <img src="{{ asset('images/contactbanner.jpg') }}" class="card-img footer-Img" alt="..." />
         <div class="card-img-overlay MYcard-cnt">
@@ -20,7 +20,7 @@
 </div>
 <!-- end -->
 <!-- section-2 -->
-<div class="container dealer-section">
+<div class="container dealer-section mt-3">
     <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 m-auto">
             <h2>How to connect us?</h2>

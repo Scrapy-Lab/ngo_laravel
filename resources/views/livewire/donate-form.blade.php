@@ -9,8 +9,8 @@
                 {{-- DONATION TYPE --}}
                 <h4>Donation Type</h4>
                 <div class="row">
-                    <select wire:model="donation_type" class="form-control  form-select" style="width:200px">
-                        <option value=" " selected>Select Donation Type</option>
+                    <select wire:model="donation_type" class="form-control  form-select" style="width:230px">
+                        <option value="" selected>Select Donation Type</option>
                         <option value="1">Monthly Donation</option>
                         <option value="2">Annual Donation</option>
                         <option value="3">One Time Donation</option>

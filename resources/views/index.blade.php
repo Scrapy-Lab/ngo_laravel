@@ -511,6 +511,11 @@
 
                 <div class="slider">
                     <div class="logos">
+                        @for ($i=2; $i<=19;$i++)
+
+                            <img class="partnersImages" src="{{asset('images/partners_images/Picture'.$i.'.png')}}">
+
+                        @endfor
                         <i class="fab fa-js fa-4x"></i>
                         <i class="fab fa-linkedin-in fa-4x"></i>
                         <i class="fab fa-dribbble fa-4x"></i>
@@ -550,7 +555,5 @@
     <div class="container bnnerimg sec_marginB">
         @livewire('blog-list')
     </div>
-
-
     <!-- end -->
 @endsection
