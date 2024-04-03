@@ -248,6 +248,7 @@ p.date {
     border-radius: 16px;
     margin-bottom: 42px;
     min-height: 500px;
+    /* margin: 10px; */
 }
 
 
@@ -320,6 +321,10 @@ p.date {
     .headerButton{
 
         display: none;
+    }
+
+    .campaignBox {
+        margin: 10px;
     }
     .read-btn {
         font-size: 10px;
