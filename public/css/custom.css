@@ -1072,7 +1072,7 @@ a.navbar-brand {
 
 
     .mediaQur {
-        margin: 3%;
+        margin: 0;
         display: flex;
         justify-content: center;
     }
