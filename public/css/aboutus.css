@@ -225,5 +225,5 @@
     height: 50vh;
 }
 .StoryImage {
-    margin-top: 35px;
+    margin-top: 35px !important;
 }
