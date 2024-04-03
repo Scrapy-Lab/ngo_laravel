@@ -5,8 +5,7 @@
             <a class="navbar-brand" href="#"><img src="{{ url('images/logo/site_logo.png') }}" alt=""
                     width="80px"></a>
 
-                    <a href="{{ url('/donate') }}"><button class="read-btn headerButton">Donate Now</button></a>
-                    <a href="{{ url('/join-now') }}"><button class="read-btn headerButton">Join Now</button></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -59,6 +58,7 @@
         </div>
     </nav>
     <div class="topButtons d-flex gap-4">
-
+        <a href="{{ url('/donate') }}"><button class="read-btn headerButton">Donate Now</button></a>
+        <a href="{{ url('/join-now') }}"><button class="read-btn headerButton">Join Now</button></a>
     </div>
 </div>

@@ -217,163 +217,205 @@
 </section> --}}
 
 <div class="container sect-6  h-100 logo-sect">
-    <div class="row">
-        <div class="mb-lg-3 col-6 upcard">
-            <h1>Our Board Team</h1>
-            <p>Behind Every Smile, Every Success, Every Changed Life - Our Dedicated Volunteers Shine Bright.</p>
+
+    <div class="container titleMargin">
+        <div class="row">
+            <div class="mb-lg-3 col-lg-6 col-md-12 col-sm-12 upcard">
+                <h1>Our Board Team</h1>
+                <p>Behind Every Smile, Every Success, Every Changed Life - Our Dedicated Volunteers Shine Bright.</p>
+            </div>
         </div>
+    </div>
 
-        <div class="sliderTeam " style="display: ruby;">
-            <div class="logos d-flex" style="margin-right:38px">
-                <div class="col-lg-3 col-md-6 mediaQur mr-2">
+    <div class="row">
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
                     <div class="card">
-                        <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}"
-                            class="card-img-top sec-img" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Alisha</h5>
-                            <p class="card-text">Designation</p>
-
-                            <p class="card-para">
-                                Donated
-                                <span style="color: red; float: right">5000</span>
-                            </p>
-                            <p>
-                                Experience <span style="color: red; float: right">2years</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mediaQur mr-2">
-                    <div class="card">
-                        <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
+                        <img src="{{ asset('images/board_member/Sandeep kumar.jpg') }}" class="card-img-top sec-img"
                             alt="..." />
                         <div class="card-body">
-                            <h5 class="card-title">Deepak</h5>
-                            <p class="card-text">Designation</p>
-                            <p class="card-para">
-                                Donated
-                                <span style="color: red; float: right">5000</span>
-                            </p>
-                            <p>
-                                Experience <span style="color: red; float: right">1years</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mediaQur mr-2">
-                    <div class="card">
-                        <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}"
-                            class="card-img-top sec-img" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Lisoba</h5>
-                            <p class="card-text">Designation</p>
-                            <p class="card-para">
-                                Donated
-                                <span style="color: red; float: right">5000</span>
-                            </p>
-                            <p>
-                                Experience <span style="color: red; float: right">3years</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mediaQur mr-2">
-                    <div class="card">
-                        <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">John</h5>
-                            <p class="card-text">Designation</p>
-                            <p class="card-para">
-                                Donated
-                                <span style="color: red; float: right">5000</span>
-                            </p>
-                            <p>
-                                Experience
-                                <span style="color: red; float: right">2years</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="logos d-flex">
-                <div class="col-lg-3 col-md-6 mediaQur mr-2">
-                    <div class="card">
-                        <img src="{{ asset('images/umar-ben-ZGQKW-nIW8o-unsplash.jpg') }}"
-                            class="card-img-top sec-img" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Alisha</h5>
-                            <p class="card-text">Designation</p>
+                            <h5 class="card-title">Sandeep kumar</h5>
+                            <p class="card-text">Founder & CEO</p>
 
                             <p class="card-para">
-                                Donated
-                                <span style="color: red; float: right">5000</span>
+                                Joining
+                                <span style="color: red; float: right">2013</span>
                             </p>
                             <p>
-                                Experience <span style="color: red; float: right">2years</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mediaQur mr-2">
-                    <div class="card">
-                        <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Deepak</h5>
-                            <p class="card-text">Designation</p>
-                            <p class="card-para">
-                                Donated
-                                <span style="color: red; float: right">5000</span>
-                            </p>
-                            <p>
-                                Experience <span style="color: red; float: right">1years</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mediaQur mr-2">
-                    <div class="card">
-                        <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}"
-                            class="card-img-top sec-img" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">Lisoba</h5>
-                            <p class="card-text">Designation</p>
-                            <p class="card-para">
-                                Donated
-                                <span style="color: red; float: right">5000</span>
-                            </p>
-                            <p>
-                                Experience <span style="color: red; float: right">3years</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mediaQur mr-2">
-                    <div class="card">
-                        <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
-                            alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title">John</h5>
-                            <p class="card-text">Designation</p>
-                            <p class="card-para">
-                                Donated
-                                <span style="color: red; float: right">5000</span>
-                            </p>
-                            <p>
-                                Experience
-                                <span style="color: red; float: right">2years</span>
+                                Experience <span style="color: red; float: right">11 Years</span>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="item">
+                <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
+                    <div class="card">
+                        <img src="{{ asset('images/board_member/Mohd. Aftab.jpg') }}" class="card-img-top sec-img"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Mohd. Aftab</h5>
+                            <p class="card-text">Co-Founder</p>
+                            <p class="card-para">
+                                Joining
+                                <span style="color: red; float: right">2017</span>
+                            </p>
+                            <p>
+                                Experience <span style="color: red; float: right">7 years</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="item">
+                <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
+                    <div class="card">
+                        <img src="{{ asset('images/board_member/Neelam Rani.jpg') }}" class="card-img-top sec-img"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Neelam Rani</h5>
+                            <p class="card-text">Chairperson</p>
+                            <p class="card-para">
+                                Joining
+                                <span style="color: red; float: right">2016</span>
+                            </p>
+                            <p>
+                                Experience <span style="color: red; float: right">8 years</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
+                    <div class="card">
+                        <img src="{{ asset('images/board_member/Parveen Kumar.jpg') }}" class="card-img-top sec-img"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Parveen Kumar</h5>
+                            <p class="card-text">National President</p>
+                            <p class="card-para">
+                                Joining
+                                <span style="color: red; float: right">2013</span>
+                            </p>
+                            <p>
+                                Experience
+                                <span style="color: red; float: right">11 years</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
+                    <div class="card">
+                        <img src="{{ asset('images/board_member/Amit Kumar.jpg') }}" class="card-img-top sec-img"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Amit Kumar</h5>
+                            <p class="card-text">National Vice-President</p>
+
+                            <p class="card-para">
+                                Joining
+                                <span style="color: red; float: right">2013</span>
+                            </p>
+                            <p>
+                                Experience <span style="color: red; float: right">11 years</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
+                    <div class="card">
+                        <img src="{{ asset('images/board_member/Rajat Sharma.jpg') }}" class="card-img-top sec-img"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Rajat Sharma</h5>
+                            <p class="card-text">Chief Secretary</p>
+                            <p class="card-para">
+                                Joining
+                                <span style="color: red; float: right">2016</span>
+                            </p>
+                            <p>
+                                Experience <span style="color: red; float: right">8 years</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
+                    <div class="card">
+                        <img src="{{ asset('images/board_member/Raju Sharma.jpg') }}" class="card-img-top sec-img"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Raju Sharma</h5>
+                            <p class="card-text">Finance Head</p>
+                            <p class="card-para">
+                                Joining
+                                <span style="color: red; float: right">2017</span>
+                            </p>
+                            <p>
+                                Experience <span style="color: red; float: right">7 years</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
+                    <div class="card">
+                        <img src="{{ asset('images/board_member/Anish Kumar Singh.jpg') }}" class="card-img-top sec-img"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Anish Kumar Singh</h5>
+                            <p class="card-text">HOD of Volunteers (LPU Group)</p>
+                            <p class="card-para">
+                                Joining
+                                <span style="color: red; float: right">2021</span>
+                            </p>
+                            <p>
+                                Experience
+                                <span style="color: red; float: right">3 years</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
+                    <div class="card">
+                        <img src="{{ asset('images/board_member/Aiman Fatma.jpg') }}" class="card-img-top sec-img"
+                            alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Aiman Fatma</h5>
+                            <p class="card-text">Brand Ambassador </p>
+                            <p class="card-para">
+                                Joining
+                                <span style="color: red; float: right">2021</span>
+                            </p>
+                            <p>
+                                Experience
+                                <span style="color: red; float: right">3 years</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
