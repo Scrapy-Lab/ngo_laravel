@@ -1,7 +1,7 @@
 <div>
     {{-- Step  1 --}}
     @if ($donateFirstForm)
-        <form wire:submit.prevent="saveDonateForm">
+        <form wire:submit.prevent="saveDonateForm" id="donation_form">
             <div class="donateBlogInnerbox">
                 <h3 style="color: #000">Donation Form</h3>
                 <p style="color:#5586e8">Distributes the smiles...</p>

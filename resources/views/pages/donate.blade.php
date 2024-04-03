@@ -271,6 +271,18 @@
             <p><i class="fa fa-phone" aria-hidden="true"></i> 78372-77738</p>
             <p><i class="fa fa-envelope" aria-hidden="true"></i> info@youngistaan.org</p>
             {{-- <img src="{{ url('/images/qrcode.jpeg') }}" alt=""> --}}
+
+            <div class="details">
+                <h1>Offline Donation</h1>
+
+                <p style="color:#5586e8">Send money to our bank account</p>
+                <p class="donation_text">
+                    <span>Account Name : 'YOUNGISTAAN WELFARE SOCIETY'</span> <br>
+                   <span>Account No : 25740100012294</span> <br>
+                  <span>Bank Name : BANK OF BARODA</span> <br>
+                  <span>IFSC Code : BARB0SSILUD</span>  <br>
+                   <span>Branch : SSI LUDHIANA</span> </p>
+            </div>
         </div>
     </div>
 
