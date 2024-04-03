@@ -1130,3 +1130,14 @@ img.partnersImages {
     /* aspect-ratio: 3 / 2; */
     object-fit: contain;
 }
+
+.details{
+
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
+    padding: 10px;
+}
+
+.details p{
+
+    font-weight: bold;
+}

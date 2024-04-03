@@ -45,7 +45,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link @if (Route::currentRouteName() == 'donate-now') active @endif"
-                            href="{{ route('donate-now') }}">Donate Now</a>
+                            href="{{ route('donate-now') }}#donation_form">Donate Now</a>
                     </li>
 
                     <li class="nav-item">
@@ -58,7 +58,7 @@
         </div>
     </nav>
     <div class="topButtons d-flex gap-4">
-        <a href="{{ url('/donate') }}"><button class="read-btn headerButton">Donate Now</button></a>
+        <a href="{{ url('/donate') }}#donation_form"><button class="read-btn headerButton">Donate Now</button></a>
         <a href="{{ url('/join-now') }}"><button class="read-btn headerButton">Join Now</button></a>
     </div>
 </div>
