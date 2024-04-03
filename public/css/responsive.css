@@ -52,6 +52,37 @@ button.navbar-toggler.collapsed {
     background-color: #F2EEED;
     max-width: 106%;
 }
+.row.amountmain .col-md-2 {
+    width: fit-content;
+    margin-top: 15px;
+}
+.row.amountmain {
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 90% !important;
+    height: 450px;
+}
+.campaignsInner .row.justify-content-between {
+    max-width: 91% !important;
+    margin: 0 auto;
+}
+.partnersMain.row.align-items-center {
+    max-width: 90% !important;
+    margin: 0 auto !important;
+}
+.joinNowMain {
+    max-width: 90%;
+    margin: 100px auto;
+    padding: 32px;
+}
+.bnnerimg .card {
+    width: 100% !important;
+}
+.dealer-section {
+    margin: 2em !important;
+}
 
 }
 
@@ -62,5 +93,55 @@ button.navbar-toggler.collapsed {
     position: relative;
     right: 0;
 }
+.col.d-flex.gap-4.py-4:has(.donateAmountButton) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-row {
+    width: fit-content;
+}
+span.donateAmountButton {
+    width: fit-content;
+}
+.row.icn-bx {
+    gap: 0;
+    justify-content: space-between;
+    align-items: start;
+}
+.crt h3 {
+    font-size: 18px;
+}
+.classFlex i {
+    font-size: 1em;
+    color: #AF1515;
+}
+.sec_marginB {
+    margin-top: 5rem !important;
+}
+.crt p {
+    font-size: 14px;
+}
+.container-fluid.sec-8.sec_marginB {
+    margin-top: 0 !important;
+}
+.sec_marginB {
+    margin-bottom: 70px !important;
+}
+.joinGroup.d-flex {
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+}
+.bnnerimg img.map-img {
+    width: 100%;
+    height: auto;
+}
+iframe.iframe-map {
+    width: 100% !important;
+    height: 240px;
+}
+
+
 
 }
