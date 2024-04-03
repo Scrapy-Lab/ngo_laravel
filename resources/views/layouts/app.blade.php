@@ -18,6 +18,7 @@
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
     <link href="{{ asset('css/aboutus.css') }}" rel="stylesheet">
     <link href="{{ asset('css/contactus.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"

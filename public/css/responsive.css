@@ -1,0 +1,66 @@
+@media only screen and (max-width: 1130px) {
+    .tophead ul li a.nav-link {
+        font-size: 14px;
+    }
+    .tophead ul.navbar-nav {
+        gap: 20px;
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .tophead ul.navbar-nav {
+        gap: 16px;
+    }
+    .tophead ul li a.nav-link {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .tophead ul.navbar-nav {
+        gap: 16px;
+    }
+    .tophead ul li a.nav-link {
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+button.navbar-toggler.collapsed {
+    top: 46px;
+    position: relative;
+    right: 8rem;
+}
+.container-fluid {
+    padding: 0 !important;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+.youngistan-sect {
+    background-color: #F2EEED;
+    max-width: 106%;
+}
+
+}
+
+
+@media only screen and (max-width: 565px) {
+button.navbar-toggler.collapsed {
+    top: -2px;
+    position: relative;
+    right: 0;
+}
+
+}
