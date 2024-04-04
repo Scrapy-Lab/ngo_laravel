@@ -33,11 +33,7 @@
 
 
 @media only screen and (max-width: 860px) {
-button.navbar-toggler.collapsed {
-    top: 46px;
-    position: relative;
-    right: 8rem;
-}
+
 .container-fluid {
     padding: 0 !important;
     max-width: 90%;
@@ -80,8 +76,27 @@ button.navbar-toggler.collapsed {
 .bnnerimg .card {
     width: 100% !important;
 }
-.dealer-section {
-    /* margin: 2em !important; */
+.tophead  nav.navbar {
+    padding: 0;
+    width: 100% !important;
+}
+.rounded-bl-none.rounded-tr-none.shadow-md .d-flex {
+    flex-direction: column;
+}
+
+.donateListblogMain img.crd-img {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.leftSides {
+    width: 100%;
+}
+.mobiRate {
+    display: none !important;
+}
+.amountmain .col-md-2 {
+    width: 50% !important;
+    text-align: center;
 }
 
 }

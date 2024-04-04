@@ -61,7 +61,7 @@
                       " wire:click="fixedAmount(200)">
                             <span class="donateAmountButton"> ₹ 200</span>
                         </div>
-                        <div class="col-md-2
+                        <div class="mobiRate col-md-2
                       " wire:click="fixedAmount(500)">
                             <span class="donateAmountButton"> ₹ 500</span>
                         </div>
