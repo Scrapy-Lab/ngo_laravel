@@ -213,7 +213,7 @@
  } */
  .story-img {
     max-width: 100%;
-    height: 70vh;
+    height: auto;
 }
  .hero-content .prg{
     border-left: 4px solid #AF1515;
