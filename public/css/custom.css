@@ -57,6 +57,17 @@ nav.navbar.navbar-expand-lg {
         line-height: 2.5rem;
         width: 100%;
     }
+
+    .card-img-overlay {
+        padding-top: 12rem !important;
+    }
+
+    .donateBanner{
+
+        object-fit: cover;
+        aspect-ratio: 6 / 1;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -1092,6 +1103,17 @@ a.navbar-brand {
         justify-content: center;
     }
 
+    .card-img-overlay {
+        padding-top: 0rem !important;
+    }
+
+
+    .donateBanner{
+
+        object-fit: cover;
+        /* aspect-ratio: 3 / 1; */
+        width: 100%;
+    }
     /* body{
 
         width: 105%;
@@ -1106,6 +1128,9 @@ a.navbar-brand {
         display: flex;
         justify-content: center;
     }
+
+
+
 }
 
 body {
@@ -1145,10 +1170,10 @@ article.mt-6 {
     box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.1);
     border-radius: 14px !important;
 }
-.card-img-overlay {
-    padding-top: 12rem !important;
-}
+
 .bgGrey {
         background: #ededed;
-        padding-bottom: 50px;
+        padding: 100px;
+        margin: 0 !important;
+        width: 100% !important;
     }

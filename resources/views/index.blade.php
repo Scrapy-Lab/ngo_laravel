@@ -170,7 +170,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="oph-para">
                     <h1>Sponsor To Our Talented Children</h1>
-                    <p class="oph-cont">
+                    <p class="oph-cont cnt-prg">
                         At Youngistaan, we believe that every child deserves the opportunity to pursue their passions and
                         realize their full potential. That's why we're launching our "Sponsor Our Talented Children"
                         initiative, a heartfelt invitation for compassionate individuals and organizations to join us in
@@ -218,7 +218,7 @@
 
             <div class="col-lg-3 col-md-6 col-sm-12 mediaQur">
                 <div class="card Main-cnt">
-                    <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
+                    <img src="{{ asset('images/Write an attention grabbing headline here.png') }}" class="card-img-top"
                         alt="..." />
                     <div class="card-body mycustomcardBody">
                         <h5 class="card-title text-white">Right To Vote</h5>
@@ -271,7 +271,7 @@
                 </div>
                 <div class="main-cont col-lg-7 col-md-12">
                     <h1>Message From Founder & CEO</h1>
-                    <p style="font-family:Comic Sans MS">
+                    <p class="cnt-prg" style="font-family:Comic Sans MS">
                         Dear Friends and Supporters,<br><br>
                         I am filled with immense gratitude as I reflect on the remarkable journey we've embarked on
                         together. At Youngistaan our mission isn't just about creating change – it's about igniting a
@@ -489,13 +489,34 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="item">
+                    <div class="col-lg-11 col-md-6 col-sm-12 mediaQur mr-2">
+                        <div class="card">
+                            <img src="{{ asset('images/board_member/Gaurisha.jpg') }}" class="card-img-top sec-img"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Gaurisha</h5>
+                                <p class="card-text">HOD Volunteer (CMC Group)</p>
+                                <p class="card-para">
+                                    Joining
+                                    <span style="color: red; float: right">2024</span>
+                                </p>
+                                <p>
+                                    Experience
+                                    <span style="color: red; float: right">N/A</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- end -->
     <!-- logo -->
-    <div class="container h-100 logo-sect bgGrey">
+    <div class="container-fluid h-100 logo-sect ">
 
         <div class="container titleMargin">
             <div class="row">
@@ -506,8 +527,8 @@
 
             </div>
         </div>
-        <div class="row align-items-center h-100">
-            <div class="container rounded ">
+        <div class="row align-items-center h-100 ">
+            <div class="container-fluid rounded  bgGrey">
 
                 <div class="slider">
                     <div class="logos">

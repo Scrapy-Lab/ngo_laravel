@@ -5,7 +5,9 @@
     <div class="donateMain">
         <div class="imagesgrid d-flex justify-content-between">
             <h2>Donate Now</h2>
-            <figure>
+
+            <img class="donateBanner" src="https://ngo.snehal.info/storage/01HS49RA03KWX36V3ARQC655SB.jpg" alt="">
+            {{-- <figure>
                 <img src="{{ url('/images/image-001.png') }}" alt="">
             </figure>
 
@@ -87,7 +89,7 @@
 
             <figure>
                 <img src="{{ url('/images/image-021.png') }}" alt="">
-            </figure>
+            </figure> --}}
         </div>
         {{-- <h3>Our Programms</h3>
         <p>Youngistaan Foundation’s programs address multiple issues such as hunger, homelessness, gender,

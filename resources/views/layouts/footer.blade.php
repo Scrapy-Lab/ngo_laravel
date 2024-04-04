@@ -6,7 +6,7 @@
             <div class="col-md-3">
                 <img src="{{ url('images/logo/site_logo_white.png') }}" alt="" width="150px">
                 {{-- <h3>About Us</h3> --}}
-                <p class="footercontn">Youngistaan Foundation is a network of volunteers, committed to making a difference in the community by helping those in need.</p>
+                <p class="footercontn cnt-prg">Youngistaan Foundation is a network of volunteers, committed to making a difference in the community by helping those in need.</p>
             </div>
             <div class="col-md-3">
                 <h3>Quick Links</h3>
@@ -35,10 +35,10 @@
                     <li><a class="charityList" href="{{ url('/join-now') }}">Join Now</a></li>
                     <li><a class="charityList" href="{{ url('/donate') }}">Donate Now</a></li>
                     <li>
-                        <a href="{{route('/')}}">Privacy Policy</a>
+                        <a href="">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="{{route('/')}}">Terms & Conditions</a>
+                        <a href="">Terms & Conditions</a>
                     </li>
                 </ul>
             </div>
