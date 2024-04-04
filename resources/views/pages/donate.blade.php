@@ -6,7 +6,7 @@
         <div class="imagesgrid d-flex justify-content-between">
             <h2>Donate Now</h2>
 
-            <img class="donateBanner" src="{{env('APP_URL')}}/storage/01HS49RA03KWX36V3ARQC655SB.jpg" alt="">
+            <img class="donateBanner" src="{{asset('images/donateNowBanner.jpg')}}" alt="">
             {{-- <figure>
                 <img src="{{ url('/images/image-001.png') }}" alt="">
             </figure>
