@@ -215,24 +215,9 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12 mediaQur">
-                <div class="card Main-cnt">
-                    <img src="{{ asset('images/Write an attention grabbing headline here.png') }}" class="card-img-top"
-                        alt="..." />
-                    <div class="card-body mycustomcardBody">
-                        <h5 class="card-title text-white">Right To Vote</h5>
-                        <p class="card-text text-white">
-                            Its our upcoming programs for voting power awarness to the public of Punjab .
-                        </p>
-                        <button class="btn text-white link"><i class="fa-solid fa-arrow-right"
-                                style="margin-right: 5px;"></i>Read more</button>
-                    </div>
-                </div>
-            </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mediaQur">
                 <div class="card">
-                    <img src="{{ asset('images/lisboa-ind-VnqagyZWhtk-unsplash.jpg') }}" class="card-img-top sec-img"
+                    <img src="{{ asset('images/Write an attention grabbing headline here.png') }}" class="card-img-top sec-img"
                         alt="..." />
                     <div class="card-body mYCustomcard">
                         <h5 class="card-title text-white">Food Distribution </h5>
@@ -244,6 +229,23 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mediaQur">
+                <div class="card Main-cnt">
+                    <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
+                        alt="..." />
+                    {{-- <img src="{{ asset('images/Write an attention grabbing headline here.png') }}" class="card-img-top"
+                        alt="..." /> --}}
+                    <div class="card-body mycustomcardBody">
+                        <h5 class="card-title text-white">Right To Vote</h5>
+                        <p class="card-text text-white">
+                            Its our upcoming programs for voting power awarness to the public of Punjab .
+                        </p>
+                        <button class="btn text-white link"><i class="fa-solid fa-arrow-right"
+                                style="margin-right: 5px;"></i>Read more</button>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-lg-3 col-md-6 col-sm-12 mediaQur">
                 <div class="card Main-cnt">
                     <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
