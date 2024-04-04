@@ -31,9 +31,15 @@
             </div>
             <div class="col-md-3">
                 <h3>Get in Touch</h3>
-                <ul class="charityList">
-                    <li><a href="{{ url('/join-now') }}">Join Now</a></li>
-                    <li><a href="{{ url('/donate') }}">Donate Now</a></li>
+                <ul class="blogsList">
+                    <li><a class="charityList" href="{{ url('/join-now') }}">Join Now</a></li>
+                    <li><a class="charityList" href="{{ url('/donate') }}">Donate Now</a></li>
+                    <li>
+                        <a href="{{route('/')}}">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="{{route('/')}}">Terms & Conditions</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-md-3">

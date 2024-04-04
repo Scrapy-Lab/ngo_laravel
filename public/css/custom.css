@@ -1047,7 +1047,7 @@ a.navbar-brand {
     border: none !important;
 }
 
-.charityList li a {
+ li a.charityList {
     background: #fff;
     color: #af1515 !important;
     padding: 11px;
@@ -1060,7 +1060,6 @@ a.navbar-brand {
 }
 
 .footerinner ul li a:hover {
-    background: #5586e8;
     color: #fff !important;
 }
 
@@ -1138,7 +1137,18 @@ img.partnersImages {
     padding: 10px;
 }
 
-.details p{
-
+.details p {
     font-weight: bold;
+    font-size: 11px;
 }
+article.mt-6 {
+    box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.1);
+    border-radius: 14px !important;
+}
+.card-img-overlay {
+    padding-top: 12rem !important;
+}
+.bgGrey {
+        background: #ededed;
+        padding-bottom: 50px;
+    }

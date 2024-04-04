@@ -495,7 +495,7 @@
 
     <!-- end -->
     <!-- logo -->
-    <div class="container h-100 logo-sect">
+    <div class="container h-100 logo-sect bgGrey">
 
         <div class="container titleMargin">
             <div class="row">
