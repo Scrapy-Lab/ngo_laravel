@@ -60,6 +60,6 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © 2021 Youngistaan by SM Technologies India. All Rights Reserved.</p>
+        <p>Copyright © 2021 <b><a href="youngistaan.org" style="text-decoration: none">Youngistaan Foundation</a></b> . All Rights Reserved  |  Developed By <b><a style="text-decoration: none" href="growessgroup.com">Growess Group</a></b></p>
     </div>
 </div>
