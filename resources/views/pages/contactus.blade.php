@@ -24,7 +24,7 @@
     <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 m-auto">
             <h2>How to connect us?</h2>
-            <p>On our journey to make a meaningful impact in the lives of those in need, we invite you to connect with us. Whether you're looking to volunteer your time, donate to our cause, or simply learn more about the work we do, we're here to welcome you with open arms. Every connection we make strengthens our ability to create positive change in the world. So, reach out to us today and let's join forces to spread kindness, hope, and compassion to those who need it most. Together, we can make a difference that lasts a lifetime.
+            <p class="cnt-prg">On our journey to make a meaningful impact in the lives of those in need, we invite you to connect with us. Whether you're looking to volunteer your time, donate to our cause, or simply learn more about the work we do, we're here to welcome you with open arms. Every connection we make strengthens our ability to create positive change in the world. So, reach out to us today and let's join forces to spread kindness, hope, and compassion to those who need it most. Together, we can make a difference that lasts a lifetime.
             </p>
         </div>
         <div class="col-lg-6 col-sm-12 col-md-12 no-gutters">
@@ -56,22 +56,22 @@
 <!-- section-4 -->
 <div class="container business-box">
     <div class="row business-cnt">
-        <h1>Business with OTO Motors</h1>
+        <h1>Connect With Youngistaan!</h1>
         <div class="col-lg-3 col-sm-6">
             <h5>Helpline</h5>
-            <h1>88727-46727</h1>
+            <h1> <a style="color: black; text-decoration:none" href="tel:7837277738" > 78372-77738</a></h1>
         </div>
         <div class="col-lg-3 col-sm-6">
-            <h5>Email</h5>
-            <h4>info@otomotors.in</h4>
+            <h5>Secretariat Team</h5>
+            <h6 class="contact_email"><a href="mailto:info@youngistaan.org" > info@youngistaan.org</a></h6>
         </div>
         <div class="col-lg-3 col-sm-6">
-            <h5>dealer solution</h5>
-            <h4>Dealer solution</h4>
+            <h5>For Joining </h5>
+            <h6 class="contact_email"><a href="mailto:volunteer@youngistaan.org" > volunteer@youngistaan.org</a></h6>
         </div>
         <div class="col-lg-3 col-sm-6">
-            <h5>Used Car Business</h5>
-            <h4>Become partner</h4>
+            <h5>For Donation</h5>
+            <h6 class="contact_email"> <a href="mailto:donation@youngistaan.org" >donation@youngistaan.org</a></h6>
         </div>
     </div>
     <div class="row office-cnt">
@@ -84,10 +84,10 @@
             <h5>New Delhi Office</h5>
             <p>#70, Shree Ram Mandir, Nanakpura Gurdwara,South Moti Bagh, New Delhi, 110021</p>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        {{-- <div class="col-lg-4 col-sm-6">
             <h5>Hyderabad Office</h5>
             <p>Door No. 529/530, Block-B, 5th Floor, Chandralok Complex, SD Road, Secunderabad, Telangana - 500003</p>
-        </div>
+        </div> --}}
     </div>
 </div>
 <!-- end -->

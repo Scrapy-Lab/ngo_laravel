@@ -756,11 +756,11 @@ a {
 /* logo */
 .logo-sect {
     height: 100%;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .logo-sect {
-    width: 94% !important;
+    /* width: 94% !important; */
     overflow: hidden;
 }
 
