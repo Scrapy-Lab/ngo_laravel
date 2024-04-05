@@ -94,6 +94,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
         $(document).ready(function() {
+
+
+
+            function donateScroll() {
+                $(window).scrollTop($('#donation_form').position().top);
+            }
+
+            donateScroll();
+
             $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 0,

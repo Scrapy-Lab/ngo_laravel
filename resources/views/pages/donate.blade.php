@@ -130,7 +130,7 @@
 
     {{-- Donate Content --}}
 
-    <div class="donateblogs row justify-content-between">
+    <div class="donateblogs row justify-content-between" id="donation_form">
         <div class="col-md-8 donateblogcontent mb-3">
             <div class="donateBlogbox">
 
