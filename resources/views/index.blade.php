@@ -220,7 +220,7 @@
                     <img src="{{ asset('images/events/food.jpeg') }}" class="card-img-top"
                         alt="..." />
                     <div class="card-body mYCustomcard">
-                        <h5 class="card-title text-white">Food Distribution </h5>
+                        <h5 class="card-title text-white">Food Distribution Program</h5>
                         <p class="card-text text-white">
                             Upcoming event for the needy children. We will distributes the food to our children.
                         </p>
