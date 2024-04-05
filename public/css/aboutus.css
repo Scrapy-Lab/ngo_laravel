@@ -221,8 +221,8 @@
     font-style: italic;
  }
  .foter-Img {
-    object-fit: cover;
-    height: 50vh;
+    /* object-fit: cover;
+    height: 50vh; */
 }
 .StoryImage {
     margin-top: 35px !important;
