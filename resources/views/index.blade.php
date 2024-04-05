@@ -530,7 +530,8 @@
             </div>
         </div>
         <div class="row align-items-center h-100 ">
-            <div class="container-fluid rounded  bgGrey">
+            {{-- bgGrey --}}
+            <div class="container-fluid rounded  ">
 
                 <div class="slider">
                     <div class="logos">
