@@ -78,7 +78,8 @@
 }
 .tophead  nav.navbar {
     padding: 0;
-    width: 100% !important;
+    width: fit-content !important;
+    position: static;
 }
 .rounded-bl-none.rounded-tr-none.shadow-md .d-flex {
     flex-direction: column;
@@ -95,21 +96,29 @@
     display: none !important;
 }
 .amountmain .col-md-2 {
-    width: 50% !important;
     text-align: center;
 }
-
+.content .tophead {
+    justify-content: start !important;
+}
+button.navbar-toggler.collapsed {
+    position: absolute;
+    right: 28px;
+}
+button.navbar-toggler {
+    position: absolute;
+    right: 28px;
+}
+.carousel-item {
+    height: 272px;
+}
+a#readMore {
+    bottom: 38px; }
 }
 
 
 @media only screen and (max-width: 565px) {
 
-
-button.navbar-toggler.collapsed {
-    top: -2px;
-    position: relative;
-    right: 0;
-}
 .col.d-flex.gap-4.py-4:has(.donateAmountButton) {
     flex-direction: column;
     justify-content: center;
@@ -158,8 +167,70 @@ iframe.iframe-map {
     width: 100% !important;
     height: 240px;
 }
+.needMore {
+    flex-direction: row !important;
+}
+.needMore .form-control { padding: 9px 4px;
+    font-size: 12px !important;
+}
+.donateAmountButton {
+    padding: 7px;
+    font-size: 14px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.row .needMore {
+    flex-direction: row !important;
+    justify-content: start !important;
+    gap: 18px !important;
+}
+.carousel-item {
+    height: 178px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 490px) {
+    .donateAmountButton {
+        padding: 8px 13px !important;
+        font-size: 12px;
+    }
+    .row.amountmain .col-md-2 {
+        padding: 0;
+    }
+    .row.amountmain {
+        gap: 6px;
+    }
+    .input-row {
+        width: 42%;
+    }
+    .row .needMore {
+        padding: 20px 0 !important;
+    }
+    a.navbar-brand {
+        margin-right: 5px;
+    }
+    .tophead .topButtons {
+    gap: 16px !important;
+    }
+    .topButtons button {
+        font-size: 12px;}
 
 
 
 }
 
+
+@media only screen and (max-width: 375px) {
+.tophead .topButtons {
+    gap: 6px !important;
+}
+button.navbar-toggler {
+    position: absolute;
+    right: 19px;
+    padding: 5px 4px;
+}
+
+}

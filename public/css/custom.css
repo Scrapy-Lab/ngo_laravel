@@ -299,7 +299,12 @@ p.date {
 .campaignsInner {
     margin-top: 44px;
 }
-
+a#readMore {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+}
 .campaignboxcontent a {
     font-size: 18px;
     color: #5586e8;
@@ -337,10 +342,10 @@ p.date {
 
 @media screen and (max-width:768px) {
 
-    .headerButton {
+    /* .headerButton {
 
         display: none;
-    }
+    } */
 
     .campaignBox {
         margin: 10px;
@@ -457,12 +462,15 @@ p.date {
     padding: 100px 0;
 }
 
+
 .donateBlogbox img {
     width: 240px;
-    /* border-radius: 10px 10px 0 0; */
+    height: auto !important;
     border-radius: 40px;
 }
-
+.donateBlogbox figure a img {
+    width: 50% !important;
+}
 .donatePayment img {
     width: 362px;
 }
@@ -859,8 +867,8 @@ h4.recentPost {
 }
 
 .carousel-inner img {
-    /* object-fit: contain; */
-    height: auto;
+    object-fit: cover !important;
+    height: inherit !important;
     width: 100% !important;
 }
 
