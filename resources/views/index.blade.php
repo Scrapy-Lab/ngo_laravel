@@ -251,9 +251,9 @@
                     <img src="{{ asset('images/events/upcomming_event.jpeg') }}" class="card-img-top"
                         alt="..." />
                     <div class="card-body Custombody">
-                        <h5 class="card-title text-white">John</h5>
+                        <h5 class="card-title text-white">Upcomming</h5>
                         <p class="card-text text-white">
-                            Organize a Drawing Event for our children of Youngistaan.
+                            Organize an educational Event for our children of Youngistaan.
                         </p>
                         <button class="btn text-white link"><i class="fa-solid fa-arrow-right"
                                 style="margin-right: 5px;"></i>Read more</button>
