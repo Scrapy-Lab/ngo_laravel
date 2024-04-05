@@ -238,7 +238,7 @@
                     <div class="card-body mycustomcardBody">
                         <h5 class="card-title text-white">Right To Vote</h5>
                         <p class="card-text text-white">
-                            Its our upcoming programs for voting power awarness to the public of Punjab .
+                            Organize an educational Event for our children of Youngistaan.
                         </p>
                         <button class="btn text-white link"><i class="fa-solid fa-arrow-right"
                                 style="margin-right: 5px;"></i>Read more</button>
@@ -253,7 +253,7 @@
                     <div class="card-body Custombody">
                         <h5 class="card-title text-white">Upcomming</h5>
                         <p class="card-text text-white">
-                            Organize an educational Event for our children of Youngistaan.
+                            Its our upcoming programs for voting power awarness to the public of Punjab .
                         </p>
                         <button class="btn text-white link"><i class="fa-solid fa-arrow-right"
                                 style="margin-right: 5px;"></i>Read more</button>
