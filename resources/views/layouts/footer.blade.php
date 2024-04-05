@@ -6,7 +6,7 @@
             <div class="col-md-3">
                 <img src="{{ url('images/logo/site_logo_white.png') }}" alt="" width="150px">
                 {{-- <h3>About Us</h3> --}}
-                <p class="footercontn cnt-prg">Youngistaan Foundation is a network of volunteers, committed to making a difference in the community by helping those in need.</p>
+                <p class="footercontn">Youngistaan Foundation is a network of volunteers, committed to making a difference in the community by helping those in need.</p>
             </div>
             <div class="col-md-3">
                 <h3>Quick Links</h3>
@@ -40,6 +40,9 @@
                     <li>
                         <a href="">Terms & Conditions</a>
                     </li>
+                    <li>
+                        <a href="">Refund & Cancellation Policy</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-md-3">
@@ -47,7 +50,7 @@
                <ul class="quick">
                 <li><p><i class="fa fa-map-marker" aria-hidden="true"></i> <strong> Head Office:</strong>#1123, 2nd Floor, Sector-39, Opp. ICICI Bank, Chandigarh Road, Ludhiana -141010 (PB.)</p></li>
                 <li><p><i class="fa fa-phone" aria-hidden="true"></i> <strong>Phone Number : </strong> <a href="tel:7837277738" class="mr-2"> 78372-77738 </a></p></li>
-                <li><p><i class="fa fa-envelope-o" aria-hidden="true"></i> <strong>Email :</strong><a href="mailto:donation@youngistaan.org" > donation@youngistaan.org </a></p></li>
+                <li><p><i class="fa fa-envelope-o" aria-hidden="true"></i> <strong>Email :</strong><a href="mailto:info@youngistaan.org" > info@youngistaan.org </a></p></li>
                 <li>
                     <ul class="socialMediaLinks d-flex gap-5">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
