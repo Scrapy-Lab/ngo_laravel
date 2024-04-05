@@ -114,7 +114,7 @@
 <!-- section-4 -->
 <div class="container bnnerimg">
   <div class="card bg-dark text-white">
-    <img src="{{ asset('images/youngistaan.jpg') }}" class="card-img foter-Img" alt="... " />
+    <img src="{{ asset('images/banners_Images/about_champion_banner.png') }}" class="card-img foter-Img" alt="... " />
     <!-- <div class="card-img-overlay MYcard">
       <button type="button" class="Abt-btns">Join Now</button>
     </div> -->
