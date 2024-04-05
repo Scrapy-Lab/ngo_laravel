@@ -80,7 +80,7 @@
                         </div>
                     </div>
                      <div class="row">
-                        <div class="col d-flex gap-4 py-4">
+                        <div class="col d-flex gap-4 py-4 needMore">
                             <span wire:click="enableCustomAmt" class="donateAmountButton">Custom Amount</span>
                             <div class="input-row">
                                 <input type="number" wire:model="amount" id="customAmountInput" class="form-control"
