@@ -291,7 +291,7 @@
         </form>
     @endif
     {{-- STEP 4 --}}
-    {{-- @if ($donateFourthForm) --}}
+    @if ($donateFourthForm)
         <div class="donateBlogInnerbox nextTypeImage text-center">
             <img id="bouncingImage" src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif"
                 alt="Bouncing Image">
@@ -306,5 +306,5 @@
             <h3>Download Your Donation Receipt</h3>
             <a href="#" class="my-4">Download Now</a>
         </div>
-    {{-- @endif --}}
+    @endif
 </div>
