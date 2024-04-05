@@ -8,8 +8,8 @@
 
                 {{-- DONATION TYPE --}}
                 <h4>Donation Type</h4>
-                <div class="row">
-                    <select wire:model="donation_type" class="form-control  form-select" style="width:230px">
+                <div class="row" style="padding: 20px;">
+                    <select wire:model="donation_type" class="form-control  form-select" style="width:230px;">
                         <option value="" selected>Select Donation Type</option>
                         <option value="1">Monthly Donation</option>
                         <option value="2">Annual Donation</option>
@@ -90,9 +90,65 @@
                     </div>
                     {{-- Selct Project --}}
                     <h4>Select Project*</h4>
-                    <div class="row">
+                    <style>
+                        @media (max-width: 575.98px) {
+                            .col-stack-xs {
+                                flex-basis: 100% !important;
+                                max-width: 50% !important;
+                            }
+                        }
+                    </style>
+
+                    <div class="row mobileView_div"  >
+                        <div class="col-md-6 col-stack-xs" style="padding: 0">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox1" wire:model="transaction_type.1" value="1">
+                                <label class="form-check-label" for="checkbox1">Medical Programs</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox2" wire:model="transaction_type.2" value="2">
+                                <label class="form-check-label" for="checkbox2">Traffic Awareness</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox3" wire:model="transaction_type.3" value="3">
+                                <label class="form-check-label" for="checkbox3">Project-Siksha</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-stack-xs" style="padding: 0">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox4" wire:model="transaction_type.4" value="4">
+                                <label class="form-check-label" for="checkbox4">VastarDaan</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox5" wire:model="transaction_type.5" value="5">
+                                <label class="form-check-label" for="checkbox5">Traffic Awareness</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="checkbox6" wire:model="transaction_type.6" value="6">
+                                <label class="form-check-label" for="checkbox6">Right To Vote</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- <div class="row mobileView_div" >
                         @forelse($projects as $project)
-                            <div class="col-md-4">
+                            <div class="col-md-6 col-stack-xs" style="padding: 0">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox{{ $project->id }}"
+                                        wire:model="transaction_type.{{ $project->id }}" value="{{ $project->id }}">
+                                    <label class="form-check-label" for="checkbox{{ $project->id }}">{{ $project->title }}</label>
+                                </div>
+                            </div>
+                        @empty
+                            <div class="col-md-6 col-stack-xs" style="padding: 0">
+                                <p>No projects found</p>
+                            </div>
+                        @endforelse
+                    </div> --}}
+
+                    <div class="row desktopViewDiv">
+                        @forelse($projects as $project)
+                            <div class="col-xs-2 col-md-4 ">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="checkbox1"
                                         wire:model="transaction_type.{{ $project->id }}" value="{{ $project->id }}">
@@ -235,7 +291,7 @@
         </form>
     @endif
     {{-- STEP 4 --}}
-    @if ($donateFourthForm)
+    {{-- @if ($donateFourthForm) --}}
         <div class="donateBlogInnerbox nextTypeImage text-center">
             <img id="bouncingImage" src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif"
                 alt="Bouncing Image">
@@ -250,5 +306,5 @@
             <h3>Download Your Donation Receipt</h3>
             <a href="#" class="my-4">Download Now</a>
         </div>
-    @endif
+    {{-- @endif --}}
 </div>

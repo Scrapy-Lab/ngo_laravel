@@ -145,15 +145,15 @@
                             aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active donateNowSlider">
                             <img src="{{ asset('images/banners_Images/doante_banner1.png') }}" class="d-block w-100"
                                 alt="Slide 1">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item donateNowSlider">
                             <img src="{{ asset('images/banners_Images/doante_banner2.png') }}" class="d-block w-100"
                                 alt="Slide 2">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item donateNowSlider">
                             <img src="{{ asset('images/banners_Images/doante_banner1.png') }}" class="d-block w-100"
                                 alt="Slide 3">
                         </div>
@@ -315,6 +315,18 @@
 
     <script>
         $(document).ready(function() {
+
+            window.onload = function() {
+                // Scroll to the donation form element
+                var donationForm = document.getElementById('donation_form');
+                if (donationForm) {
+                    donationForm.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            };
+
             $('#carouselExample').carousel({
                 interval: 2000 // Change slide interval here (in milliseconds)
             });

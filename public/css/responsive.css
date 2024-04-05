@@ -19,6 +19,30 @@
     .tophead ul li a.nav-link {
         font-size: 15px;
     }
+
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .mobileView_div {
+        visibility: hidden;
+    }
+    .desktopViewDiv {
+        visibility: visible !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mobileView_div {
+        visibility: visible !important;
+    }
+    .desktopViewDiv {
+        visibility: hidden;
+        display: none !important;
+    }
 }
 
 
