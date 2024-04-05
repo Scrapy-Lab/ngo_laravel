@@ -217,7 +217,7 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mediaQur">
                 <div class="card">
-                    <img src="{{ asset('images/Write an attention grabbing headline here.png') }}" class="card-img-top sec-img"
+                    <img src="{{ asset('images/events/food.jpeg') }}" class="card-img-top"
                         alt="..." />
                     <div class="card-body mYCustomcard">
                         <h5 class="card-title text-white">Food Distribution </h5>
@@ -231,7 +231,7 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mediaQur">
                 <div class="card Main-cnt">
-                    <img src="{{ asset('images/deepak-mahajan-8ig-SzHpqDw-unsplash.jpg') }}" class="card-img-top"
+                    <img src="{{ asset('images/events/siksha.png') }}" class="card-img-top"
                         alt="..." />
                     {{-- <img src="{{ asset('images/Write an attention grabbing headline here.png') }}" class="card-img-top"
                         alt="..." /> --}}
@@ -248,7 +248,7 @@
 
             <div class="col-lg-3 col-md-6 col-sm-12 mediaQur">
                 <div class="card Main-cnt">
-                    <img src="{{ asset('images/jd-chow-gutlccGLXKI-unsplash.jpg') }}" class="card-img-top"
+                    <img src="{{ asset('images/events/upcomming_event.jpeg') }}" class="card-img-top"
                         alt="..." />
                     <div class="card-body Custombody">
                         <h5 class="card-title text-white">John</h5>
@@ -561,11 +561,12 @@
     </div>
     <!-- end -->
     <!-- section -->
-    <div class="container-fluid bnnerimg sec_marginB">
+    {{-- container-fluid --}}
+    <div class=" bnnerimg sec_marginB">
         <div class="card bg-dark text-white">
             <img src="{{ asset('images/lower_banner.jpg') }}" class="card-img footerImg" alt="..." />
             <div class="card-img-overlay MYcard">
-                <h5 class="card-title CustomTitle">No one has ever become poor by giving</h5>
+                <h5 class="card-title CustomTitle">No one has ever become <br> <span class="bannerIndexTextonDesktop">poor by giving </span> </h5>
                 <a href="{{ route('donate-now') }}" style="float: right; padding: 0 19%;">
                     <button type="button" class="CstomBtn read-btn">
                         Donate now

@@ -6,7 +6,7 @@
         <div class="imagesgrid d-flex justify-content-between">
             <h2>Donate Now</h2>
 
-            <img class="donateBanner" src="{{asset('images/donateNowBanner.jpg')}}" alt="">
+            <img class="donateBanner" src="{{ asset('images/donateNowBanner.jpg') }}" alt="">
             {{-- <figure>
                 <img src="{{ url('/images/image-001.png') }}" alt="">
             </figure>
@@ -137,29 +137,37 @@
                 {{-- CAROUSEL --}}
                 <div id="carouselExample" class="carousel slide" data-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 1">
+                            <img src="{{ asset('images/banners_Images/doante_banner1.png') }}" class="d-block w-100"
+                                alt="Slide 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 2">
+                            <img src="{{ asset('images/banners_Images/doante_banner2.png') }}" class="d-block w-100"
+                                alt="Slide 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 3">
+                            <img src="{{ asset('images/banners_Images/doante_banner1.png') }}" class="d-block w-100"
+                                alt="Slide 3">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                      </button>
+                    </button>
 
                 </div>
 
@@ -280,10 +288,11 @@
                 <p style="color:#5586e8">Send money to our bank account</p>
                 <p class="donation_text">
                     <span>Account Name : 'YOUNGISTAAN WELFARE SOCIETY'</span> <br>
-                   <span>Account No : 25740100012294</span> <br>
-                  <span>Bank Name : BANK OF BARODA</span> <br>
-                  <span>IFSC Code : BARB0SSILUD</span>  <br>
-                   <span>Branch : SSI LUDHIANA</span> </p>
+                    <span>Account No : 25740100012294</span> <br>
+                    <span>Bank Name : BANK OF BARODA</span> <br>
+                    <span>IFSC Code : BARB0SSILUD</span> <br>
+                    <span>Branch : SSI LUDHIANA</span>
+                </p>
             </div>
         </div>
     </div>
@@ -311,5 +320,4 @@
             });
         });
     </script>
-
 @endsection

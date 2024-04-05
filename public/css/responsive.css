@@ -53,8 +53,8 @@
     margin-top: 15px;
 }
 .row.amountmain {
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 .card {
     width: 90% !important;
@@ -103,6 +103,8 @@
 
 
 @media only screen and (max-width: 565px) {
+
+
 button.navbar-toggler.collapsed {
     top: -2px;
     position: relative;
@@ -160,3 +162,4 @@ iframe.iframe-map {
 
 
 }
+
