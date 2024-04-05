@@ -12,13 +12,21 @@
                     <div class="banner-text">
                         <h1 class="card-title Custom-title">
                             @php
-                                $text = $banner->name;
-                                $words = explode(' ', $text);
-                                $half = ceil(count($words) / 2);
-                                $firstHalf = implode(' ', array_slice($words, 0, $half));
-                                $secondHalf = implode(' ', array_slice($words, $half));
-                            @endphp
-                            {{ $firstHalf }} <br> {{ $secondHalf }}
+                            $text = $banner->name;
+                            $words = explode(' ', $text);
+                            $totalWords = count($words);
+
+                            // Calculate the approximate lengths of each part
+                            $firstThird = ceil($totalWords * 0.3);  // 40% of total words
+                            $secondThird = ceil($totalWords * 0.3); // 30% of total words
+
+                            // Extract each part
+                            $firstHalf = implode(' ', array_slice($words, 0, $firstThird));
+                            $secondHalf = implode(' ', array_slice($words, $firstThird, $secondThird));
+                            $thirdHalf = implode(' ', array_slice($words, $firstThird + $secondThird));
+                        @endphp
+
+                        {{ $firstHalf }} <br> {{ $secondHalf }} <br> {{ $thirdHalf }}
                         </h1>
                     </div>
                     {{-- <p class="card-text footertxt">
