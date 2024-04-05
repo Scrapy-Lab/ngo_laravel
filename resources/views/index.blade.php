@@ -236,7 +236,7 @@
                     {{-- <img src="{{ asset('images/Write an attention grabbing headline here.png') }}" class="card-img-top"
                         alt="..." /> --}}
                     <div class="card-body mycustomcardBody">
-                        <h5 class="card-title text-white">Right To Vote</h5>
+                        <h5 class="card-title text-white">Medical Project</h5>
                         <p class="card-text text-white">
                             Organize an educational Event for our children of Youngistaan.
                         </p>
