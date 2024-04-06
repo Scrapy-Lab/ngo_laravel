@@ -57,31 +57,31 @@
 
 
                     <div class="row amountmain">
-                        <div class="col-md-2
+                        <div class="col-md-2 donate_amount
                       " wire:click="fixedAmount(200)">
-                            <span class="donateAmountButton"> ₹ 200</span>
+                            <span class="donateAmountButton" style="background-color: {{ $amount == 200 ? '#5586e8' : '#AF1515' }};"> ₹ 200</span>
                         </div>
                         {{-- mobiRate --}}
-                        <div class=" col-md-2
+                        <div class=" col-md-2 donate_amount
                       " wire:click="fixedAmount(500)">
-                            <span class="donateAmountButton"> ₹ 500</span>
+                            <span class="donateAmountButton" style="background-color: {{ $amount == 500 ? '#5586e8' : '#AF1515' }};"> ₹ 500</span>
                         </div>
-                        <div class="col-md-2
+                        <div class="col-md-2 donate_amount
                       " wire:click="fixedAmount(1000)">
-                            <span class="donateAmountButton"> ₹ 1000</span>
+                            <span class="donateAmountButton" style="background-color: {{ $amount == 1000 ? '#5586e8' : '#AF1515' }};"> ₹ 1000</span>
                         </div>
-                        <div class="col-md-2
+                        <div class="col-md-2 donate_amount
                       " wire:click="fixedAmount(2000)">
-                            <span class="donateAmountButton"> ₹ 2000</span>
+                            <span class="donateAmountButton" style="background-color: {{ $amount == 2000 ? '#5586e8' : '#AF1515' }};"> ₹ 2000</span>
                         </div>
-                        <div class="col-md-2
+                        <div class="col-md-2 donate_amount
                       " wire:click="fixedAmount(5000)">
-                            <span class="donateAmountButton"> ₹ 5000</span>
+                            <span class="donateAmountButton" style="background-color: {{ $amount == 5000 ? '#5586e8' : '#AF1515' }};"> ₹ 5000</span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col d-flex gap-4 py-4 needMore">
-                            <span wire:click="enableCustomAmt" class="donateAmountButton">Custom Amount</span>
+                            <span wire:click="enableCustomAmt" class="donateAmountButton"  style="background-color: {{ $enableCustomAmt  ? '#5586e8' : '#AF1515' }};"> Custom Amount</span>
                             <div class="input-row">
                                 <input type="number" wire:model="amount" id="customAmountInput" class="form-control"
                                     placeholder="Enter custom amount" {{ $disable }}>
@@ -332,4 +332,17 @@
             <a href="#" class="my-4">Download Now</a>
         </div>
     @endif
+
+    <script>
+        $(document).ready(function() {
+            // Add click event handler to elements with class donate_amount
+            $('.donateAmountButton').click(function() {
+                // Change color to blue on click
+
+                $('.donateAmountButton').css('background-color', '#AF1515');
+                $(this).css('background-color', '#5586e8');
+                console.log("fasdasdasda");
+            });
+        });
+    </script>
 </div>

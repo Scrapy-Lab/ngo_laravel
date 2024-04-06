@@ -28,6 +28,7 @@ class DonateForm extends Component
     public $payment_type;
     public $transaction_type = [];
     public $amount;
+    public $enableCustomAmt;
 
     // Personal Information
     #[Validate('required|min:3')]
@@ -61,6 +62,7 @@ class DonateForm extends Component
     public function enableCustomAmt()
     {
         $this->disable = '';
+        $this->enableCustomAmt = true;
     }
 
     public function fixedAmount($amount)

@@ -441,7 +441,7 @@ a#readMore {
     font-size: 54px;
     left: 0;
     text-align: center;
-    top: 8rem;
+    top: 3rem;
     right: 0;
 }
 
@@ -462,9 +462,9 @@ a#readMore {
 }
 
 .donateblogs {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto !important;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 
@@ -1135,7 +1135,7 @@ li a.charityList {
     .donateBanner {
 
         object-fit: cover;
-        /* aspect-ratio: 3 / 1; */
+        aspect-ratio: 3 / 1;
         width: 100%;
     }
 
