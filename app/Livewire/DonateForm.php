@@ -24,7 +24,7 @@ class DonateForm extends Component
     public $projects;
 
     // Donation Type
-    public $donation_type=0;
+    public $donation_type = 0;
     public $payment_type;
     public $transaction_type = [];
     public $amount;
@@ -48,7 +48,7 @@ class DonateForm extends Component
     {
         $this->donation_type = 0;
         $this->payment_type = 1;
-        $this->projects = Project::orWhere('schedule',null)->orWhere('schedule','<=',Carbon::now())->where('is_visible',1)->get();
+        $this->projects = Project::orWhere('schedule', null)->orWhere('schedule', '<=', Carbon::now())->where('is_visible', 1)->get();
         $this->donateNow = new DonateNow();
         $this->payment = new Payment();
     }
@@ -76,21 +76,32 @@ class DonateForm extends Component
         $this->donateNow->amount = $this->amount;
         $this->donateNow->payment_type = $this->payment_type;
         $transactionIds = [];
-        foreach($this->transaction_type as $key=>$val){
-            $transactionIds[] = $key;
+
+        foreach ($this->transaction_type as $key => $val) {
+            if ($val) {
+
+                $transactionIds[] = $key;
+            }
         }
+        // dd($this->transaction_type, $transactionIds);
         $this->donateNow->transaction_type = json_encode($transactionIds);
-        if($this->donateNow->save()){
+        if ($this->donateNow->save()) {
             $this->donateFirstForm = false;
             $this->donateSecondForm = true;
             session()->flash('status', 'Donation Details Complete.');
         }
-
-
     }
 
-    public function savePersonalInfo()
+    public function savePersonalInfo($back)
     {
+
+        if ($back) {
+            // dd($back);
+            $this->donateFirstForm = true;
+            $this->donateSecondForm = false;
+            return true;
+        }
+
         // dd('asdasd');
         $this->validate();
         // dd($this->validate());
@@ -99,7 +110,7 @@ class DonateForm extends Component
         $this->donateNow->phone = $this->phone;
         $this->donateNow->city = $this->city;
         $this->donateNow->address = $this->address;
-        if($this->donateNow->save()){
+        if ($this->donateNow->save()) {
             $this->donateSecondForm = false;
             $this->donateThirdForm = true;
             session()->flash('status', 'User Personal Details successfully submitted.');
@@ -107,8 +118,15 @@ class DonateForm extends Component
     }
 
 
-    public function saveScreenShot()
+    public function saveScreenShot($back)
     {
+
+        if ($back) {
+            // dd($back);
+            $this->donateSecondForm = true;
+            $this->donateThirdForm = false;
+            return true;
+        }
 
         $this->validate();
 
@@ -116,8 +134,8 @@ class DonateForm extends Component
         // dd();
         // $this->screenshot->store('screenshot');
         // dd( $this->screenshot->store('screenshot'));
-        $this->donateNow->payment_ss = $this->screenshot->store('payments','public');
-        if($this->donateNow->save()){
+        $this->donateNow->payment_ss = $this->screenshot->store('payments', 'public');
+        if ($this->donateNow->save()) {
             $this->donateThirdForm = false;
             $this->donateFourthForm = true;
 

@@ -152,10 +152,10 @@
                             @forelse($projects as $project)
                                 <div class="col-xs-2 col-md-4 ">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="checkbox1"
+                                        <input class="form-check-input" type="checkbox" id="checkbox_{{$project->id }}"
                                             wire:model="transaction_type.{{ $project->id }}"
                                             value="{{ $project->id }}">
-                                        <label class="form-check-label" for="checkbox1">{{ $project->title }}</label>
+                                        <label class="form-check-label" for="checkbox_{{$project->id }}">{{ $project->title }}</label>
                                     </div>
                                 </div>
                             @empty
@@ -185,12 +185,13 @@
 
                 </div>
                 <button class="my-4" type="submit">Next</button>
+
             </div>
             <form>
     @endif
     {{-- STEP 2  --}}
     @if ($donateSecondForm)
-        <form wire:submit.prevent="savePersonalInfo">
+        <form wire:submit.prevent="savePersonalInfo(0)">
             <div class="donateBlogInnerbox">
                 {{-- Personal Info --}}
                 @if (session('status'))
@@ -247,14 +248,18 @@
                             @enderror
                         </div>
                     </div>
-                    <button href="#" class="my-4">Donate Now</button>
+
+                    {{-- <img src="{{asset('images/logo/back.png')}}" alt="" width="20px"> --}}
+                    {{-- <button class="my-4"   wire:target="savePersonalInfo(1)"  type="submit">Back</button> --}}
+                    <button href="#" class="my-4 ">Donate Now</button>
+                    <i class="fa fa-arrow-left" wire:click="savePersonalInfo(1)" style="float: ; padding: 37px; cursor:pointer" aria-hidden="true"> Back</i>
                 </div>
             </div>
         </form>
     @endif
     {{-- STEP 3 --}}
     @if ($donateThirdForm)
-        <form wire:submit.prevent="saveScreenShot">
+        <form wire:submit.prevent="saveScreenShot(0)">
             <div class="donateBlogInnerbox">
                 @if (session('status'))
                     <div class="alert alert-success">
@@ -311,6 +316,7 @@
                 </div>
 
                 <button href="#" class="my-4">Donate Now</button>
+                <i class="fa fa-arrow-left" wire:click="saveScreenShot(1)" style="float: ; padding: 37px; cursor:pointer" aria-hidden="true"> Back</i>
 
             </div>
         </form>
