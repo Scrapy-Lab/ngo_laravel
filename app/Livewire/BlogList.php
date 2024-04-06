@@ -17,7 +17,7 @@ class BlogList extends Component
             $query->whereNull('published_at')
                 ->orWhere('published_at', '<=', Carbon::now());
         })
-        ->orderBy('ordering', 'ASC')
+        ->orderBy('published_at', 'DESC')
         ->get();
     }
 
