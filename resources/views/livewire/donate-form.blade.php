@@ -9,7 +9,7 @@
                 {{-- DONATION TYPE --}}
                 <h4>Donation Type</h4>
                 <div class="row" style="padding: 20px;">
-                    <select wire:model="donation_type" class="form-control  form-select" style="width:230px;">
+                    <select wire:model="donation_type" class="form-control  form-select" style="width:230px;" required>
                         <option value="" selected>Select Donation Type</option>
                         <option value="1">Monthly Donation</option>
                         <option value="2">Annual Donation</option>
@@ -197,6 +197,7 @@
                 @if (session('status'))
                     <div class="alert alert-success">
                         {{ session('status') }}
+                        <i class="fa fa-arrow-left" wire:click="savePersonalInfo(1)" style="float: right; cursor:pointer" aria-hidden="true"> Back</i>
                     </div>
                 @endif
                 <h4>Personal Info</h4>
@@ -252,7 +253,7 @@
                     {{-- <img src="{{asset('images/logo/back.png')}}" alt="" width="20px"> --}}
                     {{-- <button class="my-4"   wire:target="savePersonalInfo(1)"  type="submit">Back</button> --}}
                     <button href="#" class="my-4 ">Donate Now</button>
-                    <i class="fa fa-arrow-left" wire:click="savePersonalInfo(1)" style="float: ; padding: 37px; cursor:pointer" aria-hidden="true"> Back</i>
+
                 </div>
             </div>
         </form>
@@ -264,6 +265,7 @@
                 @if (session('status'))
                     <div class="alert alert-success">
                         {{ session('status') }}
+                        <i class="fa fa-arrow-left" wire:click="saveScreenShot(1)" style="float: right;cursor:pointer" aria-hidden="true"> Back</i>
                     </div>
                 @endif
                 <div class="container-fluid">
@@ -316,7 +318,7 @@
                 </div>
 
                 <button href="#" class="my-4">Donate Now</button>
-                <i class="fa fa-arrow-left" wire:click="saveScreenShot(1)" style="float: ; padding: 37px; cursor:pointer" aria-hidden="true"> Back</i>
+
 
             </div>
         </form>
