@@ -2,7 +2,7 @@
     {{-- Navbar --}}
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="{{ url('images/logo/site_logo.png') }}" alt=""
+            <a class="navbar-brand" href="{{route('home')}}"><img src="{{ url('images/logo/site_logo.png') }}" alt=""
                     width="80px"></a>
 
 
@@ -13,7 +13,7 @@
             </button>
 
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="visibility: visible;">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ">
                         <a class="nav-link @if (Route::currentRouteName() == 'home') active @endif "
