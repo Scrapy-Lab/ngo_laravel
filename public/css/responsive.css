@@ -2,6 +2,7 @@
     .tophead ul li a.nav-link {
         font-size: 14px;
     }
+
     .tophead ul.navbar-nav {
         gap: 20px;
     }
@@ -16,6 +17,7 @@
     .tophead ul.navbar-nav {
         gap: 16px;
     }
+
     .tophead ul li a.nav-link {
         font-size: 15px;
     }
@@ -30,18 +32,31 @@
     .mobileView_div {
         visibility: hidden;
     }
+
     .desktopViewDiv {
         visibility: visible !important;
     }
+
+    iframe.mapContact {
+        width: 550px;
+        height: 450px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
     .mobileView_div {
         visibility: visible !important;
     }
+
     .desktopViewDiv {
         visibility: hidden;
         display: none !important;
+    }
+
+    iframe.mapContact {
+        width: 384px;
+        height: 450px;
     }
 }
 
@@ -50,6 +65,7 @@
     .tophead ul.navbar-nav {
         gap: 16px;
     }
+
     .tophead ul li a.nav-link {
         font-size: 13px;
     }
@@ -58,159 +74,197 @@
 
 @media only screen and (max-width: 860px) {
 
-.container-fluid {
-    padding: 0 !important;
-    max-width: 90%;
-    margin: 0 auto;
-}
-.logos {
-    display: flex;
-    flex-direction: row;
-    gap: 4em;
-}
-.youngistan-sect {
-    background-color: #F2EEED;
-    max-width: 106%;
-}
-.row.amountmain .col-md-2 {
-    width: fit-content;
-    margin-top: 15px;
-}
-.row.amountmain {
-    /* align-items: center;
-    justify-content: center; */
-}
-.card {
-    width: 90% !important;
-    height: 450px;
-}
-.campaignsInner .row.justify-content-between {
-    max-width: 91% !important;
-    margin: 0 auto;
-}
-.partnersMain.row.align-items-center {
-    max-width: 90% !important;
-    margin: 0 auto !important;
-}
-.joinNowMain {
-    max-width: 90%;
-    margin: 100px auto;
-    padding: 32px;
-}
-.bnnerimg .card {
-    width: 100% !important;
-}
-.tophead  nav.navbar {
-    padding: 0;
-    width: fit-content !important;
-    position: static;
-}
-.rounded-bl-none.rounded-tr-none.shadow-md .d-flex {
-    flex-direction: column;
-}
+    .container-fluid {
+        padding: 0 !important;
+        max-width: 90%;
+        margin: 0 auto;
+    }
 
-.donateListblogMain img.crd-img {
-    width: 100% !important;
-    max-width: 100% !important;
-}
-.leftSides {
-    width: 100%;
-}
-.mobiRate {
-    display: none !important;
-}
-.amountmain .col-md-2 {
-    text-align: center;
-}
-.content .tophead {
-    justify-content: start !important;
-}
-button.navbar-toggler.collapsed {
-    position: absolute;
-    right: 28px;
-}
-button.navbar-toggler {
-    position: absolute;
-    right: 28px;
-}
-.carousel-item {
-    height: 272px;
-}
-a#readMore {
-    bottom: 38px; }
+    .logos {
+        display: flex;
+        flex-direction: row;
+        gap: 4em;
+    }
+
+    .youngistan-sect {
+        background-color: #F2EEED;
+        max-width: 106%;
+    }
+
+    .row.amountmain .col-md-2 {
+        width: fit-content;
+        margin-top: 15px;
+    }
+
+    .row.amountmain {
+        /* align-items: center;
+    justify-content: center; */
+    }
+
+    .card {
+        width: 90% !important;
+        height: 450px;
+    }
+
+    .campaignsInner .row.justify-content-between {
+        max-width: 91% !important;
+        margin: 0 auto;
+    }
+
+    .partnersMain.row.align-items-center {
+        max-width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    .joinNowMain {
+        max-width: 90%;
+        margin: 100px auto;
+        padding: 32px;
+    }
+
+    .bnnerimg .card {
+        width: 100% !important;
+    }
+
+    .tophead nav.navbar {
+        padding: 0;
+        width: fit-content !important;
+        position: static;
+    }
+
+    .rounded-bl-none.rounded-tr-none.shadow-md .d-flex {
+        flex-direction: column;
+    }
+
+    .donateListblogMain img.crd-img {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .leftSides {
+        width: 100%;
+    }
+
+    .mobiRate {
+        display: none !important;
+    }
+
+    .amountmain .col-md-2 {
+        text-align: center;
+    }
+
+    .content .tophead {
+        justify-content: start !important;
+    }
+
+    button.navbar-toggler.collapsed {
+        position: absolute;
+        right: 28px;
+    }
+
+    button.navbar-toggler {
+        position: absolute;
+        right: 28px;
+    }
+
+    .carousel-item {
+        height: 272px;
+    }
+
+    a#readMore {
+        bottom: 38px;
+    }
 }
 
 
 @media only screen and (max-width: 565px) {
 
-.col.d-flex.gap-4.py-4:has(.donateAmountButton) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.input-row {
-    width: fit-content;
-}
-span.donateAmountButton {
-    width: fit-content;
-}
-.row.icn-bx {
-    gap: 0;
-    justify-content: space-between;
-    align-items: start;
-}
-.crt h3 {
-    font-size: 18px;
-}
-.classFlex i {
-    font-size: 1em;
-    color: #AF1515;
-}
-.sec_marginB {
-    margin-top: 5rem !important;
-}
-.crt p {
-    font-size: 14px;
-}
-.container-fluid.sec-8.sec_marginB {
-    margin-top: 0 !important;
-}
-.sec_marginB {
-    margin-bottom: 70px !important;
-}
-.joinGroup.d-flex {
-    flex-direction: column;
-    max-width: 100%;
-    width: 100%;
-}
-.bnnerimg img.map-img {
-    width: 100%;
-    height: auto;
-}
-iframe.iframe-map {
-    width: 100% !important;
-    height: 240px;
-}
-.needMore {
-    flex-direction: row !important;
-}
-.needMore .form-control { padding: 9px 4px;
-    font-size: 12px !important;
-}
-.donateAmountButton {
-    padding: 7px;
-    font-size: 14px;
-    padding-left: 18px;
-    padding-right: 18px;
-}
-.row .needMore {
-    flex-direction: row !important;
-    justify-content: start !important;
-    gap: 18px !important;
-}
-.carousel-item {
-    height: 178px;
-}
+    .col.d-flex.gap-4.py-4:has(.donateAmountButton) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-row {
+        width: fit-content;
+    }
+
+    span.donateAmountButton {
+        width: fit-content;
+    }
+
+    .row.icn-bx {
+        gap: 0;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .crt h3 {
+        font-size: 18px;
+    }
+
+    .classFlex i {
+        font-size: 1em;
+        color: #AF1515;
+    }
+
+    .sec_marginB {
+        margin-top: 5rem !important;
+    }
+
+    .crt p {
+        font-size: 14px;
+    }
+
+    .container-fluid.sec-8.sec_marginB {
+        margin-top: 0 !important;
+    }
+
+    .sec_marginB {
+        margin-bottom: 70px !important;
+    }
+
+    .joinGroup.d-flex {
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .bnnerimg img.map-img {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe.iframe-map {
+        width: 100% !important;
+        height: 240px;
+    }
+
+    .needMore {
+        flex-direction: row !important;
+    }
+
+    .needMore .form-control {
+        padding: 9px 4px;
+        font-size: 12px !important;
+    }
+
+    .donateAmountButton {
+        padding: 7px;
+        font-size: 14px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .row .needMore {
+        flex-direction: row !important;
+        justify-content: start !important;
+        gap: 18px !important;
+    }
+
+    .carousel-item {
+        height: 178px;
+    }
 
 }
 
@@ -221,26 +275,34 @@ iframe.iframe-map {
         padding: 8px 13px !important;
         font-size: 12px;
     }
+
     .row.amountmain .col-md-2 {
         padding: 0;
     }
+
     .row.amountmain {
         gap: 6px;
     }
+
     .input-row {
         width: 42%;
     }
+
     .row .needMore {
         padding: 20px 0 !important;
     }
+
     a.navbar-brand {
         margin-right: 5px;
     }
+
     .tophead .topButtons {
-    gap: 16px !important;
+        gap: 16px !important;
     }
+
     .topButtons button {
-        font-size: 12px;}
+        font-size: 12px;
+    }
 
 
 
@@ -248,13 +310,14 @@ iframe.iframe-map {
 
 
 @media only screen and (max-width: 375px) {
-.tophead .topButtons {
-    gap: 6px !important;
-}
-button.navbar-toggler {
-    position: absolute;
-    right: 19px;
-    padding: 5px 4px;
-}
+    .tophead .topButtons {
+        gap: 6px !important;
+    }
+
+    button.navbar-toggler {
+        position: absolute;
+        right: 19px;
+        padding: 5px 4px;
+    }
 
 }

@@ -86,8 +86,8 @@
         margin: -1em;
     }
     .map-img {
-        width: 107%;
-        height: 40vh;
+        /* width: 107%;
+        height: 40vh; */
     }
     .iframe-map {
         max-width: 107%;
