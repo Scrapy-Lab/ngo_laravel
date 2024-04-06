@@ -27,7 +27,7 @@
                                     <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
                                     {{-- <a href="{{ route('project-details', $project->slug) }}" id="readMore">Read
                                         More</a> --}}
-                                        <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+                                        <a href="{{ route('project-details', $project->slug) }}" id="readMores">
                                             <button class="read-btn">
 
                                                 Read
