@@ -1182,6 +1182,7 @@ body {
 img.partnersImages {
     /* aspect-ratio: 3 / 2; */
     object-fit: contain;
+    margin-right: 40px;
 }
 
 .details {
@@ -1215,3 +1216,24 @@ article.mt-6 {
     max-width: 100%;
     border-radius: 20px;
 }
+
+
+/* .slider {
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+} */
+
+

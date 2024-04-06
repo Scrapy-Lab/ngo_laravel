@@ -765,17 +765,18 @@ a {
 }
 
 .slider {
-    animation: slidein 15s linear infinite;
+    animation: slidein 10s linear infinite;
     white-space: nowrap;
+
 }
 
-.sliderTeam {
+/* .sliderTeam {
     animation: slidein 20s linear infinite;
     white-space: nowrap;
-}
+} */
 
 .logos {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     gap: 8em;
 }

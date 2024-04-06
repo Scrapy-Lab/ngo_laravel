@@ -2,7 +2,7 @@
 @section('content')
 {{-- carousel --}}
     <!-- section-1 -->
-    <div id="carouselExampleCaptions" class="carousel slide slider1" data-bs-ride="false" data-bs-interval="2000">
+    <div id="carouselExampleCaptions" class="carousel slide slider1" data-bs-ride="carousel" data-bs-interval="2000">
         @livewire('homepage-slider')
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -541,7 +541,14 @@
                             <img class="partnersImages" src="{{asset('images/partners_images/Picture'.$i.'.png')}}">
 
                         @endfor
-                        <i class="fab fa-js fa-4x"></i>
+
+                        @for ($i=2; $i<=19;$i++)
+
+                            <img class="partnersImages" src="{{asset('images/partners_images/Picture'.$i.'.png')}}">
+
+                        @endfor
+
+                        {{-- <i class="fab fa-js fa-4x"></i>
                         <i class="fab fa-linkedin-in fa-4x"></i>
                         <i class="fab fa-dribbble fa-4x"></i>
                         <i class="fab fa-medium-m fa-4x"></i>
@@ -555,7 +562,7 @@
                         <i class="fab fa-linkedin-in fa-4x"></i>
                         <i class="fab fa-dribbble fa-4x"></i>
                         <i class="fab fa-medium-m fa-4x"></i>
-                        <i class="fab fa-github fa-4x"></i>
+                        <i class="fab fa-github fa-4x"></i> --}}
                     </div>
                 </div>
             </div>
