@@ -12,7 +12,7 @@
                             <div class="campaignboxcontent">
                                 <a href="{{ route('project-details', $project->slug) }}">{{ $project->title }}</a>
                                 <p>{!! html_entity_decode(Str::limit($project->content, 100)) !!}</p>
-                                <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+                                <a href="{{ url('blog/post/'.$project->slug) }}" id="readMore">
                                     <button class="read-btn">
 
                                         Read
