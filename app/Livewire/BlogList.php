@@ -12,7 +12,13 @@ class BlogList extends Component
     public $Projects =[];
 
     public function mount() {
-        $this->Projects = Post::where('post_type', 'post')->orWhere('published_at',null)->orWhere('published_at','<=',Carbon::now())->orderBy('ordering', 'ASC')->get();
+        $this->Projects = Post::where('post_type', 'post')
+        ->where(function ($query) {
+            $query->whereNull('published_at')
+                ->orWhere('published_at', '<=', Carbon::now());
+        })
+        ->orderBy('ordering', 'ASC')
+        ->get();
     }
 
     public function render()
