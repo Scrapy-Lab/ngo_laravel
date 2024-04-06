@@ -45,7 +45,7 @@
         </div>
 
         {{-- Our Partners --}}
-        <div class="partnersMain row align-items-center">
+        {{-- <div class="partnersMain row align-items-center">
             <div class="col-md-6">
                 <h3>Our partners</h3>
                 <h4>Everyone here is passionate about their work, incredibly smart, and genuinely kind.</h4>
@@ -78,6 +78,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
