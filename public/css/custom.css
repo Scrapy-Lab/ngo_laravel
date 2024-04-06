@@ -52,6 +52,9 @@ nav.navbar.navbar-expand-lg {
 
         margin-right: 217px;
     }
+    .donateBlogbox{
+        margin-left: 100px;
+    }
 
     .donateNowSlider{
 
@@ -1202,4 +1205,13 @@ article.mt-6 {
     padding: 100px;
     margin: 0 !important;
     width: 100% !important;
+}
+
+
+.project_details_images{
+    width: 100% !important;
+    aspect-ratio: 6 / 2;
+    height: auto !important;
+    max-width: 100%;
+    border-radius: 20px;
 }
