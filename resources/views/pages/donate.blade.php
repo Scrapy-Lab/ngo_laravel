@@ -6,7 +6,7 @@
         <div class="imagesgrid d-flex justify-content-between">
             <h2>Donate Now</h2>
 
-            <img class="donateBanner" src="{{ asset('images/donateNowBanner.jpg') }}" alt="" style="object-fit: fill">
+            <img class="donateBanner" src="{{ asset('images/donateNowBanner.jpg') }}" alt="" >
             {{-- <figure>
                 <img src="{{ url('/images/image-001.png') }}" alt="">
             </figure>
@@ -147,15 +147,15 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active donateNowSlider">
                             <img src="{{ asset('images/banners_Images/doante_banner1.png') }}" class="d-block w-100"
-                                alt="Slide 1">
+                                alt="Slide 1" style="object-fit: fill !important">
                         </div>
                         <div class="carousel-item donateNowSlider">
                             <img src="{{ asset('images/banners_Images/doante_banner2.png') }}" class="d-block w-100"
-                                alt="Slide 2">
+                                alt="Slide 2" style="object-fit: fill !important" >
                         </div>
                         <div class="carousel-item donateNowSlider">
                             <img src="{{ asset('images/banners_Images/doante_banner1.png') }}" class="d-block w-100"
-                                alt="Slide 3">
+                                alt="Slide 3"style="object-fit: fill !important">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
