@@ -34,29 +34,31 @@
     <!-- section-1  -->
     <div class="container-fluid sec-2">
         <div class="row fourdivs">
-            <div class="col-lg-2  Aboutbox3  col-md-4">
-                <i class="fa-regular fa-file-lines"></i>
+            <div class="col-lg-2  clsFlexxx col-md-4">
+                <i class="fa-solid fa-medal fnt-cn"></i>
                 <div class="crts">
                     <h2><span class="counter" data-end-value="76800">0</span>+</h2>
-                    <p>Students P/year</p>
+                    <p>Children P/year</p>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 Aboutbox4">
-                <i class="fa-solid fa-hospital"></i>
+
+            <div class="col-lg-2 clsFlexx col-md-4">
+                <i class="fa-solid fa-globe fnt-cn"></i>
                 <div class="crtss">
                     <h3> <span class="counter" data-end-value="20">0</span>+</h3>
                     <p>Cities Work</p>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 Aboutbox3">
+            <div class="col-lg-2 clsFlexxx col-md-4">
                 <i class="fa-solid fa-people-roof"></i>
                 <div class="crts">
                     <h3> <span class="counter" data-end-value="800">3</span>+</h3>
                     <p>Active Members</p>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 Aboutbox4">
-                <i class="fa-solid fa-clock"></i>
+            <div class="col-lg-2 clsFlexx col-md-4">
+                <i class="fas fa-handshake"></i>
+
                 <div class="crtss">
                     <h3> <span class="counter" data-end-value="1500">0</span>+</h3>
                     <p>Active Donors</p>

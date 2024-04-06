@@ -1,7 +1,7 @@
 <div>
     {{-- Step  1 --}}
     @if ($donateFirstForm)
-        <form wire:submit.prevent="saveDonateForm" >
+        <form wire:submit.prevent="saveDonateForm">
             <div class="donateBlogInnerbox">
                 <h3 style="color: #000">Donation Form</h3>
                 <p style="color:#5586e8">Distributes the smiles...</p>
@@ -79,7 +79,7 @@
                             <span class="donateAmountButton"> ₹ 5000</span>
                         </div>
                     </div>
-                     <div class="row">
+                    <div class="row">
                         <div class="col d-flex gap-4 py-4 needMore">
                             <span wire:click="enableCustomAmt" class="donateAmountButton">Custom Amount</span>
                             <div class="input-row">
@@ -99,36 +99,70 @@
                         }
                     </style>
 
-                    <div class="row mobileView_div"  >
-                        <div class="col-md-6 col-stack-xs" style="padding: 0">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="checkbox1" wire:model="transaction_type.1" value="1">
-                                <label class="form-check-label" for="checkbox1">Medical Programs</label>
+                    @php
+                        // Check if the "mobile" word exists in User-Agent
+                        $isMob = is_numeric(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'mobile'));
+
+                        // if($isMob){
+                        // echo 'Using Mobile Device...';
+                        // }else{
+                        // echo 'Using Desktop...';
+                        // }
+
+                    @endphp
+                    @if ($isMob)
+                        <div class="row mobileView_div">
+                            <div class="col-md-6 col-stack-xs" style="padding: 0">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox1"
+                                        wire:model="transaction_type.1" value="1">
+                                    <label class="form-check-label" for="checkbox1">Medical Programs</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2"
+                                        wire:model="transaction_type.2" value="2">
+                                    <label class="form-check-label" for="checkbox2">Traffic Awareness</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox3"
+                                        wire:model="transaction_type.3" value="3">
+                                    <label class="form-check-label" for="checkbox3">Project-Siksha</label>
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="checkbox2" wire:model="transaction_type.2" value="2">
-                                <label class="form-check-label" for="checkbox2">Traffic Awareness</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="checkbox3" wire:model="transaction_type.3" value="3">
-                                <label class="form-check-label" for="checkbox3">Project-Siksha</label>
+                            <div class="col-md-6 col-stack-xs" style="padding: 0">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox4"
+                                        wire:model="transaction_type.4" value="4">
+                                    <label class="form-check-label" for="checkbox4">VastarDaan</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox5"
+                                        wire:model="transaction_type.5" value="5">
+                                    <label class="form-check-label" for="checkbox5">Traffic Awareness</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox6"
+                                        wire:model="transaction_type.6" value="6">
+                                    <label class="form-check-label" for="checkbox6">Right To Vote</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-stack-xs" style="padding: 0">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="checkbox4" wire:model="transaction_type.4" value="4">
-                                <label class="form-check-label" for="checkbox4">VastarDaan</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="checkbox5" wire:model="transaction_type.5" value="5">
-                                <label class="form-check-label" for="checkbox5">Traffic Awareness</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="checkbox6" wire:model="transaction_type.6" value="6">
-                                <label class="form-check-label" for="checkbox6">Right To Vote</label>
-                            </div>
+                    @else
+                        <div class="row desktopViewDiv">
+                            @forelse($projects as $project)
+                                <div class="col-xs-2 col-md-4 ">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="checkbox1"
+                                            wire:model="transaction_type.{{ $project->id }}"
+                                            value="{{ $project->id }}">
+                                        <label class="form-check-label" for="checkbox1">{{ $project->title }}</label>
+                                    </div>
+                                </div>
+                            @empty
+                            @endforelse
                         </div>
-                    </div>
+                    @endif
+
 
                     {{-- <div class="row mobileView_div" >
                         @forelse($projects as $project)
@@ -146,18 +180,9 @@
                         @endforelse
                     </div> --}}
 
-                    <div class="row desktopViewDiv">
-                        @forelse($projects as $project)
-                            <div class="col-xs-2 col-md-4 ">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="checkbox1"
-                                        wire:model="transaction_type.{{ $project->id }}" value="{{ $project->id }}">
-                                    <label class="form-check-label" for="checkbox1">{{ $project->title }}</label>
-                                </div>
-                            </div>
-                        @empty
-                        @endforelse
-                    </div>
+
+
+
                 </div>
                 <button class="my-4" type="submit">Next</button>
             </div>
