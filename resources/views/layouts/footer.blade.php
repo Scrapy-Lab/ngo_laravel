@@ -35,13 +35,13 @@
                     <li><a class="charityList" href="{{ url('/join-now') }}">Join Now</a></li>
                     <li><a class="charityList" href="{{ url('/donate') }}">Donate Now</a></li>
                     <li>
-                        <a href="">Privacy Policy</a>
+                        <a href="{{route('privacy-policy')}}">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="">Terms & Conditions</a>
+                        <a href="{{route('terms-conditions')}}">Terms & Conditions</a>
                     </li>
                     <li>
-                        <a href="">Refund & Cancellation Policy</a>
+                        <a href="{{route('refund-policy')}}">Refund & Cancellation Policy</a>
                     </li>
                 </ul>
             </div>

@@ -35,5 +35,17 @@ Route::middleware('page-cache')->get('contact-us', function () {
     return view('pages.contactus');
 })->name('contact-us');
 
+Route::middleware('page-cache')->get('privacy-policy', function () {
+    return view('pages.privacy');
+})->name('privacy-policy');
+
+Route::middleware('page-cache')->get('refund-policy', function () {
+    return view('pages.refund');
+})->name('refund-policy');
+
+Route::middleware('page-cache')->get('terms-conditions', function () {
+    return view('pages.terms');
+})->name('terms-conditions');
+
 
 Route::get('project-details/{slug}',[DynamicPageController::class,'projectDetail'])->name('project-details');

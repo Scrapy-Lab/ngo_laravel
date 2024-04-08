@@ -15,4 +15,9 @@ class DonateNow extends Model
     {
         return $this->belongsTo(Payment::class);
     }
+
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
+    }
 }

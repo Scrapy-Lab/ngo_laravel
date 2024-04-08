@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        .logo {
+
+            width: 100px;
+        }
+
+        /* body {
+            margin: 0;
+            font-family: calibri;
+        } */
+
+        /* header */
+
+        .logo {
+            color: black;
+            display: inline-lock;
+        }
+
+        .header {
+            background-color: #fff;
+            box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+        }
+
+        .header ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .header li a {
+            display: block;
+            padding: 20px 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        .header li a:hover,
+        .header .menu-btn:hover {
+            background-color: #f4f4f4;
+        }
+
+        .header .logo {
+            display: block;
+            float: left;
+            font-size: 2em;
+            padding: 10px 20px 5px 35px;
+            text-decoration: none;
+        }
+
+        /* menu */
+
+        .header .menu {
+            clear: both;
+            max-height: 0;
+            transition: max-height .2s ease-out;
+
+        }
+
+        /* menu icon */
+
+        .header .menu-icon {
+            cursor: pointer;
+            display: inline-block;
+            float: right;
+            padding: 28px 20px;
+            position: relative;
+            user-select: none;
+        }
+
+        .header .menu-icon .navicon {
+            background: #333;
+            display: block;
+            height: 2px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 18px;
+        }
+
+        .header .menu-icon .navicon:before,
+        .header .menu-icon .navicon:after {
+            background: #333;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+
+        .header .menu-icon .navicon:before {
+            top: 5px;
+        }
+
+        .header .menu-icon .navicon:after {
+            top: -5px;
+        }
+
+        /* menu btn */
+
+        .header .menu-btn {
+            display: none;
+        }
+
+        .header .menu-btn:checked~.menu {
+            max-height: 240px;
+        }
+
+        .header .menu-btn:checked~.menu-icon .navicon {
+            background: transparent;
+        }
+
+        .header .menu-btn:checked~.menu-icon .navicon:before {
+            transform: rotate(-45deg);
+        }
+
+        .header .menu-btn:checked~.menu-icon .navicon:after {
+            transform: rotate(45deg);
+        }
+
+        .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+        .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+            top: 0;
+        }
+
+        /* 48em = 768px */
+
+        @media (min-width: 48em) {
+            .header li {
+                float: left;
+            }
+
+            .header li a {
+                padding: 22px 14px;
+            }
+
+            .header .menu {
+                clear: none;
+                float: right;
+                max-height: none;
+                padding-right: 120px;
+            }
+
+            .header .menu-icon {
+                display: none;
+            }
+
+            p{
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div style="    display: inline-grid;">
+
+                <a href="index.html" class="logo"><img src="https://ngo.snehal.info/images/logo/site_logo.png" alt=""
+                    class="logo"> </a>
+                    <span style="font-size: 10px;padding-left: 70px;">Distributes the smiles...</span>
+                </div>
+            <ul class="menu">
+
+                <li>
+                    <h2 class="addr_title"> YOUNGISTAAN WELFARE SOCIETY (REGD.) </h2>
+                    <h4><b>Regd. No. 201721103 | Society ACT (XXI 1860) | ESTD. 22/Feb/2017</b></h4>
+                    <p class="address"> <b>Head Office Address
+                        : Jamalpur,
+                        Chandigarh Road, Ludhiana (PB.) </b> </p>
+                    <p><b>Contact No : 78372-77738, 92179-99361 | www.youngistaan.org</b> </p>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+    <hr>
+
+
+    <div>
+            <h2>Donation Receipt</h2>
+    </div>
+
+</body>
+
+</html>
