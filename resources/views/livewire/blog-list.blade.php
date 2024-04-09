@@ -1,5 +1,15 @@
 <div class="campaignsInner">
     <div class="row justify-content-between">
+        <div class="container titleMargin">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-lg-3 upcard">
+                    <h1>Our Blogs</h1>
+                    {{-- <p>
+                        Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
+                    </p> --}}
+                </div>
+            </div>
+        </div>
             <div class="owl-carousel owl-theme">
             {{-- COMPAIGN BOX --}}
             @forelse ($Projects as $project)

@@ -278,8 +278,8 @@
             {{-- need help --}}
             <h3 class="my-3">Need Help?</h3>
             <p>For the needs of a special donation, you can contact donation@youngistaan.org</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i> 78372-77738</p>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> info@youngistaan.org</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:7837277738" >78372-77738</a></p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@youngistaan.org" > info@youngistaan.org</a></p>
             {{-- <img src="{{ url('/images/qrcode.jpeg') }}" alt=""> --}}
 
             <div class="details">

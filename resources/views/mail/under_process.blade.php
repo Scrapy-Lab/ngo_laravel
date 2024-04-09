@@ -19,7 +19,7 @@
     <div style="max-width: 1020px;width: 100%;position: relative;margin: 0 auto;padding: 40px 0;">
         <div style="display: flex;justify-content: space-between;align-items: center;margin: 0 26px;">
             <img src="{{ url('images/mail_images/logo.png') }}" w="20" h="20" alt="logo"/>
-            <div style="width: 58%; margin-left:50%">
+            <div style="width: 58%; margin-left:20%">
                 <h1 style="color: #cc2121;font-size: 26px;font-family: sans-serif;font-weight: 700;">YOUNGISTAAN WELFARE SOCIETY  (REGD.)  </h1>
                 <span>Regd. No. 201721103 | Society ACT  (XXI 1860)  | ESTD. 22/Feb/2017  </span>
                 <p style="width: 75%;">Head Office Address : #1123, 2nd Floor, Sector-39, Opp. ICICI Bank, Chandigarh Road, Ludhiana -
