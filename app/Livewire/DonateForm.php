@@ -169,7 +169,7 @@ class DonateForm extends Component
             ];
 
 
-            Mail::to('rajbansh.snehal@gmail.com')->send(new UnderProcess($data_array));
+            Mail::to('rajbansh.snehal@gmail.com', $this->donateNow->email)->send(new UnderProcess($data_array));
         }
     }
 }
