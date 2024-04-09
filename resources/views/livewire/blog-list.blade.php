@@ -3,10 +3,10 @@
         <div class="container titleMargin">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 mb-lg-3 upcard">
-                    <h1>Our Blogs</h1>
-                    {{-- <p>
-                        Bringing Light to Dark Corners, Hope to Forgotten Souls, One Project at a Time.
-                    </p> --}}
+                    <h1>Our Blog & News Updates</h1>
+                    <p>
+                        Let's read our latest News, updates and articles.
+                    </p>
                 </div>
             </div>
         </div>
