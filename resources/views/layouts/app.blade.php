@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- <title>Youngisgtan</title> --}}
     @include('meta::manager', [
-        'title' => 'Youngisgtan',
+        'title' => 'Youngistaan - Be the Change !',
         'description' =>
             'Our vision is nothing less than realizing the full potential of the Internet – universal access to research and education',
         'image' => url('images/logo/site_logo.png'),
