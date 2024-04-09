@@ -19,7 +19,7 @@
     <div style="max-width: 1020px;width: 100%;position: relative;margin: 0 auto;padding: 40px 0;">
         <div style="display: flex;justify-content: space-between;align-items: center;margin: 0 26px;">
             <img src="{{ url('images/mail_images/logo.png') }}" w="20" h="20" alt="logo"/>
-            <div style="width: 58%;">
+            <div style="width: 58%; margin-left:50%">
                 <h1 style="color: #cc2121;font-size: 26px;font-family: sans-serif;font-weight: 700;">YOUNGISTAAN WELFARE SOCIETY  (REGD.)  </h1>
                 <span>Regd. No. 201721103 | Society ACT  (XXI 1860)  | ESTD. 22/Feb/2017  </span>
                 <p style="width: 75%;">Head Office Address : #1123, 2nd Floor, Sector-39, Opp. ICICI Bank, Chandigarh Road, Ludhiana -
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div style="width: 100%;border: 1px solid #e6a6a6;"></div>
-        <div style="max-width: 768px;margin: 0 auto">
+        <div style="margin: 0 auto">
         <div style="background-image: url({{ url('images/mail_images/youngistan.png') }}); background-repeat: no-repeat;background-size: 772px 797px;">
             <h3 style="text-align: center;text-decoration: underline;color: #cc2121;font-size: 24px;font-family: sans-serif;margin: 42px 0;">Donation Receipt</h3>
             <h6 style="color: rgb(29, 87, 202);font-size: 24px;font-family: sans-serif;font-weight: 100;">Thank you for your gift!</h6>
@@ -47,24 +47,24 @@
                 <h6 style="font-size: 18px;text-decoration: underline;font-weight: 100;font-family: sans-serif;">DONATION DETAILS:</h6>
                 <table style="width:100%;height: 204px;">
                     <tr style="color: #cc2121;">
-                        <th style="font-size: 20px;text-align: start;padding-left: 24px;">Donor Name</th>
-                        <th style="font-size: 20px;">{{$data['full_name']}}</th>
+                        <th style="font-size: 20px;text-align: start;padding-left: 24px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">Donor Name</th>
+                        <th style="font-size: 20px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">{{$data['full_name']}}</th>
                     </tr>
                     <tr>
-                        <td style="font-size: 16px;padding-left: 24px;">City</td>
-                        <td style="text-align: center;font-size: 16px;">{{$data['city']}}</td>
+                        <td style="font-size: 16px;padding-left: 24px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">City</td>
+                        <td style="text-align: center;font-size: 16px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">{{$data['city']}}</td>
                     </tr>
                     <tr>
-                        <td style="font-size: 16px;padding-left: 24px;">Donation Amount</td>
-                        <td style="text-align: center;font-size: 16px;">Rs. {{$data['amount']}}/-</td>
+                        <td style="font-size: 16px;padding-left: 24px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">Donation Amount</td>
+                        <td style="text-align: center;font-size: 16px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">Rs. {{$data['amount']}}/-</td>
                     </tr>
                     <tr>
-                        <td style="font-size: 16px;padding-left: 24px;">Donation for Project :</td>
-                        <td style="text-align: center;font-size: 16px;">{{$data['transaction_type']}}</td>
+                        <td style="font-size: 16px;padding-left: 24px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">Donation for Project :</td>
+                        <td style="text-align: center;font-size: 16px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">{{$data['transaction_type']}}</td>
                     </tr>
                     <tr>
-                        <td style="font-size: 16px;padding-left: 24px;">Donation Date</td>
-                        <td style="text-align: center;font-size: 16px;">{{$data['createdAt']}}</td>
+                        <td style="font-size: 16px;padding-left: 24px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">Donation Date</td>
+                        <td style="text-align: center;font-size: 16px;border: 1px solid black;border-collapse: collapse;font-family: sans-serif;">{{$data['createdAt']}}</td>
                     </tr>
                 </table>
                 <p style="float: right;">For donation related query you can connect with us at : donation@youngistaan.org</p>
