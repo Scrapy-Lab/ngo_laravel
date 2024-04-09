@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-html, body {
-    height: 100%;
+body {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -29,22 +30,96 @@ body {
 }
 
 .tophead {
-    max-width: 90%;
+    /* max-width: 100%; */
     margin: 0 auto;
+    padding: 0 10px;
+    ;
+}
+
+.nav-link {
+
+    color: var(--bs-nav-link-color) !important;
 }
 
 nav.navbar.navbar-expand-lg {
     padding: 0;
 }
 
-.topButtons button {
-    color: #fff;
-    background: #AF1515;
-    border: none;
-    border-radius: 15px;
-    font-weight: 700;
-    font-size: 15px;
-    padding: 4px 10px;
+@media screen and (min-width:768px) {
+
+    .bannerIndexTextonDesktop {
+
+
+        margin-right: 217px;
+    }
+    .donateBlogbox{
+        margin-left: 100px;
+    }
+
+    .donateNowSlider{
+
+        height: 300px !important;
+    }
+
+    .topButtons button {
+        color: #fff;
+        background: #AF1515;
+        border: none;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 15px;
+        padding: 4px 10px;
+        line-height: 2.5rem;
+        width: 100%;
+    }
+
+    .card-img-overlay {
+        padding-top: 12rem !important;
+    }
+
+    .donateBanner {
+
+        object-fit: cover;
+        aspect-ratio: 6 / 1;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .navbar-toggler {
+        margin-left: 78px;
+        /* margin-left: 120px;
+        margin-top: -11px;
+
+        margin-left: 100px; */
+    }
+
+    .topButtons button {
+        color: #fff;
+        background: #AF1515;
+        border: none;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 15px;
+        padding: 4px 10px;
+        /* line-height: 2.5rem; */
+        width: 100%;
+    }
+}
+
+.topButtons {
+    display: flex;
+    row-gap: 15em !important;
+    flex-direction: row;
+    flex-basis: content;
+}
+
+@media screen and (min-width:425px) {
+    .tophead ul.navbar-nav {
+        gap: 0px;
+    }
 }
 
 a.nav-link.active {
@@ -109,8 +184,8 @@ p.footercontn {
 }
 
 .footerinner img {
-    padding-bottom: 24px;
-    margin-bottom: 12px;
+    /* padding-bottom: 24px;
+    margin-bottom: 12px; */
 }
 
 .footerinner ul {
@@ -168,33 +243,44 @@ p.date {
     top: 0;
     left: 0;
 }
+
 .row {
     max-width: 100%;
 }
+
 .ourWorkBanner h1 {
     color: #fff;
     font-size: 40px;
     z-index: 999;
     position: relative;
 }
+
 .campaignsInner .row {
     max-width: 100%;
 }
+
 .ourworkMain {
     max-width: 1116px;
     margin: 0 auto;
     padding-top: 62px;
 }
+
 .campaigns {
     text-align: center;
 }
 
 .campaignBox {
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
     overflow: hidden;
     border-radius: 16px;
     margin-bottom: 42px;
+    min-height: 500px;
+    /* margin: 10px; */
 }
+
+
+
+
 .campaignBox img {
     transition: 2.2s ease all;
     height: 100%;
@@ -204,6 +290,7 @@ p.date {
     transform: scale(1.5);
     object-fit: contain;
 }
+
 .campaignBox figure {
     overflow: hidden;
     /* / height: 220px; / */
@@ -216,8 +303,15 @@ p.date {
     /* height: 200px !important; */
     height: auto;
 }
+
 .campaignsInner {
     margin-top: 44px;
+}
+a#readMore {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0;
 }
 .campaignboxcontent a {
     font-size: 18px;
@@ -225,66 +319,107 @@ p.date {
     text-decoration: none;
     font-weight: 600;
     line-height: 10px;
-    transition: 2.2s ease all;
+    /* transition: 2.2s ease all; */
 }
+
 .campaignBox:hover .campaignboxcontent a {
     color: #AF1515;
 }
+
 .campaignboxcontent p {
     font-size: 14px;
     margin: 20px 0 !important;
     max-width: 100% !important;
     display: block;
 }
-.read-btn {
-    font-size: 18px;
-    border: none;
-    background: #AF1515;
-    padding: 16px 16px;
-    border-radius: 8px;
-    color: #fff;
-    transition: 2.2s ease all;
+
+
+@media screen and (min-width:768px) {
+    .read-btn {
+        font-size: 18px;
+        border: none;
+        background: #AF1515;
+        padding: 16px 16px;
+        border-radius: 8px;
+        color: #fff;
+        /* transition: 2.2s ease all; */
+    }
+
 }
+
+
+@media screen and (max-width:768px) {
+
+    /* .headerButton {
+
+        display: none;
+    } */
+
+    .campaignBox {
+        margin: 10px;
+    }
+
+    .read-btn {
+        font-size: 10px;
+        border: none;
+        background: #AF1515;
+        padding: 16px 16px;
+        border-radius: 8px;
+        color: #fff;
+        /* transition: 2.2s ease all; */
+    }
+
+}
+
 .campaignBox:hover .campaignboxcontent button {
     background: #AF1515;
 
 }
-.read-btn:hover{
+
+.read-btn:hover {
     background: #5586e8;
 }
+
 .campaignBox:hover .read-btn {
     background: #AF1515;
 }
+
 .campaigns p {
     max-width: 56%;
     margin: 0 auto;
 }
+
 .partnersMain img {
     width: 159px;
     margin-bottom: 30px;
 }
+
 .partnersMain {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .partnersMain h3 {
     font-size: 35px;
     text-transform: capitalize;
     font-weight: 800;
     color: #AF1515;
 }
+
 .partnersMain h4 {
     font-size: 19px;
     font-weight: 400;
     max-width: 92%;
     margin-top: 20px;
 }
+
 .partnersMain p {
     margin-top: 20px;
     line-height: 25px;
     max-width: 92%;
     font-size: 14px;
 }
+
 .campaigns h2 {
     font-size: 35px;
     text-transform: capitalize;
@@ -299,6 +434,7 @@ p.date {
     flex-wrap: wrap;
     position: relative;
 }
+
 .imagesgrid h2 {
     position: absolute;
     top: 0;
@@ -308,50 +444,64 @@ p.date {
     font-size: 54px;
     left: 0;
     text-align: center;
-    top: 8rem;
+    top: 3rem;
     right: 0;
 }
+
 .donateMain {
     max-width: 100%;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
+
 .imagesgrid figure img {
     width: 100% !important;
 }
+
 .imagesgrid figure {
     width: 13% !important;
     margin-bottom: 5px;
     height: 108px;
     overflow: hidden;
 }
+
 .donateblogs {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto !important;
-    padding: 100px 0;
+    padding: 50px 0;
 }
+
+
 .donateBlogbox img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
+    width: 240px;
+    height: auto !important;
+    border-radius: 20px;
+}
+.donateBlogbox figure a img {
+    width: 50% !important;
 }
 .donatePayment img {
     width: 362px;
 }
+
 .accordion-item {
     margin-bottom: 0px;
     border: 1px solid lightgrey;
 }
+
 .accordion-button:not(.collapsed) {
     background: transparent !important;
     color: green;
     font-family: 'Roboto';
     font-size: 16px;
 }
+
 button.accordion-button {
     font-family: 'Roboto';
     font-size: 16px;
     position: relative;
     padding-left: 43px;
 }
+
 button.accordion-button:before {
     position: absolute;
     content: '';
@@ -362,51 +512,62 @@ button.accordion-button:before {
     left: 17px;
     top: 17px;
 }
+
 .accordion-body {
     font-size: 13px;
     color: grey;
     line-height: 20px;
 }
+
 .donatePayment h3 {
     font-size: 22px;
     font-weight: 800;
     color: #AF1515;
     margin-bottom: 18px;
 }
+
 .donatePayment p {
     font-size: 14px;
     font-family: 'Roboto';
 }
+
 .donateBlogInnerbox {
-    padding: 24px;
+    padding: 11px;
 }
+
 .donateBlogbox {
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
 }
+
 .donateBlogInnerbox h3 {
     font-size: 25px;
     font-weight: 800;
     letter-spacing: 1px;
 }
+
 span.smallfont {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0;
 }
+
 .inputWIthoptions input {
     padding: 2px 12px;
     border: 1px solid darkslategrey;
     color: #fff;
 }
+
 .inputWIthoptions label {
     background: #AF1515;
     padding: 2px 12px;
     border: 1px solid #AF1515;
     color: #fff;
 }
+
 .inputWIthoptions {
     margin: 28px 0;
 }
+
 .donateBlogInnerbox button {
     background: #AF1515;
     border: 1px solid #AF1515;
@@ -418,10 +579,12 @@ span.smallfont {
     margin-bottom: 15px;
     transition: 1.8s ease all;
 }
+
 .donateBlogInnerbox button:hover {
     background: #AF1515;
     border: 1px solid #AF1515;
 }
+
 h4.allHead {
     margin-top: 12px;
     font-size: 16px;
@@ -429,16 +592,20 @@ h4.allHead {
     border-bottom: 1px solid lightgrey;
     padding-bottom: 10px;
 }
+
 .selectPayment input {
     border: 1px solid grey;
 }
+
 .selectPayment label {
     font-size: 14px;
     font-weight: 400;
 }
+
 .formGroups {
     width: 48% !important;
 }
+
 .formGroups input {
     width: 100% !important;
     color: grey;
@@ -447,16 +614,19 @@ h4.allHead {
     margin-top: 5px;
     font-size: 13px;
 }
+
 .formGroups label {
     font-weight: 500;
     font-size: 14px;
     margin-top: 10px;
 }
+
 .emailGroup label {
     font-weight: 500;
     font-size: 14px;
     margin-top: 10px;
 }
+
 .emailGroup input {
     width: 100% !important;
     color: grey;
@@ -465,24 +635,29 @@ h4.allHead {
     margin-top: 5px;
     font-size: 13px;
 }
+
 .donateBlogInnerbox p {
     font-size: 14px;
     margin-top: 10px;
 }
+
 .forcheck p {
     font-weight: 500;
     font-size: 15px;
     margin: 0 !important;
 }
+
 .donateBlogInnerbox h5 {
     font-size: 18px !important;
     font-weight: 600;
     margin: 15px 0;
 }
+
 .checkbox1 label {
     font-size: 14px;
     font-weight: 500;
 }
+
 .checkbox1 input {
     border: 1px solid darkslategrey;
 }
@@ -492,19 +667,23 @@ h4.allHead {
     color: #AF1515;
     font-weight: 500;
 }
+
 .donateblogBox img {
     width: 100%;
     border-radius: 10px;
 }
+
 .donateblogBox {
     position: relative;
 }
+
 .donateBoxheads h3 {
     font-size: 18px;
     font-weight: 600;
     margin: 0;
     color: #fff !important;
 }
+
 .donateBoxheads {
     background: #AF1515bd;
     position: absolute;
@@ -514,23 +693,28 @@ h4.allHead {
     padding-top: 15px;
     margin-left: 12px;
 }
+
 .donateBoxheads p {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
 }
+
 .donateMain h3 {
     font-weight: 900;
     margin-top: 15px;
     color: #AF1515;
 }
+
 .donateMain p {
     font-size: 14px;
     width: 65%;
 }
+
 .donateblogBoxs.row {
     margin-bottom: 40px;
 }
+
 .imagesgrid:before {
     position: absolute;
     content: '';
@@ -538,19 +722,23 @@ h4.allHead {
     height: 99%;
     background: #0000008f;
 }
+
 .donateForm {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px;
 }
+
 .donteGroups {
     width: 100%;
 }
+
 .donteGroups label {
     width: 100%;
     font-size: 14px;
     font-family: 'Montserrat';
     margin-bottom: 6px;
 }
+
 .donteGroups textarea {
     width: 97%;
     height: 39px;
@@ -559,12 +747,15 @@ h4.allHead {
     font-size: 14px;
     font-family: 'Montserrat';
 }
+
 .donateForm .donteGroup {
     width: 48%;
 }
+
 .donteGroup label {
     width: 100%;
 }
+
 .donteGroup select {
     width: 98%;
     border: 1px solid darkgrey;
@@ -572,19 +763,22 @@ h4.allHead {
     font-size: 14px;
     font-family: 'Montserrat';
 }
+
 .donteGroup input {
-    width: 98%;
+    width: 100%;
     border: 1px solid darkgrey;
     padding: 5px 10px;
     font-size: 14px;
     font-family: 'Montserrat';
 }
+
 .donteGroup label {
     width: 100%;
     font-size: 14px;
     font-family: 'Montserrat';
     margin-bottom: 6px;
 }
+
 .donateBlogbox h4 {
     text-decoration: none !important;
     font-family: 'Montserrat';
@@ -595,11 +789,12 @@ h4.allHead {
     color: #000;
     text-decoration: underline;
 }
+
 .form-check input {
     border: 2px solid #AF1515;
 }
 
-.donateAmountButton{
+.donateAmountButton {
     cursor: pointer;
     background-color: #AF1515;
     /* / width: 61px; / */
@@ -615,14 +810,17 @@ h4.allHead {
     background-color: #AF1515 !important;
     border-color: #AF1515 !important;
 }
+
 .form-check label {
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Montserrat';
 }
+
 input#customAmountInput {
     font-family: 'Montserrat';
     width: 108%;
 }
+
 select.types {
     width: 98%;
     border: 1px solid darkgrey;
@@ -630,11 +828,13 @@ select.types {
     font-size: 14px;
     font-family: 'Montserrat';
 }
+
 a.blogMaintitle {
     font-family: 'Montserrat' !important;
     font-size: 22px;
     color: #AF1515;
 }
+
 a.blogMainButton {
     background: #AF1515;
     padding: 8px 30px;
@@ -645,41 +845,54 @@ a.blogMainButton {
     border-radius: 10px;
     transition: 1.8s ease all;
 }
+
 a.blogMainButton:hover {
     background: #AF1515;
     border: 1px solid #AF1515;
 }
+
 .mainSearch {
     margin: 0 !important;
     font-family: 'Montserrat';
     color: #AF1515 !important;
 }
+
 h4.recentPost {
     margin: 0 !important;
     font-family: 'Montserrat';
     color: #AF1515;
 }
+
 .recentTitleBlogs {
     font-weight: 700;
     color: #AF1515;
     text-decoration: underline;
 }
+
 .carousel-item {
-    height: 300px; /* Adjust height as needed */
-  }
-  .carousel-inner img {
-    object-fit: contain;
-    height: auto;
+    /* height: 300px; */
+    /* Adjust height as needed */
+}
+
+.carousel-inner img {
+    object-fit: cover !important;
+    height: inherit !important;
     width: 100% !important;
 }
-  .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 484px;
+
+
+@media screen and (max-width:768px) {
+    .carousel-inner {
+
+        /* height: 300px; */
+    }
+
+
+
 }
+
 a.my-4 {
-    width: 30%;
+    width: 200px;
     max-width: 100%;
     display: block;
     text-align: center;
@@ -692,14 +905,17 @@ a.my-4 {
     font-weight: 500;
     transition: 1.8s ease all;
 }
+
 a.my-4:hover {
     background: #AF1515;
     border: 1px solid #AF1515;
 }
+
 .itsImage img {
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
     width: 50%;
 }
+
 .noticeMian {
     border: 2px solid #AF1515 !important;
     border-radius: 10px;
@@ -707,22 +923,25 @@ a.my-4:hover {
     margin: 20px auto !important;
     padding: 10px 36px;
 }
+
 .noticeMian p {
     font-size: 15px;
     font-family: 'Montserrat';
 }
+
 span.red {
     font-weight: 700;
     font-family: 'Montserrat';
-    color:  #AF1515;
+    color: #AF1515;
 }
 
 .snowflake {
     position: fixed;
     pointer-events: none;
     z-index: 1000;
-  }
-  #bouncingImage {
+}
+
+#bouncingImage {
     position: absolute;
     width: 200px;
     height: 80px;
@@ -733,15 +952,18 @@ span.red {
     top: 37px;
 }
 
-  @keyframes bounceAnimation {
+@keyframes bounceAnimation {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     100% {
-      transform: translateY(20px); /* Adjust the bounce height */
+        transform: translateY(20px);
+        /* Adjust the bounce height */
     }
-  }
-  .nextTypeImage {
+}
+
+.nextTypeImage {
     padding: 174px 24px 24px;
     position: relative;
 }
@@ -755,20 +977,24 @@ span.red {
     padding: 60px;
     position: relative;
 }
+
 .joinGroup {
     flex-direction: column;
     max-width: 50%;
 }
+
 .joinFormInner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .joinGroup.d-flex {
     flex-direction: column;
     max-width: 48%;
     width: 100%;
 }
+
 .joinNowMain h2 {
     position: absolute;
     top: -16px;
@@ -779,12 +1005,14 @@ span.red {
     font-size: 27px;
     color: #AF1515;
 }
+
 .joinGroup label {
     font-family: 'Montserrat';
     font-size: 16px;
     margin-bottom: 7px;
     font-weight: 500;
 }
+
 .joinGroup input {
     border: 1px solid darkgrey;
     padding: 5px 10px;
@@ -792,6 +1020,7 @@ span.red {
     font-size: 14px;
     font-family: 'Montserrat';
 }
+
 .joinGroup select {
     border: 1px solid darkgrey;
     padding: 5px 10px;
@@ -811,45 +1040,52 @@ span.red {
     margin-bottom: 15px;
     transition: 1.8s ease all;
 }
+
 .submitButtonit button:hover {
     background: #AF1515;
     border: 1px solid #AF1515;
 }
+
 .joinGroups {
     width: 100%;
 }
 
 
-.error{
+.error {
 
     color: red;
     margin-bottom: 5px;
 }
 
-.sec_marginB{
+.sec_marginB {
 
+    /* padding: 0 !important; */
     margin-bottom: 10rem !important;
+    margin-top: 10rem !important;
 }
 
 a.navbar-brand {
     margin-right: 80px;
 }
+
 .footerinner ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-    margin: 0 !important;
+    margin: 5px !important;
     font-weight: 400;
 }
+
 .socialMediaLinks li a i {
     font-size: 25px;
 }
+
 .socialMediaLinks li {
     padding: 0 !important;
     border: none !important;
 }
 
-.charityList li a {
+li a.charityList {
     background: #fff;
     color: #af1515 !important;
     padding: 11px;
@@ -858,12 +1094,15 @@ a.navbar-brand {
     text-align: center;
     border-radius: 7px;
     font-weight: 600 !important;
-    transition: 0.8s ease all;
+    /* transition: 0.8s ease all; */
 }
 
 .footerinner ul li a:hover {
-    background: #5586e8;
     color: #fff !important;
+}
+
+.footer_button:hover {
+    background-color: #5586e8 !important;
 }
 
 .donateListblogMain img.crd-img {
@@ -881,7 +1120,124 @@ a.navbar-brand {
 }
 
 
-.paddingDateLogo{
+.paddingDateLogo {
 
     padding: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+
+
+    .mediaQur {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-img-overlay {
+        padding-top: 0rem !important;
+    }
+
+
+    .donateBanner {
+
+        object-fit: cover;
+        aspect-ratio: 3 / 1;
+        width: 100%;
+    }
+
+    /* body{
+
+        width: 105%;
+    } */
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .sec-2 {
+
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.sec-3 {
+
+    display: flex;
+    justify-content: center;
+}
+
+.sect-3 {
+
+    display: flex;
+    justify-content: center;
+}
+
+img.partnersImages {
+    /* aspect-ratio: 3 / 2; */
+    object-fit: contain;
+    margin-right: 40px;
+}
+
+.details {
+
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
+    padding: 10px;
+}
+
+.details p {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+article.mt-6 {
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 14px !important;
+}
+
+.bgGrey {
+    background: #ededed;
+    padding: 100px;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+
+.project_details_images{
+    width: 100% !important;
+    aspect-ratio: 6 / 2;
+    height: auto !important;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+/* .slider {
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+} */
+
+

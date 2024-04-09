@@ -100,18 +100,6 @@
                 @enderror
             </div>
 
-            <div class="joinGroup d-flex">
-                <label for="">Choose Our Project</label>
-                <select wire:model="project_id" id="" multiple required>
-                    <option value="">Choose Our Project</option>
-                    @foreach ($projects as $project)
-                        <option value="{{ $project->id }}">{{ $project->title }}</option>
-                    @endforeach
-                </select>
-                @error('project_id')
-                    <span class="error">{{ $message }}</span>
-                @enderror
-            </div>
 
             <div class="joinGroup d-flex">
                 <label for="">Upload Adhar Card-Front (Optional)</label>
@@ -123,10 +111,36 @@
                 <input type="file" wire:model="aadhar_back" id="">
             </div>
 
-            <div class="joinGroup d-flex">
+            <div class="joinGroup  d-flex">
                 <label for="">Upload PAN Card (Optional)</label>
                 <input type="file" wire:model="pan" id="">
             </div>
+
+            <div class="mb-5">
+                <label for="">Choose Our Project</label>
+<br>
+                {{-- <select wire:model="project_id" id="" multiple required>
+                    <option value="">Choose Our Project</option>
+                    @foreach ($projects as $project)
+                        <option value="{{ $project->id }}">{{ $project->title }}</option>
+                    @endforeach
+                </select> --}}
+
+                @forelse($projects as $project)
+                {{-- <div class="col-md-4"> --}}
+                    <div class="form-check form-check-inline mt-2 ">
+                        <input class="form-check-input d-flex" type="checkbox" id="checkbox_{{$project->id}}"
+                            wire:model="project_id.{{ $project->id }}" value="{{ $project->id }}">
+                        <label class="form-check-label" for="checkbox_{{$project->id}}">{{ $project->title }}</label>
+                    </div>
+                {{-- </div> --}}
+            @empty
+            @endforelse
+                @error('project_id')
+                    <span class="error">{{ $message }}</span>
+                @enderror
+            </div>
+
 
             <div class="joinGroups d-flex">
                 <label class="termCond" for="">
@@ -135,7 +149,7 @@
             </div>
         </div>
 
-        <div class="submitButtonit text-center">
+        <div class="submitButtonit text-center mt-3">
             <button>Submit</button>
         </div>
 

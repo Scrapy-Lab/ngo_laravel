@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('donors', function (Blueprint $table) {
+        Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->float('amount');
-            $table->string('email');
-            $table->string('ip_address');
+            $table->foreignId('donation_id')->constrained('donate_nows')->onDelete('cascade')->uniqid();
+            $table->boolean('is_approved')->default(0);
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('donors');
+        Schema::dropIfExists('payments');
     }
 };

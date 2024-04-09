@@ -5,7 +5,9 @@
     <div class="donateMain">
         <div class="imagesgrid d-flex justify-content-between">
             <h2>Donate Now</h2>
-            <figure>
+
+            <img class="donateBanner" src="{{ asset('images/donateNowBanner.jpg') }}" alt="" >
+            {{-- <figure>
                 <img src="{{ url('/images/image-001.png') }}" alt="">
             </figure>
 
@@ -87,7 +89,7 @@
 
             <figure>
                 <img src="{{ url('/images/image-021.png') }}" alt="">
-            </figure>
+            </figure> --}}
         </div>
         {{-- <h3>Our Programms</h3>
         <p>Youngistaan Foundation’s programs address multiple issues such as hunger, homelessness, gender,
@@ -128,36 +130,44 @@
 
     {{-- Donate Content --}}
 
-    <div class="donateblogs row justify-content-between">
-        <div class="col-md-8 donateblogcontent">
+    <div class="donateblogs row justify-content-between" id="donation_form">
+        <div class="col-md-8 donateblogcontent mb-3">
             <div class="donateBlogbox">
 
                 {{-- CAROUSEL --}}
                 <div id="carouselExample" class="carousel slide" data-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-item active donateNowSlider">
+                            <img src="{{ asset('images/banners_Images/doante_banner1.png') }}" class="d-block w-100"
+                                alt="Slide 1" style="object-fit: fill !important">
                         </div>
-                        <div class="carousel-item">
-                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-item donateNowSlider">
+                            <img src="{{ asset('images/banners_Images/doante_banner2.png') }}" class="d-block w-100"
+                                alt="Slide 2" style="object-fit: fill !important" >
                         </div>
-                        <div class="carousel-item">
-                            <img src="{{ url('/images/donatebox.jpg') }}" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-item donateNowSlider">
+                            <img src="{{ asset('images/banners_Images/doante_banner1.png') }}" class="d-block w-100"
+                                alt="Slide 3"style="object-fit: fill !important">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                      </button>
+                    </button>
 
                 </div>
 
@@ -268,9 +278,22 @@
             {{-- need help --}}
             <h3 class="my-3">Need Help?</h3>
             <p>For the needs of a special donation, you can contact donation@youngistaan.org</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i> 78372-77738</p>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> info@youngistaan.org</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:7837277738" >78372-77738</a></p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@youngistaan.org" > info@youngistaan.org</a></p>
             {{-- <img src="{{ url('/images/qrcode.jpeg') }}" alt=""> --}}
+
+            <div class="details">
+                <h1>Offline Donation</h1>
+
+                <p style="color:#5586e8">Send money to our bank account</p>
+                <p class="donation_text">
+                    <span>Account Name : 'YOUNGISTAAN WELFARE SOCIETY'</span> <br>
+                    <span>Account No : 25740100012294</span> <br>
+                    <span>Bank Name : BANK OF BARODA</span> <br>
+                    <span>IFSC Code : BARB0SSILUD</span> <br>
+                    <span>Branch : SSI LUDHIANA</span>
+                </p>
+            </div>
         </div>
     </div>
 
@@ -292,10 +315,21 @@
 
     <script>
         $(document).ready(function() {
+
+            window.onload = function() {
+                // Scroll to the donation form element
+                var donationForm = document.getElementById('donation_form');
+                if (donationForm) {
+                    donationForm.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            };
+
             $('#carouselExample').carousel({
                 interval: 2000 // Change slide interval here (in milliseconds)
             });
         });
     </script>
-
 @endsection

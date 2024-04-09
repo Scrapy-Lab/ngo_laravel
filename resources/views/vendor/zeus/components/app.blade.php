@@ -1,24 +1,24 @@
 @extends('layouts.app')
 @section('content')
 <!-- Seo Tags -->
-<x-seo::meta />
+{{-- <x-seo::meta /> --}}
 <!-- Seo Tags -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{{-- <link rel="preconnect" href="https://fonts.googleapis.com"> --}}
+{{-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> --}}
 <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
 <!-- slider cdn -->
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css"> -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+{{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
 <!-- <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script> -->
 <!-- <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script> -->
-<script src="{{ asset('js/slider.js') }}"></script>
+{{-- <script src="{{ asset('js/slider.js') }}"></script> --}}
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+{{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script> --}}
 <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script> -->
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+{{-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> --}}
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
 {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> --> --}}
@@ -26,7 +26,7 @@
 @filamentStyles
 @stack('styles')
 <link rel="stylesheet" href="{{ asset('vendor/zeus/frontend.css') }}">
-<style>
+{{-- <style>
     * {
         font-family: 'KoHo', 'Almarai', sans-serif;
     }
@@ -34,7 +34,7 @@
     [x-cloak] {
         display: none !important;
     }
-</style>
+</style> --}}
 <div class="ourWorkBanner text-center">
     <h1>Blog</h1>
 </div>
@@ -69,7 +69,7 @@
 @stack('scripts')
 @filamentScripts
 @livewire('notifications')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
     $(document).ready(function() {
@@ -77,5 +77,5 @@
         $('#navbarSupportedContent').removeClass('collapse');
 
     });
-</script>
+</script> --}}
 @endsection

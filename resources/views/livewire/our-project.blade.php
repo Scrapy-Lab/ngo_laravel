@@ -27,7 +27,7 @@
                                     <p>{!! html_entity_decode(Str::limit($project->description, 100)) !!}</p>
                                     {{-- <a href="{{ route('project-details', $project->slug) }}" id="readMore">Read
                                         More</a> --}}
-                                        <a href="{{ route('project-details', $project->slug) }}" id="readMore">
+                                        <a href="{{ route('project-details', $project->slug) }}" id="readMores">
                                             <button class="read-btn">
 
                                                 Read
@@ -45,7 +45,7 @@
         </div>
 
         {{-- Our Partners --}}
-        <div class="partnersMain row align-items-center">
+        {{-- <div class="partnersMain row align-items-center">
             <div class="col-md-6">
                 <h3>Our partners</h3>
                 <h4>Everyone here is passionate about their work, incredibly smart, and genuinely kind.</h4>
@@ -78,6 +78,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
