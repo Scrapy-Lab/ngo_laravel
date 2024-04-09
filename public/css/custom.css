@@ -1101,6 +1101,10 @@ li a.charityList {
     color: #fff !important;
 }
 
+.footer_button:hover {
+    background-color: #5586e8 !important;
+}
+
 .donateListblogMain img.crd-img {
     width: 312px !important;
     height: 312px !important;

@@ -32,8 +32,8 @@
             <div class="col-md-3">
                 <h3>Get in Touch</h3>
                 <ul class="blogsList">
-                    <li><a class="charityList" href="{{ url('/join-now') }}">Join Now</a></li>
-                    <li><a class="charityList" href="{{ url('/donate') }}">Donate Now</a></li>
+                    <li><a class="charityList footer_button" href="{{ url('/join-now') }}">Join Now</a></li>
+                    <li><a class="charityList footer_button" href="{{ url('/donate') }}">Donate Now</a></li>
                     <li>
                         <a href="{{route('privacy-policy')}}">Privacy Policy</a>
                     </li>
