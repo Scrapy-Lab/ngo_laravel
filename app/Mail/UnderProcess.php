@@ -27,7 +27,7 @@ class UnderProcess extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Donation is Under Process',
+            subject: 'Donation Receipt',
         );
     }
 
