@@ -116,29 +116,29 @@
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="checkbox1"
                                         wire:model="transaction_type.1" value="1">
-                                    <label class="form-check-label" for="checkbox1">Medical Programs</label>
+                                    <label class="form-check-label" for="checkbox1">Project - Siksha</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="checkbox2"
                                         wire:model="transaction_type.2" value="2">
-                                    <label class="form-check-label" for="checkbox2">Traffic Awareness</label>
+                                    <label class="form-check-label" for="checkbox2">Medical Programs</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="checkbox3"
                                         wire:model="transaction_type.3" value="3">
-                                    <label class="form-check-label" for="checkbox3">Project-Siksha</label>
+                                    <label class="form-check-label" for="checkbox3">Hunger Hero Program</label>
                                 </div>
                             </div>
                             <div class="col-md-6 col-stack-xs" style="padding: 0">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="checkbox4"
                                         wire:model="transaction_type.4" value="4">
-                                    <label class="form-check-label" for="checkbox4">VastarDaan</label>
+                                    <label class="form-check-label" for="checkbox4">Road Safety Program</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="checkbox5"
                                         wire:model="transaction_type.5" value="5">
-                                    <label class="form-check-label" for="checkbox5">Traffic Awareness</label>
+                                    <label class="form-check-label" for="checkbox5">VastarDaan</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="checkbox6"

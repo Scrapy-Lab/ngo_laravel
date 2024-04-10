@@ -68,6 +68,6 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © 2021 <b><a href="youngistaan.org" style="text-decoration: none; color:rgb(255, 255, 255)">Youngistaan Foundation</a></b> . All Rights Reserved  |  Developed By <b><a style="text-decoration: none;color:white" href="growessgroup.com">Growess Group</a></b></p>
+        <p>Copyright © 2021 <b><a href="https://youngistaan.org" style="text-decoration: none; color:rgb(255, 255, 255)">Youngistaan Foundation</a></b> . All Rights Reserved  |  Developed By <b><a style="text-decoration: none;color:white" href="https://growessgroup.com">Growess Group</a></b></p>
     </div>
 </div>

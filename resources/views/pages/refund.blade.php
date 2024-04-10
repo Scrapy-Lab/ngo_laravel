@@ -27,7 +27,7 @@
                 Youngistaan will endeavour to refund donYoungistaan Foundation expects that anyone wishing to donate
                 considers their decision carefully and checks donation amounts during transactions. Youngistaan
                 recognises that it is possible to make an error when making an on-line donation or for the donors to
-                change their mind about the donation made. It can also occur that an error is made by Youngistaan or our
+                change their mind about the donation made and donation Refund will be initiated with in 7-15 days. It can also occur that an error is made by Youngistaan or our
                 payment gateway. Under this policy Youngistaan will endeavour to refund donations in accordance with the
                 following rules:ations in accordance with the following rules:</p>
             <h3 class="headline">Rules</h3>
