@@ -15,7 +15,7 @@
             </p>
             <h3 class="headline">The personal information we typically ask you for is:</h3>
             <p class="paragraph">Contact details (name, address, e-mail, phone numbers) You may request a copy of the
-                personal information we have for you at any time by emailing info@youngistaan.org. If any personal
+                personal information we have for you at any time by emailing <a href="mailto:info@youngistaan.org"><span style="color: #1a28d1;">info@youngistaan.org</span></a>. If any personal
                 information changes or you find our records are out of date, please let us know. Youngistaan will ensure
                 your personal information is held securely, in accordance with the Data Protection Act.</p>
             <h3 class="headline">Payment Process:</h3>

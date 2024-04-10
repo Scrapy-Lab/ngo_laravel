@@ -38,7 +38,7 @@
                     date, donation amount, donor’s name, ID, tax invoice number and the nature of the error.
                 </li>
                 <li>Written requests for refund can be sent by email or mail:</li>
-                <li>Email: <span style="color: #1a28d1;">donation@youngistaan.org</span></li>
+                <li>Email:<a href="mailto:donation@youngistaan.org"> <span style="color: #1a28d1;">donation@youngistaan.org</span></a> </li>
                 <li>Correspondence address: #1123, 2nd Floor, Sector-39, Opp. ICICI Bank, Chandigarh Road, Ludhiana -
                     141010 (PB.)</li>
                 <li>Youngistaan Foundation will fully examine all requests for refund and endeavour to ensure that
