@@ -9,13 +9,13 @@
 <div class="container bnnerimg mt-3">
     <div class="card">
         <img src="{{ asset('images/contactbanner.jpg') }}" class="card-img footer-Img" alt="..." />
-        <div class="card-img-overlay MYcard-cnt">
+        {{-- <div class="card-img-overlay MYcard-cnt">
             <h5 class="card-title">
                 Get in Touch</h5>
             <p class="card-text">
                 Tell us what you think
             </p>
-        </div>
+        </div> --}}
     </div>
 </div>
 <!-- end -->
@@ -75,10 +75,10 @@
         </div>
     </div>
     <div class="row office-cnt">
-        <h1>Our offices</h1>
+        <h1>Our Offices</h1>
         <div class="col-lg-4 col-sm-6">
-            <h5>Ludhiana Office</h5>
-            <p>#223, 3rd Floor, Good Luck Tower,Industrial Area – A, Cheema Chowk, Ludhiana – 141003</p>
+            <h5>Registered Office (Ludhiana)</h5>
+            <p>#16/2, Street No. 2, Ram Nagar, Mundian Kalan, Ludhiana - 141015 (PB.)</p>
         </div>
         <div class="col-lg-4 col-sm-6">
             <h5>New Delhi Office</h5>
