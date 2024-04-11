@@ -39,8 +39,7 @@
                 </li>
                 <li>Written requests for refund can be sent by email or mail:</li>
                 <li>Email:<a href="mailto:donation@youngistaan.org"> <span style="color: #1a28d1;">donation@youngistaan.org</span></a> </li>
-                <li>Correspondence address: #1123, 2nd Floor, Sector-39, Opp. ICICI Bank, Chandigarh Road, Ludhiana -
-                    141010 (PB.)</li>
+                <li>Registered Office (Ludhiana): #16/2, Street No. 2, Ram Nagar, Mundian Kalan, Ludhiana - 141015 (PB.)</li>
                 <li>Youngistaan Foundation will fully examine all requests for refund and endeavour to ensure that
                     genuine errors are rectified. However, after 15 days Youngistaan is under no obligation to give
                     refunds and the decision on refunds will be at Youngistaan’s discretion.</li>
