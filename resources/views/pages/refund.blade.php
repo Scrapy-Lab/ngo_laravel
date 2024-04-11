@@ -27,10 +27,8 @@
                 Youngistaan will endeavour to refund donations in accordance with the following rules:</p>
             <h3 class="headline">Rules</h3>
             <ul class="paragraph">
-                <li>If an error is made in making a donation or if the donor changes their mind, we will honour all
-                    requests for refund that are made in writing within 15 (fifteen) days of the date the donation was
-                    made. The written refund request should include the details of the initial transaction including
-                    date, donation amount, donor’s name, ID, tax invoice number and the nature of the error.
+                <li>Donation Cancellation: We understand that sometimes plans change. If you need to cancel your donation, please notify us within 24-48 working hours of making the donation. Donation Cancelled and Refunds will be issued within 7-15 days of receiving your cancellation request.
+                    And to request a cancellation, please contact us at <a href="mailto:donation@youngistaan.org"><span style="color: #1a28d1;">donation@youngistaan.org</span></a>  and please include your name, donation amount, and the date of the donation ID, UTR NO. in your cancellation request.
                 </li>
                 <li>Written requests for refund can be sent by email or mail:</li>
                 <li>Email:<a href="mailto:donation@youngistaan.org"> <span style="color: #1a28d1;">donation@youngistaan.org</span></a> </li>
