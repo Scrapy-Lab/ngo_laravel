@@ -144,7 +144,7 @@
 
             <div class="joinGroups d-flex">
                 <label class="termCond" for="">
-                    <input type="checkbox" id="" required> Agree our <a href="#">Term &
+                    <input type="checkbox" id="" required> Agree our <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Term &
                         Conditions</a></label>
             </div>
         </div>
@@ -159,6 +159,59 @@
             </div>
         @endif
     </form>
+<!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+            <img src="{{ url('images/logo/site_logo.png') }}" width="70px" alt="">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="margin-left: 30px;">Terms & Condition for Volunteers</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ol class="paragraph">
+            <li>The person should be above 18 years to be active member of this organization and
+                without any criminal background.
+                </li>
+            <li>The person should be physically and mentally strong (Special Person Define First)
+                and willing to work for the organization individually or in a group and travel at his
+                own expenses.
+                </li>
+            <li>A person is selected and can be removed by the chairman or core group without
+                notice or giving reason for misconduct, misbehavior, indiscipline.
+                </li>
+            <li>The member is willing to work and obey the chairman and core group.</li>
+            <li>The member will give his best effort to full fill objective and task assigned to him or
+                her.
+                </li>
+            <li>Member should attend the general meetings and participate fully and have to give
+                written application for being absent, 3 days before the meeting.
+                </li>
+            <li>The meetings will be held on weekends/Month-end on Saturday or Sundays at various
+                locations.
+                </li>
+            <li>Meetings will be headed by chairman and the core group and members.</li>
+            <li>The chairman has the supreme power to form or diffuse a core group, members.</li>
+            <li>It is duty of a member to obey and give due respect to the chairman and the core
+                group.
+                </li>
+            <li>Membership Fee should be paid with Application Form on Rejection of Application
+                the Membership fee will be refund in a week.
+                </li>
+          </ol>
+          <hr style="opacity: 5.25; ;color: #af1515;">
+        </div>
+        {{-- <div class="modal-footer">
+
+        </div> --}}
+      </div>
+    </div>
+  </div>
+
+
     @if ($errors->any())
         <script>
             document.addEventListener('livewire:load', function() {
