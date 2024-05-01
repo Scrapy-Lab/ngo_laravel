@@ -12,6 +12,7 @@
         'description' =>
             'Our vision is nothing less than realizing the full potential of the Internet – universal access to research and education',
         'image' => url('images/logo/site_logo.png'),
+        'referrer' => "default"
     ])
     <link rel="icon" href="{{ url('images/logo/site_logo.png') }}" type="image/icon type">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">

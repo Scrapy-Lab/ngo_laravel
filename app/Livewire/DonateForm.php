@@ -11,6 +11,7 @@ use App\Models\Payment;
 use Livewire\Attributes\Validate;
 use Livewire\Features\SupportFileUploads\WithFileUploads;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Crypt;
 
 class DonateForm extends Component
 {
@@ -88,6 +89,12 @@ class DonateForm extends Component
         // dd($this->transaction_type, $transactionIds);
         $this->donateNow->transaction_type = json_encode($transactionIds);
         if ($this->donateNow->save()) {
+
+            session(['donation_id' => Crypt::encryptString($this->donateNow->id)]);
+
+            // Display the session data and decrypt the donation ID stored in the session
+            // dd(session()->all(), Crypt::decryptString(session('donation_id')));
+
             $this->donateFirstForm = false;
             $this->donateSecondForm = true;
             session()->flash('status', 'Donation Details Complete.');
@@ -136,40 +143,40 @@ class DonateForm extends Component
         // dd();
         // $this->screenshot->store('screenshot');
         // dd( $this->screenshot->store('screenshot'));
-        $this->donateNow->payment_ss = $this->screenshot->store('payments', 'public');
-        if ($this->donateNow->save()) {
-            $this->donateThirdForm = false;
-            $this->donateFourthForm = true;
+        // $this->donateNow->payment_ss = $this->screenshot->store('payments', 'public');
+        // if ($this->donateNow->save()) {
+        //     $this->donateThirdForm = false;
+        //     $this->donateFourthForm = true;
 
-            // dd($this->donateNow->id);
-            $this->payment->donation_id = $this->donateNow->id;
-            $this->payment->save();
-            session()->flash('status', 'Payment Details successfully submitted.');
-            $projects="";
-            $ids = json_decode( $this->donateNow->transaction_type);
-            $data = Project::select('title')->whereIn('id', $ids)->get();
-            foreach ($data as $key => $val) {
-                $projects .= $val->title;
-                if ($key < count($data) - 1) {
-                    $projects .= ', ';
-                }
-            }
-            // dd($this->donateNow->created_at);
-            $createdAt = Carbon::createFromFormat('Y-m-d H:i:s', $this->donateNow->created_at);
-            $formattedCreatedAt = $createdAt->format('Y-m-d'); // Change the format as per your requirement
+        //     // dd($this->donateNow->id);
+        //     $this->payment->donation_id = $this->donateNow->id;
+        //     $this->payment->save();
+        //     session()->flash('status', 'Payment Details successfully submitted.');
+        //     $projects="";
+        //     $ids = json_decode( $this->donateNow->transaction_type);
+        //     $data = Project::select('title')->whereIn('id', $ids)->get();
+        //     foreach ($data as $key => $val) {
+        //         $projects .= $val->title;
+        //         if ($key < count($data) - 1) {
+        //             $projects .= ', ';
+        //         }
+        //     }
+        //     // dd($this->donateNow->created_at);
+        //     $createdAt = Carbon::createFromFormat('Y-m-d H:i:s', $this->donateNow->created_at);
+        //     $formattedCreatedAt = $createdAt->format('Y-m-d'); // Change the format as per your requirement
 
-            $data_array = [
-                'full_name' => $this->donateNow->full_name,
-                'email' => $this->donateNow->email,
-                'transaction_type' => $projects,
-                'city' => $this->donateNow->city,
-                'address' => $this->donateNow->address,
-                'amount' => $this->donateNow->amount,
-                'createdAt' => $formattedCreatedAt,
-            ];
+        //     $data_array = [
+        //         'full_name' => $this->donateNow->full_name,
+        //         'email' => $this->donateNow->email,
+        //         'transaction_type' => $projects,
+        //         'city' => $this->donateNow->city,
+        //         'address' => $this->donateNow->address,
+        //         'amount' => $this->donateNow->amount,
+        //         'createdAt' => $formattedCreatedAt,
+        //     ];
 
 
-            Mail::to($this->donateNow->email)->bcc('rajbansh.snehal@gmail.com','Snehal Raj')->send(new UnderProcess($data_array));
-        }
+        //     Mail::to($this->donateNow->email)->bcc('rajbansh.snehal@gmail.com','Snehal Raj')->send(new UnderProcess($data_array));
+        // }
     }
 }

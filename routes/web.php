@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DynamicPageController;
+use App\Models\DonateNow;
+use Barryvdh\DomPDF\Facade\Pdf;
+use Illuminate\Support\Facades\Crypt;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,6 +49,13 @@ Route::middleware('page-cache')->get('refund-policy', function () {
 Route::middleware('page-cache')->get('terms-conditions', function () {
     return view('pages.terms');
 })->name('terms-conditions');
+
+Route::middleware('page-cache')->get('thank-you', function () {
+    return view('pages.thankyou');
+})->name('thank-you');
+
+
+Route::get('reciept', [DynamicPageController::class,'reciept'])->name('pdf');
 
 
 Route::get('project-details/{slug}',[DynamicPageController::class,'projectDetail'])->name('project-details');
