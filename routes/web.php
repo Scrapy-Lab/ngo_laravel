@@ -56,6 +56,7 @@ Route::middleware('page-cache')->get('thank-you', function () {
 
 
 Route::get('reciept', [DynamicPageController::class,'reciept'])->name('pdf');
+Route::get('recieptPDF/{id}', [DynamicPageController::class,'recieptPdf'])->name('pdf-download');
 
 
 Route::get('project-details/{slug}',[DynamicPageController::class,'projectDetail'])->name('project-details');
