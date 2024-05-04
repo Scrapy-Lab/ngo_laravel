@@ -37,7 +37,7 @@
         <p style="color: #333333;">Youngistaan Team!</p>
 
         <img width="150px" src="{{url('images/logo/site_logo.png')}}" alt="Donation Receipt"
-            style="max-width: 100%; height: auto; display: block; margin-top: 20px;">
+            style=" width: 150px; max-width: 100%; height: auto; display: block; margin-top: 20px;">
     </div>
 
 </body>
