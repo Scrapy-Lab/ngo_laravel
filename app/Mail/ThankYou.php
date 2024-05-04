@@ -27,7 +27,7 @@ class ThankYou extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Thank You',
+            subject: 'Youngistaan - Donation Receipt PDF',
         );
     }
 

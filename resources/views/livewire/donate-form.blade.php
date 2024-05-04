@@ -283,10 +283,58 @@
             @endif
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="itsImage text-center">
                             {{-- <img src="{{ url('/images/bgQr.png') }}" alt=""> --}}
                         </div>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Donation Type</th>
+                                <th scope="col">
+                                    @if ($donation_type == 1 )
+                                    Monthly Donation
+                                    @elseif ($donation_type == 2)
+                                    Annual Donation
+                                    @else
+                                    One Time Donation
+                                    @endif
+                                </th>
+
+
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Donation Amount</th>
+                                <td>{{$amount}}</td>
+
+
+                              </tr>
+
+                              <tr>
+                                <th scope="row">Full Name</th>
+                                <td colspan="2">{{$full_name}}</td>
+
+                              </tr>
+                              <tr>
+                                <th scope="row">Email</th>
+                                <td colspan="2">{{$email}}</td>
+
+                              </tr>
+                              <tr>
+                                <th scope="row">Mobile Number</th>
+                                <td colspan="2">{{$phone}}</td>
+
+                              </tr>
+                              <tr>
+                                <th scope="row">City</th>
+                                <td colspan="2">{{$city}}</td>
+
+                              </tr>
+                            </tbody>
+                          </table>
+
                     </div>
                     <div class="col-md-6">
                         <div class="row">
@@ -391,7 +439,7 @@
                 }
             },
             "handler": function(response) {
-                alert(response.razorpay_payment_id);
+                // alert(response.razorpay_payment_id);
                 window.location.href = "{{route('thank-you')}}";
             },
             "modal": {

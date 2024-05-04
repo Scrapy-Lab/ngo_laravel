@@ -20,7 +20,7 @@
 
         <a href="{{ route('pdf-download',$data['hashId'] ) }}" download>
             <button
-                style="background-color: #4CAF50; /* Green */
+                style="background-color: #AF1515; /* Green */
             border: none;
             color: white;
             padding: 15px 32px;

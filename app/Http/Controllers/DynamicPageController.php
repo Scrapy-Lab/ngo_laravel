@@ -49,7 +49,7 @@ class DynamicPageController extends Controller
 
                 $pdf = Pdf::loadView('pages.reciept', ['data' => $dotantion_data]);
 
-                Mail::to($dotantion_data->email)->bcc('rajbansh.snehal@gmail.com', 'Snehal Raj')->send(new ThankYou($dotantion_data));
+                // Mail::to($dotantion_data->email)->bcc('rajbansh.snehal@gmail.com', 'Snehal Raj')->send(new ThankYou($dotantion_data));
                 // dd($pdf->download());
                 return $pdf->download();
             }
