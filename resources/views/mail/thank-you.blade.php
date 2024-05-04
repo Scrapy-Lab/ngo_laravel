@@ -36,7 +36,7 @@
         <p style="color: #333333;">With heartfelt gratitude,</p>
         <p style="color: #333333;">Youngistaan Team!</p>
 
-        <img src="{{url('images/logo/site_logo.png')}}" alt="Donation Receipt"
+        <img width="150px" src="{{url('images/logo/site_logo.png')}}" alt="Donation Receipt"
             style="max-width: 100%; height: auto; display: block; margin-top: 20px;">
     </div>
 
