@@ -95,7 +95,7 @@
                         </tr>
                         <tr>
                             <td style="font-size: 16px;padding-left: 24px;">Donation Date</td>
-                            <td style="text-align: center;font-size: 16px;">{{ $data->created_at }}</td>
+                            <td style="text-align: center;font-size: 16px;">{{ \Carbon\Carbon::parse($data->created_at)->diffForHumans() }}</td>
                         </tr>
                     </table>
                 </div>
