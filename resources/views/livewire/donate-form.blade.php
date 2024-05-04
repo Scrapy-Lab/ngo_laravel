@@ -390,8 +390,8 @@
     <script>
         console.log("adasdadasdadasd asd asdas dasd a");
         var options = {
-            "key": "rzp_test_0WiHd2duqjIki2", // Test key  Enter the Key ID generated from the Dashboard
-            // "key": "rzp_live_7ax5iM2vX2B3uU", // Live Key Enter the Key ID generated from the Dashboard
+            // "key": "rzp_test_0WiHd2duqjIki2", // Test key  Enter the Key ID generated from the Dashboard
+            "key": "rzp_live_7ax5iM2vX2B3uU", // Live Key Enter the Key ID generated from the Dashboard
             "amount": {{ $amount * 100 }},
             "currency": "INR",
             "description": "Youngistaan welfare society",
