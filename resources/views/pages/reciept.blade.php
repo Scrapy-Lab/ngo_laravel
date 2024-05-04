@@ -95,7 +95,8 @@
                         </tr>
                         <tr>
                             <td style="font-size: 16px;padding-left: 24px;">Donation Date</td>
-                            <td style="text-align: center;font-size: 16px;">{{ \Carbon\Carbon::parse($data->created_at)->format('F j, Y \a\t g:i A') }}</td>
+                            {{-- <td style="text-align: center;font-size: 16px;">{{ \Carbon\Carbon::parse($data->created_at)->format('F j, Y \a\t g:i A') }}</td> --}}
+                            <td style="text-align: center;font-size: 16px;">{{ \Carbon\Carbon::parse($data->created_at)->format('F j, Y') }}</td>
                         </tr>
                     </table>
                 </div>
