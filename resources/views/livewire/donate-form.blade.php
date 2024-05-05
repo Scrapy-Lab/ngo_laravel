@@ -91,7 +91,7 @@
                                 style="background-color: {{ $enableCustomAmt ? '#5586e8' : '#AF1515' }};"> Custom
                                 Amount</span>
                             <div class="input-row">
-                                <input type="number" wire:model="amount" id="customAmountInput" class="form-control"
+                                <input type="number" wire:model="amount" id="customAmountInput" min="200" class="form-control"
                                     placeholder="Enter custom amount" {{ $disable }}>
                             </div>
                         </div>
@@ -263,7 +263,7 @@
 
                 {{-- <img src="{{asset('images/logo/back.png')}}" alt="" width="20px"> --}}
                 {{-- <button class="my-4"   wire:target="savePersonalInfo(1)"  type="submit">Back</button> --}}
-                <button href="#" class="my-4 ">Donate Now</button>
+                <button href="#" class="my-4 ">Next</button>
 
             </div>
         </div>
@@ -379,7 +379,7 @@
             </div> --}}
 
             {{-- <button href="#" class="my-4">Donate Now</button> --}}
-            <button wire:ignore id="rzp-button1"> Pay Now</button>
+            <button  id="rzp-button1"> Pay Now</button>
         </div>
 
 
@@ -439,7 +439,9 @@
                 }
             },
             "handler": function(response) {
-                // alert(response.razorpay_payment_id);
+                // console.log("response", response);
+                // alert(response);
+                // if()
                 window.location.href = "{{route('thank-you')}}";
             },
             "modal": {
@@ -457,7 +459,9 @@
         $(document).ready(function() {
             var rzp1 = new Razorpay(options);
             document.getElementById('rzp-button1').onclick = function(e) {
+                this.disabled = true;
                 rzp1.open();
+
                 e.preventDefault();
             }
         });

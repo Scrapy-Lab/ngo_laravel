@@ -50,6 +50,7 @@ class DonateForm extends Component
 
     public function mount()
     {
+        session(['payment' => false]);
         $this->donation_type = 0;
         $this->payment_type = 1;
         $this->projects = Project::orWhere('schedule', null)->orWhere('schedule', '<=', Carbon::now())->where('is_visible', 1)->get();
@@ -92,6 +93,7 @@ class DonateForm extends Component
         if ($this->donateNow->save()) {
 
             session(['donation_id' => Crypt::encryptString($this->donateNow->id)]);
+            session(['donation_id_reciept' => Crypt::encryptString($this->donateNow->id)]);
 
             // Display the session data and decrypt the donation ID stored in the session
             // dd(session()->all(), Crypt::decryptString(session('donation_id')));
@@ -125,8 +127,7 @@ class DonateForm extends Component
         if ($this->donateNow->save()) {
             $this->donateSecondForm = false;
             $this->donateThirdForm = true;
-            $this->donateNow->hashId = Crypt::encryptString($this->donateNow->id);
-            Mail::to($this->email)->bcc('rajbansh.snehal@gmail.com', 'Snehal Raj')->send(new ThankYou($this->donateNow));
+
             session()->flash('status', 'User Personal Details successfully submitted.');
         }
     }
@@ -134,15 +135,19 @@ class DonateForm extends Component
 
     public function saveScreenShot($back)
     {
-
+        // dd($back);
         if ($back) {
-            // dd($back);
+
             $this->donateSecondForm = true;
             $this->donateThirdForm = false;
+            // $this->donateNow->hashId = Crypt::encryptString($this->donateNow->id);
+            // Mail::to($this->email)->bcc('rajbansh.snehal@gmail.com', 'Snehal Raj')->send(new ThankYou($this->donateNow));
             return true;
         }
 
-        $this->validate();
+        // $this->dispatchBrowserEvent('openRazorpay');
+        return true;
+        // $this->validate();
 
 
         // dd();

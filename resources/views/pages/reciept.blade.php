@@ -53,7 +53,9 @@
                 <div style="display: flex;justify-content:space-around;align-items: center;margin: 10px 0;">
                     <div
                         style="font-size: 16px;font-family: sans-serif;font-weight: 600;color: rgb(5, 8, 89);margin-top: 30px;margin-bottom: 30px;">
-                        Authorised Signatory</div>
+                        Authorised Signatory
+                    <img src="{{ public_path('images/mail_images/signature.png') }}" style="width:250px; margin-left:-200px" alt="logo" />
+                    </div>
                     <img src="{{ public_path('images/mail_images/image004.png') }}" w="10" h="10" alt="logo" />
                     <img src="{{ public_path('images/mail_images/eastman.png') }}" w="10" h="10" alt="logo" />
                 </div>

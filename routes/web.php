@@ -2,9 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DynamicPageController;
+use App\Mail\ThankYou;
 use App\Models\DonateNow;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +20,7 @@ use Illuminate\Support\Facades\Crypt;
 |
 */
 
-Route::middleware('page-cache')->get('/',[DynamicPageController::class,'index'])->name('home');
+Route::middleware('page-cache')->get('/', [DynamicPageController::class, 'index'])->name('home');
 
 Route::middleware('page-cache')->get('ourwork', function () {
     return view('pages.ourwork');
@@ -50,13 +54,15 @@ Route::middleware('page-cache')->get('terms-conditions', function () {
     return view('pages.terms');
 })->name('terms-conditions');
 
-Route::middleware('page-cache')->get('thank-you', function () {
-    return view('pages.thankyou');
-})->name('thank-you');
+Route::middleware('page-cache')->get('thank-you', [DynamicPageController::class, 'thankyou']
 
 
-Route::get('reciept', [DynamicPageController::class,'reciept'])->name('pdf');
-Route::get('recieptPDF/{id}', [DynamicPageController::class,'recieptPdf'])->name('pdf-download');
+
+)->name('thank-you');
 
 
-Route::get('project-details/{slug}',[DynamicPageController::class,'projectDetail'])->name('project-details');
+Route::get('reciept', [DynamicPageController::class, 'reciept'])->name('pdf');
+Route::get('recieptPDF/{id}', [DynamicPageController::class, 'recieptPdf'])->name('pdf-download');
+
+
+Route::get('project-details/{slug}', [DynamicPageController::class, 'projectDetail'])->name('project-details');
