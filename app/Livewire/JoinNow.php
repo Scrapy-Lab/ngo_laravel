@@ -44,7 +44,7 @@ class JoinNow extends Component
 
     public function mount()
     {
-        $this->projects = Project::select('id','title')->get();
+        $this->projects = Project::select('id', 'title')->get();
         $this->join_now = new Joinus;
     }
 
@@ -55,12 +55,25 @@ class JoinNow extends Component
 
     public function joinNow()
     {
-        $this->validate();
-// dd($this->aadhar_back->extension());
 
-        $aadharFront = 'aadharFront_'.time().'.'.$this->aadhar_front->extension();
-        $aadharBack = 'aadharBack_'.time().'.'.$this->aadhar_back->extension();
-        $imagePan = 'imagePan_'.time().'.'.$this->pan->extension();
+        // dd($this->project_id);
+        $this->validate();
+        // dd($this->aadhar_back->extension());
+        if (isset($this->aadharFront) || $this->pan || $this->pan) {
+            $aadharFront = 'aadharFront_' . time() . '.' . $this->aadhar_front->extension();
+            $aadharBack = 'aadharBack_' . time() . '.' . $this->aadhar_back->extension();
+            $imagePan = 'imagePan_' . time() . '.' . $this->pan->extension();
+
+            $this->join_now->aadhar_front = $aadharFront;
+            $this->join_now->aadhar_back = $aadharBack;
+            $this->join_now->pan = $imagePan;
+
+            // Store Images in folders
+            $this->aadhar_front->storeAs('joinNowImages', $aadharFront, 'public');
+            $this->aadhar_back->storeAs('joinNowImages', $aadharBack, 'public');
+            $this->aadhar_front->storeAs('joinNowImages', $imagePan, 'public');
+        }
+
         $this->join_now->full_name = $this->full_name;
         $this->join_now->mobile_no = $this->mobile_no;
         $this->join_now->email = $this->email;
@@ -73,16 +86,12 @@ class JoinNow extends Component
         $this->join_now->qualification = $this->qualification;
         $this->join_now->volunter_type = $this->volunter_type;
         $this->join_now->project_id = json_encode($this->project_id);
-        $this->join_now->aadhar_front = $aadharFront;
-        $this->join_now->aadhar_back = $aadharBack;
-        $this->join_now->pan = $imagePan;
 
-        // Store Images in folders
-        $this->aadhar_front->storeAs('joinNowImages', $aadharFront, 'public');
-        $this->aadhar_back->storeAs('joinNowImages', $aadharBack, 'public');
-        $this->aadhar_front->storeAs('joinNowImages', $imagePan, 'public');
-        if($this->join_now->save()){
+
+
+        if ($this->join_now->save()) {
             session()->flash('status', 'Your Details successfully submitted.');
+            $this->reset();
         }
     }
 }
