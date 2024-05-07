@@ -91,7 +91,7 @@ class JoinNow extends Component
 
         if ($this->join_now->save()) {
             session()->flash('status', 'Your Details successfully submitted.');
-            $this->reset();
+            $this->reset(['full_name', 'mobile_no', 'email', 'address', 'city', 'state', 'dob', 'age', 'blood_group', 'qualification', 'volunter_type', 'project_id']);
         }
     }
 }
