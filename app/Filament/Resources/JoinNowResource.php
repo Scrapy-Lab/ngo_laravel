@@ -99,11 +99,13 @@ class JoinNowResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('protect_id')
                     ->default(function (JoinNow $record) {
-                        $projects=[];
-                        $data = Project::select('title')->whereIn('id',json_decode($record->project_id))->get();
+                        $projects = "";
+                        $data = Project::select('title')->whereIn('id',json_decode($record->project_id,true))->get();
+
                         foreach($data as $val){
-                            $projects[] = $val->title;
+                            $projects .= $val->title . " , ";
                         }
+                        // dd($projects);
                         return $projects;
                     }),
                     ImageColumn::make('aadhar_front')
@@ -133,7 +135,7 @@ class JoinNowResource extends Resource
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-            ])
+            ])->defaultSort('created_at', 'desc')
             ->filters([
                 //
             ])
