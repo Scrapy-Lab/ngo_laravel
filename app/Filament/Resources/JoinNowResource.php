@@ -63,6 +63,7 @@ class JoinNowResource extends Resource
                 Forms\Components\TextInput::make('project_id')
                     ->required(),
                 Forms\Components\TextInput::make('aadhar_front')
+
                     ->maxLength(191),
                 Forms\Components\TextInput::make('aadhar_back')
                     ->maxLength(191),
@@ -100,33 +101,60 @@ class JoinNowResource extends Resource
                 Tables\Columns\TextColumn::make('protect_id')
                     ->default(function (JoinNow $record) {
                         $projects = "";
-                        $data = Project::select('title')->whereIn('id',json_decode($record->project_id,true))->get();
+                        $data = Project::select('title')->whereIn('id', json_decode($record->project_id, true))->get();
 
-                        foreach($data as $val){
+                        foreach ($data as $val) {
                             $projects .= $val->title . " , ";
                         }
                         // dd($projects);
                         return $projects;
                     }),
-                    ImageColumn::make('aadhar_front')
-                ->getStateUsing(function (JoinNow $record): string {
-                    // http://127.0.0.1:8000/admin/join-nows
-                    // dd(Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_front);
-                    return Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_front;
-                }),
+                ImageColumn::make('aadhar_front')
+
+                    ->getStateUsing(function (JoinNow $record): string {
+                        // http://127.0.0.1:8000/admin/join-nows
+                        // dd(Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_front);
+                        if ($record->aadhar_front) {
+
+                            return Request::getScheme() . "://" . Request::getHttpHost() . "/storage/joinNowImages/" . $record->aadhar_front;
+                        } else {
+
+
+                            // dd()
+                            return url('/images/default_join.webp');
+                        }
+                    }),
                 Tables\Columns\ImageColumn::make('aadhar_back')
-                ->getStateUsing(function (JoinNow $record): string {
+                    ->getStateUsing(function (JoinNow $record): string {
 
-                    // dd(Request::getScheme()."/storage/joinNowImages/".$record->aadhar_back);
-                    return Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_back;
-                })
-                   ,
+                        // dd(Request::getScheme()."/storage/joinNowImages/".$record->aadhar_back);
+                        if ($record->aadhar_back) {
+
+                            // return Request::getScheme() . "://" . Request::getHttpHost() . "/storage/joinNowImages/" . $record->aadhar_front;
+                            return Request::getScheme() . "://" . Request::getHttpHost() . "/storage/joinNowImages/" . $record->aadhar_back;
+                        } else {
+
+
+                            // dd()
+                            return url('/images/default_join.webp');
+                        }
+                    }),
                 Tables\Columns\ImageColumn::make('pan')
-                ->getStateUsing(function (JoinNow $record): string {
+                    ->getStateUsing(function (JoinNow $record): string {
 
-                    // dd(Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_back);
-                    return Request::getScheme()."://".Request::getHttpHost()."/storage/joinNowImages/".$record->pan;
-                }),
+                        // dd(Request::getHttpHost()."/storage/joinNowImages/".$record->aadhar_back);
+                        if ($record->pan) {
+
+                            // return Request::getScheme() . "://" . Request::getHttpHost() . "/storage/joinNowImages/" . $record->aadhar_front;
+                            // return Request::getScheme() . "://" . Request::getHttpHost() . "/storage/joinNowImages/" . $record->aadhar_back;
+                            return Request::getScheme() . "://" . Request::getHttpHost() . "/storage/joinNowImages/" . $record->pan;
+                        } else {
+
+
+                            // dd()
+                            return url('/images/default_join.webp');
+                        }
+                    }),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
