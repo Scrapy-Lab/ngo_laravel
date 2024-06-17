@@ -91,8 +91,8 @@
                                 style="background-color: {{ $enableCustomAmt ? '#5586e8' : '#AF1515' }};"> Custom
                                 Amount</span>
                             <div class="input-row">
-                                <input type="number" wire:model="amount" id="customAmountInput" min="200" class="form-control"
-                                    placeholder="Enter custom amount" {{ $disable }}>
+                                <input type="number" wire:model="amount" id="customAmountInput" min="200"
+                                    class="form-control" placeholder="Enter custom amount" {{ $disable }}>
                             </div>
                         </div>
                     </div>
@@ -201,152 +201,152 @@
     @endif
     {{-- STEP 2  --}}
     @if ($donateSecondForm)
-    <form wire:submit.prevent="savePersonalInfo(0)">
-        <div class="donateBlogInnerbox">
-            {{-- Personal Info --}}
-            @if (session('status'))
-                <div class="alert alert-success">
-                    {{ session('status') }}
-                    <i class="fa fa-arrow-left" wire:click="savePersonalInfo(1)" style="float: right; cursor:pointer"
-                        aria-hidden="true"> Back</i>
-                </div>
-            @endif
-            <h4>Personal Info</h4>
-            <div class="donateForm d-flex">
-                <div class="donteGroup">
-                    <label for="">Full Name*</label>
-                    <input type="text" wire:model="full_name" placeholder="Full Name">
-                    <div style="color:red">
-                        @error('full_name')
-                            {{ $message }}
-                        @enderror
+        <form wire:submit.prevent="savePersonalInfo(0)">
+            <div class="donateBlogInnerbox">
+                {{-- Personal Info --}}
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                        <i class="fa fa-arrow-left" wire:click="savePersonalInfo(1)"
+                            style="float: right; cursor:pointer" aria-hidden="true"> Back</i>
                     </div>
-                </div>
-                <div class="donteGroup">
-                    <label for="">Email</label>
-                    <input type="email" wire:model="email" name="" id="" placeholder="Email">
-                    <div style="color:red">
-                        @error('email')
-                            {{ $message }}
-                        @enderror
+                @endif
+                <h4>Personal Info</h4>
+                <div class="donateForm d-flex">
+                    <div class="donteGroup">
+                        <label for="">Full Name*</label>
+                        <input type="text" wire:model="full_name" placeholder="Full Name">
+                        <div style="color:red">
+                            @error('full_name')
+                                {{ $message }}
+                            @enderror
+                        </div>
                     </div>
-                </div>
-                <div class="donteGroup mt-2">
-                    <label for="">Mobile Number*</label>
-                    <input type="tel" wire:model="phone" name="" id=""
-                        placeholder="Mobile number">
-                    <div style="color:red">
-                        @error('phone')
-                            {{ $message }}
-                        @enderror
+                    <div class="donteGroup">
+                        <label for="">Email</label>
+                        <input type="email" wire:model="email" name="" id="" placeholder="Email">
+                        <div style="color:red">
+                            @error('email')
+                                {{ $message }}
+                            @enderror
+                        </div>
                     </div>
-                </div>
-                <div class="donteGroup mt-2">
-                    <label for="">City</label>
-                    <input type="text" name="" wire:model="city" id="" placeholder="City">
-                    <div style="color:red">
-                        @error('city')
-                            {{ $message }}
-                        @enderror
+                    <div class="donteGroup mt-2">
+                        <label for="">Mobile Number*</label>
+                        <input type="tel" wire:model="phone" name="" id=""
+                            placeholder="Mobile number">
+                        <div style="color:red">
+                            @error('phone')
+                                {{ $message }}
+                            @enderror
+                        </div>
                     </div>
-                </div>
+                    <div class="donteGroup mt-2">
+                        <label for="">City</label>
+                        <input type="text" name="" wire:model="city" id="" placeholder="City">
+                        <div style="color:red">
+                            @error('city')
+                                {{ $message }}
+                            @enderror
+                        </div>
+                    </div>
 
-                <div class="donteGroups mt-2">
-                    <label for="">Address</label>
-                    <textarea name="" id="" cols="30" wire:model="address" rows="10" placeholder="Address"></textarea>
-                    <div style="color:red">
-                        @error('address')
-                            {{ $message }}
-                        @enderror
+                    <div class="donteGroups mt-2">
+                        <label for="">Address</label>
+                        <textarea name="" id="" cols="30" wire:model="address" rows="10" placeholder="Address"></textarea>
+                        <div style="color:red">
+                            @error('address')
+                                {{ $message }}
+                            @enderror
+                        </div>
                     </div>
+
+                    {{-- <img src="{{asset('images/logo/back.png')}}" alt="" width="20px"> --}}
+                    {{-- <button class="my-4"   wire:target="savePersonalInfo(1)"  type="submit">Back</button> --}}
+                    <button href="#" class="my-4 ">Next</button>
+
                 </div>
-
-                {{-- <img src="{{asset('images/logo/back.png')}}" alt="" width="20px"> --}}
-                {{-- <button class="my-4"   wire:target="savePersonalInfo(1)"  type="submit">Back</button> --}}
-                <button href="#" class="my-4 ">Next</button>
-
             </div>
-        </div>
-    </form>
+        </form>
 
     @endif
     {{-- STEP 3 --}}
     @if ($donateThirdForm)
-    <form wire:submit.prevent="saveScreenShot(0)">
-        <div class="donateBlogInnerbox">
-            @if (session('status'))
-                <div class="alert alert-success">
-                    {{ session('status') }}
-                    <i class="fa fa-arrow-left" wire:click="saveScreenShot(1)" style="float: right;cursor:pointer"
-                        aria-hidden="true"> Back</i>
-                </div>
-            @endif
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="itsImage text-center">
-                            {{-- <img src="{{ url('/images/bgQr.png') }}" alt=""> --}}
-                        </div>
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">Donation Type</th>
-                                <th scope="col">
-                                    @if ($donation_type == 1 )
-                                    Monthly Donation
-                                    @elseif ($donation_type == 2)
-                                    Annual Donation
-                                    @else
-                                    One Time Donation
-                                    @endif
-                                </th>
-
-
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">Donation Amount</th>
-                                <td>{{$amount}}</td>
-
-
-                              </tr>
-
-                              <tr>
-                                <th scope="row">Full Name</th>
-                                <td colspan="2">{{$full_name}}</td>
-
-                              </tr>
-                              <tr>
-                                <th scope="row">Email</th>
-                                <td colspan="2">{{$email}}</td>
-
-                              </tr>
-                              <tr>
-                                <th scope="row">Mobile Number</th>
-                                <td colspan="2">{{$phone}}</td>
-
-                              </tr>
-                              <tr>
-                                <th scope="row">City</th>
-                                <td colspan="2">{{$city}}</td>
-
-                              </tr>
-                            </tbody>
-                          </table>
-
+        <form wire:submit.prevent="saveScreenShot(0)">
+            <div class="donateBlogInnerbox">
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                        <i class="fa fa-arrow-left" wire:click="saveScreenShot(1)"
+                            style="float: right;cursor:pointer" aria-hidden="true"> Back</i>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-12">
-                                @if ($screenshot)
-                                    <img src="{{ $screenshot->temporaryUrl() }}">
-                                @endif
+                @endif
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="itsImage text-center">
+                                {{-- <img src="{{ url('/images/bgQr.png') }}" alt=""> --}}
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Donation Type</th>
+                                        <th scope="col">
+                                            @if ($donation_type == 1)
+                                                Monthly Donation
+                                            @elseif ($donation_type == 2)
+                                                Annual Donation
+                                            @else
+                                                One Time Donation
+                                            @endif
+                                        </th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Donation Amount</th>
+                                        <td>{{ $amount }}</td>
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Full Name</th>
+                                        <td colspan="2">{{ $full_name }}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Email</th>
+                                        <td colspan="2">{{ $email }}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Mobile Number</th>
+                                        <td colspan="2">{{ $phone }}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">City</th>
+                                        <td colspan="2">{{ $city }}</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    @if ($screenshot)
+                                        <img src="{{ $screenshot->temporaryUrl() }}">
+                                    @endif
+                                </div>
+
                             </div>
 
-                        </div>
-
-                        {{-- <div class="row">
+                            {{-- <div class="row">
                             <div class="text-center">
                                 <div class="image-upload">
                                     <div wire:loading wire:target="screenshot">Uploading...</div>
@@ -369,124 +369,127 @@
                         </div> --}}
 
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            {{-- <div class="noticeMian">
+                {{-- <div class="noticeMian">
                 <p> <span class="red">Important Note:</span> Our Developer team Are Working On Payment Gateway .
                     You can pay through QR code . Don’t worry your transaction is totally safe.
                 </p>
             </div> --}}
 
-            {{-- <button href="#" class="my-4">Donate Now</button> --}}
-            <button  id="rzp-button1"> Pay Now</button>
-        </div>
+                {{-- <button href="#" class="my-4">Donate Now</button> --}}
+                <button id="rzp-button1"> Pay Now</button>
+            </div>
 
 
 
-    </form>
+        </form>
 
-    @script
-    <script>
-        console.log("adasdadasdadasd asd asdas dasd a");
-        var options = {
-            // "key": "rzp_test_0WiHd2duqjIki2", // Test key  Enter the Key ID generated from the Dashboard
-            "key": "rzp_live_7ax5iM2vX2B3uU", // Live Key Enter the Key ID generated from the Dashboard
-            "amount": {{ $amount * 100 }},
-            "currency": "INR",
-            "description": "Youngistaan welfare society",
-            "image": "{{url('images/logo/site_logo.png')}}",
-            "prefill": {
-                "email": "{{$email}}",
-                "contact": "{{$phone}}",
-            },
-            config: {
-                display: {
-                    blocks: {
-                        utib: { //name for Axis block
-                            name: "Pay using Axis Bank",
-                            instruments: [{
-                                    method: "card",
-                                    issuers: ["UTIB"]
+        @script
+            <script>
+                console.log("adasdadasdadasd asd asdas dasd a");
+                var options = {
+                    // "key": "rzp_test_0WiHd2duqjIki2", // Test key  Enter the Key ID generated from the Dashboard
+                    "key": "rzp_live_7ax5iM2vX2B3uU", // Live Key Enter the Key ID generated from the Dashboard
+                    "amount": {{ $amount * 100 }},
+                    "currency": "INR",
+                    "description": "Youngistaan welfare society",
+                    "image": "{{ url('images/logo/site_logo.png') }}",
+                    "prefill": {
+                        "email": "{{ $email }}",
+                        "contact": "{{ $phone }}",
+                    },
+                    config: {
+                        display: {
+                            blocks: {
+                                utib: { //name for Axis block
+                                    name: "Pay using Axis Bank",
+                                    instruments: [{
+                                            method: "card",
+                                            issuers: ["UTIB"]
+                                        },
+                                        {
+                                            method: "netbanking",
+                                            banks: ["UTIB"]
+                                        },
+                                    ]
                                 },
-                                {
-                                    method: "netbanking",
-                                    banks: ["UTIB"]
-                                },
-                            ]
-                        },
-                        other: { //  name for other block
-                            name: "Other Payment modes",
-                            instruments: [{
-                                    method: "card",
-                                    issuers: ["ICIC"]
-                                },
-                                {
-                                    method: 'upi',
+                                other: { //  name for other block
+                                    name: "Other Payment modes",
+                                    instruments: [{
+                                            method: "card",
+                                            issuers: ["ICIC"]
+                                        },
+                                        {
+                                            method: 'upi',
+                                        },
+                                        {
+                                            method: 'netbanking',
+                                        }
+                                    ]
                                 }
-                            ]
+                            },
+                            // hide: [
+                            //   {
+                            //   method: "upi"
+                            //   }
+                            // ],
+                            sequence: ["block.utib", "block.other"],
+                            preferences: {
+                                show_default_blocks: false // Should Checkout show its default blocks?
+                            }
                         }
                     },
-                    // hide: [
-                    //   {
-                    //   method: "upi"
-                    //   }
-                    // ],
-                    sequence: ["block.utib", "block.other"],
-                    preferences: {
-                        show_default_blocks: false // Should Checkout show its default blocks?
+                    "handler": function(response) {
+                        // console.log("response", response);
+                        // alert(response);
+                        // if()
+                        window.location.href = "{{ route('thank-you') }}";
+                    },
+                    "modal": {
+                        "ondismiss": function() {
+                            if (confirm("Are you sure, you want to close the form?")) {
+                                txt = "You pressed OK!";
+                                console.log("Checkout form closed by the user");
+                            } else {
+                                txt = "You pressed Cancel!";
+                                console.log("Complete the Payment")
+                            }
+                        }
                     }
-                }
-            },
-            "handler": function(response) {
-                // console.log("response", response);
-                // alert(response);
-                // if()
-                window.location.href = "{{route('thank-you')}}";
-            },
-            "modal": {
-                "ondismiss": function() {
-                    if (confirm("Are you sure, you want to close the form?")) {
-                        txt = "You pressed OK!";
-                        console.log("Checkout form closed by the user");
-                    } else {
-                        txt = "You pressed Cancel!";
-                        console.log("Complete the Payment")
-                    }
-                }
-            }
-        };
-        $(document).ready(function() {
-            var rzp1 = new Razorpay(options);
-            document.getElementById('rzp-button1').onclick = function(e) {
-                this.disabled = true;
-                rzp1.open();
+                };
+                $(document).ready(function() {
+                    var rzp1 = new Razorpay(options);
+                    document.getElementById('rzp-button1').onclick = function(e) {
+                        this.disabled = true;
+                        rzp1.open();
 
-                e.preventDefault();
-            }
-        });
-    </script>
-@endscript
-    {{-- >
+                        e.preventDefault();
+                    }
+                });
+            </script>
+        @endscript
+        {{-- >
 
          --}}
     @endif
     {{-- STEP 4 --}}
     @if ($donateFourthForm)
-    <div class="donateBlogInnerbox nextTypeImage text-center">
-        <img id="bouncingImage" src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif"
-            alt="Bouncing Image">
-        <h4>Your Donation has been successfully
-            submitted</h4>
+        <div class="donateBlogInnerbox nextTypeImage text-center">
+            <img id="bouncingImage" src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif"
+                alt="Bouncing Image">
+            <h4>Your Donation has been successfully
+                submitted</h4>
 
-        <div class="noticeMian text-center">
-            <p> Your tax-deductible donation is greatly
-                appreciated!
-            </p>
+            <div class="noticeMian text-center">
+                <p> Your tax-deductible donation is greatly
+                    appreciated!
+                </p>
+            </div>
+            <h3>Download Your Donation Receipt</h3>
+            <a href="#" class="my-4">Download Now</a>
         </div>
-        <h3>Download Your Donation Receipt</h3>
-        <a href="#" class="my-4">Download Now</a>
-    </div>
     @endif
 
     <script>
